@@ -1,0 +1,7 @@
+demographic_group,pct_travis_county_population,pct_food_insecure,food_insecurity_rate,pct_snap_recipients,median_hh_income,pct_below_poverty,pct_in_food_desert_zip,pct_no_vehicle,childcare_burden_pct_income,avg_miles_to_grocery
+White Non-Hispanic,48.2,8.4,10.2,22.1,98400,6.8,8.4,5.2,14.1,0.6
+Hispanic / Latino,26.4,34.2,21.8,38.4,52300,19.4,42.6,18.7,31.4,1.8
+Black / African American,8.1,31.8,19.6,24.7,48700,22.1,51.3,24.1,34.2,2.1
+Asian / Pacific Islander,7.3,11.2,9.8,6.4,87600,8.1,12.4,7.3,16.8,0.7
+Multiracial,4.8,18.4,14.2,8.2,63400,11.3,22.7,11.4,22.1,1.1
+Other / Not Reported,5.2,22.6,16.8,0.2,54800,15.6,31.2,14.3,26.8,1.6

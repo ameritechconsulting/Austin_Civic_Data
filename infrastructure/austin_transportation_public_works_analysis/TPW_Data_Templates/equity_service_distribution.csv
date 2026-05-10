@@ -1,0 +1,11 @@
+geography_name,zip_code,council_district,census_tract,median_hh_income,pct_below_poverty,pct_black,pct_hispanic,pct_white,pct_renters,displacement_risk_tier,avg_pci,sidewalk_coverage_pct,hin_segment_present,active_capital_project_present,active_capital_project_name,capital_investment_per_capita_5yr,drainage_infrastructure_condition,flood_risk_level,adcap_opportunity_flag,infrastructure_displacement_risk,notes
+East Cesar Chavez,78702,3,,,,,,,,High,,,,Y,,,,,,Y,Y,Street improvements preceded rapid gentrification
+Airport Blvd Corridor,78723,1,,,,,,,,High,,,,Y,Y,Airport Blvd Corridor,,,,Y,Y,Active TPW corridor investment
+Rundberg Lane,78753,4,,,,,,,,High,,,,Y,Y,Rundberg Safety,,,,Y,Y,HIN; Vision Zero priority; high poverty
+East MLK Jr Blvd,78721,1,,,,,,,,High,,,,Y,Y,East MLK Corridor,,,,Y,Y,
+E William Cannon,78744,2,,,,,,,,Moderate,,,,Y,,,,,High,Y,Y,HIN; Onion Creek flood risk
+North Lamar,78752,4,,,,,,,,Moderate,,,,Y,Y,N. Lamar Corridor,,,,N,Y,Corridor investment ongoing
+Windsor Hills/NE Austin,78723,4,,,,,,,,High,,,,N,,,,,Moderate,Y,N,
+South Congress,78704,9,,,,,,,,Low,,,,N,,,,,Low,N,N,Gentrified; low displacement risk
+West Austin,78731,10,,,,,,,,Low,,,,N,,,,,Low,N,N,High income; best infrastructure condition
+Central Business District,78701,9,,,,,,,,Low,,,,N,,,,,Low,N,N,

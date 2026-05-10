@@ -1,0 +1,20 @@
+metric,value,unit,source_note,year
+Austin avg monthly infant care (center-based),1847,USD/month,Child Care Aware of America / Austin metro survey,2024
+Austin avg monthly toddler care (center-based),1612,USD/month,Child Care Aware of America,2024
+Austin avg monthly preschool (3-5 yr center),1388,USD/month,Child Care Aware of America,2024
+Austin avg monthly school-age care,924,USD/month,Child Care Aware of America,2024
+Annual infant care cost as pct of median family income,29.6,percent,Based on $75k median; $22,164 annual infant care,2024
+Annual toddler care cost as pct of median family income,25.8,percent,Based on $75k median; $19,344 annual,2024
+HHS affordability threshold (no more than 7% income),5250,USD/year,HHS benchmark for a $75k family,2024
+Families paying >10% income on childcare,41.3,percent,Travis County estimate,2023
+Parents who reduced work hours due to childcare cost,28.7,percent,Austin Chamber / Regional survey,2023
+Parents who left workforce due to childcare,14.2,percent,Austin Chamber / Regional survey,2023
+Workers in childcare desert (no licensed slots nearby),87400,people,Travis County estimate,2023
+Licensed childcare slots Travis County,62800,slots,Texas Health and Human Services,2024
+Children under 6 needing care Travis County,89200,children,ACS 5-Year Estimate,2023
+Childcare slot gap Travis County,26400,slots,"Gap between demand (89,200) and supply (62,800)",2024
+Workers who turned down job due to childcare,19.6,percent,Regional workforce survey,2023
+Mothers vs fathers workforce exit rate due to childcare,4.8,ratio,"Mothers 4.8x more likely than fathers to exit for childcare",2023
+Avg childcare subsidy waitlist Travis County,18,months,Texas HHS CCMS waitlist data,2024
+Families on CCMS subsidy waitlist Travis County,9800,families,Texas HHS,2024
+Economic output lost to childcare crisis Austin metro,1.2,billion USD/year,Austin Chamber estimate,2023

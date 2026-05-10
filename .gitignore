@@ -1,0 +1,34 @@
+# Work in progress — never publish to GitHub
+drafts/
+
+# Archived copies — internal only
+archive/
+
+# Claude Code settings
+.claude/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Python virtual environments
+.venv/
+venv/
+env/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Jupyter
+.ipynb_checkpoints/
+
+# VSCode
+.vscode/
+
+# Node / npm
+node_modules/
+
+# OS
+Thumbs.db

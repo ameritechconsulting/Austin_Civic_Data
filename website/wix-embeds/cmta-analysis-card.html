@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background: transparent;
+    padding: 8px;
+  }
+
+  .card {
+    background: #ffffff;
+    border: 1px solid #dde3ed;
+    border-radius: 8px;
+    padding: 20px 24px;
+    max-width: 540px;
+  }
+
+  .card-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+
+  .repo-icon {
+    width: 18px;
+    height: 18px;
+    fill: #1B3A6B;
+    flex-shrink: 0;
+  }
+
+  .repo-name {
+    font-size: 15px;
+    font-weight: 600;
+    color: #1B3A6B;
+    text-decoration: none;
+  }
+
+  .repo-name:hover { text-decoration: underline; }
+
+  .badge {
+    font-size: 11px;
+    color: #555;
+    border: 1px solid #d0d7de;
+    border-radius: 20px;
+    padding: 1px 8px;
+    margin-left: auto;
+    white-space: nowrap;
+  }
+
+  .description {
+    font-size: 13px;
+    color: #444;
+    line-height: 1.5;
+    margin-bottom: 14px;
+  }
+
+  .meta {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    font-size: 12px;
+    color: #777;
+    margin-bottom: 16px;
+    flex-wrap: wrap;
+  }
+
+  .meta-item {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+
+  .divider {
+    border: none;
+    border-top: 1px solid #eee;
+    margin-bottom: 14px;
+  }
+
+  .footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .attribution {
+    font-size: 11px;
+    color: #999;
+  }
+
+  .btn {
+    display: inline-block;
+    background: #1B3A6B;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 7px 16px;
+    border-radius: 5px;
+    text-decoration: none;
+    letter-spacing: 0.3px;
+    transition: background 0.2s;
+  }
+
+  .btn:hover { background: #2E86AB; }
+
+  .loading { font-size: 13px; color: #999; padding: 12px 0; }
+  .error   { font-size: 13px; color: #c0392b; padding: 12px 0; }
+</style>
+</head>
+<body>
+
+<div class="card">
+  <div id="content"><p class="loading">Loading…</p></div>
+</div>
+
+<script>
+const REPO = 'ameritechconsulting/cmta-analysis';
+const LABEL = 'CMTA Transit Equity Analysis';
+const DESCRIPTION = 'Baseline evidence report and equity analysis of CapMetro transit accessibility across Austin council districts — covering 311 complaint data, stop amenity gaps, ADA violations, and risk scoring.';
+
+fetch('https://api.github.com/repos/' + REPO)
+  .then(r => r.json())
+  .then(data => {
+    const updated = new Date(data.pushed_at).toLocaleDateString('en-US', {
+      year: 'numeric', month: 'short', day: 'numeric'
+    });
+    document.getElementById('content').innerHTML = `
+      <div class="card-header">
+        <svg class="repo-icon" viewBox="0 0 16 16">
+          <path d="M2 2.5A2.5 2.5 0 0 1 4.5 0h7A2.5 2.5 0 0 1 14 2.5v10.042a.75.75 0 0 1-1.204.6l-2.546-1.908-2.546 1.908A.75.75 0 0 1 6.5 12.5V2.5A1 1 0 0 0 5.5 1.5h-1A1 1 0 0 0 3.5 2.5v11a1 1 0 0 0 1 1h7a1 1 0 0 0 1-1v-1h1v1a2 2 0 0 1-2 2h-7a2 2 0 0 1-2-2v-11z"/>
+        </svg>
+        <a class="repo-name" href="https://github.com/${REPO}" target="_blank">${LABEL}</a>
+        <span class="badge">Public</span>
+      </div>
+      <p class="description">${DESCRIPTION}</p>
+      <div class="meta">
+        <span class="meta-item">Updated ${updated}</span>
+        <span class="meta-item">${data.stargazers_count} stars</span>
+      </div>
+      <hr class="divider">
+      <div class="footer">
+        <span class="attribution">Ameritech Consulting Group</span>
+        <a class="btn" href="https://github.com/${REPO}" target="_blank">View Analysis →</a>
+      </div>
+    `;
+  })
+  .catch(() => {
+    document.getElementById('content').innerHTML =
+      '<p class="error">Unable to load repository data.</p>';
+  });
+</script>
+</body>
+</html>

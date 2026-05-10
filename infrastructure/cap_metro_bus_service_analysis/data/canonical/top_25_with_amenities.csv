@@ -1,0 +1,26 @@
+stop_id,stop_name,trip_count,max_trips_per_hour,meets_15_rule,meets_50_rule,bench_present,shelter_present,bench_count,shelter_count,_merge,amenity_gap,gap_priority,amenity_status
+5940,1609 Lavaca/17th (Midblock),2215,137,True,True,0,0,0,0,both,2,High,missing both
+501,Guadalupe/16th Street,2156,129,True,True,0,0,0,0,both,2,High,missing both
+2643,Lavaca/4th,2147,124,True,True,0,0,0,0,both,2,High,missing both
+498,Guadalupe/W. 21st Street,1994,131,True,True,0,0,0,0,both,2,High,missing both
+5864,UT Dean Keeton Station (NB),1843,119,True,True,0,0,0,0,both,2,High,missing both
+2763,Vic Mathias/Auditorium Shores (SB),1831,112,True,True,0,0,0,0,both,2,High,missing both
+2613,Guadalupe/4th,1813,104,True,True,0,0,0,0,both,2,High,missing both
+6314,115 7Th/Colorado,1740,108,True,True,0,0,0,0,both,2,High,missing both
+1368,501 Pleasant Valley/5th,1554,99,True,True,0,0,0,0,both,2,High,missing both
+5868,Republic Square Station (NB),1495,93,True,True,0,0,0,0,both,2,High,missing both
+5849,Northcross Station (SB),1494,97,True,True,0,0,0,0,both,2,High,missing both
+5879,Bluebonnet Station (SB),1486,91,True,True,0,0,0,0,both,2,High,missing both
+5349,West 38th Station (SB),1471,90,True,True,0,0,0,0,both,2,High,missing both
+6315,8th Street NB (Trinity/8th),1435,90,True,True,0,0,0,0,both,2,High,missing both
+5859,North Lamar Transit Center,1432,99,True,True,0,0,0,0,left_only,2,High,missing both
+497,UT West Mall Station (SB),2798,175,True,True,0,1,0,1,both,1,Medium,missing one
+591,Capitol Station (NB),2344,141,True,True,1,0,1,0,both,1,Medium,missing one
+1042,2231 Guadalupe/West Mall UT,2107,138,True,True,1,0,1,0,both,1,Medium,missing one
+603,31st Street Rapid  Station (NB),1803,108,True,True,1,0,1,0,both,1,Medium,missing one
+2606,Austin History Center Station (NB),1495,93,True,True,1,0,1,0,both,1,Medium,missing one
+2328,Oltorf West Station (SB),1486,92,True,True,1,0,1,0,both,1,Medium,missing one
+2738,Capitol Station (SB),2805,175,True,True,1,1,2,1,both,0,Low,bench+shelter
+5357,31st Street Station (SB),2231,140,True,True,1,1,1,1,both,0,Low,bench+shelter
+2611,Austin History Center Station (SB),1930,120,True,True,1,1,1,1,both,0,Low,bench+shelter
+5604,Crestview Station Bus Stop,1699,114,True,True,1,1,1,1,both,0,Low,bench+shelter

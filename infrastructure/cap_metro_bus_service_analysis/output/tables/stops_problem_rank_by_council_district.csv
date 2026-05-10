@@ -1,0 +1,26 @@
+council_district,rank_in_district,stop_id,stop_name,problem_score,risk_score,total_calls,unresolved_tickets,unresolved_rate,safety_concerns,amenity_gap
+3,1,1368,501 Pleasant Valley/5th,0.665,0.731,85.0,67.0,78.8,7.0,2
+4,1,5859,North Lamar Transit Center,0.606,0.699,67.0,52.0,77.6,8.0,2
+5,1,5879,Bluebonnet Station (SB),0.644,0.74,75.0,52.0,69.3,10.0,2
+5,2,2328,Oltorf West Station (SB),0.12,0.175,0.0,0.0,0.0,0.0,1
+7,1,5849,Northcross Station (SB),0.635,0.712,78.0,60.0,76.9,7.0,2
+7,2,5604,Crestview Station Bus Stop,0.0,0.0,0.0,0.0,0.0,0.0,0
+9,1,5940,1609 Lavaca/17th (Midblock),0.995,1.0,142.0,113.0,79.6,19.0,2
+9,2,501,Guadalupe/16th Street,0.962,0.958,138.0,116.0,84.1,16.0,2
+9,3,2643,Lavaca/4th,0.9,0.909,135.0,106.0,78.5,12.0,2
+9,4,498,Guadalupe/W. 21st Street,0.827,0.86,112.0,91.0,81.2,13.0,2
+9,5,5864,UT Dean Keeton Station (NB),0.757,0.824,98.0,70.0,71.4,13.0,2
+9,6,2613,Guadalupe/4th,0.724,0.781,92.0,75.0,81.5,10.0,2
+9,7,2763,Vic Mathias/Auditorium Shores (SB),0.705,0.766,95.0,71.0,74.7,8.0,2
+9,8,5868,Republic Square Station (NB),0.672,0.747,82.0,64.0,78.0,9.0,2
+9,9,6314,115 7Th/Colorado,0.645,0.708,88.0,68.0,77.3,4.0,2
+9,10,6315,8th Street NB (Trinity/8th),0.612,0.72,68.0,44.0,64.7,10.0,2
+9,11,5349,West 38th Station (SB),0.603,0.688,72.0,55.0,76.4,6.0,2
+9,12,497,UT West Mall Station (SB),0.12,0.175,0.0,0.0,0.0,0.0,1
+9,13,591,Capitol Station (NB),0.12,0.175,0.0,0.0,0.0,0.0,1
+9,14,1042,2231 Guadalupe/West Mall UT,0.12,0.175,0.0,0.0,0.0,0.0,1
+9,15,603,31st Street Rapid  Station (NB),0.12,0.175,0.0,0.0,0.0,0.0,1
+9,16,2606,Austin History Center Station (NB),0.12,0.175,0.0,0.0,0.0,0.0,1
+9,17,2738,Capitol Station (SB),0.0,0.0,0.0,0.0,0.0,0.0,0
+9,18,5357,31st Street Station (SB),0.0,0.0,0.0,0.0,0.0,0.0,0
+9,19,2611,Austin History Center Station (SB),0.0,0.0,0.0,0.0,0.0,0.0,0

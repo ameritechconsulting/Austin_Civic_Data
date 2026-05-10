@@ -1,0 +1,934 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CMTA Transit — 5 Most Pressing Concerns | Ameritech Consulting Group</title>
+  <style>
+    @page {
+      size: letter;
+      margin: 0.65in 0.75in 0.65in 0.75in;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      font-size: 10pt;
+      color: #1a1a2e;
+      background: white;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+    .page {
+      width: 100%;
+      min-height: 9.7in;
+      page-break-after: always;
+      break-after: page;
+      display: flex;
+      flex-direction: column;
+    }
+    .page:last-child {
+      page-break-after: avoid;
+      break-after: avoid;
+    }
+
+    /* --- typography --- */
+    h1 { font-size: 24pt; font-weight: 900; color: #1a3a5c; line-height: 1.1; letter-spacing: -0.5px; }
+    h2 { font-size: 13pt; font-weight: 700; color: #1a3a5c; margin-bottom: 6px; }
+    h3 { font-size: 10.5pt; font-weight: 700; color: #1a3a5c; margin-bottom: 4px; }
+    p  { font-size: 9.5pt; line-height: 1.55; color: #2c2c2c; }
+
+    /* --- page header bar --- */
+    .page-header {
+      background: #1a3a5c;
+      color: white;
+      padding: 9px 14px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 16px;
+    }
+    .page-header .lbl {
+      font-size: 7.5pt; font-weight: 600;
+      letter-spacing: 1.2px; text-transform: uppercase; opacity: 0.8;
+    }
+    .page-header .ttl { font-size: 10pt; font-weight: 700; }
+
+    /* --- rules --- */
+    .rule  { border: none; border-top: 2px solid #1a3a5c; margin: 11px 0; }
+    .orule { border: none; border-top: 3px solid #d94f00; margin: 3px 0 11px 0; }
+
+    /* --- KPI grid --- */
+    .kpi-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 7px;
+      margin: 14px 0;
+    }
+    .kpi-box {
+      border: 1px solid #c5cdd6;
+      border-top: 4px solid #d94f00;
+      border-radius: 3px;
+      padding: 9px 7px;
+      text-align: center;
+      background: #fafbfc;
+    }
+    .kpi-box.red  { border-top-color: #c0392b; }
+    .kpi-box.amb  { border-top-color: #e8a000; }
+    .kpi-box.blu  { border-top-color: #2e6fad; }
+    .kpi-box.nav  { border-top-color: #1a3a5c; }
+    .kpi-num {
+      font-size: 21pt; font-weight: 800; color: #d94f00;
+      display: block; line-height: 1;
+    }
+    .kpi-box.red .kpi-num { color: #c0392b; }
+    .kpi-box.amb .kpi-num { color: #e8a000; }
+    .kpi-box.blu .kpi-num { color: #2e6fad; }
+    .kpi-box.nav .kpi-num { color: #1a3a5c; }
+    .kpi-lbl {
+      font-size: 7pt; font-weight: 600; color: #5a6570;
+      text-transform: uppercase; letter-spacing: 0.4px;
+      margin-top: 4px; display: block; line-height: 1.35;
+    }
+
+    /* --- finding banner --- */
+    .fbanner {
+      background: #d94f00; color: white;
+      padding: 7px 13px; margin-bottom: 12px; border-radius: 2px;
+    }
+    .fbanner.nv { background: #1a3a5c; }
+    .fbanner .fnum {
+      font-size: 7.5pt; font-weight: 600;
+      letter-spacing: 1.5px; text-transform: uppercase; opacity: 0.88;
+    }
+    .fbanner h2 { color: white; font-size: 13pt; margin-bottom: 0; }
+
+    /* --- callout boxes --- */
+    .callout {
+      border-left: 4px solid #d94f00;
+      background: #fff8f5;
+      padding: 7px 11px;
+      margin: 8px 0;
+      font-size: 9pt;
+    }
+    .callout.bl { border-left-color: #2e6fad; background: #f0f6ff; }
+    .callout.rd { border-left-color: #c0392b; background: #fff2f2; }
+
+    /* --- tables --- */
+    table { width: 100%; border-collapse: collapse; font-size: 8.5pt; }
+    thead th {
+      background: #1a3a5c; color: white;
+      padding: 5px 7px; text-align: left;
+      font-weight: 600; font-size: 7.5pt;
+    }
+    tbody tr:nth-child(even) { background: #f0f2f5; }
+    tbody tr:nth-child(odd)  { background: white; }
+    tbody td {
+      padding: 5px 7px;
+      border-bottom: 1px solid #dde2e8;
+      vertical-align: middle;
+    }
+    .rnk { font-weight: 700; color: #d94f00; text-align: center; }
+    .gF  { background: #c0392b !important; color: white; font-weight: 800; text-align: center; border-radius: 2px; padding: 2px 5px; display: inline-block; }
+    .gD  { background: #e67e22 !important; color: white; font-weight: 700; text-align: center; border-radius: 2px; padding: 2px 5px; display: inline-block; }
+    .gC  { background: #d4a017 !important; color: white; font-weight: 700; text-align: center; border-radius: 2px; padding: 2px 5px; display: inline-block; }
+
+    /* --- layouts --- */
+    .two-col   { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin: 8px 0; }
+    .three-col { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 10px; margin: 8px 0; }
+
+    /* --- action items --- */
+    .aitem { display: flex; gap: 11px; margin-bottom: 11px; align-items: flex-start; }
+    .anum  {
+      background: #1a3a5c; color: white; font-weight: 800; font-size: 12pt;
+      min-width: 30px; height: 30px;
+      display: flex; align-items: center; justify-content: center;
+      border-radius: 50%; flex-shrink: 0;
+    }
+    .acontent h3 { margin-bottom: 2px; }
+    .acontent p  { font-size: 9pt; }
+
+    /* --- chart labels --- */
+    .ctitle { font-size: 9pt; font-weight: 700; color: #1a3a5c; margin-bottom: 5px; }
+    .csrc   { font-size: 7pt; color: #5a6570; margin-top: 3px; }
+
+    /* --- footer --- */
+    .pfooter {
+      margin-top: auto; padding-top: 8px;
+      border-top: 1px solid #c5cdd6;
+      font-size: 7pt; color: #5a6570;
+    }
+    .pf-top {
+      display: flex; justify-content: space-between; align-items: baseline;
+      font-size: 7.5pt; font-weight: 600; color: #3a4a5c; margin-bottom: 3px;
+    }
+    .pf-contact { font-size: 6.8pt; color: #5a6570; letter-spacing: 0.1px; }
+
+    /* --- cover top --- */
+    .cover-top {
+      background: #eef1f5;
+      border-left: 6px solid #1a3a5c;
+      border-top: 4px solid #1a3a5c;
+      color: #1a1a2e;
+      padding: 20px 22px 17px; margin-bottom: 18px;
+    }
+    .cover-top .agl {
+      font-size: 8pt; letter-spacing: 2px; font-weight: 600;
+      text-transform: uppercase; color: #4a5f75; margin-bottom: 9px;
+    }
+    .cover-top h1 { color: #1a3a5c; }
+    .cover-top .date-line { font-size: 9pt; color: #4a5f75; margin-top: 11px; font-weight: 500; }
+  </style>
+</head>
+<body>
+
+<!-- ============================================================ -->
+<!-- PAGE 1 — COVER / EXECUTIVE BRIEF                            -->
+<!-- ============================================================ -->
+<div class="page">
+  <div class="cover-top">
+    <div class="agl">Capital Metro Transit Authority + City of Austin &mdash; Independent Baseline Review</div>
+    <h1>5 Most Pressing Concerns<br>in Transit Stop Conditions,<br>Safety &amp; Accountability</h1>
+    <div class="date-line">
+      Prepared by Ameritech Consulting Group &nbsp;&bull;&nbsp; April 26, 2026
+      &nbsp;&bull;&nbsp; Public Data: FY2023&ndash;2026 YTD
+    </div>
+  </div>
+
+  <p style="margin-bottom:12px;">
+    This brief summarizes five evidence-based findings drawn from 311 complaint records, GTFS service data,
+    ADA incident files, and geospatial equity analysis covering Austin&rsquo;s highest-demand transit stops.
+    All data is publicly available. All findings are reproducible. This is a baseline&mdash;not a final
+    audit&mdash;but the patterns identified demand immediate action.
+  </p>
+
+  <!-- KPI Row -->
+  <div class="kpi-grid">
+    <div class="kpi-box red">
+      <span class="kpi-num">80%</span>
+      <span class="kpi-lbl">High-Priority Stops<br>Missing Shelter</span>
+    </div>
+    <div class="kpi-box">
+      <span class="kpi-num">500+</span>
+      <span class="kpi-lbl">Avg. Days Open<br>Per Unresolved Ticket</span>
+    </div>
+    <div class="kpi-box amb">
+      <span class="kpi-num">342</span>
+      <span class="kpi-lbl">ADA-Related<br>Complaints (3 Yrs)</span>
+    </div>
+    <div class="kpi-box red">
+      <span class="kpi-num">84%</span>
+      <span class="kpi-lbl">Highest Unresolved<br>311 Rate at One Stop</span>
+    </div>
+    <div class="kpi-box nav">
+      <span class="kpi-num">F</span>
+      <span class="kpi-lbl">Overall Grade&mdash;<br>Every Analyzed District</span>
+    </div>
+  </div>
+
+  <hr class="rule">
+
+  <h3 style="margin-bottom:9px;">Five Findings at a Glance</h3>
+
+  <div style="display:grid; grid-template-columns:1fr 1fr; gap:9px; margin-bottom:12px;">
+    <div class="callout">
+      <strong>Finding 1 &mdash; Infrastructure Failure:</strong> 80% of the 25 highest-demand stops have
+      no shelter; 64% have no bench. Riders face weather exposure and standing burden at Austin&rsquo;s
+      most active transit locations.
+    </div>
+    <div class="callout">
+      <strong>Finding 2 &mdash; Risk Concentration:</strong> The top-risk stops appear at the same locations
+      across every metric&mdash;service intensity, complaint volume, unresolved tickets, and amenity absence
+      all converge on fewer than 15 sites.
+    </div>
+    <div class="callout bl">
+      <strong>Finding 3 &mdash; Accountability Breakdown:</strong> Tickets at the highest-volume stops sit
+      open for an average of 500+ days. Residents report the same problems repeatedly with no resolution.
+    </div>
+    <div class="callout bl">
+      <strong>Finding 4 &mdash; ADA &amp; Safety Signals:</strong> 342 ADA-related complaint records appear
+      in the 3-year baseline. Safety concerns make up 10.65% of all analyzed calls. Zero confirmed ADA
+      repairs are documented in any district.
+    </div>
+  </div>
+
+  <div class="callout rd">
+    <strong>Finding 5 &mdash; Systemic Equity Failure:</strong> All five analyzed council districts receive
+    an overall F grade. Districts 3 and 4 carry the highest non-white population shares (61.7% and 73.9%
+    respectively) and face identical infrastructure and response-rate failures&mdash;with no measurable
+    corrective action on record.
+  </div>
+
+  <hr class="rule" style="margin-top:12px;">
+  <p style="font-size:7.5pt; color:#5a6570;">
+    <strong>Data sources:</strong> City of Austin 311 Open Data Portal &bull; Capital Metro GTFS feeds
+    &bull; ADA complaint records &bull; Travis County Census tract boundaries &bull; Austin Council District
+    shapefiles. &nbsp;Analysis window: FY2023&ndash;FY2025 + 2026 YTD (through April 2026).
+    This report is a reproducible baseline assessment and does not constitute a legal determination.
+  </p>
+
+  <div class="pfooter">
+    <div class="pf-top">
+      <span>CMTA + City of Austin &mdash; Independent Baseline Review, April 2026</span>
+      <span>Page 1 of 5</span>
+    </div>
+    <div class="pf-contact">
+      Tiffany Moore &nbsp;&bull;&nbsp; Ameritech Consulting Group &nbsp;&bull;&nbsp;
+      tiffany@a-techconsulting.com &nbsp;&bull;&nbsp;
+      www.a-techconsulting.com &nbsp;&bull;&nbsp;
+      GitHub: github.com/ameritechconsulting/cmta-analysis
+    </div>
+  </div>
+</div>
+
+
+<!-- ============================================================ -->
+<!-- PAGE 2 — FINDING 1 & 2: INFRASTRUCTURE + RISK CONCENTRATION -->
+<!-- ============================================================ -->
+<div class="page">
+  <div class="page-header">
+    <span class="lbl">Findings 1 &amp; 2</span>
+    <span class="ttl">CMTA + City of Austin &mdash; Transit Baseline Review, April 2026</span>
+    <span class="lbl">Infrastructure &amp; Risk</span>
+  </div>
+
+  <div class="fbanner">
+    <div class="fnum">Finding 1 of 5</div>
+    <h2>Basic Amenities Are Missing at 4 Out of 5 High-Demand Stops</h2>
+  </div>
+
+  <div class="two-col" style="margin-bottom:4px;">
+    <div>
+      <div class="ctitle">Amenity Gap at Austin&rsquo;s 25 Highest-Priority Transit Stops</div>
+      <!-- HORIZONTAL BAR CHART: Amenity Gaps -->
+      <svg viewBox="0 0 440 120" width="100%" style="font-family:Arial,sans-serif;display:block;">
+        <rect width="440" height="120" fill="white"/>
+        <!-- grid verticals at 25/50/75/100 of 320px range (x=105 to x=425) -->
+        <line x1="185" y1="5" x2="185" y2="100" stroke="#dde2e8" stroke-width="1"/>
+        <line x1="265" y1="5" x2="265" y2="100" stroke="#dde2e8" stroke-width="1"/>
+        <line x1="345" y1="5" x2="345" y2="100" stroke="#dde2e8" stroke-width="1"/>
+        <line x1="425" y1="5" x2="425" y2="100" stroke="#dde2e8" stroke-width="1"/>
+        <text x="105" y="5"  font-size="7" fill="#999">0%</text>
+        <text x="185" y="5"  font-size="7" fill="#999" text-anchor="middle">25%</text>
+        <text x="265" y="5"  font-size="7" fill="#999" text-anchor="middle">50%</text>
+        <text x="345" y="5"  font-size="7" fill="#999" text-anchor="middle">75%</text>
+        <text x="425" y="5"  font-size="7" fill="#999" text-anchor="middle">100%</text>
+
+        <!-- Bar 1: Missing Shelter 80% → 0.80*320=256 -->
+        <text x="101" y="26" font-size="8.5" fill="#2c2c2c" text-anchor="end">No Shelter</text>
+        <rect x="105" y="12" width="256" height="21" fill="#c0392b" rx="2"/>
+        <text x="365" y="26" font-size="9.5" font-weight="700" fill="#c0392b">80%</text>
+
+        <!-- Bar 2: Missing Bench 64% → 0.64*320=204.8 -->
+        <text x="101" y="58" font-size="8.5" fill="#2c2c2c" text-anchor="end">No Bench</text>
+        <rect x="105" y="44" width="205" height="21" fill="#e67e22" rx="2"/>
+        <text x="314" y="58" font-size="9.5" font-weight="700" fill="#e67e22">64%</text>
+
+        <!-- Bar 3: Safety Complaints 10.65% → 0.1065*320=34 -->
+        <text x="101" y="90" font-size="8.5" fill="#2c2c2c" text-anchor="end">Safety Calls</text>
+        <rect x="105" y="76" width="34" height="21" fill="#2e6fad" rx="2"/>
+        <text x="143" y="90" font-size="9.5" font-weight="700" fill="#2e6fad">10.7%</text>
+
+        <line x1="105" y1="101" x2="440" y2="101" stroke="#c5cdd6" stroke-width="1"/>
+      </svg>
+      <div class="csrc">Source: data/canonical/top_25_with_amenities.csv | FY2023&ndash;2026 YTD</div>
+    </div>
+    <div>
+      <p style="margin-bottom:7px;">
+        Of the 25 bus stops with the highest service intensity in Austin&rsquo;s network,
+        <strong>20 have no shelter</strong> and <strong>16 have no bench</strong>.
+        These are not low-use stops&mdash;they are the city&rsquo;s most active transit locations.
+      </p>
+      <div class="callout rd" style="margin-bottom:7px;">
+        <strong>Why it matters:</strong> Riders at peak-service stops are exposed to Texas heat, rain, and
+        sun with no protection. This is a basic safety and dignity failure, not an edge case.
+      </div>
+      <div class="callout">
+        <strong>Responsibility split:</strong> 82.6% of issues in this dataset are attributed to
+        CapMetro; 12.4% to the City of Austin. Neither agency can refer this away.
+      </div>
+    </div>
+  </div>
+
+  <hr class="rule">
+
+  <div class="fbanner nv" style="margin-top:4px;">
+    <div class="fnum">Finding 2 of 5</div>
+    <h2>Risk Is Concentrated &mdash; The Same Stops Fail Across Every Metric</h2>
+  </div>
+
+  <div class="ctitle" style="margin-bottom:4px;">Top 10 Highest-Risk Stop Locations &mdash; Composite Risk Score (0&ndash;1)</div>
+  <table>
+    <thead>
+      <tr>
+        <th style="width:22px;">#</th>
+        <th>Stop Location</th>
+        <th style="text-align:center;">Daily Trips</th>
+        <th style="text-align:center;">311 Calls</th>
+        <th style="text-align:center;">Safety</th>
+        <th style="text-align:center;">Shelter</th>
+        <th style="text-align:center;">Bench</th>
+        <th style="text-align:center;width:52px;">Risk</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="rnk">1</td>
+        <td><strong>1609 Lavaca / 17th St. (Midblock)</strong></td>
+        <td style="text-align:center;">2,215</td><td style="text-align:center;">142</td>
+        <td style="text-align:center;">19</td>
+        <td style="text-align:center;color:#c0392b;font-weight:700;">&#x2717; No</td>
+        <td style="text-align:center;color:#c0392b;font-weight:700;">&#x2717; No</td>
+        <td style="text-align:center;"><strong>1.000</strong></td>
+      </tr>
+      <tr>
+        <td class="rnk">2</td><td>Guadalupe / 16th Street</td>
+        <td style="text-align:center;">2,156</td><td style="text-align:center;">138</td><td style="text-align:center;">16</td>
+        <td style="text-align:center;color:#c0392b;">&#x2717; No</td><td style="text-align:center;color:#c0392b;">&#x2717; No</td>
+        <td style="text-align:center;">0.958</td>
+      </tr>
+      <tr>
+        <td class="rnk">3</td><td>Lavaca / 4th Street</td>
+        <td style="text-align:center;">2,147</td><td style="text-align:center;">135</td><td style="text-align:center;">12</td>
+        <td style="text-align:center;color:#c0392b;">&#x2717; No</td><td style="text-align:center;color:#c0392b;">&#x2717; No</td>
+        <td style="text-align:center;">0.909</td>
+      </tr>
+      <tr>
+        <td class="rnk">4</td><td>Guadalupe / W. 21st Street</td>
+        <td style="text-align:center;">1,994</td><td style="text-align:center;">112</td><td style="text-align:center;">13</td>
+        <td style="text-align:center;color:#c0392b;">&#x2717; No</td><td style="text-align:center;color:#c0392b;">&#x2717; No</td>
+        <td style="text-align:center;">0.860</td>
+      </tr>
+      <tr>
+        <td class="rnk">5</td><td>UT Dean Keeton Station (NB)</td>
+        <td style="text-align:center;">1,843</td><td style="text-align:center;">98</td><td style="text-align:center;">13</td>
+        <td style="text-align:center;color:#c0392b;">&#x2717; No</td><td style="text-align:center;color:#c0392b;">&#x2717; No</td>
+        <td style="text-align:center;">0.824</td>
+      </tr>
+      <tr>
+        <td class="rnk">6</td><td>Guadalupe / 4th Street</td>
+        <td style="text-align:center;">1,813</td><td style="text-align:center;">92</td><td style="text-align:center;">10</td>
+        <td style="text-align:center;color:#c0392b;">&#x2717; No</td><td style="text-align:center;color:#c0392b;">&#x2717; No</td>
+        <td style="text-align:center;">0.781</td>
+      </tr>
+      <tr>
+        <td class="rnk">7</td><td>Vic Mathias / Auditorium Shores (SB)</td>
+        <td style="text-align:center;">1,831</td><td style="text-align:center;">95</td><td style="text-align:center;">8</td>
+        <td style="text-align:center;color:#c0392b;">&#x2717; No</td><td style="text-align:center;color:#c0392b;">&#x2717; No</td>
+        <td style="text-align:center;">0.766</td>
+      </tr>
+      <tr>
+        <td class="rnk">8</td><td>Republic Square Station (NB)</td>
+        <td style="text-align:center;">1,495</td><td style="text-align:center;">82</td><td style="text-align:center;">9</td>
+        <td style="text-align:center;color:#c0392b;">&#x2717; No</td><td style="text-align:center;color:#c0392b;">&#x2717; No</td>
+        <td style="text-align:center;">0.747</td>
+      </tr>
+      <tr>
+        <td class="rnk">9</td><td>Bluebonnet Station (SB)</td>
+        <td style="text-align:center;">1,486</td><td style="text-align:center;">75</td><td style="text-align:center;">10</td>
+        <td style="text-align:center;color:#c0392b;">&#x2717; No</td><td style="text-align:center;color:#c0392b;">&#x2717; No</td>
+        <td style="text-align:center;">0.740</td>
+      </tr>
+      <tr>
+        <td class="rnk">10</td><td>501 Pleasant Valley / 5th Street</td>
+        <td style="text-align:center;">1,554</td><td style="text-align:center;">85</td><td style="text-align:center;">7</td>
+        <td style="text-align:center;color:#c0392b;">&#x2717; No</td><td style="text-align:center;color:#c0392b;">&#x2717; No</td>
+        <td style="text-align:center;">0.731</td>
+      </tr>
+    </tbody>
+  </table>
+  <div class="csrc">Source: output/tables/stop_baseline_risk_index.csv | Risk score 0&ndash;1 weighted across amenity gap, complaint volume, safety rate, &amp; avg. ticket age</div>
+
+  <div class="pfooter">
+    <div class="pf-top">
+      <span>CMTA + City of Austin &mdash; Independent Baseline Review, April 2026</span>
+      <span>Page 2 of 5</span>
+    </div>
+    <div class="pf-contact">
+      Tiffany Moore &nbsp;&bull;&nbsp; Ameritech Consulting Group &nbsp;&bull;&nbsp;
+      tiffany@a-techconsulting.com &nbsp;&bull;&nbsp;
+      www.a-techconsulting.com &nbsp;&bull;&nbsp;
+      GitHub: github.com/ameritechconsulting/cmta-analysis
+    </div>
+  </div>
+</div>
+
+
+<!-- ============================================================ -->
+<!-- PAGE 3 — FINDING 3: 311 ACCOUNTABILITY / UNRESOLVED BURDEN  -->
+<!-- ============================================================ -->
+<div class="page">
+  <div class="page-header">
+    <span class="lbl">Finding 3</span>
+    <span class="ttl">CMTA + City of Austin &mdash; Transit Baseline Review, April 2026</span>
+    <span class="lbl">Accountability Breakdown</span>
+  </div>
+
+  <div class="fbanner">
+    <div class="fnum">Finding 3 of 5</div>
+    <h2>311 Tickets Sit Open an Average of 500 Days &mdash; With No Resolution in Sight</h2>
+  </div>
+
+  <div class="two-col">
+    <div>
+      <div class="ctitle">Annual 311 Complaint Volume &mdash; High-Priority Transit Stops</div>
+      <!-- VERTICAL BAR CHART: Annual complaints -->
+      <!-- Chart area y=15 to y=140, height=125. Max=500. x=50..285 -->
+      <svg viewBox="0 0 300 175" width="100%" style="font-family:Arial,sans-serif;display:block;">
+        <rect width="300" height="175" fill="white"/>
+        <!-- grid horizontals -->
+        <line x1="50" y1="15"  x2="285" y2="15"  stroke="#dde2e8" stroke-width="0.5"/>
+        <line x1="50" y1="46"  x2="285" y2="46"  stroke="#dde2e8" stroke-width="0.5"/>
+        <line x1="50" y1="77"  x2="285" y2="77"  stroke="#dde2e8" stroke-width="0.5"/>
+        <line x1="50" y1="109" x2="285" y2="109" stroke="#dde2e8" stroke-width="0.5"/>
+        <!-- Y-axis labels -->
+        <text x="46" y="18"  font-size="7" fill="#888" text-anchor="end">500</text>
+        <text x="46" y="49"  font-size="7" fill="#888" text-anchor="end">375</text>
+        <text x="46" y="80"  font-size="7" fill="#888" text-anchor="end">250</text>
+        <text x="46" y="112" font-size="7" fill="#888" text-anchor="end">125</text>
+        <text x="46" y="143" font-size="7" fill="#888" text-anchor="end">0</text>
+        <!-- X axis -->
+        <line x1="50" y1="140" x2="285" y2="140" stroke="#1a3a5c" stroke-width="1.5"/>
+        <!-- Y axis -->
+        <line x1="50" y1="10" x2="50" y2="140" stroke="#c5cdd6" stroke-width="1"/>
+
+        <!-- 2023: 443 → h=443/500*125=110.75 → y=140-110.75=29.25≈29 -->
+        <rect x="65"  y="29" width="42" height="111" fill="#2e6fad" rx="2"/>
+        <text x="86"  y="25" font-size="8" font-weight="700" fill="#2e6fad" text-anchor="middle">443</text>
+        <text x="86"  y="153" font-size="8" fill="#2c2c2c" text-anchor="middle">2023</text>
+
+        <!-- 2024: 405 → h=405/500*125=101.25 → y=38.75≈39 -->
+        <rect x="120" y="39" width="42" height="101" fill="#2e6fad" rx="2"/>
+        <text x="141" y="35" font-size="8" font-weight="700" fill="#2e6fad" text-anchor="middle">405</text>
+        <text x="141" y="153" font-size="8" fill="#2c2c2c" text-anchor="middle">2024</text>
+
+        <!-- 2025: 461 → h=115.25 → y=24.75≈25 (highest, red) -->
+        <rect x="175" y="25" width="42" height="115" fill="#c0392b" rx="2"/>
+        <text x="196" y="21" font-size="8" font-weight="700" fill="#c0392b" text-anchor="middle">461</text>
+        <text x="196" y="153" font-size="8" fill="#2c2c2c" text-anchor="middle">2025</text>
+
+        <!-- 2026 YTD: 118 → h=29.5 → y=110.5≈111 (gray, partial) -->
+        <rect x="230" y="111" width="42" height="29" fill="#888" rx="2"/>
+        <text x="251" y="107" font-size="8" font-weight="700" fill="#888" text-anchor="middle">118</text>
+        <text x="251" y="153" font-size="8" fill="#2c2c2c" text-anchor="middle">2026*</text>
+
+        <text x="251" y="163" font-size="6.5" fill="#888" text-anchor="middle">*YTD only</text>
+        <text x="52"  y="173" font-size="6.5" fill="#888">2025 is the highest full-year total in the 3-year baseline period</text>
+      </svg>
+      <div class="csrc">Source: output/tables/yearly_complaint_trends.csv</div>
+    </div>
+    <div>
+      <p style="margin-bottom:7px;">
+        Complaint volume has <strong>not meaningfully improved</strong> across three measured years. 2025
+        posted the highest full-year total (461) in the baseline. The 2026 partial-year count (118) is
+        on pace to match prior years.
+      </p>
+      <div class="callout rd" style="margin-bottom:7px;">
+        <strong>500+ days average open:</strong> Across the top 15 highest-call stops, the mean open
+        ticket age is <strong>500.8 days</strong>&mdash;more than 16 months. Lavaca/4th averages
+        <strong>509 days</strong>. Guadalupe/16th: <strong>507 days</strong>.
+      </div>
+      <div class="callout" style="margin-bottom:7px;">
+        <strong>2025 complaint breakdown:</strong><br>
+        &bull; Shelter: 231 &nbsp;(50%)<br>
+        &bull; Bench: 109 &nbsp;&nbsp;&nbsp;(24%)<br>
+        &bull; Safety: 49 &nbsp;&nbsp;&nbsp;&nbsp;(11%)<br>
+        &bull; Weather: 46 &nbsp;&nbsp;&nbsp;(10%)
+      </div>
+    </div>
+  </div>
+
+  <hr class="rule">
+
+  <div class="ctitle" style="margin-bottom:5px;">Unresolved 311 Ticket Rate &mdash; Top Stops by Call Volume</div>
+  <!-- HORIZONTAL BAR CHART: unresolved rates -->
+  <!-- labels left of x=220; bars x=220..520 (max 300px=100%) -->
+  <svg viewBox="0 0 580 155" width="100%" style="font-family:Arial,sans-serif;display:block;">
+    <rect width="580" height="155" fill="white"/>
+    <!-- grid verticals: 25%=295, 50%=370, 75%=445, 100%=520 -->
+    <line x1="295" y1="0" x2="295" y2="148" stroke="#dde2e8" stroke-width="0.5"/>
+    <line x1="370" y1="0" x2="370" y2="148" stroke="#dde2e8" stroke-width="0.5"/>
+    <line x1="445" y1="0" x2="445" y2="148" stroke="#dde2e8" stroke-width="0.5"/>
+    <line x1="520" y1="0" x2="520" y2="148" stroke="#dde2e8" stroke-width="0.5"/>
+    <text x="220" y="9" font-size="6.5" fill="#888">0%</text>
+    <text x="295" y="9" font-size="6.5" fill="#888" text-anchor="middle">25%</text>
+    <text x="370" y="9" font-size="6.5" fill="#888" text-anchor="middle">50%</text>
+    <text x="445" y="9" font-size="6.5" fill="#888" text-anchor="middle">75%</text>
+    <text x="520" y="9" font-size="6.5" fill="#888" text-anchor="middle">100%</text>
+
+    <!-- Guadalupe/16th: 84.1% → 252 -->
+    <text x="216" y="24" font-size="7.5" fill="#2c2c2c" text-anchor="end">Guadalupe / 16th St.</text>
+    <text x="216" y="32" font-size="6"   fill="#666"   text-anchor="end">138 calls</text>
+    <rect x="220" y="13" width="252" height="14" fill="#c0392b" rx="1"/>
+    <text x="476" y="24" font-size="7.5" font-weight="700" fill="#c0392b">84.1%</text>
+
+    <!-- Guadalupe/4th: 81.5% → 245 -->
+    <text x="216" y="46" font-size="7.5" fill="#2c2c2c" text-anchor="end">Guadalupe / 4th St.</text>
+    <text x="216" y="54" font-size="6"   fill="#666"   text-anchor="end">92 calls</text>
+    <rect x="220" y="35" width="245" height="14" fill="#c0392b" rx="1"/>
+    <text x="469" y="46" font-size="7.5" font-weight="700" fill="#c0392b">81.5%</text>
+
+    <!-- Guadalupe/W.21st: 81.2% → 244 -->
+    <text x="216" y="68" font-size="7.5" fill="#2c2c2c" text-anchor="end">Guadalupe / W. 21st St.</text>
+    <text x="216" y="76" font-size="6"   fill="#666"   text-anchor="end">112 calls</text>
+    <rect x="220" y="57" width="244" height="14" fill="#e67e22" rx="1"/>
+    <text x="468" y="68" font-size="7.5" font-weight="700" fill="#e67e22">81.2%</text>
+
+    <!-- 1609 Lavaca/17th: 79.6% → 239 -->
+    <text x="216" y="90" font-size="7.5" fill="#2c2c2c" text-anchor="end">1609 Lavaca / 17th St.</text>
+    <text x="216" y="98" font-size="6"   fill="#666"   text-anchor="end">142 calls</text>
+    <rect x="220" y="79" width="239" height="14" fill="#e67e22" rx="1"/>
+    <text x="463" y="90" font-size="7.5" font-weight="700" fill="#e67e22">79.6%</text>
+
+    <!-- 501 Pleasant Valley/5th: 78.8% → 236 -->
+    <text x="216" y="112" font-size="7.5" fill="#2c2c2c" text-anchor="end">501 Pleasant Valley / 5th</text>
+    <text x="216" y="120" font-size="6"   fill="#666"   text-anchor="end">85 calls</text>
+    <rect x="220" y="101" width="236" height="14" fill="#e8a000" rx="1"/>
+    <text x="460" y="112" font-size="7.5" font-weight="700" fill="#e8a000">78.8%</text>
+
+    <!-- 115 7th/Colorado: 77.3% → 232 -->
+    <text x="216" y="134" font-size="7.5" fill="#2c2c2c" text-anchor="end">115 7th / Colorado</text>
+    <text x="216" y="142" font-size="6"   fill="#666"   text-anchor="end">88 calls</text>
+    <rect x="220" y="123" width="232" height="14" fill="#e8a000" rx="1"/>
+    <text x="456" y="134" font-size="7.5" font-weight="700" fill="#e8a000">77.3%</text>
+
+    <!-- 75% dashed reference -->
+    <line x1="445" y1="0" x2="445" y2="148" stroke="#c0392b" stroke-width="1.2" stroke-dasharray="4,3"/>
+    <text x="447" y="147" font-size="6.5" fill="#c0392b">75% threshold</text>
+  </svg>
+  <div class="csrc">Source: output/tables/311_unresolved_call_burden_by_stop.csv | Every top stop exceeds 75% unresolved rate</div>
+
+  <div class="pfooter">
+    <div class="pf-top">
+      <span>CMTA + City of Austin &mdash; Independent Baseline Review, April 2026</span>
+      <span>Page 3 of 5</span>
+    </div>
+    <div class="pf-contact">
+      Tiffany Moore &nbsp;&bull;&nbsp; Ameritech Consulting Group &nbsp;&bull;&nbsp;
+      tiffany@a-techconsulting.com &nbsp;&bull;&nbsp;
+      www.a-techconsulting.com &nbsp;&bull;&nbsp;
+      GitHub: github.com/ameritechconsulting/cmta-analysis
+    </div>
+  </div>
+</div>
+
+
+<!-- ============================================================ -->
+<!-- PAGE 4 — FINDING 4 & 5: ADA / SAFETY + EQUITY FAILURES     -->
+<!-- ============================================================ -->
+<div class="page">
+  <div class="page-header">
+    <span class="lbl">Findings 4 &amp; 5</span>
+    <span class="ttl">CMTA + City of Austin &mdash; Transit Baseline Review, April 2026</span>
+    <span class="lbl">ADA, Safety &amp; Equity</span>
+  </div>
+
+  <div class="fbanner">
+    <div class="fnum">Finding 4 of 5</div>
+    <h2>342 ADA-Related Complaints Filed Over Three Years &mdash; Zero Confirmed Repairs Documented</h2>
+  </div>
+
+  <div class="two-col" style="margin-bottom:5px;">
+    <div>
+      <div class="ctitle">Safety &amp; ADA/Sidewalk Complaints by Year</div>
+      <!-- STACKED vertical bar: safety + ada reports each year -->
+      <!-- Chart: y=10..130 (h=120), max=60, x=50..265 -->
+      <svg viewBox="0 0 290 170" width="100%" style="font-family:Arial,sans-serif;display:block;">
+        <rect width="290" height="170" fill="white"/>
+        <line x1="50" y1="10"  x2="270" y2="10"  stroke="#dde2e8" stroke-width="0.5"/>
+        <line x1="50" y1="34"  x2="270" y2="34"  stroke="#dde2e8" stroke-width="0.5"/>
+        <line x1="50" y1="58"  x2="270" y2="58"  stroke="#dde2e8" stroke-width="0.5"/>
+        <line x1="50" y1="82"  x2="270" y2="82"  stroke="#dde2e8" stroke-width="0.5"/>
+        <line x1="50" y1="106" x2="270" y2="106" stroke="#dde2e8" stroke-width="0.5"/>
+        <!-- Y labels: 0,15,30,45,60 → 130,106,82,58,34 -->
+        <text x="46" y="133" font-size="7" fill="#888" text-anchor="end">0</text>
+        <text x="46" y="109" font-size="7" fill="#888" text-anchor="end">15</text>
+        <text x="46" y="85"  font-size="7" fill="#888" text-anchor="end">30</text>
+        <text x="46" y="61"  font-size="7" fill="#888" text-anchor="end">45</text>
+        <text x="46" y="37"  font-size="7" fill="#888" text-anchor="end">60</text>
+        <line x1="50" y1="10" x2="50" y2="130" stroke="#c5cdd6" stroke-width="1"/>
+        <line x1="50" y1="130" x2="270" y2="130" stroke="#1a3a5c" stroke-width="1.5"/>
+
+        <!-- Scale: 120px = 60 complaints → 2px per complaint -->
+        <!-- 2023: safety=40 (h=80) → y=50; ada=8 (h=16) → y=34 -->
+        <rect x="65"  y="50" width="38" height="80" fill="#c0392b" rx="1"/>
+        <rect x="65"  y="34" width="38" height="16" fill="#8e44ad" rx="1"/>
+        <text x="84"  y="30" font-size="7.5" font-weight="700" fill="#1a1a2e" text-anchor="middle">40+8</text>
+        <text x="84"  y="143" font-size="8" fill="#2c2c2c" text-anchor="middle">2023</text>
+
+        <!-- 2024: safety=50 (h=100) → y=30; ada=10 (h=20) → y=10 -->
+        <rect x="120" y="30" width="38" height="100" fill="#c0392b" rx="1"/>
+        <rect x="120" y="10" width="38" height="20"  fill="#8e44ad" rx="1"/>
+        <text x="139" y="7"  font-size="7.5" font-weight="700" fill="#1a1a2e" text-anchor="middle">50+10</text>
+        <text x="139" y="143" font-size="8" fill="#2c2c2c" text-anchor="middle">2024</text>
+
+        <!-- 2025: safety=49 (h=98) → y=32; ada=5 (h=10) → y=22 -->
+        <rect x="175" y="32" width="38" height="98" fill="#c0392b" rx="1"/>
+        <rect x="175" y="22" width="38" height="10" fill="#8e44ad" rx="1"/>
+        <text x="194" y="18" font-size="7.5" font-weight="700" fill="#1a1a2e" text-anchor="middle">49+5</text>
+        <text x="194" y="143" font-size="8" fill="#2c2c2c" text-anchor="middle">2025</text>
+
+        <!-- 2026 YTD: safety=13 (h=26) → y=104; ada=2 (h=4) → y=100 -->
+        <rect x="225" y="104" width="38" height="26" fill="#c0392b" rx="1" opacity="0.65"/>
+        <rect x="225" y="100" width="38" height="4"  fill="#8e44ad" rx="1" opacity="0.65"/>
+        <text x="244" y="97" font-size="7.5" font-weight="700" fill="#888" text-anchor="middle">13+2</text>
+        <text x="244" y="143" font-size="8" fill="#2c2c2c" text-anchor="middle">2026*</text>
+
+        <!-- Legend -->
+        <rect x="52"  y="152" width="9" height="8" fill="#c0392b"/>
+        <text x="64"  y="159" font-size="7" fill="#2c2c2c">Safety Complaints</text>
+        <rect x="148" y="152" width="9" height="8" fill="#8e44ad"/>
+        <text x="160" y="159" font-size="7" fill="#2c2c2c">ADA / Sidewalk Reports</text>
+        <text x="52"  y="168" font-size="6.5" fill="#888">*2026 YTD (partial year)</text>
+      </svg>
+      <div class="csrc">Source: yearly_complaints_with_percentages.csv + ada_violation_dataset.csv</div>
+    </div>
+    <div>
+      <p style="margin-bottom:7px;">
+        Safety-related complaints have been a persistent 9&ndash;12% of total annual complaints since 2023.
+        2024 posted the highest safety complaint count (50 incidents). ADA/sidewalk reports appear every year.
+      </p>
+      <div class="callout rd" style="margin-bottom:7px;">
+        <strong>342 ADA records. 0 confirmed repairs.</strong> Across all five analyzed council districts,
+        the City of Austin has documented zero confirmed ADA repair completions in this baseline window.
+        Every district returns an F on the ADA sub-grade.
+      </div>
+      <div class="callout bl">
+        <strong>North Lamar Emergency:</strong> The 12300 block of N. Lamar Blvd. has an active
+        accessibility gap despite a new pedestrian beacon (installed Feb 2026). Immediate actions:
+        <br>&bull; File 311: &ldquo;Sidewalk Repair/New Installation&rdquo; + life-safety flag
+        <br>&bull; Escalate to corridors@austintexas.gov
+        <br>&bull; File formal ADA complaint: City Civil Rights 512-974-3451
+        <br>&bull; File with CapMetro ADA: 512-389-7583
+      </div>
+    </div>
+  </div>
+
+  <hr class="rule">
+
+  <div class="fbanner nv" style="margin-top:4px;">
+    <div class="fnum">Finding 5 of 5</div>
+    <h2>Every Analyzed District Receives an Overall F Grade &mdash; No Exceptions</h2>
+  </div>
+
+  <table>
+    <thead>
+      <tr>
+        <th>District</th>
+        <th style="text-align:center;">Non-White %</th>
+        <th style="text-align:center;">Open Tickets</th>
+        <th style="text-align:center;">Avg. Days Open</th>
+        <th style="text-align:center;">Amenity Gap</th>
+        <th style="text-align:center;">Response</th>
+        <th style="text-align:center;">Ticket Age</th>
+        <th style="text-align:center;">ADA</th>
+        <th style="text-align:center;background:#c0392b;">OVERALL</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>District 3</strong></td>
+        <td style="text-align:center;font-weight:700;color:#c0392b;">61.7%</td>
+        <td style="text-align:center;">67</td><td style="text-align:center;">498 days</td>
+        <td style="text-align:center;color:#c0392b;font-weight:700;">Both missing</td>
+        <td style="text-align:center;"><span class="gD">D</span></td>
+        <td style="text-align:center;"><span class="gD">D</span></td>
+        <td style="text-align:center;"><span class="gF">F</span></td>
+        <td style="text-align:center;"><span class="gF">F</span></td>
+      </tr>
+      <tr>
+        <td><strong>District 4</strong></td>
+        <td style="text-align:center;font-weight:700;color:#c0392b;">73.9%</td>
+        <td style="text-align:center;">52</td><td style="text-align:center;">509 days</td>
+        <td style="text-align:center;color:#c0392b;font-weight:700;">Both missing</td>
+        <td style="text-align:center;"><span class="gD">D</span></td>
+        <td style="text-align:center;"><span class="gD">D</span></td>
+        <td style="text-align:center;"><span class="gF">F</span></td>
+        <td style="text-align:center;"><span class="gF">F</span></td>
+      </tr>
+      <tr>
+        <td><strong>District 5</strong></td>
+        <td style="text-align:center;">45.3%</td>
+        <td style="text-align:center;">52</td><td style="text-align:center;">507 days</td>
+        <td style="text-align:center;color:#c0392b;font-weight:700;">Both missing</td>
+        <td style="text-align:center;"><span class="gC">C</span></td>
+        <td style="text-align:center;"><span class="gD">D</span></td>
+        <td style="text-align:center;"><span class="gF">F</span></td>
+        <td style="text-align:center;"><span class="gF">F</span></td>
+      </tr>
+      <tr>
+        <td><strong>District 7</strong></td>
+        <td style="text-align:center;">45.4%</td>
+        <td style="text-align:center;">60</td><td style="text-align:center;">490 days</td>
+        <td style="text-align:center;color:#c0392b;font-weight:700;">Both missing</td>
+        <td style="text-align:center;"><span class="gD">D</span></td>
+        <td style="text-align:center;"><span class="gD">D</span></td>
+        <td style="text-align:center;"><span class="gF">F</span></td>
+        <td style="text-align:center;"><span class="gF">F</span></td>
+      </tr>
+      <tr>
+        <td><strong>District 9</strong> <span style="font-size:7.5pt;color:#666;">(11 stops)</span></td>
+        <td style="text-align:center;">38.7%</td>
+        <td style="text-align:center;">873</td><td style="text-align:center;">502 days</td>
+        <td style="text-align:center;color:#c0392b;font-weight:700;">All missing</td>
+        <td style="text-align:center;"><span class="gD">D</span></td>
+        <td style="text-align:center;"><span class="gD">D</span></td>
+        <td style="text-align:center;"><span class="gF">F</span></td>
+        <td style="text-align:center;"><span class="gF">F</span></td>
+      </tr>
+    </tbody>
+  </table>
+  <div class="csrc">Source: output/tables/district_report_card.csv | Districts 3 &amp; 4 carry the highest non-white population shares and identical infrastructure failure grades</div>
+
+  <div class="pfooter">
+    <div class="pf-top">
+      <span>CMTA + City of Austin &mdash; Independent Baseline Review, April 2026</span>
+      <span>Page 4 of 5</span>
+    </div>
+    <div class="pf-contact">
+      Tiffany Moore &nbsp;&bull;&nbsp; Ameritech Consulting Group &nbsp;&bull;&nbsp;
+      tiffany@a-techconsulting.com &nbsp;&bull;&nbsp;
+      www.a-techconsulting.com &nbsp;&bull;&nbsp;
+      GitHub: github.com/ameritechconsulting/cmta-analysis
+    </div>
+  </div>
+</div>
+
+
+<!-- ============================================================ -->
+<!-- PAGE 5 — 90-DAY ACTION PLAN                                  -->
+<!-- ============================================================ -->
+<div class="page">
+  <div class="page-header">
+    <span class="lbl">Action Plan</span>
+    <span class="ttl">CMTA + City of Austin &mdash; Transit Baseline Review, April 2026</span>
+    <span class="lbl">90-Day Priorities</span>
+  </div>
+
+  <div style="background:#1a3a5c;color:white;padding:11px 15px;margin-bottom:15px;border-radius:2px;">
+    <div style="font-size:7.5pt;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;opacity:0.82;margin-bottom:3px;">Decision Ask</div>
+    <h2 style="color:white;font-size:14pt;">Immediate Actions Required in the Next 90 Days</h2>
+    <p style="font-size:9pt;opacity:0.9;margin-top:4px;">
+      Five findings. One conclusion: Austin&rsquo;s highest-demand transit stops are failing riders on every
+      measurable dimension&mdash;infrastructure, safety, ADA compliance, and accountability. The following
+      actions are targeted, measurable, and achievable this quarter.
+    </p>
+  </div>
+
+  <div class="aitem">
+    <div class="anum">1</div>
+    <div class="acontent">
+      <h3>Initiate Corrective Action at Top 10 Risk-Index Stops</h3>
+      <p>Authorize an emergency shelter and bench installation plan led by 1609 Lavaca/17th, Guadalupe/16th,
+      and Lavaca/4th. These locations combine peak service intensity, highest complaint volume, and zero
+      amenity coverage. <strong>Target: reduce missing-shelter share from 80% to below 60% within one
+      fiscal cycle.</strong></p>
+    </div>
+  </div>
+
+  <div class="aitem">
+    <div class="anum">2</div>
+    <div class="acontent">
+      <h3>Create a Joint CMTA + City Unresolved-Ticket Resolution Tracker</h3>
+      <p>Establish a shared, publicly accessible resolution log for all 311 tickets open more than 90 days
+      at high-priority stops. Set a hard closure target: no ticket at a top-10 risk stop should remain open
+      longer than 180 days without a documented escalation.
+      <strong>Current average: 500+ days at every flagged location.</strong></p>
+    </div>
+  </div>
+
+  <div class="aitem">
+    <div class="anum">3</div>
+    <div class="acontent">
+      <h3>Activate Formal ADA Channels for North Lamar and All Flagged Corridors</h3>
+      <p>File formal ADA complaints with the City Office of Civil Rights
+      (<strong>512-974-3451</strong>) and CapMetro ADA Coordinator (<strong>512-389-7583</strong>) for
+      stops with documented gaps and zero confirmed repairs. Escalate the North Lamar 12300-block sidewalk
+      gap to the North Lamar Boulevard Mobility Project (corridors@austintexas.gov) as a life-safety
+      priority.</p>
+    </div>
+  </div>
+
+  <div class="aitem">
+    <div class="anum">4</div>
+    <div class="acontent">
+      <h3>Publish Monthly Public Progress Dashboard by Stop</h3>
+      <p>Commit to monthly public reporting on: open ticket count, average age, shelter/bench installation
+      status, and ADA repair completions&mdash;disaggregated by stop and council district. Use the
+      A/B/C equity pillar scorecard format to track whether conditions are actually improving.
+      <strong>Transparency is the accountability mechanism.</strong></p>
+    </div>
+  </div>
+
+  <div class="aitem">
+    <div class="anum">5</div>
+    <div class="acontent">
+      <h3>Approve Monthly Evidence Refresh Cycle Using This Reproducible Pipeline</h3>
+      <p>This baseline is designed to be refreshed. Authorize monthly pipeline runs so progress&mdash;or
+      continued failure&mdash;is documented in real time. Set formal threshold triggers: any stop exceeding
+      100 unresolved tickets or 400-day average ticket age should automatically trigger a district-level
+      escalation review.</p>
+    </div>
+  </div>
+
+  <hr class="rule">
+
+  <!-- Targets row -->
+  <h3 style="margin-bottom:8px;">Measurable 90-Day Targets</h3>
+  <div class="three-col">
+    <div style="border:2px solid #c0392b;border-radius:3px;padding:8px;text-align:center;">
+      <div style="font-size:17pt;font-weight:800;color:#c0392b;line-height:1.1;">80% &rarr; &lt;60%</div>
+      <div style="font-size:7.5pt;color:#555;font-weight:600;margin-top:3px;">Missing Shelter Rate<br>at High-Priority Stops</div>
+    </div>
+    <div style="border:2px solid #e67e22;border-radius:3px;padding:8px;text-align:center;">
+      <div style="font-size:17pt;font-weight:800;color:#e67e22;line-height:1.1;">500d &rarr; &lt;180d</div>
+      <div style="font-size:7.5pt;color:#555;font-weight:600;margin-top:3px;">Max Open Ticket Age<br>at Top-10 Risk Stops</div>
+    </div>
+    <div style="border:2px solid #1a3a5c;border-radius:3px;padding:8px;text-align:center;">
+      <div style="font-size:17pt;font-weight:800;color:#1a3a5c;line-height:1.1;">0 &rarr; Monthly</div>
+      <div style="font-size:7.5pt;color:#555;font-weight:600;margin-top:3px;">Public Progress Reports<br>Published per Stop</div>
+    </div>
+  </div>
+
+  <hr class="rule" style="margin-top:11px;">
+
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:8px;">
+    <div>
+      <div style="font-size:8pt;font-weight:700;color:#1a3a5c;margin-bottom:4px;">REPORT PREPARED BY</div>
+      <p style="font-size:8.5pt;line-height:1.7;">
+        Ameritech Consulting Group<br>
+        tiffany@a-techconsulting.com<br>
+        April 26, 2026
+      </p>
+      <p style="font-size:7.5pt;margin-top:6px;color:#555;">
+        Reproducible baseline using publicly available data. Does not constitute a legal determination.
+        Methodology and source files available on request.
+      </p>
+    </div>
+    <div>
+      <div style="font-size:8pt;font-weight:700;color:#1a3a5c;margin-bottom:4px;">ESCALATION CONTACTS</div>
+      <p style="font-size:8.5pt;line-height:1.9;">
+        <strong>City of Austin 311:</strong> 512-974-2000<br>
+        <strong>City Office of Civil Rights:</strong> 512-974-3451<br>
+        <strong>&nbsp;&nbsp;&nbsp;&nbsp;</strong>officeofcivilrights@austintexas.gov<br>
+        <strong>CapMetro ADA Coordinator:</strong> 512-389-7583<br>
+        <strong>&nbsp;&nbsp;&nbsp;&nbsp;</strong>ccr-accessibility@capmetro.org<br>
+        <strong>N. Lamar Mobility Project:</strong> corridors@austintexas.gov
+      </p>
+    </div>
+  </div>
+
+  <div class="pfooter">
+    <div class="pf-top">
+      <span>CMTA + City of Austin &mdash; Independent Baseline Review, April 2026</span>
+      <span>Page 5 of 5</span>
+    </div>
+    <div class="pf-contact">
+      Tiffany Moore &nbsp;&bull;&nbsp; Ameritech Consulting Group &nbsp;&bull;&nbsp;
+      tiffany@a-techconsulting.com &nbsp;&bull;&nbsp;
+      www.a-techconsulting.com &nbsp;&bull;&nbsp;
+      GitHub: github.com/ameritechconsulting/cmta-analysis
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

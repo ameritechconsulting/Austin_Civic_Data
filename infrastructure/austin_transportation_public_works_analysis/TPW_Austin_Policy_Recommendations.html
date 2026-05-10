@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Austin TPW — Policy Recommendations | Ameritech Consulting Group</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --navy:   #1b2e4b;
+  --teal:   #1e6e7a;
+  --gold:   #b8830a;
+  --red:    #a83228;
+  --green:  #1c6640;
+  --ltgray: #f4f5f7;
+  --rule:   #d0d4d8;
+}
+
+body {
+  font-family: 'Georgia', 'Times New Roman', serif;
+  font-size: 10pt;
+  color: #1a1a1a;
+  background: #d8dce0;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+
+/* ── Page shell ── */
+.page {
+  width: 8.5in;
+  height: 11in;
+  margin: 0.3in auto;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  box-shadow: 0 3px 16px rgba(0,0,0,0.22);
+}
+
+.body {
+  flex: 1;
+  padding: 0.38in 0.65in 0.15in 0.65in;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+/* ════════════════════
+   COVER HEADER
+════════════════════ */
+.cover-hero {
+  background: var(--navy);
+  padding: 0.52in 0.65in 0.4in 0.65in;
+  flex-shrink: 0;
+}
+.cover-hero .eyebrow {
+  font-size: 7.5pt;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: #a8c8e0;
+  margin-bottom: 0.14in;
+}
+.cover-hero h1 {
+  font-size: 24pt;
+  font-weight: bold;
+  color: #fff;
+  line-height: 1.1;
+  margin-bottom: 0.08in;
+}
+.cover-hero .subhead { font-size: 11pt; color: #c8dcea; line-height: 1.4; }
+
+.accent-bar {
+  height: 5px;
+  background: linear-gradient(90deg, var(--red) 0%, var(--gold) 54%, #ddd 100%);
+  flex-shrink: 0;
+}
+.datebar {
+  background: #edf0f4;
+  padding: 8px 0.65in;
+  font-size: 8.5pt;
+  color: #445;
+  display: flex;
+  gap: 0.35in;
+  flex-shrink: 0;
+}
+.datebar b { color: var(--navy); }
+
+/* ════════════════════
+   CONTENT ELEMENTS
+════════════════════ */
+h3 {
+  font-size: 8.8pt;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--teal);
+  font-weight: bold;
+  border-bottom: 1px solid var(--rule);
+  padding-bottom: 3px;
+  margin-top: 0.15in;
+  margin-bottom: 0.09in;
+}
+h3:first-child { margin-top: 0; }
+
+p { font-size: 9.4pt; line-height: 1.6; color: #222; margin-bottom: 0.08in; }
+
+/* tables */
+table { width: 100%; border-collapse: collapse; font-size: 8.7pt; margin-bottom: 0.1in; }
+thead tr { background: var(--navy); color: #fff; }
+th { padding: 6px 8px; text-align: left; font-size: 7.8pt; letter-spacing: 0.04em; font-weight: bold; }
+tbody tr:nth-child(even) { background: var(--ltgray); }
+td { padding: 5px 8px; vertical-align: top; border-bottom: 1px solid #e2e6ea; line-height: 1.45; }
+
+/* callout */
+.callout {
+  border-left: 4px solid var(--teal);
+  background: #eff7f8;
+  padding: 9px 13px;
+  margin: 0.09in 0;
+  font-size: 9.3pt;
+  line-height: 1.6;
+  color: #1a2a3a;
+}
+.callout b { color: var(--navy); }
+
+/* info (gold) */
+.info {
+  border-left: 4px solid var(--gold);
+  background: #fdf8ef;
+  padding: 9px 13px;
+  margin: 0.09in 0;
+  font-size: 9.3pt;
+  line-height: 1.55;
+  color: #2a2a1a;
+}
+.info b { color: var(--navy); }
+
+/* ── Priority badges ── */
+.badge {
+  display: inline-block;
+  font-size: 6.8pt;
+  font-weight: bold;
+  letter-spacing: 0.06em;
+  padding: 2px 7px;
+  border-radius: 2px;
+  text-transform: uppercase;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+.b-high  { background: #fde8e6; color: var(--red);   border: 1px solid #f0c0bc; }
+.b-med   { background: #fef3cc; color: #8a6200;       border: 1px solid #e8d888; }
+.b-long  { background: #e4f0ea; color: var(--green);  border: 1px solid #b0d8be; }
+
+/* ── Recommendation cards ── */
+.rec {
+  border: 1px solid #dde0e4;
+  border-left: 5px solid var(--red);
+  padding: 10px 14px;
+  margin-bottom: 9px;
+  background: #fff;
+}
+.rec.med  { border-left-color: var(--gold); }
+.rec.long { border-left-color: var(--green); }
+
+.rec .top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 5px;
+}
+.rec .num  { font-size: 7pt; text-transform: uppercase; letter-spacing: 0.1em; color: #888; margin-bottom: 3px; }
+.rec .head { font-weight: bold; color: var(--navy); font-size: 10pt; line-height: 1.2; }
+.rec .meta {
+  font-size: 7.5pt;
+  color: #666;
+  white-space: nowrap;
+  text-align: right;
+  line-height: 1.65;
+}
+.rec .meta b { color: var(--navy); }
+.rec p { font-size: 9.2pt; line-height: 1.55; margin: 0; color: #333; }
+
+/* ════════════════════
+   FOOTER
+════════════════════ */
+.foot {
+  background: var(--navy);
+  padding: 7px 0.65in;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 7pt;
+  color: #7294b4;
+  flex-shrink: 0;
+}
+.foot .firm { color: #fff; font-weight: bold; }
+.foot .mid  { color: #c0d4e4; }
+.foot .pgn  { color: #fff; font-weight: bold; white-space: nowrap; }
+
+@media print {
+  body { background: #fff; }
+  .page { margin: 0; box-shadow: none; page-break-after: always; height: 11in; }
+  .page:last-child { page-break-after: avoid; }
+}
+</style>
+</head>
+<body>
+
+<!-- ═══════════════════════════════
+     PAGE 1 — COVER & HIGH-PRIORITY RECS
+════════════════════════════════ -->
+<div class="page">
+  <div class="cover-hero">
+    <div class="eyebrow">Ameritech Consulting Group &nbsp;·&nbsp; Infrastructure &amp; Policy Practice</div>
+    <h1>Austin Transportation &amp; Public Works<br>Policy Recommendations</h1>
+    <div class="subhead">Companion to the Five-Page Findings Summary &nbsp;|&nbsp; City of Austin Analysis</div>
+  </div>
+  <div class="accent-bar"></div>
+  <div class="datebar">
+    <div>Prepared: <b>May 2026</b></div>
+    <div>Prepared For: <b>City Council &amp; TPW Leadership</b></div>
+    <div>Prepared By: <b>Ameritech Consulting Group</b></div>
+  </div>
+
+  <div class="body">
+    <p style="margin-top:0.14in;">This document presents the full set of policy recommendations developed from Ameritech Consulting Group's analysis of Austin's Transportation &amp; Public Works Department. Recommendations are organized by priority tier with lead assignments and timelines. They address the five key findings in the companion Findings Summary: growing capital backlog, unmet Vision Zero targets, racialized flood risk, persistent service inequities, and the absence of an anti-displacement framework paired with infrastructure investment.</p>
+
+    <div class="callout"><b>Organizing principle:</b> None of these recommendations require new budget authority in isolation — they require new policy direction. The tools, resources, and institutional capacity are largely in place. What is missing is a Council directive to apply them systematically.</div>
+
+    <h3>High-Priority Recommendations — Immediate Action (0–18 Months)</h3>
+
+    <div class="rec">
+      <div class="top">
+        <div>
+          <div class="num"><span class="badge b-high">High Priority</span> Recommendation 1</div>
+          <div class="head">Adopt an Equity-in-Infrastructure Framework</div>
+        </div>
+        <div class="meta"><b>Lead:</b> TPW + Equity Office<br><b>Timeline:</b> 0–12 months</div>
+      </div>
+      <p>Establish disaggregated service standards for pavement condition (PCI), sidewalk coverage, drainage infrastructure age, and maintenance response time — broken out by neighborhood income quartile and race/ethnicity demographics. Require annual equity progress reporting to City Council. This creates the accountability baseline against which all future TPW performance is measured and makes service inequities visible and addressable as a policy matter rather than an operational byproduct.</p>
+    </div>
+
+    <div class="rec">
+      <div class="top">
+        <div>
+          <div class="num"><span class="badge b-high">High Priority</span> Recommendation 2</div>
+          <div class="head">Require Displacement Impact Review for Capital Projects &gt;$5M</div>
+        </div>
+        <div class="meta"><b>Lead:</b> TPW + Planning Dept.<br><b>Timeline:</b> 0–18 months</div>
+      </div>
+      <p>Mandate a Displacement Impact Review (DIR) — analogous to environmental review — before approval of any capital corridor project exceeding $5M in equity-priority geographies. Direct TPW and the Housing Department to jointly develop an infrastructure-affordability framework specifying mitigation options for projects triggering displacement risk thresholds. High-risk corridors include North Lamar, Airport Blvd, E. MLK Jr. Blvd, Rundberg Lane, E. William Cannon, and the Onion Creek watershed.</p>
+    </div>
+
+    <div class="rec">
+      <div class="top">
+        <div>
+          <div class="num"><span class="badge b-high">High Priority</span> Recommendation 3</div>
+          <div class="head">Accelerate Sidewalk Gap Closure in Equity Priority Zones</div>
+        </div>
+        <div class="meta"><b>Lead:</b> TPW Active Transportation<br><b>Timeline:</b> Ongoing</div>
+      </div>
+      <p>Prioritize sidewalk buildout in census tracts overlapping the High Injury Network, transit corridors, schools, and lower-income geographies. Adopt an explicit annual target for linear feet of sidewalk gap closure in equity-priority zones. Report progress disaggregated by neighborhood demographics in each TPW annual report. The current inventory of 1,700–2,000 miles of sidewalk gaps represents a compounding public safety and equity failure — particularly for transit-dependent residents walking to stops on HIN corridors.</p>
+    </div>
+  </div>
+
+  <div class="foot">
+    <span class="firm">Ameritech Consulting Group &nbsp;|&nbsp; tiffany@a-techconsulting.com</span>
+    <span class="mid">Policy Recommendations — Austin TPW &nbsp;|&nbsp; May 2026</span>
+    <span class="pgn">Page 1 of 2</span>
+  </div>
+</div>
+
+
+<!-- ═══════════════════════════════
+     PAGE 2 — MEDIUM / LONG-TERM RECS + MATRIX
+════════════════════════════════ -->
+<div class="page">
+  <div class="cover-hero" style="padding: 0.18in 0.65in 0.16in 0.65in;">
+    <div class="lbl" style="font-size:7pt; text-transform:uppercase; letter-spacing:0.16em; color:#7294b4; margin-bottom:3px;">Continued</div>
+    <h1 style="font-size:17pt;">Medium &amp; Long-Term Recommendations</h1>
+  </div>
+  <div class="accent-bar"></div>
+
+  <div class="body">
+    <h3>Medium-Priority Recommendations (12–36 Months)</h3>
+
+    <div class="rec med">
+      <div class="top">
+        <div>
+          <div class="num"><span class="badge b-med">Medium Priority</span> Recommendation 4</div>
+          <div class="head">HIN Corridor Structural Redesign Commitment</div>
+        </div>
+        <div class="meta"><b>Lead:</b> TPW Vision Zero<br><b>Timeline:</b> 12–36 months</div>
+      </div>
+      <p>Fund at least two full High Injury Network structural corridor redesigns per budget cycle — lane narrowing, raised pedestrian crossings, pedestrian refuge islands, protected bike facilities, and lighting upgrades. Require TPW to report annual fatality trends disaggregated by neighborhood income quartile and race/ethnicity to enable transparent accountability tracking against Vision Zero commitments. Incremental interventions (signage, paint, cameras) are necessary but are not substitutes for structural redesign.</p>
+    </div>
+
+    <div class="rec med">
+      <div class="top">
+        <div>
+          <div class="num"><span class="badge b-med">Medium Priority</span> Recommendation 5</div>
+          <div class="head">Pair Flood Buyout Programs with Replacement Housing Plans</div>
+        </div>
+        <div class="meta"><b>Lead:</b> TPW + Housing Dept.<br><b>Timeline:</b> 12–24 months</div>
+      </div>
+      <p>Require that all watershed buyout programs — beginning with Onion Creek — include a systematic replacement housing plan approved prior to the first property acquisition in each new buyout phase. Commission a Drainage Utility equity audit examining both fee structure and capital allocation patterns by income and race demographics. Link future buyout investments with ADCAP-style affordability preservation tools so that flood mitigation success is measured not only by properties removed from floodplains, but by residents able to remain in Austin.</p>
+    </div>
+
+    <div class="rec med">
+      <div class="top">
+        <div>
+          <div class="num"><span class="badge b-med">Medium Priority</span> Recommendation 6</div>
+          <div class="head">Establish Community Benefits Agreement Template for Major Contracts</div>
+        </div>
+        <div class="meta"><b>Lead:</b> TPW + OPO<br><b>Timeline:</b> 12–24 months</div>
+      </div>
+      <p>Develop a standard Community Benefits Agreement (CBA) template for all TPW capital contracts exceeding $5M, requiring local workforce hiring targets, small and minority business participation goals, and community liaison commitments. This converts major infrastructure contracts into local economic development tools — particularly important in HIN corridors and equity-priority neighborhoods where contract work is most concentrated.</p>
+    </div>
+
+    <h3>Long-Term Recommendation (24–48 Months)</h3>
+
+    <div class="rec long">
+      <div class="top">
+        <div>
+          <div class="num"><span class="badge b-long">Long-Term</span> Recommendation 7</div>
+          <div class="head">Next Bond Cycle Equity Targeting Framework</div>
+        </div>
+        <div class="meta"><b>Lead:</b> TPW + City Council<br><b>Timeline:</b> 24–48 months</div>
+      </div>
+      <p>Require that any future mobility bond program include an explicit equity allocation framework: a defined percentage or dollar floor for projects in equity-priority geographies, disaggregated performance targets as bond conditions, and an equity oversight committee with community representation. This ensures the structural lessons from the 2016 and 2020 bond programs — which created capital investment without displacement safeguards — are not repeated in the next cycle.</p>
+    </div>
+
+    <h3>Summary Matrix</h3>
+    <table>
+      <thead><tr><th>#</th><th>Recommendation</th><th>Priority</th><th>Lead</th><th>Timeline</th></tr></thead>
+      <tbody>
+        <tr><td>1</td><td>Adopt Equity-in-Infrastructure Framework</td><td>High</td><td>TPW + Equity Office</td><td>0–12 months</td></tr>
+        <tr><td>2</td><td>Require Displacement Impact Review (&gt;$5M projects)</td><td>High</td><td>TPW + Planning</td><td>0–18 months</td></tr>
+        <tr><td>3</td><td>Accelerate Sidewalk Gap Closure in Equity Zones</td><td>High</td><td>TPW Active Transportation</td><td>Ongoing</td></tr>
+        <tr><td>4</td><td>HIN Corridor Structural Redesign (2+/year)</td><td>Medium</td><td>TPW Vision Zero</td><td>12–36 months</td></tr>
+        <tr><td>5</td><td>Pair Flood Buyouts with Replacement Housing Plans</td><td>Medium</td><td>TPW + Housing Dept.</td><td>12–24 months</td></tr>
+        <tr><td>6</td><td>Community Benefits Agreement Template</td><td>Medium</td><td>TPW + OPO</td><td>12–24 months</td></tr>
+        <tr><td>7</td><td>Next Bond Cycle Equity Targeting Framework</td><td>Long-Term</td><td>TPW + City Council</td><td>24–48 months</td></tr>
+      </tbody>
+    </table>
+
+    <div class="info"><b>ADCAP Linkage:</b> Recommendations 2, 5, and 7 are explicitly designed to pair infrastructure investment with ADCAP-style affordability preservation tools — using the moment of capital investment as the policy intervention point rather than waiting for downstream displacement. Council direction linking TPW capital approvals to the ADCAP framework would operationalize this connection and close Austin's most critical infrastructure-affordability gap.</div>
+  </div>
+
+  <div class="foot">
+    <span class="firm">Ameritech Consulting Group &nbsp;|&nbsp; tiffany@a-techconsulting.com</span>
+    <span class="mid">All figures are estimates based on publicly available data. Verify before presentation.</span>
+    <span class="pgn">Page 2 of 2</span>
+  </div>
+</div>
+
+</body>
+</html>

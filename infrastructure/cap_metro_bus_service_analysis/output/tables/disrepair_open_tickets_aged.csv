@@ -1,0 +1,1105 @@
+stop_name,sr_number,category,complaint_description,created_date,age_days,age_years,age_band
+115 7Th/Colorado,SR23000840,Missing Shelter,Transit stop 115 7Th/Colorado needs weather shelter,2023-01-22,1176,3.221917808219178,3+ years
+115 7Th/Colorado,SR23000847,Missing Shelter,Request shelter installation at 115 7Th/Colorado,2023-01-22,1176,3.221917808219178,3+ years
+115 7Th/Colorado,SR23000874,Missing Benches,Request bench installation at 115 7Th/Colorado,2023-01-26,1172,3.210958904109589,3+ years
+115 7Th/Colorado,SR23000821,Weather Exposure,Riders getting wet at 115 7Th/Colorado during rain,2023-02-21,1146,3.1397260273972605,3+ years
+115 7Th/Colorado,SR23000883,Missing Benches,No benches at 115 7Th/Colorado bus stop,2023-03-16,1123,3.0767123287671234,3+ years
+115 7Th/Colorado,SR23000888,Safety (Lighting),Safety concerns at 115 7Th/Colorado bus stop after dark,2023-05-12,1066,2.9205479452054797,2–3 years
+115 7Th/Colorado,SR23000867,Missing Shelter,Transit stop 115 7Th/Colorado needs shelter for rider protection,2023-05-17,1061,2.9068493150684933,2–3 years
+115 7Th/Colorado,SR23000884,Weather Exposure,Bus stop 115 7Th/Colorado exposed to extreme heat/sun,2023-05-17,1061,2.9068493150684933,2–3 years
+115 7Th/Colorado,SR23000831,Missing Shelter,No shelter at 115 7Th/Colorado transit stop,2023-05-19,1059,2.9013698630136986,2–3 years
+115 7Th/Colorado,SR23000837,Missing Shelter,Transit stop 115 7Th/Colorado needs shelter for rider protection,2023-05-30,1048,2.871232876712329,2–3 years
+115 7Th/Colorado,SR23000876,Weather Exposure,Riders getting wet at 115 7Th/Colorado during rain,2023-06-10,1037,2.841095890410959,2–3 years
+115 7Th/Colorado,SR23000830,Other,Riders have nowhere to sit at 115 7Th/Colorado,2023-07-04,1013,2.7753424657534245,2–3 years
+115 7Th/Colorado,SR23000899,Missing Benches,Request bench installation at 115 7Th/Colorado,2023-07-30,987,2.704109589041096,2–3 years
+115 7Th/Colorado,SR23000813,Missing Benches,Request bench installation at 115 7Th/Colorado,2023-08-01,985,2.6986301369863015,2–3 years
+115 7Th/Colorado,SR23000826,Other,Riders have nowhere to sit at 115 7Th/Colorado,2023-08-07,979,2.682191780821918,2–3 years
+115 7Th/Colorado,SR23000895,Missing Benches,No benches at 115 7Th/Colorado bus stop,2023-08-26,960,2.6301369863013697,2–3 years
+115 7Th/Colorado,SR23000833,Missing Shelter,Transit stop 115 7Th/Colorado needs weather shelter,2023-09-05,950,2.6027397260273974,2–3 years
+115 7Th/Colorado,SR23000834,Missing Shelter,Bus stop at 115 7Th/Colorado missing shelter - riders exposed to weather,2023-09-10,945,2.589041095890411,2–3 years
+115 7Th/Colorado,SR23000870,Missing Shelter,Transit stop 115 7Th/Colorado needs shelter for rider protection,2023-09-24,931,2.5506849315068494,2–3 years
+115 7Th/Colorado,SR23000869,Safety (Lighting),Safety concerns at 115 7Th/Colorado bus stop after dark,2023-09-30,925,2.5342465753424657,2–3 years
+115 7Th/Colorado,SR23000853,Missing Shelter,Bus stop at 115 7Th/Colorado missing shelter - riders exposed to weather,2023-10-04,921,2.5232876712328767,2–3 years
+115 7Th/Colorado,SR23000862,Missing Shelter,Transit stop 115 7Th/Colorado needs shelter for rider protection,2023-10-20,905,2.4794520547945207,2–3 years
+115 7Th/Colorado,SR23000892,Missing Shelter,No shelter at 115 7Th/Colorado transit stop,2023-10-26,899,2.463013698630137,2–3 years
+115 7Th/Colorado,SR23000859,Weather Exposure,Riders getting wet at 115 7Th/Colorado during rain,2023-11-10,884,2.421917808219178,2–3 years
+115 7Th/Colorado,SR23000866,Safety Concerns,Feeling unsafe waiting at 115 7Th/Colorado,2023-11-11,883,2.419178082191781,2–3 years
+115 7Th/Colorado,SR23000864,Missing Shelter,Request shelter installation at 115 7Th/Colorado,2023-12-06,858,2.350684931506849,2–3 years
+115 7Th/Colorado,SR23000832,Missing Benches,No benches at 115 7Th/Colorado bus stop,2023-12-26,838,2.295890410958904,2–3 years
+115 7Th/Colorado,SR23000885,Missing Shelter,Bus stop at 115 7Th/Colorado missing shelter - riders exposed to weather,2023-12-28,836,2.2904109589041095,2–3 years
+115 7Th/Colorado,SR23000818,Safety Concerns,Request safety improvements at 115 7Th/Colorado stop,2023-12-29,835,2.287671232876712,2–3 years
+115 7Th/Colorado,SR23000838,Missing Shelter,No shelter at 115 7Th/Colorado transit stop,2024-01-14,819,2.243835616438356,2–3 years
+115 7Th/Colorado,SR23000823,Missing Shelter,Transit stop 115 7Th/Colorado needs shelter for rider protection,2024-01-15,818,2.241095890410959,2–3 years
+115 7Th/Colorado,SR23000854,Missing Benches,No benches at 115 7Th/Colorado bus stop,2024-02-09,793,2.1726027397260275,2–3 years
+115 7Th/Colorado,SR23000879,Missing Shelter,No shelter at 115 7Th/Colorado transit stop,2024-03-21,752,2.0602739726027397,2–3 years
+115 7Th/Colorado,SR23000887,Weather Exposure,Riders getting wet at 115 7Th/Colorado during rain,2024-03-28,745,2.041095890410959,2–3 years
+115 7Th/Colorado,SR23000824,Other,Riders have nowhere to sit at 115 7Th/Colorado,2024-04-05,737,2.0191780821917806,2–3 years
+115 7Th/Colorado,SR23000841,Other,Riders have nowhere to sit at 115 7Th/Colorado,2024-04-08,734,2.010958904109589,2–3 years
+115 7Th/Colorado,SR23000848,Missing Benches,Request bench installation at 115 7Th/Colorado,2024-06-12,669,1.832876712328767,1–2 years
+115 7Th/Colorado,SR23000816,Missing Benches,Missing seating at 115 7Th/Colorado transit stop,2024-06-23,658,1.8027397260273972,1–2 years
+115 7Th/Colorado,SR23000836,Missing Shelter,No shelter at 115 7Th/Colorado transit stop,2024-07-15,636,1.7424657534246577,1–2 years
+115 7Th/Colorado,SR23000827,Missing Shelter,Transit stop 115 7Th/Colorado needs shelter for rider protection,2024-08-01,619,1.695890410958904,1–2 years
+115 7Th/Colorado,SR23000881,Missing Shelter,No weather protection at 115 7Th/Colorado transit stop,2024-08-15,605,1.6575342465753424,1–2 years
+115 7Th/Colorado,SR23000872,Missing Shelter,Bus stop at 115 7Th/Colorado missing shelter - riders exposed to weather,2024-08-16,604,1.6547945205479453,1–2 years
+115 7Th/Colorado,SR23000875,Weather Exposure,Riders getting wet at 115 7Th/Colorado during rain,2024-08-29,591,1.6191780821917807,1–2 years
+115 7Th/Colorado,SR23000858,Weather Exposure,Riders getting wet at 115 7Th/Colorado during rain,2024-09-03,586,1.6054794520547946,1–2 years
+115 7Th/Colorado,SR23000839,Missing Shelter,No shelter at 115 7Th/Colorado transit stop,2024-09-22,567,1.5534246575342463,1–2 years
+115 7Th/Colorado,SR23000820,Missing Shelter,Transit stop 115 7Th/Colorado needs shelter for rider protection,2024-10-30,529,1.4493150684931506,1–2 years
+115 7Th/Colorado,SR23000890,Missing Shelter,Transit stop 115 7Th/Colorado needs shelter for rider protection,2024-12-20,478,1.3095890410958904,1–2 years
+115 7Th/Colorado,SR23000828,Weather Exposure,Riders getting wet at 115 7Th/Colorado during rain,2024-12-26,472,1.2931506849315069,1–2 years
+115 7Th/Colorado,SR23000873,Missing Shelter,Transit stop 115 7Th/Colorado needs shelter for rider protection,2025-01-03,464,1.2712328767123289,1–2 years
+115 7Th/Colorado,SR23000815,Missing Shelter,No shelter at 115 7Th/Colorado transit stop,2025-01-16,451,1.2356164383561643,1–2 years
+115 7Th/Colorado,SR23000814,Other,Riders have nowhere to sit at 115 7Th/Colorado,2025-01-26,441,1.2082191780821918,1–2 years
+115 7Th/Colorado,SR23000865,Missing Benches,No benches at 115 7Th/Colorado bus stop,2025-02-13,423,1.158904109589041,1–2 years
+115 7Th/Colorado,SR23000878,Weather Exposure,Bus stop 115 7Th/Colorado exposed to extreme heat/sun,2025-03-09,399,1.093150684931507,1–2 years
+115 7Th/Colorado,SR23000850,Missing Shelter,Transit stop 115 7Th/Colorado needs shelter for rider protection,2025-03-20,388,1.063013698630137,1–2 years
+115 7Th/Colorado,SR23000822,Missing Shelter,Bus stop at 115 7Th/Colorado missing shelter - riders exposed to weather,2025-04-29,348,0.9534246575342464,< 1 year
+115 7Th/Colorado,SR23000849,Missing Benches,No benches at 115 7Th/Colorado bus stop,2025-05-10,337,0.9232876712328768,< 1 year
+115 7Th/Colorado,SR23000825,Missing Shelter,Transit stop 115 7Th/Colorado needs shelter for rider protection,2025-06-23,293,0.8027397260273973,< 1 year
+115 7Th/Colorado,SR23000886,Missing Shelter,No shelter at 115 7Th/Colorado transit stop,2025-06-26,290,0.7945205479452054,< 1 year
+115 7Th/Colorado,SR23000896,Weather Exposure,Riders getting wet at 115 7Th/Colorado during rain,2025-07-10,276,0.7561643835616438,< 1 year
+115 7Th/Colorado,SR23000812,Other,Riders have nowhere to sit at 115 7Th/Colorado,2025-07-28,258,0.7068493150684931,< 1 year
+115 7Th/Colorado,SR23000861,Missing Shelter,Request shelter installation at 115 7Th/Colorado,2025-08-17,238,0.6520547945205479,< 1 year
+115 7Th/Colorado,SR23000893,Missing Shelter,Transit stop 115 7Th/Colorado needs shelter for rider protection,2025-09-28,196,0.536986301369863,< 1 year
+115 7Th/Colorado,SR23000819,Missing Shelter,Transit stop 115 7Th/Colorado needs shelter for rider protection,2025-09-29,195,0.5342465753424658,< 1 year
+115 7Th/Colorado,SR23000842,Missing Shelter,Bus stop at 115 7Th/Colorado missing shelter - riders exposed to weather,2025-11-23,140,0.3835616438356164,< 1 year
+115 7Th/Colorado,SR23000855,Weather Exposure,Bus stop 115 7Th/Colorado exposed to extreme heat/sun,2025-12-05,128,0.3506849315068493,< 1 year
+115 7Th/Colorado,SR23000894,Missing Shelter,No shelter at 115 7Th/Colorado transit stop,2025-12-16,117,0.3205479452054794,< 1 year
+115 7Th/Colorado,SR23000882,Missing Benches,No benches at 115 7Th/Colorado bus stop,2025-12-30,103,0.2821917808219178,< 1 year
+115 7Th/Colorado,SR23000863,Missing Shelter,No shelter at 115 7Th/Colorado transit stop,2026-01-23,79,0.2164383561643835,< 1 year
+1609 Lavaca/17th (Midblock),SR23000085,Missing Shelter,Transit stop 1609 Lavaca/17th (Midblock) needs shelter for rider protection,2023-01-13,1185,3.2465753424657535,3+ years
+1609 Lavaca/17th (Midblock),SR23000140,Missing Shelter,Bus stop at 1609 Lavaca/17th (Midblock) missing shelter - riders exposed to weather,2023-01-14,1184,3.243835616438356,3+ years
+1609 Lavaca/17th (Midblock),SR23000111,Missing Shelter,Request shelter installation at 1609 Lavaca/17th (Midblock),2023-01-17,1181,3.2356164383561645,3+ years
+1609 Lavaca/17th (Midblock),SR23000043,Missing Shelter,No shelter at 1609 Lavaca/17th (Midblock) transit stop,2023-01-31,1167,3.197260273972603,3+ years
+1609 Lavaca/17th (Midblock),SR23000014,Other,Riders have nowhere to sit at 1609 Lavaca/17th (Midblock),2023-02-01,1166,3.1945205479452055,3+ years
+1609 Lavaca/17th (Midblock),SR23000075,Missing Benches,Request bench installation at 1609 Lavaca/17th (Midblock),2023-02-14,1153,3.158904109589041,3+ years
+1609 Lavaca/17th (Midblock),SR23000052,Missing Shelter,Request shelter installation at 1609 Lavaca/17th (Midblock),2023-03-03,1136,3.112328767123288,3+ years
+1609 Lavaca/17th (Midblock),SR23000057,Other,Riders have nowhere to sit at 1609 Lavaca/17th (Midblock),2023-03-06,1133,3.1041095890410957,3+ years
+1609 Lavaca/17th (Midblock),SR23000053,Missing Shelter,No shelter at 1609 Lavaca/17th (Midblock) transit stop,2023-04-02,1106,3.03013698630137,3+ years
+1609 Lavaca/17th (Midblock),SR23000039,Weather Exposure,Riders getting wet at 1609 Lavaca/17th (Midblock) during rain,2023-04-09,1099,3.010958904109589,3+ years
+1609 Lavaca/17th (Midblock),SR23000009,Weather Exposure,Bus stop 1609 Lavaca/17th (Midblock) exposed to extreme heat/sun,2023-05-07,1071,2.9342465753424656,2–3 years
+1609 Lavaca/17th (Midblock),SR23000029,Weather Exposure,Riders getting wet at 1609 Lavaca/17th (Midblock) during rain,2023-05-09,1069,2.9287671232876713,2–3 years
+1609 Lavaca/17th (Midblock),SR23000098,Missing Shelter,Transit stop 1609 Lavaca/17th (Midblock) needs shelter for rider protection,2023-05-30,1048,2.871232876712329,2–3 years
+1609 Lavaca/17th (Midblock),SR23000065,Missing Shelter,Transit stop 1609 Lavaca/17th (Midblock) needs weather shelter,2023-06-23,1024,2.8054794520547945,2–3 years
+1609 Lavaca/17th (Midblock),SR23000054,Missing Benches,Missing seating at 1609 Lavaca/17th (Midblock) transit stop,2023-07-15,1002,2.745205479452055,2–3 years
+1609 Lavaca/17th (Midblock),SR23000063,Missing Shelter,Transit stop 1609 Lavaca/17th (Midblock) needs weather shelter,2023-07-19,998,2.734246575342466,2–3 years
+1609 Lavaca/17th (Midblock),SR23000129,Weather Exposure,Bus stop 1609 Lavaca/17th (Midblock) exposed to extreme heat/sun,2023-07-29,988,2.706849315068493,2–3 years
+1609 Lavaca/17th (Midblock),SR23000118,Other,Riders have nowhere to sit at 1609 Lavaca/17th (Midblock),2023-07-31,986,2.7013698630136984,2–3 years
+1609 Lavaca/17th (Midblock),SR23000072,Missing Shelter,Request shelter installation at 1609 Lavaca/17th (Midblock),2023-08-03,983,2.6931506849315068,2–3 years
+1609 Lavaca/17th (Midblock),SR23000003,Missing Benches,Missing seating at 1609 Lavaca/17th (Midblock) transit stop,2023-08-07,979,2.682191780821918,2–3 years
+1609 Lavaca/17th (Midblock),SR23000047,Missing Benches,Request bench installation at 1609 Lavaca/17th (Midblock),2023-08-08,978,2.6794520547945204,2–3 years
+1609 Lavaca/17th (Midblock),SR23000050,Weather Exposure,Riders getting wet at 1609 Lavaca/17th (Midblock) during rain,2023-09-07,948,2.5972602739726027,2–3 years
+1609 Lavaca/17th (Midblock),SR23000028,Weather Exposure,Bus stop 1609 Lavaca/17th (Midblock) exposed to extreme heat/sun,2023-09-22,933,2.5561643835616437,2–3 years
+1609 Lavaca/17th (Midblock),SR23000092,Safety Concerns,Request safety improvements at 1609 Lavaca/17th (Midblock) stop,2023-10-02,923,2.5287671232876714,2–3 years
+1609 Lavaca/17th (Midblock),SR23000080,Missing Shelter,Request shelter installation at 1609 Lavaca/17th (Midblock),2023-10-04,921,2.5232876712328767,2–3 years
+1609 Lavaca/17th (Midblock),SR23000008,Missing Shelter,Transit stop 1609 Lavaca/17th (Midblock) needs weather shelter,2023-10-15,910,2.493150684931507,2–3 years
+1609 Lavaca/17th (Midblock),SR23000121,Missing Benches,Request bench installation at 1609 Lavaca/17th (Midblock),2023-10-23,902,2.4712328767123286,2–3 years
+1609 Lavaca/17th (Midblock),SR23000073,Missing Benches,Missing seating at 1609 Lavaca/17th (Midblock) transit stop,2023-11-02,892,2.4438356164383563,2–3 years
+1609 Lavaca/17th (Midblock),SR23000091,Missing Shelter,No shelter at 1609 Lavaca/17th (Midblock) transit stop,2023-11-02,892,2.4438356164383563,2–3 years
+1609 Lavaca/17th (Midblock),SR23000102,Missing Shelter,Bus stop at 1609 Lavaca/17th (Midblock) missing shelter - riders exposed to weather,2023-11-06,888,2.4328767123287673,2–3 years
+1609 Lavaca/17th (Midblock),SR23000011,Missing Shelter,No shelter at 1609 Lavaca/17th (Midblock) transit stop,2023-11-21,873,2.3917808219178083,2–3 years
+1609 Lavaca/17th (Midblock),SR23000046,Missing Shelter,Transit stop 1609 Lavaca/17th (Midblock) needs shelter for rider protection,2023-12-03,861,2.3589041095890413,2–3 years
+1609 Lavaca/17th (Midblock),SR23000115,Missing Shelter,Bus stop at 1609 Lavaca/17th (Midblock) missing shelter - riders exposed to weather,2024-01-09,824,2.2575342465753425,2–3 years
+1609 Lavaca/17th (Midblock),SR23000012,Missing Benches,Missing seating at 1609 Lavaca/17th (Midblock) transit stop,2024-01-13,820,2.2465753424657535,2–3 years
+1609 Lavaca/17th (Midblock),SR23000034,Safety (Lighting),Transit stop 1609 Lavaca/17th (Midblock) needs better lighting,2024-01-20,813,2.2273972602739724,2–3 years
+1609 Lavaca/17th (Midblock),SR23000000,Weather Exposure,Riders getting wet at 1609 Lavaca/17th (Midblock) during rain,2024-02-25,777,2.128767123287671,2–3 years
+1609 Lavaca/17th (Midblock),SR23000139,Missing Shelter,Bus stop at 1609 Lavaca/17th (Midblock) missing shelter - riders exposed to weather,2024-03-03,770,2.1095890410958904,2–3 years
+1609 Lavaca/17th (Midblock),SR23000055,Missing Shelter,Bus stop at 1609 Lavaca/17th (Midblock) missing shelter - riders exposed to weather,2024-03-11,762,2.0876712328767124,2–3 years
+1609 Lavaca/17th (Midblock),SR23000103,Safety (Lighting),Transit stop 1609 Lavaca/17th (Midblock) needs better lighting,2024-03-22,751,2.0575342465753423,2–3 years
+1609 Lavaca/17th (Midblock),SR23000120,Safety Concerns,Request safety improvements at 1609 Lavaca/17th (Midblock) stop,2024-03-30,743,2.0356164383561643,2–3 years
+1609 Lavaca/17th (Midblock),SR23000070,Safety (Lighting),Safety concerns at 1609 Lavaca/17th (Midblock) bus stop after dark,2024-04-10,732,2.0054794520547947,2–3 years
+1609 Lavaca/17th (Midblock),SR23000015,Safety (Lighting),Safety concerns at 1609 Lavaca/17th (Midblock) bus stop after dark,2024-04-14,728,1.9945205479452055,1–2 years
+1609 Lavaca/17th (Midblock),SR23000060,Other,Riders have nowhere to sit at 1609 Lavaca/17th (Midblock),2024-04-16,726,1.989041095890411,1–2 years
+1609 Lavaca/17th (Midblock),SR23000131,Missing Benches,Request bench installation at 1609 Lavaca/17th (Midblock),2024-05-10,702,1.9232876712328768,1–2 years
+1609 Lavaca/17th (Midblock),SR23000031,Safety (Lighting),Safety concerns at 1609 Lavaca/17th (Midblock) bus stop after dark,2024-05-10,702,1.9232876712328768,1–2 years
+1609 Lavaca/17th (Midblock),SR23000097,Weather Exposure,Bus stop 1609 Lavaca/17th (Midblock) exposed to extreme heat/sun,2024-05-11,701,1.9205479452054792,1–2 years
+1609 Lavaca/17th (Midblock),SR23000020,Safety (Lighting),Transit stop 1609 Lavaca/17th (Midblock) needs better lighting,2024-06-02,679,1.8602739726027395,1–2 years
+1609 Lavaca/17th (Midblock),SR23000026,Safety (Lighting),Transit stop 1609 Lavaca/17th (Midblock) needs better lighting,2024-06-03,678,1.8575342465753424,1–2 years
+1609 Lavaca/17th (Midblock),SR23000137,Missing Shelter,Request shelter installation at 1609 Lavaca/17th (Midblock),2024-06-09,672,1.841095890410959,1–2 years
+1609 Lavaca/17th (Midblock),SR23000007,Missing Shelter,Request shelter installation at 1609 Lavaca/17th (Midblock),2024-06-14,667,1.8273972602739723,1–2 years
+1609 Lavaca/17th (Midblock),SR23000001,Other,Riders have nowhere to sit at 1609 Lavaca/17th (Midblock),2024-06-28,653,1.789041095890411,1–2 years
+1609 Lavaca/17th (Midblock),SR23000089,Missing Shelter,No weather protection at 1609 Lavaca/17th (Midblock) transit stop,2024-07-15,636,1.7424657534246577,1–2 years
+1609 Lavaca/17th (Midblock),SR23000076,Missing Shelter,Request shelter installation at 1609 Lavaca/17th (Midblock),2024-08-08,612,1.6767123287671233,1–2 years
+1609 Lavaca/17th (Midblock),SR23000108,Missing Shelter,No shelter at 1609 Lavaca/17th (Midblock) transit stop,2024-08-15,605,1.6575342465753424,1–2 years
+1609 Lavaca/17th (Midblock),SR23000017,Missing Shelter,Transit stop 1609 Lavaca/17th (Midblock) needs weather shelter,2024-08-20,600,1.643835616438356,1–2 years
+1609 Lavaca/17th (Midblock),SR23000023,Missing Shelter,Request shelter installation at 1609 Lavaca/17th (Midblock),2024-08-22,598,1.6383561643835616,1–2 years
+1609 Lavaca/17th (Midblock),SR23000135,Missing Shelter,Transit stop 1609 Lavaca/17th (Midblock) needs shelter for rider protection,2024-09-16,573,1.5698630136986302,1–2 years
+1609 Lavaca/17th (Midblock),SR23000141,Missing Shelter,No shelter at 1609 Lavaca/17th (Midblock) transit stop,2024-09-26,563,1.5424657534246575,1–2 years
+1609 Lavaca/17th (Midblock),SR23000061,Missing Shelter,Request shelter installation at 1609 Lavaca/17th (Midblock),2024-09-30,559,1.5315068493150683,1–2 years
+1609 Lavaca/17th (Midblock),SR23000132,Missing Shelter,Request shelter installation at 1609 Lavaca/17th (Midblock),2024-10-14,545,1.4931506849315068,1–2 years
+1609 Lavaca/17th (Midblock),SR23000025,Missing Shelter,Bus stop at 1609 Lavaca/17th (Midblock) missing shelter - riders exposed to weather,2024-11-09,519,1.421917808219178,1–2 years
+1609 Lavaca/17th (Midblock),SR23000096,Missing Benches,No benches at 1609 Lavaca/17th (Midblock) bus stop,2024-11-15,513,1.4054794520547946,1–2 years
+1609 Lavaca/17th (Midblock),SR23000081,Other,Riders have nowhere to sit at 1609 Lavaca/17th (Midblock),2024-11-18,510,1.3972602739726028,1–2 years
+1609 Lavaca/17th (Midblock),SR23000019,Missing Shelter,No shelter at 1609 Lavaca/17th (Midblock) transit stop,2024-12-03,495,1.356164383561644,1–2 years
+1609 Lavaca/17th (Midblock),SR23000105,Missing Shelter,No weather protection at 1609 Lavaca/17th (Midblock) transit stop,2024-12-15,483,1.3232876712328767,1–2 years
+1609 Lavaca/17th (Midblock),SR23000101,Other,Riders have nowhere to sit at 1609 Lavaca/17th (Midblock),2024-12-20,478,1.3095890410958904,1–2 years
+1609 Lavaca/17th (Midblock),SR23000013,Safety Concerns,Feeling unsafe waiting at 1609 Lavaca/17th (Midblock),2025-01-01,466,1.2767123287671234,1–2 years
+1609 Lavaca/17th (Midblock),SR23000084,Missing Shelter,Bus stop at 1609 Lavaca/17th (Midblock) missing shelter - riders exposed to weather,2025-01-03,464,1.2712328767123289,1–2 years
+1609 Lavaca/17th (Midblock),SR23000117,Missing Benches,Missing seating at 1609 Lavaca/17th (Midblock) transit stop,2025-01-05,462,1.2657534246575342,1–2 years
+1609 Lavaca/17th (Midblock),SR23000093,Missing Benches,Request bench installation at 1609 Lavaca/17th (Midblock),2025-01-08,459,1.2575342465753423,1–2 years
+1609 Lavaca/17th (Midblock),SR23000123,Missing Shelter,Bus stop at 1609 Lavaca/17th (Midblock) missing shelter - riders exposed to weather,2025-01-14,453,1.2410958904109588,1–2 years
+1609 Lavaca/17th (Midblock),SR23000124,Missing Shelter,Bus stop at 1609 Lavaca/17th (Midblock) missing shelter - riders exposed to weather,2025-01-14,453,1.2410958904109588,1–2 years
+1609 Lavaca/17th (Midblock),SR23000113,Missing Benches,Request bench installation at 1609 Lavaca/17th (Midblock),2025-01-16,451,1.2356164383561643,1–2 years
+1609 Lavaca/17th (Midblock),SR23000133,Missing Shelter,Request shelter installation at 1609 Lavaca/17th (Midblock),2025-01-18,449,1.2301369863013698,1–2 years
+1609 Lavaca/17th (Midblock),SR23000040,Missing Benches,No benches at 1609 Lavaca/17th (Midblock) bus stop,2025-01-22,445,1.2191780821917808,1–2 years
+1609 Lavaca/17th (Midblock),SR23000077,Safety Concerns,Feeling unsafe waiting at 1609 Lavaca/17th (Midblock),2025-01-29,438,1.2,1–2 years
+1609 Lavaca/17th (Midblock),SR23000086,Other,Riders have nowhere to sit at 1609 Lavaca/17th (Midblock),2025-02-03,433,1.1863013698630136,1–2 years
+1609 Lavaca/17th (Midblock),SR23000112,Missing Shelter,Transit stop 1609 Lavaca/17th (Midblock) needs shelter for rider protection,2025-02-05,431,1.180821917808219,1–2 years
+1609 Lavaca/17th (Midblock),SR23000062,Missing Benches,No benches at 1609 Lavaca/17th (Midblock) bus stop,2025-03-07,401,1.0986301369863014,1–2 years
+1609 Lavaca/17th (Midblock),SR23000110,Missing Shelter,No weather protection at 1609 Lavaca/17th (Midblock) transit stop,2025-03-27,381,1.0438356164383562,1–2 years
+1609 Lavaca/17th (Midblock),SR23000114,Weather Exposure,Riders getting wet at 1609 Lavaca/17th (Midblock) during rain,2025-04-14,363,0.9945205479452056,< 1 year
+1609 Lavaca/17th (Midblock),SR23000088,Safety (Lighting),Safety concerns at 1609 Lavaca/17th (Midblock) bus stop after dark,2025-04-18,359,0.9835616438356164,< 1 year
+1609 Lavaca/17th (Midblock),SR23000130,Missing Shelter,Request shelter installation at 1609 Lavaca/17th (Midblock),2025-05-13,334,0.915068493150685,< 1 year
+1609 Lavaca/17th (Midblock),SR23000082,Missing Shelter,Bus stop at 1609 Lavaca/17th (Midblock) missing shelter - riders exposed to weather,2025-06-05,311,0.852054794520548,< 1 year
+1609 Lavaca/17th (Midblock),SR23000033,Missing Shelter,Bus stop at 1609 Lavaca/17th (Midblock) missing shelter - riders exposed to weather,2025-06-08,308,0.8438356164383561,< 1 year
+1609 Lavaca/17th (Midblock),SR23000035,Missing Shelter,Request shelter installation at 1609 Lavaca/17th (Midblock),2025-06-08,308,0.8438356164383561,< 1 year
+1609 Lavaca/17th (Midblock),SR23000016,Safety (Lighting),Safety concerns at 1609 Lavaca/17th (Midblock) bus stop after dark,2025-06-13,303,0.8301369863013699,< 1 year
+1609 Lavaca/17th (Midblock),SR23000116,Missing Shelter,Bus stop at 1609 Lavaca/17th (Midblock) missing shelter - riders exposed to weather,2025-06-17,299,0.8191780821917808,< 1 year
+1609 Lavaca/17th (Midblock),SR23000104,Safety (Lighting),Transit stop 1609 Lavaca/17th (Midblock) needs better lighting,2025-06-19,297,0.8136986301369863,< 1 year
+1609 Lavaca/17th (Midblock),SR23000127,Safety Concerns,Request safety improvements at 1609 Lavaca/17th (Midblock) stop,2025-06-19,297,0.8136986301369863,< 1 year
+1609 Lavaca/17th (Midblock),SR23000048,Weather Exposure,Bus stop 1609 Lavaca/17th (Midblock) exposed to extreme heat/sun,2025-07-25,261,0.7150684931506849,< 1 year
+1609 Lavaca/17th (Midblock),SR23000066,Missing Benches,Request bench installation at 1609 Lavaca/17th (Midblock),2025-09-18,206,0.5643835616438356,< 1 year
+1609 Lavaca/17th (Midblock),SR23000042,Missing Shelter,Bus stop at 1609 Lavaca/17th (Midblock) missing shelter - riders exposed to weather,2025-09-28,196,0.536986301369863,< 1 year
+1609 Lavaca/17th (Midblock),SR23000099,Missing Shelter,Transit stop 1609 Lavaca/17th (Midblock) needs shelter for rider protection,2025-10-10,184,0.5041095890410959,< 1 year
+1609 Lavaca/17th (Midblock),SR23000126,Weather Exposure,Bus stop 1609 Lavaca/17th (Midblock) exposed to extreme heat/sun,2025-10-17,177,0.4849315068493151,< 1 year
+1609 Lavaca/17th (Midblock),SR23000094,Missing Shelter,Bus stop at 1609 Lavaca/17th (Midblock) missing shelter - riders exposed to weather,2025-10-28,166,0.4547945205479452,< 1 year
+1609 Lavaca/17th (Midblock),SR23000018,Other,Riders have nowhere to sit at 1609 Lavaca/17th (Midblock),2025-11-09,154,0.421917808219178,< 1 year
+1609 Lavaca/17th (Midblock),SR23000100,Missing Shelter,Request shelter installation at 1609 Lavaca/17th (Midblock),2025-11-13,150,0.410958904109589,< 1 year
+1609 Lavaca/17th (Midblock),SR23000128,Weather Exposure,Riders getting wet at 1609 Lavaca/17th (Midblock) during rain,2025-11-14,149,0.4082191780821917,< 1 year
+1609 Lavaca/17th (Midblock),SR23000083,Missing Shelter,No shelter at 1609 Lavaca/17th (Midblock) transit stop,2025-11-21,142,0.3890410958904109,< 1 year
+1609 Lavaca/17th (Midblock),SR23000038,Other,Riders have nowhere to sit at 1609 Lavaca/17th (Midblock),2025-12-02,131,0.3589041095890411,< 1 year
+1609 Lavaca/17th (Midblock),SR23000079,Missing Shelter,Transit stop 1609 Lavaca/17th (Midblock) needs weather shelter,2025-12-18,115,0.3150684931506849,< 1 year
+1609 Lavaca/17th (Midblock),SR23000032,Missing Benches,Request bench installation at 1609 Lavaca/17th (Midblock),2025-12-24,109,0.2986301369863013,< 1 year
+1609 Lavaca/17th (Midblock),SR23000074,Missing Benches,No benches at 1609 Lavaca/17th (Midblock) bus stop,2025-12-31,102,0.2794520547945205,< 1 year
+1609 Lavaca/17th (Midblock),SR23000134,Missing Benches,Request bench installation at 1609 Lavaca/17th (Midblock),2026-01-01,101,0.2767123287671232,< 1 year
+1609 Lavaca/17th (Midblock),SR23000078,Missing Shelter,Request shelter installation at 1609 Lavaca/17th (Midblock),2026-01-30,72,0.1972602739726027,< 1 year
+1609 Lavaca/17th (Midblock),SR23000056,Missing Benches,Request bench installation at 1609 Lavaca/17th (Midblock),2026-02-10,61,0.1671232876712328,< 1 year
+1609 Lavaca/17th (Midblock),SR23000004,Missing Shelter,Bus stop at 1609 Lavaca/17th (Midblock) missing shelter - riders exposed to weather,2026-02-12,59,0.1616438356164383,< 1 year
+1609 Lavaca/17th (Midblock),SR23000006,Missing Shelter,Bus stop at 1609 Lavaca/17th (Midblock) missing shelter - riders exposed to weather,2026-02-15,56,0.1534246575342465,< 1 year
+1609 Lavaca/17th (Midblock),SR23000010,Missing Benches,Request bench installation at 1609 Lavaca/17th (Midblock),2026-02-18,53,0.1452054794520547,< 1 year
+1609 Lavaca/17th (Midblock),SR23000037,Missing Benches,Request bench installation at 1609 Lavaca/17th (Midblock),2026-02-22,49,0.1342465753424657,< 1 year
+1609 Lavaca/17th (Midblock),SR23000059,Weather Exposure,Bus stop 1609 Lavaca/17th (Midblock) exposed to extreme heat/sun,2026-03-18,25,0.0684931506849315,< 1 year
+1609 Lavaca/17th (Midblock),SR23000022,Missing Shelter,Request shelter installation at 1609 Lavaca/17th (Midblock),2026-03-25,18,0.0493150684931506,< 1 year
+501 Pleasant Valley/5th,SR23000923,Missing Benches,Missing seating at 501 Pleasant Valley/5th transit stop,2023-01-03,1195,3.2739726027397262,3+ years
+501 Pleasant Valley/5th,SR23000903,Missing Shelter,No shelter at 501 Pleasant Valley/5th transit stop,2023-01-19,1179,3.23013698630137,3+ years
+501 Pleasant Valley/5th,SR23000966,Weather Exposure,Riders getting wet at 501 Pleasant Valley/5th during rain,2023-01-19,1179,3.23013698630137,3+ years
+501 Pleasant Valley/5th,SR23000902,Missing Shelter,Bus stop at 501 Pleasant Valley/5th missing shelter - riders exposed to weather,2023-01-21,1177,3.2246575342465755,3+ years
+501 Pleasant Valley/5th,SR23000951,Missing Shelter,No weather protection at 501 Pleasant Valley/5th transit stop,2023-02-19,1148,3.1452054794520548,3+ years
+501 Pleasant Valley/5th,SR23000930,Missing Shelter,Transit stop 501 Pleasant Valley/5th needs shelter for rider protection,2023-03-06,1133,3.1041095890410957,3+ years
+501 Pleasant Valley/5th,SR23000931,Missing Shelter,No shelter at 501 Pleasant Valley/5th transit stop,2023-03-07,1132,3.1013698630136988,3+ years
+501 Pleasant Valley/5th,SR23000967,Weather Exposure,Bus stop 501 Pleasant Valley/5th exposed to extreme heat/sun,2023-03-07,1132,3.1013698630136988,3+ years
+501 Pleasant Valley/5th,SR23000935,Missing Shelter,Transit stop 501 Pleasant Valley/5th needs shelter for rider protection,2023-03-31,1108,3.0356164383561643,3+ years
+501 Pleasant Valley/5th,SR23000907,Missing Benches,Request bench installation at 501 Pleasant Valley/5th,2023-04-13,1095,3.0,3+ years
+501 Pleasant Valley/5th,SR23000928,Weather Exposure,Riders getting wet at 501 Pleasant Valley/5th during rain,2023-04-27,1081,2.9616438356164383,2–3 years
+501 Pleasant Valley/5th,SR23000962,Other,Riders have nowhere to sit at 501 Pleasant Valley/5th,2023-07-04,1013,2.7753424657534245,2–3 years
+501 Pleasant Valley/5th,SR23000915,Weather Exposure,Bus stop 501 Pleasant Valley/5th exposed to extreme heat/sun,2023-08-09,977,2.6767123287671235,2–3 years
+501 Pleasant Valley/5th,SR23000917,Missing Shelter,Bus stop at 501 Pleasant Valley/5th missing shelter - riders exposed to weather,2023-08-25,961,2.632876712328767,2–3 years
+501 Pleasant Valley/5th,SR23000968,Missing Shelter,No shelter at 501 Pleasant Valley/5th transit stop,2023-09-03,952,2.6082191780821917,2–3 years
+501 Pleasant Valley/5th,SR23000948,Safety (Lighting),Safety concerns at 501 Pleasant Valley/5th bus stop after dark,2023-09-11,944,2.5863013698630137,2–3 years
+501 Pleasant Valley/5th,SR23000949,Missing Shelter,No weather protection at 501 Pleasant Valley/5th transit stop,2023-09-23,932,2.5534246575342467,2–3 years
+501 Pleasant Valley/5th,SR23000984,Missing Shelter,Transit stop 501 Pleasant Valley/5th needs weather shelter,2023-10-11,914,2.504109589041096,2–3 years
+501 Pleasant Valley/5th,SR23000925,Missing Shelter,Transit stop 501 Pleasant Valley/5th needs shelter for rider protection,2023-10-27,898,2.4602739726027396,2–3 years
+501 Pleasant Valley/5th,SR23000934,Missing Benches,Request bench installation at 501 Pleasant Valley/5th,2023-11-03,891,2.441095890410959,2–3 years
+501 Pleasant Valley/5th,SR23000945,Missing Benches,Request bench installation at 501 Pleasant Valley/5th,2023-12-16,848,2.3232876712328765,2–3 years
+501 Pleasant Valley/5th,SR23000905,Missing Shelter,Bus stop at 501 Pleasant Valley/5th missing shelter - riders exposed to weather,2023-12-24,840,2.3013698630136985,2–3 years
+501 Pleasant Valley/5th,SR23000933,Missing Shelter,No weather protection at 501 Pleasant Valley/5th transit stop,2023-12-29,835,2.287671232876712,2–3 years
+501 Pleasant Valley/5th,SR23000947,Missing Shelter,Transit stop 501 Pleasant Valley/5th needs shelter for rider protection,2024-02-07,795,2.1780821917808217,2–3 years
+501 Pleasant Valley/5th,SR23000943,Weather Exposure,Bus stop 501 Pleasant Valley/5th exposed to extreme heat/sun,2024-02-26,776,2.126027397260274,2–3 years
+501 Pleasant Valley/5th,SR23000982,Safety (Lighting),Safety concerns at 501 Pleasant Valley/5th bus stop after dark,2024-03-18,755,2.0684931506849313,2–3 years
+501 Pleasant Valley/5th,SR23000932,Weather Exposure,Bus stop 501 Pleasant Valley/5th exposed to extreme heat/sun,2024-03-20,753,2.063013698630137,2–3 years
+501 Pleasant Valley/5th,SR23000958,Missing Shelter,Request shelter installation at 501 Pleasant Valley/5th,2024-03-22,751,2.0575342465753423,2–3 years
+501 Pleasant Valley/5th,SR23000965,Missing Benches,Request bench installation at 501 Pleasant Valley/5th,2024-04-11,731,2.002739726027398,2–3 years
+501 Pleasant Valley/5th,SR23000964,Missing Shelter,No shelter at 501 Pleasant Valley/5th transit stop,2024-05-21,691,1.893150684931507,1–2 years
+501 Pleasant Valley/5th,SR23000929,Safety Concerns,Feeling unsafe waiting at 501 Pleasant Valley/5th,2024-05-25,687,1.8821917808219175,1–2 years
+501 Pleasant Valley/5th,SR23000959,Missing Benches,No benches at 501 Pleasant Valley/5th bus stop,2024-07-16,635,1.7397260273972603,1–2 years
+501 Pleasant Valley/5th,SR23000952,Missing Shelter,Transit stop 501 Pleasant Valley/5th needs shelter for rider protection,2024-07-28,623,1.7068493150684931,1–2 years
+501 Pleasant Valley/5th,SR23000924,Missing Shelter,Bus stop at 501 Pleasant Valley/5th missing shelter - riders exposed to weather,2024-09-04,585,1.6027397260273972,1–2 years
+501 Pleasant Valley/5th,SR23000969,Other,Riders have nowhere to sit at 501 Pleasant Valley/5th,2024-09-26,563,1.5424657534246575,1–2 years
+501 Pleasant Valley/5th,SR23000926,Missing Shelter,Bus stop at 501 Pleasant Valley/5th missing shelter - riders exposed to weather,2024-10-06,553,1.515068493150685,1–2 years
+501 Pleasant Valley/5th,SR23000912,Missing Benches,Request bench installation at 501 Pleasant Valley/5th,2024-12-09,489,1.3397260273972602,1–2 years
+501 Pleasant Valley/5th,SR23000983,Missing Shelter,Request shelter installation at 501 Pleasant Valley/5th,2024-12-24,474,1.2986301369863014,1–2 years
+501 Pleasant Valley/5th,SR23000927,Weather Exposure,Bus stop 501 Pleasant Valley/5th exposed to extreme heat/sun,2024-12-28,470,1.2876712328767124,1–2 years
+501 Pleasant Valley/5th,SR23000981,Missing Shelter,Request shelter installation at 501 Pleasant Valley/5th,2025-02-05,431,1.180821917808219,1–2 years
+501 Pleasant Valley/5th,SR23000920,Missing Benches,Request bench installation at 501 Pleasant Valley/5th,2025-02-25,411,1.126027397260274,1–2 years
+501 Pleasant Valley/5th,SR23000922,Weather Exposure,Riders getting wet at 501 Pleasant Valley/5th during rain,2025-04-04,373,1.021917808219178,1–2 years
+501 Pleasant Valley/5th,SR23000921,Missing Shelter,Transit stop 501 Pleasant Valley/5th needs shelter for rider protection,2025-04-11,366,1.0027397260273974,1–2 years
+501 Pleasant Valley/5th,SR23000939,Missing Shelter,Bus stop at 501 Pleasant Valley/5th missing shelter - riders exposed to weather,2025-04-11,366,1.0027397260273974,1–2 years
+501 Pleasant Valley/5th,SR23000940,Missing Shelter,No shelter at 501 Pleasant Valley/5th transit stop,2025-04-29,348,0.9534246575342464,< 1 year
+501 Pleasant Valley/5th,SR23000916,Safety (Lighting),Transit stop 501 Pleasant Valley/5th needs better lighting,2025-05-03,344,0.9424657534246575,< 1 year
+501 Pleasant Valley/5th,SR23000973,Missing Shelter,Request shelter installation at 501 Pleasant Valley/5th,2025-05-18,329,0.9013698630136986,< 1 year
+501 Pleasant Valley/5th,SR23000971,Missing Shelter,Transit stop 501 Pleasant Valley/5th needs weather shelter,2025-05-19,328,0.8986301369863013,< 1 year
+501 Pleasant Valley/5th,SR23000961,Missing Benches,No benches at 501 Pleasant Valley/5th bus stop,2025-05-20,327,0.8958904109589041,< 1 year
+501 Pleasant Valley/5th,SR23000944,Missing Shelter,No weather protection at 501 Pleasant Valley/5th transit stop,2025-05-20,327,0.8958904109589041,< 1 year
+501 Pleasant Valley/5th,SR23000970,Missing Shelter,Bus stop at 501 Pleasant Valley/5th missing shelter - riders exposed to weather,2025-05-20,327,0.8958904109589041,< 1 year
+501 Pleasant Valley/5th,SR23000980,Safety Concerns,Feeling unsafe waiting at 501 Pleasant Valley/5th,2025-05-30,317,0.8684931506849315,< 1 year
+501 Pleasant Valley/5th,SR23000913,Missing Shelter,Transit stop 501 Pleasant Valley/5th needs shelter for rider protection,2025-06-03,313,0.8575342465753425,< 1 year
+501 Pleasant Valley/5th,SR23000941,Other,Riders have nowhere to sit at 501 Pleasant Valley/5th,2025-07-24,262,0.7178082191780822,< 1 year
+501 Pleasant Valley/5th,SR23000972,Missing Benches,No benches at 501 Pleasant Valley/5th bus stop,2025-08-22,233,0.6383561643835617,< 1 year
+501 Pleasant Valley/5th,SR23000957,Weather Exposure,Riders getting wet at 501 Pleasant Valley/5th during rain,2025-09-08,216,0.5917808219178082,< 1 year
+501 Pleasant Valley/5th,SR23000955,Missing Benches,Request bench installation at 501 Pleasant Valley/5th,2025-09-11,213,0.5835616438356165,< 1 year
+501 Pleasant Valley/5th,SR23000960,Missing Shelter,Request shelter installation at 501 Pleasant Valley/5th,2025-10-03,191,0.5232876712328767,< 1 year
+501 Pleasant Valley/5th,SR23000954,Missing Shelter,Request shelter installation at 501 Pleasant Valley/5th,2025-10-17,177,0.4849315068493151,< 1 year
+501 Pleasant Valley/5th,SR23000936,Missing Shelter,Transit stop 501 Pleasant Valley/5th needs shelter for rider protection,2025-12-12,121,0.3315068493150685,< 1 year
+501 Pleasant Valley/5th,SR23000909,Missing Benches,Request bench installation at 501 Pleasant Valley/5th,2025-12-24,109,0.2986301369863013,< 1 year
+501 Pleasant Valley/5th,SR23000963,Missing Shelter,Request shelter installation at 501 Pleasant Valley/5th,2026-02-16,55,0.1506849315068493,< 1 year
+501 Pleasant Valley/5th,SR23000975,Missing Benches,No benches at 501 Pleasant Valley/5th bus stop,2026-02-26,45,0.1232876712328767,< 1 year
+501 Pleasant Valley/5th,SR23000937,Missing Benches,Missing seating at 501 Pleasant Valley/5th transit stop,2026-03-07,36,0.0986301369863013,< 1 year
+501 Pleasant Valley/5th,SR23000977,Missing Shelter,Bus stop at 501 Pleasant Valley/5th missing shelter - riders exposed to weather,2026-03-16,27,0.073972602739726,< 1 year
+501 Pleasant Valley/5th,SR23000901,Missing Shelter,Request shelter installation at 501 Pleasant Valley/5th,2026-03-29,14,0.0383561643835616,< 1 year
+501 Pleasant Valley/5th,SR23000904,Missing Shelter,Bus stop at 501 Pleasant Valley/5th missing shelter - riders exposed to weather,2026-03-31,12,0.0328767123287671,< 1 year
+8th Street NB (Trinity/8th),SR23001296,Other,Riders have nowhere to sit at 8th Street NB (Trinity/8th),2023-03-13,1126,3.084931506849315,3+ years
+8th Street NB (Trinity/8th),SR23001339,Missing Shelter,Transit stop 8th Street NB (Trinity/8th) needs shelter for rider protection,2023-05-08,1070,2.9315068493150687,2–3 years
+8th Street NB (Trinity/8th),SR23001346,Safety Concerns,Request safety improvements at 8th Street NB (Trinity/8th) stop,2023-06-16,1031,2.824657534246575,2–3 years
+8th Street NB (Trinity/8th),SR23001337,Safety (Lighting),Safety concerns at 8th Street NB (Trinity/8th) bus stop after dark,2023-06-20,1027,2.813698630136986,2–3 years
+8th Street NB (Trinity/8th),SR23001310,Missing Shelter,Bus stop at 8th Street NB (Trinity/8th) missing shelter - riders exposed to weather,2023-07-08,1009,2.7643835616438355,2–3 years
+8th Street NB (Trinity/8th),SR23001299,Missing Shelter,Request shelter installation at 8th Street NB (Trinity/8th),2023-07-19,998,2.734246575342466,2–3 years
+8th Street NB (Trinity/8th),SR23001347,Missing Benches,Missing seating at 8th Street NB (Trinity/8th) transit stop,2023-08-10,976,2.673972602739726,2–3 years
+8th Street NB (Trinity/8th),SR23001353,Weather Exposure,Bus stop 8th Street NB (Trinity/8th) exposed to extreme heat/sun,2023-08-23,963,2.638356164383562,2–3 years
+8th Street NB (Trinity/8th),SR23001336,Missing Benches,Missing seating at 8th Street NB (Trinity/8th) transit stop,2023-09-24,931,2.5506849315068494,2–3 years
+8th Street NB (Trinity/8th),SR23001300,Missing Benches,Request bench installation at 8th Street NB (Trinity/8th),2023-11-29,865,2.3698630136986303,2–3 years
+8th Street NB (Trinity/8th),SR23001331,Missing Benches,No benches at 8th Street NB (Trinity/8th) bus stop,2023-11-30,864,2.367123287671233,2–3 years
+8th Street NB (Trinity/8th),SR23001325,Other,Riders have nowhere to sit at 8th Street NB (Trinity/8th),2024-01-28,805,2.2054794520547945,2–3 years
+8th Street NB (Trinity/8th),SR23001311,Missing Benches,Request bench installation at 8th Street NB (Trinity/8th),2024-02-16,786,2.1534246575342464,2–3 years
+8th Street NB (Trinity/8th),SR23001318,Missing Shelter,Request shelter installation at 8th Street NB (Trinity/8th),2024-03-16,757,2.073972602739726,2–3 years
+8th Street NB (Trinity/8th),SR23001304,Missing Benches,Missing seating at 8th Street NB (Trinity/8th) transit stop,2024-03-26,747,2.0465753424657533,2–3 years
+8th Street NB (Trinity/8th),SR23001315,Missing Benches,Missing seating at 8th Street NB (Trinity/8th) transit stop,2024-04-07,735,2.0136986301369864,2–3 years
+8th Street NB (Trinity/8th),SR23001348,Missing Benches,Request bench installation at 8th Street NB (Trinity/8th),2024-04-25,717,1.9643835616438357,1–2 years
+8th Street NB (Trinity/8th),SR23001349,Missing Shelter,Transit stop 8th Street NB (Trinity/8th) needs weather shelter,2024-04-26,716,1.9616438356164383,1–2 years
+8th Street NB (Trinity/8th),SR23001319,Missing Benches,No benches at 8th Street NB (Trinity/8th) bus stop,2024-06-20,661,1.810958904109589,1–2 years
+8th Street NB (Trinity/8th),SR23001307,Safety (Lighting),Safety concerns at 8th Street NB (Trinity/8th) bus stop after dark,2024-06-28,653,1.789041095890411,1–2 years
+8th Street NB (Trinity/8th),SR23001293,Missing Shelter,No shelter at 8th Street NB (Trinity/8th) transit stop,2024-07-10,641,1.7561643835616438,1–2 years
+8th Street NB (Trinity/8th),SR23001320,Missing Shelter,Transit stop 8th Street NB (Trinity/8th) needs shelter for rider protection,2024-08-02,618,1.6931506849315068,1–2 years
+8th Street NB (Trinity/8th),SR23001328,Safety Concerns,Request safety improvements at 8th Street NB (Trinity/8th) stop,2024-09-29,560,1.5342465753424657,1–2 years
+8th Street NB (Trinity/8th),SR23001301,Missing Shelter,Bus stop at 8th Street NB (Trinity/8th) missing shelter - riders exposed to weather,2024-11-09,519,1.421917808219178,1–2 years
+8th Street NB (Trinity/8th),SR23001298,Missing Benches,No benches at 8th Street NB (Trinity/8th) bus stop,2024-11-22,506,1.3863013698630138,1–2 years
+8th Street NB (Trinity/8th),SR23001295,Missing Benches,No benches at 8th Street NB (Trinity/8th) bus stop,2024-12-13,485,1.3287671232876712,1–2 years
+8th Street NB (Trinity/8th),SR23001334,Missing Benches,Missing seating at 8th Street NB (Trinity/8th) transit stop,2025-01-26,441,1.2082191780821918,1–2 years
+8th Street NB (Trinity/8th),SR23001314,Missing Shelter,No shelter at 8th Street NB (Trinity/8th) transit stop,2025-03-13,395,1.082191780821918,1–2 years
+8th Street NB (Trinity/8th),SR23001352,Missing Shelter,No weather protection at 8th Street NB (Trinity/8th) transit stop,2025-03-25,383,1.0493150684931507,1–2 years
+8th Street NB (Trinity/8th),SR23001332,Weather Exposure,Bus stop 8th Street NB (Trinity/8th) exposed to extreme heat/sun,2025-04-05,372,1.0191780821917809,1–2 years
+8th Street NB (Trinity/8th),SR23001292,Missing Benches,No benches at 8th Street NB (Trinity/8th) bus stop,2025-05-13,334,0.915068493150685,< 1 year
+8th Street NB (Trinity/8th),SR23001323,Weather Exposure,Riders getting wet at 8th Street NB (Trinity/8th) during rain,2025-06-22,294,0.8054794520547945,< 1 year
+8th Street NB (Trinity/8th),SR23001355,Safety Concerns,Request safety improvements at 8th Street NB (Trinity/8th) stop,2025-08-08,247,0.6767123287671233,< 1 year
+8th Street NB (Trinity/8th),SR23001356,Missing Benches,Request bench installation at 8th Street NB (Trinity/8th),2025-09-03,221,0.6054794520547945,< 1 year
+8th Street NB (Trinity/8th),SR23001308,Missing Shelter,No shelter at 8th Street NB (Trinity/8th) transit stop,2025-10-06,188,0.5150684931506849,< 1 year
+8th Street NB (Trinity/8th),SR23001357,Missing Benches,Missing seating at 8th Street NB (Trinity/8th) transit stop,2025-11-05,158,0.4328767123287671,< 1 year
+8th Street NB (Trinity/8th),SR23001327,Missing Benches,Request bench installation at 8th Street NB (Trinity/8th),2025-12-27,106,0.2904109589041095,< 1 year
+8th Street NB (Trinity/8th),SR23001345,Safety (Lighting),Transit stop 8th Street NB (Trinity/8th) needs better lighting,2026-01-10,92,0.2520547945205479,< 1 year
+8th Street NB (Trinity/8th),SR23001335,Missing Benches,Request bench installation at 8th Street NB (Trinity/8th),2026-01-24,78,0.2136986301369863,< 1 year
+8th Street NB (Trinity/8th),SR23001351,Missing Shelter,Transit stop 8th Street NB (Trinity/8th) needs weather shelter,2026-02-20,51,0.1397260273972602,< 1 year
+8th Street NB (Trinity/8th),SR23001359,Missing Shelter,Bus stop at 8th Street NB (Trinity/8th) missing shelter - riders exposed to weather,2026-02-26,45,0.1232876712328767,< 1 year
+8th Street NB (Trinity/8th),SR23001303,Safety (Lighting),Transit stop 8th Street NB (Trinity/8th) needs better lighting,2026-02-26,45,0.1232876712328767,< 1 year
+8th Street NB (Trinity/8th),SR23001358,Missing Shelter,No shelter at 8th Street NB (Trinity/8th) transit stop,2026-02-28,43,0.1178082191780822,< 1 year
+8th Street NB (Trinity/8th),SR23001312,Missing Benches,Missing seating at 8th Street NB (Trinity/8th) transit stop,2026-04-03,9,0.0246575342465753,< 1 year
+Bluebonnet Station (SB),SR23001156,Weather Exposure,Riders getting wet at Bluebonnet Station (SB) during rain,2023-01-28,1170,3.2054794520547945,3+ years
+Bluebonnet Station (SB),SR23001210,Missing Shelter,Transit stop Bluebonnet Station (SB) needs weather shelter,2023-02-16,1151,3.1534246575342464,3+ years
+Bluebonnet Station (SB),SR23001181,Missing Shelter,Request shelter installation at Bluebonnet Station (SB),2023-03-11,1128,3.0904109589041098,3+ years
+Bluebonnet Station (SB),SR23001217,Safety Concerns,Feeling unsafe waiting at Bluebonnet Station (SB),2023-04-23,1085,2.9726027397260273,2–3 years
+Bluebonnet Station (SB),SR23001206,Missing Shelter,Request shelter installation at Bluebonnet Station (SB),2023-05-04,1074,2.9424657534246577,2–3 years
+Bluebonnet Station (SB),SR23001200,Missing Shelter,Bus stop at Bluebonnet Station (SB) missing shelter - riders exposed to weather,2023-06-05,1042,2.8547945205479452,2–3 years
+Bluebonnet Station (SB),SR23001211,Missing Shelter,Transit stop Bluebonnet Station (SB) needs shelter for rider protection,2023-06-08,1039,2.8465753424657536,2–3 years
+Bluebonnet Station (SB),SR23001204,Other,Riders have nowhere to sit at Bluebonnet Station (SB),2023-07-07,1010,2.767123287671233,2–3 years
+Bluebonnet Station (SB),SR23001196,Missing Benches,Request bench installation at Bluebonnet Station (SB),2023-07-14,1003,2.747945205479452,2–3 years
+Bluebonnet Station (SB),SR23001165,Missing Shelter,Bus stop at Bluebonnet Station (SB) missing shelter - riders exposed to weather,2023-08-01,985,2.6986301369863015,2–3 years
+Bluebonnet Station (SB),SR23001158,Missing Shelter,No weather protection at Bluebonnet Station (SB) transit stop,2023-08-04,982,2.6904109589041094,2–3 years
+Bluebonnet Station (SB),SR23001177,Weather Exposure,Riders getting wet at Bluebonnet Station (SB) during rain,2023-08-26,960,2.6301369863013697,2–3 years
+Bluebonnet Station (SB),SR23001168,Weather Exposure,Bus stop Bluebonnet Station (SB) exposed to extreme heat/sun,2023-09-14,941,2.578082191780822,2–3 years
+Bluebonnet Station (SB),SR23001155,Missing Shelter,Request shelter installation at Bluebonnet Station (SB),2023-11-15,879,2.408219178082192,2–3 years
+Bluebonnet Station (SB),SR23001173,Weather Exposure,Bus stop Bluebonnet Station (SB) exposed to extreme heat/sun,2024-01-08,825,2.26027397260274,2–3 years
+Bluebonnet Station (SB),SR23001180,Missing Shelter,Transit stop Bluebonnet Station (SB) needs shelter for rider protection,2024-02-05,797,2.1835616438356165,2–3 years
+Bluebonnet Station (SB),SR23001209,Weather Exposure,Riders getting wet at Bluebonnet Station (SB) during rain,2024-03-07,766,2.0986301369863014,2–3 years
+Bluebonnet Station (SB),SR23001160,Missing Shelter,Transit stop Bluebonnet Station (SB) needs shelter for rider protection,2024-03-09,764,2.0931506849315067,2–3 years
+Bluebonnet Station (SB),SR23001185,Missing Benches,No benches at Bluebonnet Station (SB) bus stop,2024-03-19,754,2.0657534246575344,2–3 years
+Bluebonnet Station (SB),SR23001197,Safety (Lighting),Transit stop Bluebonnet Station (SB) needs better lighting,2024-07-09,642,1.7589041095890412,1–2 years
+Bluebonnet Station (SB),SR23001219,Weather Exposure,Bus stop Bluebonnet Station (SB) exposed to extreme heat/sun,2024-08-09,611,1.673972602739726,1–2 years
+Bluebonnet Station (SB),SR23001208,Safety (Lighting),Transit stop Bluebonnet Station (SB) needs better lighting,2024-09-27,562,1.5397260273972602,1–2 years
+Bluebonnet Station (SB),SR23001147,Other,Riders have nowhere to sit at Bluebonnet Station (SB),2024-10-05,554,1.5178082191780822,1–2 years
+Bluebonnet Station (SB),SR23001146,Missing Shelter,Bus stop at Bluebonnet Station (SB) missing shelter - riders exposed to weather,2024-10-13,546,1.4958904109589042,1–2 years
+Bluebonnet Station (SB),SR23001179,Missing Benches,Missing seating at Bluebonnet Station (SB) transit stop,2024-10-14,545,1.4931506849315068,1–2 years
+Bluebonnet Station (SB),SR23001159,Safety Concerns,Request safety improvements at Bluebonnet Station (SB) stop,2024-11-07,521,1.4273972602739726,1–2 years
+Bluebonnet Station (SB),SR23001188,Missing Shelter,Transit stop Bluebonnet Station (SB) needs shelter for rider protection,2024-12-06,492,1.347945205479452,1–2 years
+Bluebonnet Station (SB),SR23001151,Missing Benches,No benches at Bluebonnet Station (SB) bus stop,2024-12-31,467,1.2794520547945205,1–2 years
+Bluebonnet Station (SB),SR23001167,Safety (Lighting),Transit stop Bluebonnet Station (SB) needs better lighting,2025-02-02,434,1.189041095890411,1–2 years
+Bluebonnet Station (SB),SR23001190,Weather Exposure,Riders getting wet at Bluebonnet Station (SB) during rain,2025-02-24,412,1.1287671232876713,1–2 years
+Bluebonnet Station (SB),SR23001145,Missing Benches,No benches at Bluebonnet Station (SB) bus stop,2025-02-26,410,1.1232876712328768,1–2 years
+Bluebonnet Station (SB),SR23001161,Missing Shelter,Transit stop Bluebonnet Station (SB) needs shelter for rider protection,2025-03-10,398,1.0904109589041096,1–2 years
+Bluebonnet Station (SB),SR23001216,Missing Shelter,No shelter at Bluebonnet Station (SB) transit stop,2025-03-17,391,1.0712328767123287,1–2 years
+Bluebonnet Station (SB),SR23001154,Missing Benches,No benches at Bluebonnet Station (SB) bus stop,2025-05-11,336,0.9205479452054794,< 1 year
+Bluebonnet Station (SB),SR23001207,Missing Shelter,No shelter at Bluebonnet Station (SB) transit stop,2025-05-20,327,0.8958904109589041,< 1 year
+Bluebonnet Station (SB),SR23001176,Missing Shelter,Transit stop Bluebonnet Station (SB) needs shelter for rider protection,2025-05-26,321,0.8794520547945206,< 1 year
+Bluebonnet Station (SB),SR23001153,Missing Benches,Missing seating at Bluebonnet Station (SB) transit stop,2025-06-07,309,0.8465753424657534,< 1 year
+Bluebonnet Station (SB),SR23001194,Missing Benches,Request bench installation at Bluebonnet Station (SB),2025-07-04,282,0.7726027397260274,< 1 year
+Bluebonnet Station (SB),SR23001186,Missing Shelter,Request shelter installation at Bluebonnet Station (SB),2025-07-18,268,0.7342465753424657,< 1 year
+Bluebonnet Station (SB),SR23001170,Missing Shelter,Request shelter installation at Bluebonnet Station (SB),2025-07-22,264,0.7232876712328767,< 1 year
+Bluebonnet Station (SB),SR23001163,Missing Shelter,No weather protection at Bluebonnet Station (SB) transit stop,2025-08-08,247,0.6767123287671233,< 1 year
+Bluebonnet Station (SB),SR23001169,Safety (Lighting),Transit stop Bluebonnet Station (SB) needs better lighting,2025-08-12,243,0.6657534246575343,< 1 year
+Bluebonnet Station (SB),SR23001172,Safety (Lighting),Safety concerns at Bluebonnet Station (SB) bus stop after dark,2025-08-21,234,0.6410958904109589,< 1 year
+Bluebonnet Station (SB),SR23001164,Missing Benches,No benches at Bluebonnet Station (SB) bus stop,2025-11-23,140,0.3835616438356164,< 1 year
+Bluebonnet Station (SB),SR23001148,Missing Benches,No benches at Bluebonnet Station (SB) bus stop,2025-12-06,127,0.347945205479452,< 1 year
+Bluebonnet Station (SB),SR23001183,Missing Shelter,Transit stop Bluebonnet Station (SB) needs shelter for rider protection,2026-01-03,99,0.2712328767123287,< 1 year
+Bluebonnet Station (SB),SR23001192,Missing Shelter,Transit stop Bluebonnet Station (SB) needs shelter for rider protection,2026-01-14,88,0.2410958904109589,< 1 year
+Bluebonnet Station (SB),SR23001166,Missing Shelter,Transit stop Bluebonnet Station (SB) needs weather shelter,2026-01-20,82,0.2246575342465753,< 1 year
+Bluebonnet Station (SB),SR23001198,Missing Shelter,No weather protection at Bluebonnet Station (SB) transit stop,2026-02-09,62,0.1698630136986301,< 1 year
+Bluebonnet Station (SB),SR23001203,Missing Benches,No benches at Bluebonnet Station (SB) bus stop,2026-02-25,46,0.1260273972602739,< 1 year
+Bluebonnet Station (SB),SR23001149,Safety (Lighting),Safety concerns at Bluebonnet Station (SB) bus stop after dark,2026-02-27,44,0.1205479452054794,< 1 year
+Bluebonnet Station (SB),SR23001199,Missing Shelter,No shelter at Bluebonnet Station (SB) transit stop,2026-03-28,15,0.0410958904109589,< 1 year
+Guadalupe/16th Street,SR23000175,Missing Benches,Missing seating at Guadalupe/16th Street transit stop,2023-01-18,1180,3.232876712328767,3+ years
+Guadalupe/16th Street,SR23000211,Missing Shelter,Bus stop at Guadalupe/16th Street missing shelter - riders exposed to weather,2023-01-19,1179,3.23013698630137,3+ years
+Guadalupe/16th Street,SR23000278,Missing Shelter,Request shelter installation at Guadalupe/16th Street,2023-01-31,1167,3.197260273972603,3+ years
+Guadalupe/16th Street,SR23000161,Sidewalk/ADA,Riders have nowhere to sit at Guadalupe/16th Street,2023-02-10,1157,3.16986301369863,3+ years
+Guadalupe/16th Street,SR23000221,Weather Exposure,Riders getting wet at Guadalupe/16th Street during rain,2023-02-19,1148,3.1452054794520548,3+ years
+Guadalupe/16th Street,SR23000272,Safety (Lighting),Transit stop Guadalupe/16th Street needs better lighting,2023-02-22,1145,3.136986301369863,3+ years
+Guadalupe/16th Street,SR23000193,Missing Benches,Missing seating at Guadalupe/16th Street transit stop,2023-03-01,1138,3.117808219178082,3+ years
+Guadalupe/16th Street,SR23000162,Missing Shelter,Transit stop Guadalupe/16th Street needs shelter for rider protection,2023-03-09,1130,3.095890410958904,3+ years
+Guadalupe/16th Street,SR23000258,Missing Shelter,No shelter at Guadalupe/16th Street transit stop,2023-03-21,1118,3.063013698630137,3+ years
+Guadalupe/16th Street,SR23000171,Missing Shelter,Transit stop Guadalupe/16th Street needs weather shelter,2023-04-20,1088,2.9808219178082194,2–3 years
+Guadalupe/16th Street,SR23000185,Missing Shelter,Request shelter installation at Guadalupe/16th Street,2023-06-05,1042,2.8547945205479452,2–3 years
+Guadalupe/16th Street,SR23000191,Missing Shelter,Request shelter installation at Guadalupe/16th Street,2023-06-17,1030,2.8219178082191783,2–3 years
+Guadalupe/16th Street,SR23000196,Missing Shelter,No weather protection at Guadalupe/16th Street transit stop,2023-06-19,1028,2.8164383561643835,2–3 years
+Guadalupe/16th Street,SR23000163,Missing Shelter,Transit stop Guadalupe/16th Street needs weather shelter,2023-06-22,1025,2.808219178082192,2–3 years
+Guadalupe/16th Street,SR23000236,Missing Shelter,Request shelter installation at Guadalupe/16th Street,2023-07-03,1014,2.778082191780822,2–3 years
+Guadalupe/16th Street,SR23000187,Missing Benches,No benches at Guadalupe/16th Street bus stop,2023-07-05,1012,2.7726027397260276,2–3 years
+Guadalupe/16th Street,SR23000144,Missing Shelter,Bus stop at Guadalupe/16th Street missing shelter - riders exposed to weather,2023-07-14,1003,2.747945205479452,2–3 years
+Guadalupe/16th Street,SR23000240,Safety Concerns,Request safety improvements at Guadalupe/16th Street stop,2023-07-22,995,2.7260273972602738,2–3 years
+Guadalupe/16th Street,SR23000176,Missing Shelter,Bus stop at Guadalupe/16th Street missing shelter - riders exposed to weather,2023-07-24,993,2.7205479452054795,2–3 years
+Guadalupe/16th Street,SR23000242,Missing Shelter,Transit stop Guadalupe/16th Street needs shelter for rider protection,2023-07-30,987,2.704109589041096,2–3 years
+Guadalupe/16th Street,SR23000155,Missing Shelter,Transit stop Guadalupe/16th Street needs shelter for rider protection,2023-08-09,977,2.6767123287671235,2–3 years
+Guadalupe/16th Street,SR23000173,Weather Exposure,Bus stop Guadalupe/16th Street exposed to extreme heat/sun,2023-08-28,958,2.624657534246575,2–3 years
+Guadalupe/16th Street,SR23000264,Missing Shelter,Transit stop Guadalupe/16th Street needs shelter for rider protection,2023-10-02,923,2.5287671232876714,2–3 years
+Guadalupe/16th Street,SR23000261,Missing Shelter,No shelter at Guadalupe/16th Street transit stop,2023-10-06,919,2.5178082191780824,2–3 years
+Guadalupe/16th Street,SR23000182,Missing Shelter,Bus stop at Guadalupe/16th Street missing shelter - riders exposed to weather,2023-10-13,912,2.4986301369863013,2–3 years
+Guadalupe/16th Street,SR23000149,Sidewalk/ADA,Riders have nowhere to sit at Guadalupe/16th Street,2023-11-04,890,2.4383561643835616,2–3 years
+Guadalupe/16th Street,SR23000152,Missing Shelter,Bus stop at Guadalupe/16th Street missing shelter - riders exposed to weather,2023-11-12,882,2.4164383561643836,2–3 years
+Guadalupe/16th Street,SR23000220,Missing Benches,Missing seating at Guadalupe/16th Street transit stop,2023-11-14,880,2.410958904109589,2–3 years
+Guadalupe/16th Street,SR23000170,Sidewalk/ADA,Riders have nowhere to sit at Guadalupe/16th Street,2023-11-26,868,2.378082191780822,2–3 years
+Guadalupe/16th Street,SR23000277,Missing Shelter,Transit stop Guadalupe/16th Street needs shelter for rider protection,2023-11-28,866,2.372602739726027,2–3 years
+Guadalupe/16th Street,SR23000166,Missing Shelter,No weather protection at Guadalupe/16th Street transit stop,2023-12-13,851,2.331506849315069,2–3 years
+Guadalupe/16th Street,SR23000207,Missing Shelter,No shelter at Guadalupe/16th Street transit stop,2023-12-17,847,2.3205479452054796,2–3 years
+Guadalupe/16th Street,SR23000165,Sidewalk/ADA,Riders have nowhere to sit at Guadalupe/16th Street,2024-01-01,832,2.2794520547945205,2–3 years
+Guadalupe/16th Street,SR23000147,Missing Benches,Request bench installation at Guadalupe/16th Street,2024-01-17,816,2.2356164383561645,2–3 years
+Guadalupe/16th Street,SR23000228,Sidewalk/ADA,Riders have nowhere to sit at Guadalupe/16th Street,2024-02-06,796,2.180821917808219,2–3 years
+Guadalupe/16th Street,SR23000186,Missing Shelter,Bus stop at Guadalupe/16th Street missing shelter - riders exposed to weather,2024-02-07,795,2.1780821917808217,2–3 years
+Guadalupe/16th Street,SR23000212,Missing Shelter,Transit stop Guadalupe/16th Street needs shelter for rider protection,2024-02-07,795,2.1780821917808217,2–3 years
+Guadalupe/16th Street,SR23000172,Sidewalk/ADA,Riders have nowhere to sit at Guadalupe/16th Street,2024-02-19,783,2.1452054794520548,2–3 years
+Guadalupe/16th Street,SR23000217,Missing Benches,Missing seating at Guadalupe/16th Street transit stop,2024-03-03,770,2.1095890410958904,2–3 years
+Guadalupe/16th Street,SR23000200,Missing Shelter,Request shelter installation at Guadalupe/16th Street,2024-03-16,757,2.073972602739726,2–3 years
+Guadalupe/16th Street,SR23000183,Missing Shelter,Bus stop at Guadalupe/16th Street missing shelter - riders exposed to weather,2024-03-26,747,2.0465753424657533,2–3 years
+Guadalupe/16th Street,SR23000219,Missing Benches,Request bench installation at Guadalupe/16th Street,2024-04-03,739,2.0246575342465754,2–3 years
+Guadalupe/16th Street,SR23000145,Missing Shelter,Request shelter installation at Guadalupe/16th Street,2024-04-04,738,2.021917808219178,2–3 years
+Guadalupe/16th Street,SR23000262,Missing Benches,Request bench installation at Guadalupe/16th Street,2024-04-12,730,2.0,2–3 years
+Guadalupe/16th Street,SR23000189,Safety (Lighting),Transit stop Guadalupe/16th Street needs better lighting,2024-04-12,730,2.0,2–3 years
+Guadalupe/16th Street,SR23000271,Missing Shelter,Bus stop at Guadalupe/16th Street missing shelter - riders exposed to weather,2024-04-16,726,1.989041095890411,1–2 years
+Guadalupe/16th Street,SR23000169,Safety Concerns,Request safety improvements at Guadalupe/16th Street stop,2024-04-26,716,1.9616438356164383,1–2 years
+Guadalupe/16th Street,SR23000157,Missing Shelter,Bus stop at Guadalupe/16th Street missing shelter - riders exposed to weather,2024-05-12,700,1.917808219178082,1–2 years
+Guadalupe/16th Street,SR23000218,Weather Exposure,Bus stop Guadalupe/16th Street exposed to extreme heat/sun,2024-05-15,697,1.9095890410958904,1–2 years
+Guadalupe/16th Street,SR23000177,Missing Benches,Request bench installation at Guadalupe/16th Street,2024-05-23,689,1.887671232876712,1–2 years
+Guadalupe/16th Street,SR23000158,Missing Shelter,Request shelter installation at Guadalupe/16th Street,2024-06-02,679,1.8602739726027395,1–2 years
+Guadalupe/16th Street,SR23000276,Safety Concerns,Request safety improvements at Guadalupe/16th Street stop,2024-06-09,672,1.841095890410959,1–2 years
+Guadalupe/16th Street,SR23000230,Missing Shelter,Bus stop at Guadalupe/16th Street missing shelter - riders exposed to weather,2024-06-17,664,1.819178082191781,1–2 years
+Guadalupe/16th Street,SR23000179,Missing Shelter,Transit stop Guadalupe/16th Street needs shelter for rider protection,2024-06-28,653,1.789041095890411,1–2 years
+Guadalupe/16th Street,SR23000168,Missing Benches,No benches at Guadalupe/16th Street bus stop,2024-07-03,648,1.7753424657534247,1–2 years
+Guadalupe/16th Street,SR23000235,Missing Benches,Missing seating at Guadalupe/16th Street transit stop,2024-07-07,644,1.7643835616438357,1–2 years
+Guadalupe/16th Street,SR23000167,Safety Concerns,Request safety improvements at Guadalupe/16th Street stop,2024-07-07,644,1.7643835616438357,1–2 years
+Guadalupe/16th Street,SR23000194,Missing Benches,No benches at Guadalupe/16th Street bus stop,2024-07-18,633,1.7342465753424658,1–2 years
+Guadalupe/16th Street,SR23000233,Missing Shelter,Transit stop Guadalupe/16th Street needs shelter for rider protection,2024-08-11,609,1.6684931506849314,1–2 years
+Guadalupe/16th Street,SR23000265,Missing Shelter,Request shelter installation at Guadalupe/16th Street,2024-08-14,606,1.6602739726027398,1–2 years
+Guadalupe/16th Street,SR23000275,Missing Benches,No benches at Guadalupe/16th Street bus stop,2024-08-16,604,1.6547945205479453,1–2 years
+Guadalupe/16th Street,SR23000206,Safety Concerns,Request safety improvements at Guadalupe/16th Street stop,2024-09-04,585,1.6027397260273972,1–2 years
+Guadalupe/16th Street,SR23000192,Missing Shelter,No shelter at Guadalupe/16th Street transit stop,2024-09-08,581,1.5917808219178082,1–2 years
+Guadalupe/16th Street,SR23000251,Missing Benches,Missing seating at Guadalupe/16th Street transit stop,2024-09-13,576,1.578082191780822,1–2 years
+Guadalupe/16th Street,SR23000231,Missing Benches,Request bench installation at Guadalupe/16th Street,2024-09-18,571,1.5643835616438355,1–2 years
+Guadalupe/16th Street,SR23000197,Missing Shelter,No shelter at Guadalupe/16th Street transit stop,2024-09-19,570,1.5616438356164384,1–2 years
+Guadalupe/16th Street,SR23000266,Missing Shelter,Transit stop Guadalupe/16th Street needs weather shelter,2024-09-27,562,1.5397260273972602,1–2 years
+Guadalupe/16th Street,SR23000178,Missing Shelter,No shelter at Guadalupe/16th Street transit stop,2024-10-01,558,1.5287671232876712,1–2 years
+Guadalupe/16th Street,SR23000195,Missing Shelter,Bus stop at Guadalupe/16th Street missing shelter - riders exposed to weather,2024-10-05,554,1.5178082191780822,1–2 years
+Guadalupe/16th Street,SR23000259,Missing Shelter,No shelter at Guadalupe/16th Street transit stop,2024-10-29,530,1.452054794520548,1–2 years
+Guadalupe/16th Street,SR23000250,Missing Benches,Missing seating at Guadalupe/16th Street transit stop,2024-11-11,517,1.4164383561643836,1–2 years
+Guadalupe/16th Street,SR23000239,Safety Concerns,Feeling unsafe waiting at Guadalupe/16th Street,2024-11-14,514,1.4082191780821918,1–2 years
+Guadalupe/16th Street,SR23000208,Missing Shelter,Transit stop Guadalupe/16th Street needs shelter for rider protection,2024-12-09,489,1.3397260273972602,1–2 years
+Guadalupe/16th Street,SR23000253,Missing Shelter,Request shelter installation at Guadalupe/16th Street,2025-01-07,460,1.2602739726027397,1–2 years
+Guadalupe/16th Street,SR23000232,Safety (Lighting),Transit stop Guadalupe/16th Street needs better lighting,2025-01-14,453,1.2410958904109588,1–2 years
+Guadalupe/16th Street,SR23000199,Safety (Lighting),Transit stop Guadalupe/16th Street needs better lighting,2025-02-06,430,1.178082191780822,1–2 years
+Guadalupe/16th Street,SR23000227,Safety Concerns,Feeling unsafe waiting at Guadalupe/16th Street,2025-02-08,428,1.1726027397260277,1–2 years
+Guadalupe/16th Street,SR23000215,Sidewalk/ADA,Riders have nowhere to sit at Guadalupe/16th Street,2025-02-11,425,1.1643835616438356,1–2 years
+Guadalupe/16th Street,SR23000154,Missing Shelter,Request shelter installation at Guadalupe/16th Street,2025-02-19,417,1.1424657534246576,1–2 years
+Guadalupe/16th Street,SR23000243,Missing Shelter,Transit stop Guadalupe/16th Street needs weather shelter,2025-03-05,403,1.104109589041096,1–2 years
+Guadalupe/16th Street,SR23000224,Missing Shelter,Transit stop Guadalupe/16th Street needs shelter for rider protection,2025-03-27,381,1.0438356164383562,1–2 years
+Guadalupe/16th Street,SR23000252,Missing Shelter,Transit stop Guadalupe/16th Street needs weather shelter,2025-03-30,378,1.0356164383561643,1–2 years
+Guadalupe/16th Street,SR23000248,Missing Benches,No benches at Guadalupe/16th Street bus stop,2025-04-07,370,1.0136986301369864,1–2 years
+Guadalupe/16th Street,SR23000174,Missing Shelter,Transit stop Guadalupe/16th Street needs shelter for rider protection,2025-04-07,370,1.0136986301369864,1–2 years
+Guadalupe/16th Street,SR23000203,Missing Benches,No benches at Guadalupe/16th Street bus stop,2025-05-13,334,0.915068493150685,< 1 year
+Guadalupe/16th Street,SR23000181,Missing Benches,Missing seating at Guadalupe/16th Street transit stop,2025-05-25,322,0.8821917808219178,< 1 year
+Guadalupe/16th Street,SR23000234,Missing Benches,No benches at Guadalupe/16th Street bus stop,2025-05-31,316,0.8657534246575342,< 1 year
+Guadalupe/16th Street,SR23000210,Missing Shelter,No shelter at Guadalupe/16th Street transit stop,2025-06-18,298,0.8164383561643835,< 1 year
+Guadalupe/16th Street,SR23000267,Missing Shelter,Transit stop Guadalupe/16th Street needs weather shelter,2025-06-18,298,0.8164383561643835,< 1 year
+Guadalupe/16th Street,SR23000146,Missing Shelter,Transit stop Guadalupe/16th Street needs weather shelter,2025-07-05,281,0.7698630136986301,< 1 year
+Guadalupe/16th Street,SR23000257,Missing Shelter,Bus stop at Guadalupe/16th Street missing shelter - riders exposed to weather,2025-07-08,278,0.7616438356164383,< 1 year
+Guadalupe/16th Street,SR23000148,Missing Shelter,No shelter at Guadalupe/16th Street transit stop,2025-07-15,271,0.7424657534246575,< 1 year
+Guadalupe/16th Street,SR23000188,Missing Benches,No benches at Guadalupe/16th Street bus stop,2025-07-17,269,0.736986301369863,< 1 year
+Guadalupe/16th Street,SR23000238,Missing Shelter,Transit stop Guadalupe/16th Street needs shelter for rider protection,2025-08-02,253,0.6931506849315069,< 1 year
+Guadalupe/16th Street,SR23000190,Missing Shelter,No shelter at Guadalupe/16th Street transit stop,2025-08-26,229,0.6273972602739726,< 1 year
+Guadalupe/16th Street,SR23000247,Safety Concerns,Request safety improvements at Guadalupe/16th Street stop,2025-08-28,227,0.6219178082191781,< 1 year
+Guadalupe/16th Street,SR23000270,Missing Shelter,Transit stop Guadalupe/16th Street needs shelter for rider protection,2025-09-07,217,0.5945205479452055,< 1 year
+Guadalupe/16th Street,SR23000164,Safety (Lighting),Transit stop Guadalupe/16th Street needs better lighting,2025-09-17,207,0.5671232876712329,< 1 year
+Guadalupe/16th Street,SR23000273,Missing Shelter,Transit stop Guadalupe/16th Street needs weather shelter,2025-09-18,206,0.5643835616438356,< 1 year
+Guadalupe/16th Street,SR23000201,Safety Concerns,Feeling unsafe waiting at Guadalupe/16th Street,2025-10-06,188,0.5150684931506849,< 1 year
+Guadalupe/16th Street,SR23000214,Missing Shelter,No shelter at Guadalupe/16th Street transit stop,2025-11-01,162,0.4438356164383562,< 1 year
+Guadalupe/16th Street,SR23000213,Missing Benches,Missing seating at Guadalupe/16th Street transit stop,2025-11-02,161,0.4410958904109589,< 1 year
+Guadalupe/16th Street,SR23000268,Missing Benches,Request bench installation at Guadalupe/16th Street,2025-11-25,138,0.3780821917808219,< 1 year
+Guadalupe/16th Street,SR23000237,Missing Shelter,No shelter at Guadalupe/16th Street transit stop,2025-12-01,132,0.3616438356164383,< 1 year
+Guadalupe/16th Street,SR23000150,Missing Shelter,Transit stop Guadalupe/16th Street needs shelter for rider protection,2026-01-09,93,0.2547945205479452,< 1 year
+Guadalupe/16th Street,SR23000254,Missing Benches,Request bench installation at Guadalupe/16th Street,2026-01-18,84,0.2301369863013698,< 1 year
+Guadalupe/16th Street,SR23000209,Missing Shelter,No weather protection at Guadalupe/16th Street transit stop,2026-01-18,84,0.2301369863013698,< 1 year
+Guadalupe/16th Street,SR23000180,Missing Shelter,Bus stop at Guadalupe/16th Street missing shelter - riders exposed to weather,2026-01-21,81,0.2219178082191781,< 1 year
+Guadalupe/16th Street,SR23000229,Missing Benches,No benches at Guadalupe/16th Street bus stop,2026-01-28,74,0.2027397260273972,< 1 year
+Guadalupe/16th Street,SR23000225,Missing Shelter,Transit stop Guadalupe/16th Street needs shelter for rider protection,2026-02-05,66,0.1808219178082191,< 1 year
+Guadalupe/16th Street,SR23000151,Missing Shelter,No shelter at Guadalupe/16th Street transit stop,2026-02-11,60,0.1643835616438356,< 1 year
+Guadalupe/16th Street,SR23000245,Missing Shelter,No shelter at Guadalupe/16th Street transit stop,2026-02-23,48,0.1315068493150684,< 1 year
+Guadalupe/16th Street,SR23000204,Missing Shelter,Request shelter installation at Guadalupe/16th Street,2026-03-13,30,0.0821917808219178,< 1 year
+Guadalupe/16th Street,SR23000269,Safety (Lighting),Safety concerns at Guadalupe/16th Street bus stop after dark,2026-03-21,22,0.0602739726027397,< 1 year
+Guadalupe/16th Street,SR23000160,Missing Benches,Missing seating at Guadalupe/16th Street transit stop,2026-03-25,18,0.0493150684931506,< 1 year
+Guadalupe/16th Street,SR23000241,Sidewalk/ADA,Riders have nowhere to sit at Guadalupe/16th Street,2026-03-29,14,0.0383561643835616,< 1 year
+Guadalupe/4th,SR23000741,Missing Benches,No benches at Guadalupe/4th bus stop,2023-01-06,1192,3.265753424657534,3+ years
+Guadalupe/4th,SR23000729,Missing Benches,No benches at Guadalupe/4th bus stop,2023-01-09,1189,3.2575342465753425,3+ years
+Guadalupe/4th,SR23000727,Missing Shelter,Bus stop at Guadalupe/4th missing shelter - riders exposed to weather,2023-01-26,1172,3.210958904109589,3+ years
+Guadalupe/4th,SR23000791,Missing Benches,Request bench installation at Guadalupe/4th,2023-02-17,1150,3.1506849315068495,3+ years
+Guadalupe/4th,SR23000793,Missing Shelter,Transit stop Guadalupe/4th needs shelter for rider protection,2023-03-08,1131,3.0986301369863014,3+ years
+Guadalupe/4th,SR23000805,Safety Concerns,Request safety improvements at Guadalupe/4th stop,2023-03-15,1124,3.0794520547945203,3+ years
+Guadalupe/4th,SR23000766,Missing Shelter,Bus stop at Guadalupe/4th missing shelter - riders exposed to weather,2023-05-30,1048,2.871232876712329,2–3 years
+Guadalupe/4th,SR23000811,Missing Benches,Missing seating at Guadalupe/4th transit stop,2023-06-13,1034,2.8328767123287673,2–3 years
+Guadalupe/4th,SR23000722,Missing Benches,Missing seating at Guadalupe/4th transit stop,2023-06-23,1024,2.8054794520547945,2–3 years
+Guadalupe/4th,SR23000740,Missing Benches,No benches at Guadalupe/4th bus stop,2023-06-24,1023,2.802739726027397,2–3 years
+Guadalupe/4th,SR23000728,Missing Shelter,Transit stop Guadalupe/4th needs shelter for rider protection,2023-08-20,966,2.6465753424657534,2–3 years
+Guadalupe/4th,SR23000724,Missing Benches,Missing seating at Guadalupe/4th transit stop,2023-09-05,950,2.6027397260273974,2–3 years
+Guadalupe/4th,SR23000735,Missing Shelter,Transit stop Guadalupe/4th needs weather shelter,2023-10-05,920,2.5205479452054793,2–3 years
+Guadalupe/4th,SR23000720,Sidewalk/ADA,Riders have nowhere to sit at Guadalupe/4th,2023-10-22,903,2.473972602739726,2–3 years
+Guadalupe/4th,SR23000743,Missing Shelter,Bus stop at Guadalupe/4th missing shelter - riders exposed to weather,2023-10-23,902,2.4712328767123286,2–3 years
+Guadalupe/4th,SR23000758,Missing Benches,No benches at Guadalupe/4th bus stop,2023-11-07,887,2.43013698630137,2–3 years
+Guadalupe/4th,SR23000779,Missing Shelter,Transit stop Guadalupe/4th needs weather shelter,2023-11-28,866,2.372602739726027,2–3 years
+Guadalupe/4th,SR23000781,Missing Shelter,No shelter at Guadalupe/4th transit stop,2023-12-20,844,2.3123287671232875,2–3 years
+Guadalupe/4th,SR23000750,Missing Benches,Missing seating at Guadalupe/4th transit stop,2023-12-31,833,2.282191780821918,2–3 years
+Guadalupe/4th,SR23000773,Missing Shelter,Transit stop Guadalupe/4th needs weather shelter,2024-01-19,814,2.23013698630137,2–3 years
+Guadalupe/4th,SR23000753,Sidewalk/ADA,Riders have nowhere to sit at Guadalupe/4th,2024-02-12,790,2.164383561643836,2–3 years
+Guadalupe/4th,SR23000795,Missing Shelter,Bus stop at Guadalupe/4th missing shelter - riders exposed to weather,2024-03-24,749,2.052054794520548,2–3 years
+Guadalupe/4th,SR23000808,Sidewalk/ADA,Riders have nowhere to sit at Guadalupe/4th,2024-04-30,712,1.9506849315068493,1–2 years
+Guadalupe/4th,SR23000754,Missing Benches,Request bench installation at Guadalupe/4th,2024-05-02,710,1.9452054794520548,1–2 years
+Guadalupe/4th,SR23000807,Missing Benches,Request bench installation at Guadalupe/4th,2024-05-08,704,1.9287671232876713,1–2 years
+Guadalupe/4th,SR23000736,Missing Benches,Missing seating at Guadalupe/4th transit stop,2024-05-17,695,1.904109589041096,1–2 years
+Guadalupe/4th,SR23000737,Missing Shelter,No weather protection at Guadalupe/4th transit stop,2024-05-20,692,1.895890410958904,1–2 years
+Guadalupe/4th,SR23000760,Missing Shelter,No weather protection at Guadalupe/4th transit stop,2024-05-21,691,1.893150684931507,1–2 years
+Guadalupe/4th,SR23000768,Sidewalk/ADA,Riders have nowhere to sit at Guadalupe/4th,2024-05-27,685,1.8767123287671232,1–2 years
+Guadalupe/4th,SR23000775,Sidewalk/ADA,Riders have nowhere to sit at Guadalupe/4th,2024-06-01,680,1.8630136986301369,1–2 years
+Guadalupe/4th,SR23000747,Missing Shelter,No weather protection at Guadalupe/4th transit stop,2024-06-06,675,1.8493150684931507,1–2 years
+Guadalupe/4th,SR23000782,Missing Shelter,Bus stop at Guadalupe/4th missing shelter - riders exposed to weather,2024-07-06,645,1.7671232876712328,1–2 years
+Guadalupe/4th,SR23000752,Missing Shelter,No shelter at Guadalupe/4th transit stop,2024-07-27,624,1.7095890410958905,1–2 years
+Guadalupe/4th,SR23000756,Missing Benches,No benches at Guadalupe/4th bus stop,2024-07-30,621,1.7013698630136986,1–2 years
+Guadalupe/4th,SR23000746,Missing Shelter,No shelter at Guadalupe/4th transit stop,2024-08-23,597,1.6356164383561644,1–2 years
+Guadalupe/4th,SR23000794,Safety Concerns,Request safety improvements at Guadalupe/4th stop,2024-08-25,595,1.63013698630137,1–2 years
+Guadalupe/4th,SR23000721,Missing Benches,No benches at Guadalupe/4th bus stop,2024-10-17,542,1.484931506849315,1–2 years
+Guadalupe/4th,SR23000786,Safety Concerns,Feeling unsafe waiting at Guadalupe/4th,2024-10-22,537,1.4712328767123288,1–2 years
+Guadalupe/4th,SR23000788,Missing Shelter,Transit stop Guadalupe/4th needs shelter for rider protection,2024-11-12,516,1.4136986301369865,1–2 years
+Guadalupe/4th,SR23000806,Safety Concerns,Request safety improvements at Guadalupe/4th stop,2025-01-19,448,1.227397260273973,1–2 years
+Guadalupe/4th,SR23000785,Safety (Lighting),Transit stop Guadalupe/4th needs better lighting,2025-02-01,435,1.1917808219178083,1–2 years
+Guadalupe/4th,SR23000739,Sidewalk/ADA,Riders have nowhere to sit at Guadalupe/4th,2025-03-02,406,1.1123287671232878,1–2 years
+Guadalupe/4th,SR23000734,Missing Benches,Request bench installation at Guadalupe/4th,2025-03-16,392,1.073972602739726,1–2 years
+Guadalupe/4th,SR23000792,Missing Shelter,No shelter at Guadalupe/4th transit stop,2025-03-17,391,1.0712328767123287,1–2 years
+Guadalupe/4th,SR23000799,Missing Shelter,No shelter at Guadalupe/4th transit stop,2025-03-18,390,1.0684931506849316,1–2 years
+Guadalupe/4th,SR23000784,Missing Shelter,Request shelter installation at Guadalupe/4th,2025-03-24,384,1.0520547945205478,1–2 years
+Guadalupe/4th,SR23000809,Missing Shelter,Request shelter installation at Guadalupe/4th,2025-03-27,381,1.0438356164383562,1–2 years
+Guadalupe/4th,SR23000769,Missing Shelter,Transit stop Guadalupe/4th needs weather shelter,2025-04-11,366,1.0027397260273974,1–2 years
+Guadalupe/4th,SR23000804,Weather Exposure,Riders getting wet at Guadalupe/4th during rain,2025-04-18,359,0.9835616438356164,< 1 year
+Guadalupe/4th,SR23000801,Safety (Lighting),Transit stop Guadalupe/4th needs better lighting,2025-05-07,340,0.9315068493150684,< 1 year
+Guadalupe/4th,SR23000731,Missing Shelter,No shelter at Guadalupe/4th transit stop,2025-05-08,339,0.9287671232876712,< 1 year
+Guadalupe/4th,SR23000772,Missing Benches,Request bench installation at Guadalupe/4th,2025-06-01,315,0.863013698630137,< 1 year
+Guadalupe/4th,SR23000797,Missing Benches,Request bench installation at Guadalupe/4th,2025-06-11,305,0.8356164383561644,< 1 year
+Guadalupe/4th,SR23000767,Missing Shelter,No shelter at Guadalupe/4th transit stop,2025-06-13,303,0.8301369863013699,< 1 year
+Guadalupe/4th,SR23000771,Missing Benches,Missing seating at Guadalupe/4th transit stop,2025-06-15,301,0.8246575342465754,< 1 year
+Guadalupe/4th,SR23000751,Missing Benches,Request bench installation at Guadalupe/4th,2025-06-23,293,0.8027397260273973,< 1 year
+Guadalupe/4th,SR23000748,Missing Benches,Missing seating at Guadalupe/4th transit stop,2025-07-08,278,0.7616438356164383,< 1 year
+Guadalupe/4th,SR23000810,Missing Shelter,No shelter at Guadalupe/4th transit stop,2025-07-25,261,0.7150684931506849,< 1 year
+Guadalupe/4th,SR23000787,Missing Shelter,Transit stop Guadalupe/4th needs shelter for rider protection,2025-08-09,246,0.673972602739726,< 1 year
+Guadalupe/4th,SR23000744,Missing Benches,Request bench installation at Guadalupe/4th,2025-10-09,185,0.5068493150684932,< 1 year
+Guadalupe/4th,SR23000733,Missing Benches,Request bench installation at Guadalupe/4th,2025-11-05,158,0.4328767123287671,< 1 year
+Guadalupe/4th,SR23000798,Missing Shelter,Transit stop Guadalupe/4th needs weather shelter,2025-11-12,151,0.4136986301369863,< 1 year
+Guadalupe/4th,SR23000796,Safety (Lighting),Safety concerns at Guadalupe/4th bus stop after dark,2025-12-03,130,0.3561643835616438,< 1 year
+Guadalupe/4th,SR23000774,Missing Shelter,Request shelter installation at Guadalupe/4th,2025-12-07,126,0.3452054794520548,< 1 year
+Guadalupe/4th,SR23000778,Weather Exposure,Bus stop Guadalupe/4th exposed to extreme heat/sun,2025-12-09,124,0.3397260273972602,< 1 year
+Guadalupe/4th,SR23000761,Safety (Lighting),Safety concerns at Guadalupe/4th bus stop after dark,2025-12-13,120,0.3287671232876712,< 1 year
+Guadalupe/4th,SR23000764,Missing Shelter,No shelter at Guadalupe/4th transit stop,2025-12-18,115,0.3150684931506849,< 1 year
+Guadalupe/4th,SR23000759,Missing Shelter,Bus stop at Guadalupe/4th missing shelter - riders exposed to weather,2025-12-22,111,0.3041095890410959,< 1 year
+Guadalupe/4th,SR23000755,Missing Shelter,Request shelter installation at Guadalupe/4th,2025-12-23,110,0.3013698630136986,< 1 year
+Guadalupe/4th,SR23000730,Weather Exposure,Bus stop Guadalupe/4th exposed to extreme heat/sun,2026-01-11,91,0.2493150684931507,< 1 year
+Guadalupe/4th,SR23000745,Missing Shelter,Transit stop Guadalupe/4th needs shelter for rider protection,2026-01-16,86,0.2356164383561644,< 1 year
+Guadalupe/4th,SR23000780,Missing Benches,Request bench installation at Guadalupe/4th,2026-01-18,84,0.2301369863013698,< 1 year
+Guadalupe/4th,SR23000765,Weather Exposure,Riders getting wet at Guadalupe/4th during rain,2026-01-30,72,0.1972602739726027,< 1 year
+Guadalupe/4th,SR23000732,Sidewalk/ADA,Riders have nowhere to sit at Guadalupe/4th,2026-03-09,34,0.0931506849315068,< 1 year
+Guadalupe/4th,SR23000742,Missing Shelter,Request shelter installation at Guadalupe/4th,2026-04-08,4,0.010958904109589,< 1 year
+Guadalupe/W. 21st Street,SR23000455,Weather Exposure,Bus stop Guadalupe/W. 21st Street exposed to extreme heat/sun,2023-01-28,1170,3.2054794520547945,3+ years
+Guadalupe/W. 21st Street,SR23000437,Missing Shelter,No weather protection at Guadalupe/W. 21st Street transit stop,2023-01-31,1167,3.197260273972603,3+ years
+Guadalupe/W. 21st Street,SR23000505,Missing Benches,Request bench installation at Guadalupe/W. 21st Street,2023-02-06,1161,3.180821917808219,3+ years
+Guadalupe/W. 21st Street,SR23000507,Sidewalk/ADA,Riders have nowhere to sit at Guadalupe/W. 21st Street,2023-02-08,1159,3.175342465753425,3+ years
+Guadalupe/W. 21st Street,SR23000428,Missing Shelter,Request shelter installation at Guadalupe/W. 21st Street,2023-02-28,1139,3.1205479452054794,3+ years
+Guadalupe/W. 21st Street,SR23000415,Sidewalk/ADA,Riders have nowhere to sit at Guadalupe/W. 21st Street,2023-03-22,1117,3.0602739726027397,3+ years
+Guadalupe/W. 21st Street,SR23000520,Missing Shelter,Request shelter installation at Guadalupe/W. 21st Street,2023-04-05,1103,3.021917808219178,3+ years
+Guadalupe/W. 21st Street,SR23000475,Missing Shelter,No shelter at Guadalupe/W. 21st Street transit stop,2023-04-20,1088,2.9808219178082194,2–3 years
+Guadalupe/W. 21st Street,SR23000448,Missing Benches,Missing seating at Guadalupe/W. 21st Street transit stop,2023-05-14,1064,2.915068493150685,2–3 years
+Guadalupe/W. 21st Street,SR23000482,Missing Shelter,Request shelter installation at Guadalupe/W. 21st Street,2023-05-15,1063,2.9123287671232876,2–3 years
+Guadalupe/W. 21st Street,SR23000522,Missing Shelter,No shelter at Guadalupe/W. 21st Street transit stop,2023-05-22,1056,2.893150684931507,2–3 years
+Guadalupe/W. 21st Street,SR23000443,Sidewalk/ADA,Riders have nowhere to sit at Guadalupe/W. 21st Street,2023-06-11,1036,2.8383561643835615,2–3 years
+Guadalupe/W. 21st Street,SR23000425,Missing Benches,No benches at Guadalupe/W. 21st Street bus stop,2023-07-19,998,2.734246575342466,2–3 years
+Guadalupe/W. 21st Street,SR23000491,Missing Benches,No benches at Guadalupe/W. 21st Street bus stop,2023-07-20,997,2.7315068493150685,2–3 years
+Guadalupe/W. 21st Street,SR23000418,Missing Shelter,No shelter at Guadalupe/W. 21st Street transit stop,2023-08-08,978,2.6794520547945204,2–3 years
+Guadalupe/W. 21st Street,SR23000450,Weather Exposure,Bus stop Guadalupe/W. 21st Street exposed to extreme heat/sun,2023-08-09,977,2.6767123287671235,2–3 years
+Guadalupe/W. 21st Street,SR23000419,Weather Exposure,Riders getting wet at Guadalupe/W. 21st Street during rain,2023-08-10,976,2.673972602739726,2–3 years
+Guadalupe/W. 21st Street,SR23000514,Missing Shelter,No shelter at Guadalupe/W. 21st Street transit stop,2023-08-13,973,2.665753424657534,2–3 years
+Guadalupe/W. 21st Street,SR23000435,Missing Shelter,No weather protection at Guadalupe/W. 21st Street transit stop,2023-08-15,971,2.66027397260274,2–3 years
+Guadalupe/W. 21st Street,SR23000462,Missing Benches,Request bench installation at Guadalupe/W. 21st Street,2023-08-22,964,2.6410958904109587,2–3 years
+Guadalupe/W. 21st Street,SR23000422,Missing Shelter,No shelter at Guadalupe/W. 21st Street transit stop,2023-08-31,955,2.6164383561643834,2–3 years
+Guadalupe/W. 21st Street,SR23000488,Missing Benches,Request bench installation at Guadalupe/W. 21st Street,2023-09-04,951,2.6054794520547944,2–3 years
+Guadalupe/W. 21st Street,SR23000487,Sidewalk/ADA,Riders have nowhere to sit at Guadalupe/W. 21st Street,2023-09-23,932,2.5534246575342467,2–3 years
+Guadalupe/W. 21st Street,SR23000478,Missing Benches,Missing seating at Guadalupe/W. 21st Street transit stop,2023-10-07,918,2.515068493150685,2–3 years
+Guadalupe/W. 21st Street,SR23000483,Missing Benches,Request bench installation at Guadalupe/W. 21st Street,2023-10-09,916,2.5095890410958903,2–3 years
+Guadalupe/W. 21st Street,SR23000508,Weather Exposure,Bus stop Guadalupe/W. 21st Street exposed to extreme heat/sun,2023-11-11,883,2.419178082191781,2–3 years
+Guadalupe/W. 21st Street,SR23000463,Missing Shelter,No shelter at Guadalupe/W. 21st Street transit stop,2023-12-02,862,2.361643835616438,2–3 years
+Guadalupe/W. 21st Street,SR23000453,Missing Shelter,Transit stop Guadalupe/W. 21st Street needs shelter for rider protection,2023-12-04,860,2.356164383561644,2–3 years
+Guadalupe/W. 21st Street,SR23000504,Missing Shelter,Request shelter installation at Guadalupe/W. 21st Street,2023-12-06,858,2.350684931506849,2–3 years
+Guadalupe/W. 21st Street,SR23000468,Missing Benches,No benches at Guadalupe/W. 21st Street bus stop,2023-12-13,851,2.331506849315069,2–3 years
+Guadalupe/W. 21st Street,SR23000489,Missing Shelter,Transit stop Guadalupe/W. 21st Street needs weather shelter,2023-12-31,833,2.282191780821918,2–3 years
+Guadalupe/W. 21st Street,SR23000499,Missing Shelter,Request shelter installation at Guadalupe/W. 21st Street,2024-01-19,814,2.23013698630137,2–3 years
+Guadalupe/W. 21st Street,SR23000470,Missing Shelter,Transit stop Guadalupe/W. 21st Street needs shelter for rider protection,2024-02-12,790,2.164383561643836,2–3 years
+Guadalupe/W. 21st Street,SR23000479,Weather Exposure,Riders getting wet at Guadalupe/W. 21st Street during rain,2024-02-14,788,2.158904109589041,2–3 years
+Guadalupe/W. 21st Street,SR23000518,Missing Shelter,Bus stop at Guadalupe/W. 21st Street missing shelter - riders exposed to weather,2024-02-27,775,2.1232876712328768,2–3 years
+Guadalupe/W. 21st Street,SR23000446,Weather Exposure,Bus stop Guadalupe/W. 21st Street exposed to extreme heat/sun,2024-03-09,764,2.0931506849315067,2–3 years
+Guadalupe/W. 21st Street,SR23000467,Missing Benches,No benches at Guadalupe/W. 21st Street bus stop,2024-04-18,724,1.9835616438356165,1–2 years
+Guadalupe/W. 21st Street,SR23000417,Safety (Lighting),Transit stop Guadalupe/W. 21st Street needs better lighting,2024-04-26,716,1.9616438356164383,1–2 years
+Guadalupe/W. 21st Street,SR23000452,Weather Exposure,Riders getting wet at Guadalupe/W. 21st Street during rain,2024-05-23,689,1.887671232876712,1–2 years
+Guadalupe/W. 21st Street,SR23000476,Missing Shelter,Transit stop Guadalupe/W. 21st Street needs shelter for rider protection,2024-06-28,653,1.789041095890411,1–2 years
+Guadalupe/W. 21st Street,SR23000469,Sidewalk/ADA,Riders have nowhere to sit at Guadalupe/W. 21st Street,2024-07-09,642,1.7589041095890412,1–2 years
+Guadalupe/W. 21st Street,SR23000494,Missing Shelter,No shelter at Guadalupe/W. 21st Street transit stop,2024-07-10,641,1.7561643835616438,1–2 years
+Guadalupe/W. 21st Street,SR23000440,Missing Shelter,No shelter at Guadalupe/W. 21st Street transit stop,2024-07-14,637,1.7452054794520548,1–2 years
+Guadalupe/W. 21st Street,SR23000501,Sidewalk/ADA,Riders have nowhere to sit at Guadalupe/W. 21st Street,2024-07-22,629,1.7232876712328766,1–2 years
+Guadalupe/W. 21st Street,SR23000430,Weather Exposure,Bus stop Guadalupe/W. 21st Street exposed to extreme heat/sun,2024-08-11,609,1.6684931506849314,1–2 years
+Guadalupe/W. 21st Street,SR23000442,Missing Shelter,Transit stop Guadalupe/W. 21st Street needs shelter for rider protection,2024-08-16,604,1.6547945205479453,1–2 years
+Guadalupe/W. 21st Street,SR23000484,Missing Shelter,No shelter at Guadalupe/W. 21st Street transit stop,2024-08-29,591,1.6191780821917807,1–2 years
+Guadalupe/W. 21st Street,SR23000426,Missing Shelter,No shelter at Guadalupe/W. 21st Street transit stop,2024-09-09,580,1.5890410958904109,1–2 years
+Guadalupe/W. 21st Street,SR23000493,Missing Shelter,No shelter at Guadalupe/W. 21st Street transit stop,2024-09-16,573,1.5698630136986302,1–2 years
+Guadalupe/W. 21st Street,SR23000445,Safety (Lighting),Transit stop Guadalupe/W. 21st Street needs better lighting,2024-11-03,525,1.4383561643835616,1–2 years
+Guadalupe/W. 21st Street,SR23000436,Missing Shelter,Bus stop at Guadalupe/W. 21st Street missing shelter - riders exposed to weather,2024-12-04,494,1.3534246575342466,1–2 years
+Guadalupe/W. 21st Street,SR23000444,Missing Shelter,No weather protection at Guadalupe/W. 21st Street transit stop,2024-12-04,494,1.3534246575342466,1–2 years
+Guadalupe/W. 21st Street,SR23000461,Safety Concerns,Request safety improvements at Guadalupe/W. 21st Street stop,2024-12-06,492,1.347945205479452,1–2 years
+Guadalupe/W. 21st Street,SR23000427,Missing Shelter,No shelter at Guadalupe/W. 21st Street transit stop,2024-12-23,475,1.3013698630136987,1–2 years
+Guadalupe/W. 21st Street,SR23000477,Safety (Lighting),Transit stop Guadalupe/W. 21st Street needs better lighting,2025-01-01,466,1.2767123287671234,1–2 years
+Guadalupe/W. 21st Street,SR23000523,Sidewalk/ADA,Riders have nowhere to sit at Guadalupe/W. 21st Street,2025-01-14,453,1.2410958904109588,1–2 years
+Guadalupe/W. 21st Street,SR23000424,Missing Benches,Missing seating at Guadalupe/W. 21st Street transit stop,2025-01-18,449,1.2301369863013698,1–2 years
+Guadalupe/W. 21st Street,SR23000515,Missing Shelter,Transit stop Guadalupe/W. 21st Street needs shelter for rider protection,2025-02-07,429,1.1753424657534246,1–2 years
+Guadalupe/W. 21st Street,SR23000434,Missing Shelter,No weather protection at Guadalupe/W. 21st Street transit stop,2025-03-01,407,1.115068493150685,1–2 years
+Guadalupe/W. 21st Street,SR23000474,Missing Benches,No benches at Guadalupe/W. 21st Street bus stop,2025-03-17,391,1.0712328767123287,1–2 years
+Guadalupe/W. 21st Street,SR23000421,Missing Shelter,Request shelter installation at Guadalupe/W. 21st Street,2025-03-19,389,1.0657534246575342,1–2 years
+Guadalupe/W. 21st Street,SR23000458,Missing Shelter,Bus stop at Guadalupe/W. 21st Street missing shelter - riders exposed to weather,2025-03-19,389,1.0657534246575342,1–2 years
+Guadalupe/W. 21st Street,SR23000490,Missing Shelter,No weather protection at Guadalupe/W. 21st Street transit stop,2025-03-22,386,1.0575342465753426,1–2 years
+Guadalupe/W. 21st Street,SR23000497,Safety (Lighting),Safety concerns at Guadalupe/W. 21st Street bus stop after dark,2025-04-20,357,0.978082191780822,< 1 year
+Guadalupe/W. 21st Street,SR23000447,Missing Shelter,No shelter at Guadalupe/W. 21st Street transit stop,2025-04-26,351,0.9616438356164384,< 1 year
+Guadalupe/W. 21st Street,SR23000516,Missing Shelter,Transit stop Guadalupe/W. 21st Street needs weather shelter,2025-04-29,348,0.9534246575342464,< 1 year
+Guadalupe/W. 21st Street,SR23000449,Safety (Lighting),Safety concerns at Guadalupe/W. 21st Street bus stop after dark,2025-05-06,341,0.9342465753424658,< 1 year
+Guadalupe/W. 21st Street,SR23000502,Missing Shelter,No shelter at Guadalupe/W. 21st Street transit stop,2025-05-18,329,0.9013698630136986,< 1 year
+Guadalupe/W. 21st Street,SR23000517,Missing Shelter,No shelter at Guadalupe/W. 21st Street transit stop,2025-05-31,316,0.8657534246575342,< 1 year
+Guadalupe/W. 21st Street,SR23000432,Sidewalk/ADA,Riders have nowhere to sit at Guadalupe/W. 21st Street,2025-06-14,302,0.8273972602739726,< 1 year
+Guadalupe/W. 21st Street,SR23000509,Missing Shelter,No shelter at Guadalupe/W. 21st Street transit stop,2025-06-18,298,0.8164383561643835,< 1 year
+Guadalupe/W. 21st Street,SR23000485,Missing Shelter,No shelter at Guadalupe/W. 21st Street transit stop,2025-07-09,277,0.7589041095890411,< 1 year
+Guadalupe/W. 21st Street,SR23000457,Missing Shelter,Transit stop Guadalupe/W. 21st Street needs shelter for rider protection,2025-07-31,255,0.6986301369863014,< 1 year
+Guadalupe/W. 21st Street,SR23000519,Missing Shelter,Transit stop Guadalupe/W. 21st Street needs weather shelter,2025-08-24,231,0.6328767123287671,< 1 year
+Guadalupe/W. 21st Street,SR23000511,Sidewalk/ADA,Riders have nowhere to sit at Guadalupe/W. 21st Street,2025-08-29,226,0.6191780821917808,< 1 year
+Guadalupe/W. 21st Street,SR23000512,Missing Shelter,Bus stop at Guadalupe/W. 21st Street missing shelter - riders exposed to weather,2025-09-27,197,0.5397260273972603,< 1 year
+Guadalupe/W. 21st Street,SR23000465,Safety Concerns,Request safety improvements at Guadalupe/W. 21st Street stop,2025-10-19,175,0.4794520547945205,< 1 year
+Guadalupe/W. 21st Street,SR23000471,Missing Shelter,Transit stop Guadalupe/W. 21st Street needs shelter for rider protection,2025-10-22,172,0.4712328767123288,< 1 year
+Guadalupe/W. 21st Street,SR23000473,Missing Shelter,Bus stop at Guadalupe/W. 21st Street missing shelter - riders exposed to weather,2025-11-02,161,0.4410958904109589,< 1 year
+Guadalupe/W. 21st Street,SR23000456,Weather Exposure,Bus stop Guadalupe/W. 21st Street exposed to extreme heat/sun,2025-11-12,151,0.4136986301369863,< 1 year
+Guadalupe/W. 21st Street,SR23000481,Missing Shelter,Transit stop Guadalupe/W. 21st Street needs shelter for rider protection,2025-11-13,150,0.410958904109589,< 1 year
+Guadalupe/W. 21st Street,SR23000451,Missing Shelter,Transit stop Guadalupe/W. 21st Street needs shelter for rider protection,2025-11-24,139,0.3808219178082191,< 1 year
+Guadalupe/W. 21st Street,SR23000480,Weather Exposure,Bus stop Guadalupe/W. 21st Street exposed to extreme heat/sun,2025-12-14,119,0.3260273972602739,< 1 year
+Guadalupe/W. 21st Street,SR23000500,Missing Shelter,Request shelter installation at Guadalupe/W. 21st Street,2025-12-15,118,0.3232876712328767,< 1 year
+Guadalupe/W. 21st Street,SR23000433,Missing Shelter,No shelter at Guadalupe/W. 21st Street transit stop,2026-01-02,100,0.273972602739726,< 1 year
+Guadalupe/W. 21st Street,SR23000441,Safety Concerns,Feeling unsafe waiting at Guadalupe/W. 21st Street,2026-01-13,89,0.2438356164383561,< 1 year
+Guadalupe/W. 21st Street,SR23000431,Safety Concerns,Request safety improvements at Guadalupe/W. 21st Street stop,2026-02-06,65,0.1780821917808219,< 1 year
+Guadalupe/W. 21st Street,SR23000526,Weather Exposure,Bus stop Guadalupe/W. 21st Street exposed to extreme heat/sun,2026-02-23,48,0.1315068493150684,< 1 year
+Guadalupe/W. 21st Street,SR23000460,Safety Concerns,Feeling unsafe waiting at Guadalupe/W. 21st Street,2026-03-05,38,0.1041095890410958,< 1 year
+Guadalupe/W. 21st Street,SR23000420,Missing Benches,Missing seating at Guadalupe/W. 21st Street transit stop,2026-03-08,35,0.0958904109589041,< 1 year
+Guadalupe/W. 21st Street,SR23000459,Missing Shelter,Transit stop Guadalupe/W. 21st Street needs shelter for rider protection,2026-04-03,9,0.0246575342465753,< 1 year
+Lavaca/4th,SR23000377,Missing Benches,Missing seating at Lavaca/4th transit stop,2023-01-02,1196,3.276712328767123,3+ years
+Lavaca/4th,SR23000296,Other,Riders have nowhere to sit at Lavaca/4th,2023-01-08,1190,3.26027397260274,3+ years
+Lavaca/4th,SR23000362,Missing Benches,Request bench installation at Lavaca/4th,2023-01-11,1187,3.252054794520548,3+ years
+Lavaca/4th,SR23000291,Safety (Lighting),Safety concerns at Lavaca/4th bus stop after dark,2023-01-11,1187,3.252054794520548,3+ years
+Lavaca/4th,SR23000395,Weather Exposure,Riders getting wet at Lavaca/4th during rain,2023-02-05,1162,3.1835616438356165,3+ years
+Lavaca/4th,SR23000388,Safety Concerns,Request safety improvements at Lavaca/4th stop,2023-02-17,1150,3.1506849315068495,3+ years
+Lavaca/4th,SR23000353,Missing Shelter,Transit stop Lavaca/4th needs shelter for rider protection,2023-02-20,1147,3.1424657534246574,3+ years
+Lavaca/4th,SR23000292,Missing Shelter,Transit stop Lavaca/4th needs shelter for rider protection,2023-02-21,1146,3.1397260273972605,3+ years
+Lavaca/4th,SR23000294,Missing Shelter,Bus stop at Lavaca/4th missing shelter - riders exposed to weather,2023-02-28,1139,3.1205479452054794,3+ years
+Lavaca/4th,SR23000364,Weather Exposure,Riders getting wet at Lavaca/4th during rain,2023-03-06,1133,3.1041095890410957,3+ years
+Lavaca/4th,SR23000399,Missing Benches,No benches at Lavaca/4th bus stop,2023-04-18,1090,2.9863013698630136,2–3 years
+Lavaca/4th,SR23000299,Missing Benches,No benches at Lavaca/4th bus stop,2023-05-03,1075,2.9452054794520546,2–3 years
+Lavaca/4th,SR23000358,Missing Shelter,Bus stop at Lavaca/4th missing shelter - riders exposed to weather,2023-05-08,1070,2.9315068493150687,2–3 years
+Lavaca/4th,SR23000305,Missing Shelter,No weather protection at Lavaca/4th transit stop,2023-05-11,1067,2.9232876712328766,2–3 years
+Lavaca/4th,SR23000393,Missing Shelter,No weather protection at Lavaca/4th transit stop,2023-05-15,1063,2.9123287671232876,2–3 years
+Lavaca/4th,SR23000339,Missing Benches,No benches at Lavaca/4th bus stop,2023-05-18,1060,2.904109589041096,2–3 years
+Lavaca/4th,SR23000309,Missing Shelter,Transit stop Lavaca/4th needs shelter for rider protection,2023-05-19,1059,2.9013698630136986,2–3 years
+Lavaca/4th,SR23000306,Weather Exposure,Riders getting wet at Lavaca/4th during rain,2023-05-31,1047,2.8684931506849316,2–3 years
+Lavaca/4th,SR23000320,Missing Shelter,Request shelter installation at Lavaca/4th,2023-06-23,1024,2.8054794520547945,2–3 years
+Lavaca/4th,SR23000374,Missing Shelter,No shelter at Lavaca/4th transit stop,2023-07-07,1010,2.767123287671233,2–3 years
+Lavaca/4th,SR23000318,Missing Benches,No benches at Lavaca/4th bus stop,2023-07-24,993,2.7205479452054795,2–3 years
+Lavaca/4th,SR23000340,Missing Shelter,No shelter at Lavaca/4th transit stop,2023-07-26,991,2.7150684931506848,2–3 years
+Lavaca/4th,SR23000289,Weather Exposure,Riders getting wet at Lavaca/4th during rain,2023-07-26,991,2.7150684931506848,2–3 years
+Lavaca/4th,SR23000386,Missing Benches,Request bench installation at Lavaca/4th,2023-07-29,988,2.706849315068493,2–3 years
+Lavaca/4th,SR23000312,Missing Shelter,Transit stop Lavaca/4th needs shelter for rider protection,2023-08-06,980,2.684931506849315,2–3 years
+Lavaca/4th,SR23000387,Missing Benches,Missing seating at Lavaca/4th transit stop,2023-08-10,976,2.673972602739726,2–3 years
+Lavaca/4th,SR23000284,Missing Shelter,Transit stop Lavaca/4th needs shelter for rider protection,2023-08-20,966,2.6465753424657534,2–3 years
+Lavaca/4th,SR23000379,Missing Shelter,Transit stop Lavaca/4th needs shelter for rider protection,2023-08-27,959,2.627397260273973,2–3 years
+Lavaca/4th,SR23000346,Missing Benches,No benches at Lavaca/4th bus stop,2023-10-29,896,2.4547945205479453,2–3 years
+Lavaca/4th,SR23000286,Safety Concerns,Request safety improvements at Lavaca/4th stop,2023-11-15,879,2.408219178082192,2–3 years
+Lavaca/4th,SR23000389,Missing Shelter,Bus stop at Lavaca/4th missing shelter - riders exposed to weather,2023-11-29,865,2.3698630136986303,2–3 years
+Lavaca/4th,SR23000382,Weather Exposure,Bus stop Lavaca/4th exposed to extreme heat/sun,2023-12-01,863,2.3643835616438356,2–3 years
+Lavaca/4th,SR23000350,Other,Riders have nowhere to sit at Lavaca/4th,2023-12-08,856,2.345205479452055,2–3 years
+Lavaca/4th,SR23000375,Other,Riders have nowhere to sit at Lavaca/4th,2023-12-10,854,2.33972602739726,2–3 years
+Lavaca/4th,SR23000347,Missing Shelter,Request shelter installation at Lavaca/4th,2024-01-07,826,2.263013698630137,2–3 years
+Lavaca/4th,SR23000331,Safety (Lighting),Safety concerns at Lavaca/4th bus stop after dark,2024-01-11,822,2.252054794520548,2–3 years
+Lavaca/4th,SR23000341,Missing Shelter,Bus stop at Lavaca/4th missing shelter - riders exposed to weather,2024-02-08,794,2.175342465753425,2–3 years
+Lavaca/4th,SR23000383,Missing Shelter,Bus stop at Lavaca/4th missing shelter - riders exposed to weather,2024-02-10,792,2.16986301369863,2–3 years
+Lavaca/4th,SR23000373,Safety (Lighting),Safety concerns at Lavaca/4th bus stop after dark,2024-02-19,783,2.1452054794520548,2–3 years
+Lavaca/4th,SR23000369,Weather Exposure,Bus stop Lavaca/4th exposed to extreme heat/sun,2024-02-24,778,2.1315068493150684,2–3 years
+Lavaca/4th,SR23000280,Other,Riders have nowhere to sit at Lavaca/4th,2024-03-01,772,2.115068493150685,2–3 years
+Lavaca/4th,SR23000281,Missing Shelter,No weather protection at Lavaca/4th transit stop,2024-03-13,760,2.0821917808219177,2–3 years
+Lavaca/4th,SR23000410,Other,Riders have nowhere to sit at Lavaca/4th,2024-03-20,753,2.063013698630137,2–3 years
+Lavaca/4th,SR23000345,Missing Benches,Request bench installation at Lavaca/4th,2024-04-02,740,2.0273972602739727,2–3 years
+Lavaca/4th,SR23000384,Weather Exposure,Riders getting wet at Lavaca/4th during rain,2024-04-02,740,2.0273972602739727,2–3 years
+Lavaca/4th,SR23000344,Missing Shelter,Transit stop Lavaca/4th needs shelter for rider protection,2024-04-08,734,2.010958904109589,2–3 years
+Lavaca/4th,SR23000321,Missing Shelter,No weather protection at Lavaca/4th transit stop,2024-04-10,732,2.0054794520547947,2–3 years
+Lavaca/4th,SR23000333,Other,Riders have nowhere to sit at Lavaca/4th,2024-05-06,706,1.9342465753424656,1–2 years
+Lavaca/4th,SR23000295,Missing Shelter,Bus stop at Lavaca/4th missing shelter - riders exposed to weather,2024-05-08,704,1.9287671232876713,1–2 years
+Lavaca/4th,SR23000396,Missing Shelter,Transit stop Lavaca/4th needs shelter for rider protection,2024-05-11,701,1.9205479452054792,1–2 years
+Lavaca/4th,SR23000300,Missing Benches,No benches at Lavaca/4th bus stop,2024-06-21,660,1.8082191780821917,1–2 years
+Lavaca/4th,SR23000304,Missing Shelter,Request shelter installation at Lavaca/4th,2024-08-20,600,1.643835616438356,1–2 years
+Lavaca/4th,SR23000316,Missing Shelter,No weather protection at Lavaca/4th transit stop,2024-09-17,572,1.5671232876712329,1–2 years
+Lavaca/4th,SR23000359,Safety (Lighting),Safety concerns at Lavaca/4th bus stop after dark,2024-09-21,568,1.556164383561644,1–2 years
+Lavaca/4th,SR23000283,Other,Riders have nowhere to sit at Lavaca/4th,2024-10-01,558,1.5287671232876712,1–2 years
+Lavaca/4th,SR23000405,Safety (Lighting),Transit stop Lavaca/4th needs better lighting,2024-10-02,557,1.526027397260274,1–2 years
+Lavaca/4th,SR23000343,Weather Exposure,Riders getting wet at Lavaca/4th during rain,2024-10-08,551,1.5095890410958903,1–2 years
+Lavaca/4th,SR23000303,Missing Shelter,Request shelter installation at Lavaca/4th,2024-10-29,530,1.452054794520548,1–2 years
+Lavaca/4th,SR23000330,Missing Shelter,Request shelter installation at Lavaca/4th,2024-11-04,524,1.4356164383561645,1–2 years
+Lavaca/4th,SR23000385,Missing Shelter,No shelter at Lavaca/4th transit stop,2024-11-15,513,1.4054794520547946,1–2 years
+Lavaca/4th,SR23000338,Missing Shelter,Bus stop at Lavaca/4th missing shelter - riders exposed to weather,2024-11-27,501,1.3726027397260274,1–2 years
+Lavaca/4th,SR23000336,Missing Shelter,Bus stop at Lavaca/4th missing shelter - riders exposed to weather,2025-01-06,461,1.263013698630137,1–2 years
+Lavaca/4th,SR23000368,Missing Shelter,No shelter at Lavaca/4th transit stop,2025-01-08,459,1.2575342465753423,1–2 years
+Lavaca/4th,SR23000317,Missing Shelter,Transit stop Lavaca/4th needs weather shelter,2025-01-14,453,1.2410958904109588,1–2 years
+Lavaca/4th,SR23000401,Missing Shelter,Bus stop at Lavaca/4th missing shelter - riders exposed to weather,2025-02-15,421,1.1534246575342466,1–2 years
+Lavaca/4th,SR23000348,Safety (Lighting),Safety concerns at Lavaca/4th bus stop after dark,2025-02-20,416,1.1397260273972605,1–2 years
+Lavaca/4th,SR23000400,Missing Shelter,No shelter at Lavaca/4th transit stop,2025-03-19,389,1.0657534246575342,1–2 years
+Lavaca/4th,SR23000293,Missing Benches,Missing seating at Lavaca/4th transit stop,2025-04-09,368,1.008219178082192,1–2 years
+Lavaca/4th,SR23000328,Missing Shelter,No weather protection at Lavaca/4th transit stop,2025-04-12,365,1.0,1–2 years
+Lavaca/4th,SR23000398,Missing Shelter,No shelter at Lavaca/4th transit stop,2025-05-11,336,0.9205479452054794,< 1 year
+Lavaca/4th,SR23000411,Missing Benches,Missing seating at Lavaca/4th transit stop,2025-05-19,328,0.8986301369863013,< 1 year
+Lavaca/4th,SR23000298,Missing Shelter,Transit stop Lavaca/4th needs shelter for rider protection,2025-05-20,327,0.8958904109589041,< 1 year
+Lavaca/4th,SR23000412,Missing Shelter,No shelter at Lavaca/4th transit stop,2025-05-23,324,0.8876712328767123,< 1 year
+Lavaca/4th,SR23000297,Missing Shelter,Transit stop Lavaca/4th needs shelter for rider protection,2025-05-27,320,0.8767123287671232,< 1 year
+Lavaca/4th,SR23000407,Missing Shelter,Transit stop Lavaca/4th needs shelter for rider protection,2025-05-29,318,0.8712328767123287,< 1 year
+Lavaca/4th,SR23000313,Safety Concerns,Request safety improvements at Lavaca/4th stop,2025-06-01,315,0.863013698630137,< 1 year
+Lavaca/4th,SR23000310,Weather Exposure,Bus stop Lavaca/4th exposed to extreme heat/sun,2025-06-19,297,0.8136986301369863,< 1 year
+Lavaca/4th,SR23000302,Missing Shelter,No weather protection at Lavaca/4th transit stop,2025-06-22,294,0.8054794520547945,< 1 year
+Lavaca/4th,SR23000329,Weather Exposure,Bus stop Lavaca/4th exposed to extreme heat/sun,2025-07-04,282,0.7726027397260274,< 1 year
+Lavaca/4th,SR23000392,Missing Benches,No benches at Lavaca/4th bus stop,2025-07-11,275,0.7534246575342466,< 1 year
+Lavaca/4th,SR23000394,Missing Shelter,Request shelter installation at Lavaca/4th,2025-07-16,270,0.7397260273972602,< 1 year
+Lavaca/4th,SR23000380,Missing Shelter,No shelter at Lavaca/4th transit stop,2025-07-22,264,0.7232876712328767,< 1 year
+Lavaca/4th,SR23000319,Missing Shelter,Request shelter installation at Lavaca/4th,2025-07-26,260,0.7123287671232876,< 1 year
+Lavaca/4th,SR23000390,Weather Exposure,Riders getting wet at Lavaca/4th during rain,2025-07-29,257,0.7041095890410959,< 1 year
+Lavaca/4th,SR23000403,Missing Shelter,Request shelter installation at Lavaca/4th,2025-08-05,250,0.684931506849315,< 1 year
+Lavaca/4th,SR23000307,Missing Shelter,No shelter at Lavaca/4th transit stop,2025-08-12,243,0.6657534246575343,< 1 year
+Lavaca/4th,SR23000322,Missing Shelter,No shelter at Lavaca/4th transit stop,2025-08-22,233,0.6383561643835617,< 1 year
+Lavaca/4th,SR23000285,Missing Benches,No benches at Lavaca/4th bus stop,2025-09-03,221,0.6054794520547945,< 1 year
+Lavaca/4th,SR23000332,Missing Benches,Missing seating at Lavaca/4th transit stop,2025-09-17,207,0.5671232876712329,< 1 year
+Lavaca/4th,SR23000378,Missing Benches,Request bench installation at Lavaca/4th,2025-09-18,206,0.5643835616438356,< 1 year
+Lavaca/4th,SR23000327,Missing Shelter,No weather protection at Lavaca/4th transit stop,2025-10-01,193,0.5287671232876713,< 1 year
+Lavaca/4th,SR23000349,Missing Shelter,Transit stop Lavaca/4th needs shelter for rider protection,2025-10-03,191,0.5232876712328767,< 1 year
+Lavaca/4th,SR23000324,Missing Benches,No benches at Lavaca/4th bus stop,2025-10-09,185,0.5068493150684932,< 1 year
+Lavaca/4th,SR23000402,Missing Shelter,No weather protection at Lavaca/4th transit stop,2025-10-11,183,0.5013698630136987,< 1 year
+Lavaca/4th,SR23000376,Missing Shelter,No weather protection at Lavaca/4th transit stop,2025-11-04,159,0.4356164383561643,< 1 year
+Lavaca/4th,SR23000365,Missing Shelter,Transit stop Lavaca/4th needs shelter for rider protection,2025-11-28,135,0.3698630136986301,< 1 year
+Lavaca/4th,SR23000282,Missing Shelter,No shelter at Lavaca/4th transit stop,2025-12-09,124,0.3397260273972602,< 1 year
+Lavaca/4th,SR23000301,Missing Benches,No benches at Lavaca/4th bus stop,2025-12-22,111,0.3041095890410959,< 1 year
+Lavaca/4th,SR23000357,Safety Concerns,Request safety improvements at Lavaca/4th stop,2025-12-22,111,0.3041095890410959,< 1 year
+Lavaca/4th,SR23000314,Missing Shelter,Transit stop Lavaca/4th needs weather shelter,2025-12-23,110,0.3013698630136986,< 1 year
+Lavaca/4th,SR23000391,Missing Benches,Request bench installation at Lavaca/4th,2025-12-29,104,0.284931506849315,< 1 year
+Lavaca/4th,SR23000311,Missing Shelter,Transit stop Lavaca/4th needs shelter for rider protection,2026-01-09,93,0.2547945205479452,< 1 year
+Lavaca/4th,SR23000323,Safety Concerns,Feeling unsafe waiting at Lavaca/4th,2026-01-17,85,0.2328767123287671,< 1 year
+Lavaca/4th,SR23000335,Weather Exposure,Riders getting wet at Lavaca/4th during rain,2026-02-05,66,0.1808219178082191,< 1 year
+Lavaca/4th,SR23000363,Missing Shelter,Request shelter installation at Lavaca/4th,2026-03-14,29,0.0794520547945205,< 1 year
+Lavaca/4th,SR23000409,Weather Exposure,Riders getting wet at Lavaca/4th during rain,2026-04-08,4,0.010958904109589,< 1 year
+North Lamar Transit Center,SR23001366,Weather Exposure,Bus stop North Lamar Transit Center exposed to extreme heat/sun,2023-01-30,1168,3.2,3+ years
+North Lamar Transit Center,SR23001413,Missing Shelter,Bus stop at North Lamar Transit Center missing shelter - riders exposed to weather,2023-02-25,1142,3.128767123287671,3+ years
+North Lamar Transit Center,SR23001383,Weather Exposure,Bus stop North Lamar Transit Center exposed to extreme heat/sun,2023-02-26,1141,3.126027397260274,3+ years
+North Lamar Transit Center,SR23001381,Missing Benches,No benches at North Lamar Transit Center bus stop,2023-03-04,1135,3.1095890410958904,3+ years
+North Lamar Transit Center,SR23001369,Missing Benches,No benches at North Lamar Transit Center bus stop,2023-03-09,1130,3.095890410958904,3+ years
+North Lamar Transit Center,SR23001374,Other,Riders have nowhere to sit at North Lamar Transit Center,2023-04-05,1103,3.021917808219178,3+ years
+North Lamar Transit Center,SR23001421,Missing Benches,No benches at North Lamar Transit Center bus stop,2023-04-28,1080,2.958904109589041,2–3 years
+North Lamar Transit Center,SR23001372,Safety Concerns,Request safety improvements at North Lamar Transit Center stop,2023-05-05,1073,2.9397260273972603,2–3 years
+North Lamar Transit Center,SR23001408,Missing Shelter,Transit stop North Lamar Transit Center needs shelter for rider protection,2023-05-15,1063,2.9123287671232876,2–3 years
+North Lamar Transit Center,SR23001426,Missing Shelter,Bus stop at North Lamar Transit Center missing shelter - riders exposed to weather,2023-06-13,1034,2.8328767123287673,2–3 years
+North Lamar Transit Center,SR23001379,Missing Shelter,No shelter at North Lamar Transit Center transit stop,2023-07-07,1010,2.767123287671233,2–3 years
+North Lamar Transit Center,SR23001399,Missing Shelter,No shelter at North Lamar Transit Center transit stop,2023-07-22,995,2.7260273972602738,2–3 years
+North Lamar Transit Center,SR23001387,Missing Shelter,Bus stop at North Lamar Transit Center missing shelter - riders exposed to weather,2023-07-23,994,2.723287671232877,2–3 years
+North Lamar Transit Center,SR23001419,Safety Concerns,Feeling unsafe waiting at North Lamar Transit Center,2023-07-23,994,2.723287671232877,2–3 years
+North Lamar Transit Center,SR23001403,Safety (Lighting),Transit stop North Lamar Transit Center needs better lighting,2023-07-30,987,2.704109589041096,2–3 years
+North Lamar Transit Center,SR23001420,Weather Exposure,Bus stop North Lamar Transit Center exposed to extreme heat/sun,2023-08-02,984,2.695890410958904,2–3 years
+North Lamar Transit Center,SR23001386,Missing Benches,Missing seating at North Lamar Transit Center transit stop,2023-08-05,981,2.6876712328767125,2–3 years
+North Lamar Transit Center,SR23001397,Missing Shelter,No weather protection at North Lamar Transit Center transit stop,2023-09-27,928,2.5424657534246577,2–3 years
+North Lamar Transit Center,SR23001406,Missing Benches,Request bench installation at North Lamar Transit Center,2023-10-05,920,2.5205479452054793,2–3 years
+North Lamar Transit Center,SR23001424,Missing Shelter,No shelter at North Lamar Transit Center transit stop,2023-11-30,864,2.367123287671233,2–3 years
+North Lamar Transit Center,SR23001367,Missing Benches,No benches at North Lamar Transit Center bus stop,2023-12-10,854,2.33972602739726,2–3 years
+North Lamar Transit Center,SR23001363,Missing Shelter,Transit stop North Lamar Transit Center needs shelter for rider protection,2023-12-20,844,2.3123287671232875,2–3 years
+North Lamar Transit Center,SR23001411,Missing Benches,Missing seating at North Lamar Transit Center transit stop,2024-01-11,822,2.252054794520548,2–3 years
+North Lamar Transit Center,SR23001376,Missing Shelter,Request shelter installation at North Lamar Transit Center,2024-01-11,822,2.252054794520548,2–3 years
+North Lamar Transit Center,SR23001368,Missing Shelter,Transit stop North Lamar Transit Center needs weather shelter,2024-01-12,821,2.249315068493151,2–3 years
+North Lamar Transit Center,SR23001364,Missing Shelter,No shelter at North Lamar Transit Center transit stop,2024-01-20,813,2.2273972602739724,2–3 years
+North Lamar Transit Center,SR23001402,Missing Benches,Missing seating at North Lamar Transit Center transit stop,2024-02-06,796,2.180821917808219,2–3 years
+North Lamar Transit Center,SR23001405,Missing Shelter,No weather protection at North Lamar Transit Center transit stop,2024-06-11,670,1.8356164383561644,1–2 years
+North Lamar Transit Center,SR23001365,Safety (Lighting),Transit stop North Lamar Transit Center needs better lighting,2024-08-03,617,1.6904109589041096,1–2 years
+North Lamar Transit Center,SR23001389,Missing Benches,Missing seating at North Lamar Transit Center transit stop,2024-08-12,608,1.6657534246575345,1–2 years
+North Lamar Transit Center,SR23001378,Missing Benches,No benches at North Lamar Transit Center bus stop,2024-08-27,593,1.6246575342465754,1–2 years
+North Lamar Transit Center,SR23001360,Missing Benches,No benches at North Lamar Transit Center bus stop,2024-10-28,531,1.4547945205479451,1–2 years
+North Lamar Transit Center,SR23001371,Missing Shelter,Bus stop at North Lamar Transit Center missing shelter - riders exposed to weather,2024-12-05,493,1.3506849315068492,1–2 years
+North Lamar Transit Center,SR23001400,Missing Shelter,Transit stop North Lamar Transit Center needs weather shelter,2025-01-16,451,1.2356164383561643,1–2 years
+North Lamar Transit Center,SR23001390,Missing Shelter,Request shelter installation at North Lamar Transit Center,2025-03-22,386,1.0575342465753426,1–2 years
+North Lamar Transit Center,SR23001423,Missing Shelter,Transit stop North Lamar Transit Center needs shelter for rider protection,2025-04-13,364,0.9972602739726028,< 1 year
+North Lamar Transit Center,SR23001395,Other,Riders have nowhere to sit at North Lamar Transit Center,2025-05-02,345,0.9452054794520548,< 1 year
+North Lamar Transit Center,SR23001409,Missing Shelter,Request shelter installation at North Lamar Transit Center,2025-06-04,312,0.8547945205479452,< 1 year
+North Lamar Transit Center,SR23001398,Missing Benches,No benches at North Lamar Transit Center bus stop,2025-06-07,309,0.8465753424657534,< 1 year
+North Lamar Transit Center,SR23001415,Missing Benches,Missing seating at North Lamar Transit Center transit stop,2025-06-28,288,0.7890410958904109,< 1 year
+North Lamar Transit Center,SR23001407,Weather Exposure,Riders getting wet at North Lamar Transit Center during rain,2025-07-07,279,0.7643835616438356,< 1 year
+North Lamar Transit Center,SR23001382,Missing Benches,No benches at North Lamar Transit Center bus stop,2025-07-09,277,0.7589041095890411,< 1 year
+North Lamar Transit Center,SR23001385,Missing Benches,No benches at North Lamar Transit Center bus stop,2025-07-21,265,0.726027397260274,< 1 year
+North Lamar Transit Center,SR23001412,Safety Concerns,Feeling unsafe waiting at North Lamar Transit Center,2025-08-13,242,0.663013698630137,< 1 year
+North Lamar Transit Center,SR23001396,Missing Benches,No benches at North Lamar Transit Center bus stop,2025-08-26,229,0.6273972602739726,< 1 year
+North Lamar Transit Center,SR23001370,Other,Riders have nowhere to sit at North Lamar Transit Center,2025-09-14,210,0.5753424657534246,< 1 year
+North Lamar Transit Center,SR23001377,Missing Shelter,Transit stop North Lamar Transit Center needs shelter for rider protection,2025-10-13,181,0.4958904109589041,< 1 year
+North Lamar Transit Center,SR23001393,Missing Benches,No benches at North Lamar Transit Center bus stop,2025-10-18,176,0.4821917808219178,< 1 year
+North Lamar Transit Center,SR23001417,Weather Exposure,Riders getting wet at North Lamar Transit Center during rain,2025-12-22,111,0.3041095890410959,< 1 year
+North Lamar Transit Center,SR23001404,Missing Shelter,No weather protection at North Lamar Transit Center transit stop,2026-02-04,67,0.1835616438356164,< 1 year
+North Lamar Transit Center,SR23001410,Missing Benches,Request bench installation at North Lamar Transit Center,2026-02-27,44,0.1205479452054794,< 1 year
+North Lamar Transit Center,SR23001361,Missing Shelter,Bus stop at North Lamar Transit Center missing shelter - riders exposed to weather,2026-03-05,38,0.1041095890410958,< 1 year
+Northcross Station (SB),SR23001124,Missing Benches,Missing seating at Northcross Station (SB) transit stop,2023-01-17,1181,3.2356164383561645,3+ years
+Northcross Station (SB),SR23001141,Missing Shelter,No shelter at Northcross Station (SB) transit stop,2023-02-11,1156,3.1671232876712327,3+ years
+Northcross Station (SB),SR23001081,Missing Shelter,No shelter at Northcross Station (SB) transit stop,2023-02-22,1145,3.136986301369863,3+ years
+Northcross Station (SB),SR23001118,Missing Shelter,Bus stop at Northcross Station (SB) missing shelter - riders exposed to weather,2023-02-22,1145,3.136986301369863,3+ years
+Northcross Station (SB),SR23001070,Missing Shelter,Bus stop at Northcross Station (SB) missing shelter - riders exposed to weather,2023-04-30,1078,2.9534246575342467,2–3 years
+Northcross Station (SB),SR23001089,Missing Shelter,Bus stop at Northcross Station (SB) missing shelter - riders exposed to weather,2023-05-17,1061,2.9068493150684933,2–3 years
+Northcross Station (SB),SR23001126,Missing Shelter,No weather protection at Northcross Station (SB) transit stop,2023-05-22,1056,2.893150684931507,2–3 years
+Northcross Station (SB),SR23001096,Missing Benches,Request bench installation at Northcross Station (SB),2023-05-23,1055,2.8904109589041096,2–3 years
+Northcross Station (SB),SR23001139,Missing Benches,Request bench installation at Northcross Station (SB),2023-05-28,1050,2.8767123287671232,2–3 years
+Northcross Station (SB),SR23001076,Missing Shelter,No shelter at Northcross Station (SB) transit stop,2023-07-10,1007,2.758904109589041,2–3 years
+Northcross Station (SB),SR23001075,Missing Shelter,Request shelter installation at Northcross Station (SB),2023-07-27,990,2.712328767123288,2–3 years
+Northcross Station (SB),SR23001079,Missing Shelter,No weather protection at Northcross Station (SB) transit stop,2023-08-20,966,2.6465753424657534,2–3 years
+Northcross Station (SB),SR23001138,Missing Shelter,Bus stop at Northcross Station (SB) missing shelter - riders exposed to weather,2023-08-26,960,2.6301369863013697,2–3 years
+Northcross Station (SB),SR23001107,Missing Benches,Missing seating at Northcross Station (SB) transit stop,2023-09-06,949,2.6,2–3 years
+Northcross Station (SB),SR23001122,Missing Benches,Missing seating at Northcross Station (SB) transit stop,2023-10-05,920,2.5205479452054793,2–3 years
+Northcross Station (SB),SR23001115,Missing Shelter,Request shelter installation at Northcross Station (SB),2023-11-25,869,2.3808219178082193,2–3 years
+Northcross Station (SB),SR23001100,Weather Exposure,Bus stop Northcross Station (SB) exposed to extreme heat/sun,2023-11-26,868,2.378082191780822,2–3 years
+Northcross Station (SB),SR23001077,Missing Shelter,Transit stop Northcross Station (SB) needs shelter for rider protection,2023-12-09,855,2.3424657534246576,2–3 years
+Northcross Station (SB),SR23001143,Missing Shelter,Bus stop at Northcross Station (SB) missing shelter - riders exposed to weather,2023-12-13,851,2.331506849315069,2–3 years
+Northcross Station (SB),SR23001116,Missing Shelter,Transit stop Northcross Station (SB) needs shelter for rider protection,2023-12-14,850,2.328767123287671,2–3 years
+Northcross Station (SB),SR23001131,Missing Benches,Missing seating at Northcross Station (SB) transit stop,2023-12-30,834,2.2849315068493152,2–3 years
+Northcross Station (SB),SR23001097,Other,Riders have nowhere to sit at Northcross Station (SB),2023-12-31,833,2.282191780821918,2–3 years
+Northcross Station (SB),SR23001144,Missing Shelter,No shelter at Northcross Station (SB) transit stop,2024-01-22,811,2.221917808219178,2–3 years
+Northcross Station (SB),SR23001103,Safety (Lighting),Safety concerns at Northcross Station (SB) bus stop after dark,2024-02-02,800,2.191780821917808,2–3 years
+Northcross Station (SB),SR23001093,Weather Exposure,Bus stop Northcross Station (SB) exposed to extreme heat/sun,2024-03-02,771,2.112328767123288,2–3 years
+Northcross Station (SB),SR23001080,Weather Exposure,Riders getting wet at Northcross Station (SB) during rain,2024-03-16,757,2.073972602739726,2–3 years
+Northcross Station (SB),SR23001112,Missing Shelter,Request shelter installation at Northcross Station (SB),2024-04-02,740,2.0273972602739727,2–3 years
+Northcross Station (SB),SR23001090,Missing Shelter,Bus stop at Northcross Station (SB) missing shelter - riders exposed to weather,2024-05-23,689,1.887671232876712,1–2 years
+Northcross Station (SB),SR23001086,Weather Exposure,Bus stop Northcross Station (SB) exposed to extreme heat/sun,2024-07-06,645,1.7671232876712328,1–2 years
+Northcross Station (SB),SR23001067,Missing Shelter,Request shelter installation at Northcross Station (SB),2024-08-04,616,1.6876712328767125,1–2 years
+Northcross Station (SB),SR23001082,Missing Benches,Missing seating at Northcross Station (SB) transit stop,2024-08-12,608,1.6657534246575345,1–2 years
+Northcross Station (SB),SR23001140,Missing Shelter,Transit stop Northcross Station (SB) needs weather shelter,2024-09-02,587,1.6082191780821915,1–2 years
+Northcross Station (SB),SR23001119,Weather Exposure,Riders getting wet at Northcross Station (SB) during rain,2024-09-12,577,1.5808219178082192,1–2 years
+Northcross Station (SB),SR23001128,Missing Shelter,No weather protection at Northcross Station (SB) transit stop,2024-10-31,528,1.4465753424657537,1–2 years
+Northcross Station (SB),SR23001111,Weather Exposure,Riders getting wet at Northcross Station (SB) during rain,2024-11-26,502,1.3753424657534246,1–2 years
+Northcross Station (SB),SR23001136,Missing Shelter,Transit stop Northcross Station (SB) needs shelter for rider protection,2024-12-15,483,1.3232876712328767,1–2 years
+Northcross Station (SB),SR23001135,Missing Benches,Missing seating at Northcross Station (SB) transit stop,2025-01-01,466,1.2767123287671234,1–2 years
+Northcross Station (SB),SR23001094,Missing Shelter,Bus stop at Northcross Station (SB) missing shelter - riders exposed to weather,2025-01-06,461,1.263013698630137,1–2 years
+Northcross Station (SB),SR23001108,Missing Shelter,No shelter at Northcross Station (SB) transit stop,2025-01-08,459,1.2575342465753423,1–2 years
+Northcross Station (SB),SR23001084,Weather Exposure,Bus stop Northcross Station (SB) exposed to extreme heat/sun,2025-02-06,430,1.178082191780822,1–2 years
+Northcross Station (SB),SR23001132,Other,Riders have nowhere to sit at Northcross Station (SB),2025-04-13,364,0.9972602739726028,< 1 year
+Northcross Station (SB),SR23001129,Missing Benches,No benches at Northcross Station (SB) bus stop,2025-04-23,354,0.96986301369863,< 1 year
+Northcross Station (SB),SR23001130,Missing Benches,No benches at Northcross Station (SB) bus stop,2025-04-28,349,0.9561643835616438,< 1 year
+Northcross Station (SB),SR23001091,Safety (Lighting),Safety concerns at Northcross Station (SB) bus stop after dark,2025-04-28,349,0.9561643835616438,< 1 year
+Northcross Station (SB),SR23001114,Other,Riders have nowhere to sit at Northcross Station (SB),2025-04-30,347,0.9506849315068492,< 1 year
+Northcross Station (SB),SR23001105,Missing Shelter,No shelter at Northcross Station (SB) transit stop,2025-06-30,286,0.7835616438356164,< 1 year
+Northcross Station (SB),SR23001099,Other,Riders have nowhere to sit at Northcross Station (SB),2025-07-18,268,0.7342465753424657,< 1 year
+Northcross Station (SB),SR23001133,Missing Shelter,No shelter at Northcross Station (SB) transit stop,2025-07-21,265,0.726027397260274,< 1 year
+Northcross Station (SB),SR23001071,Safety (Lighting),Transit stop Northcross Station (SB) needs better lighting,2025-07-27,259,0.7095890410958904,< 1 year
+Northcross Station (SB),SR23001068,Weather Exposure,Bus stop Northcross Station (SB) exposed to extreme heat/sun,2025-08-03,252,0.6904109589041096,< 1 year
+Northcross Station (SB),SR23001073,Weather Exposure,Bus stop Northcross Station (SB) exposed to extreme heat/sun,2025-08-11,244,0.6684931506849315,< 1 year
+Northcross Station (SB),SR23001121,Safety (Lighting),Transit stop Northcross Station (SB) needs better lighting,2025-08-25,230,0.6301369863013698,< 1 year
+Northcross Station (SB),SR23001117,Missing Shelter,Request shelter installation at Northcross Station (SB),2025-09-07,217,0.5945205479452055,< 1 year
+Northcross Station (SB),SR23001078,Missing Shelter,Transit stop Northcross Station (SB) needs shelter for rider protection,2025-09-12,212,0.5808219178082191,< 1 year
+Northcross Station (SB),SR23001101,Missing Shelter,No weather protection at Northcross Station (SB) transit stop,2025-09-29,195,0.5342465753424658,< 1 year
+Northcross Station (SB),SR23001134,Missing Shelter,Transit stop Northcross Station (SB) needs weather shelter,2025-10-07,187,0.5123287671232877,< 1 year
+Northcross Station (SB),SR23001106,Safety (Lighting),Safety concerns at Northcross Station (SB) bus stop after dark,2025-11-11,152,0.4164383561643835,< 1 year
+Northcross Station (SB),SR23001095,Weather Exposure,Riders getting wet at Northcross Station (SB) during rain,2025-12-04,129,0.3534246575342465,< 1 year
+Northcross Station (SB),SR23001109,Missing Shelter,Request shelter installation at Northcross Station (SB),2026-02-23,48,0.1315068493150684,< 1 year
+Northcross Station (SB),SR23001083,Safety Concerns,Feeling unsafe waiting at Northcross Station (SB),2026-03-29,14,0.0383561643835616,< 1 year
+Republic Square Station (NB),SR23001039,Other,Riders have nowhere to sit at Republic Square Station (NB),2023-01-29,1169,3.202739726027397,3+ years
+Republic Square Station (NB),SR23000985,Safety Concerns,Request safety improvements at Republic Square Station (NB) stop,2023-02-21,1146,3.1397260273972605,3+ years
+Republic Square Station (NB),SR23001055,Missing Shelter,Transit stop Republic Square Station (NB) needs weather shelter,2023-03-15,1124,3.0794520547945203,3+ years
+Republic Square Station (NB),SR23000997,Missing Shelter,Bus stop at Republic Square Station (NB) missing shelter - riders exposed to weather,2023-04-09,1099,3.010958904109589,3+ years
+Republic Square Station (NB),SR23001017,Missing Shelter,No weather protection at Republic Square Station (NB) transit stop,2023-04-29,1079,2.956164383561644,2–3 years
+Republic Square Station (NB),SR23001034,Missing Benches,Request bench installation at Republic Square Station (NB),2023-05-18,1060,2.904109589041096,2–3 years
+Republic Square Station (NB),SR23000995,Safety (Lighting),Transit stop Republic Square Station (NB) needs better lighting,2023-05-23,1055,2.8904109589041096,2–3 years
+Republic Square Station (NB),SR23001000,Missing Shelter,No shelter at Republic Square Station (NB) transit stop,2023-08-09,977,2.6767123287671235,2–3 years
+Republic Square Station (NB),SR23001053,Other,Riders have nowhere to sit at Republic Square Station (NB),2023-08-15,971,2.66027397260274,2–3 years
+Republic Square Station (NB),SR23001009,Weather Exposure,Riders getting wet at Republic Square Station (NB) during rain,2023-08-18,968,2.652054794520548,2–3 years
+Republic Square Station (NB),SR23001036,Safety Concerns,Feeling unsafe waiting at Republic Square Station (NB),2023-08-22,964,2.6410958904109587,2–3 years
+Republic Square Station (NB),SR23000990,Missing Shelter,No weather protection at Republic Square Station (NB) transit stop,2023-11-19,875,2.3972602739726026,2–3 years
+Republic Square Station (NB),SR23001061,Missing Shelter,Transit stop Republic Square Station (NB) needs weather shelter,2023-12-31,833,2.282191780821918,2–3 years
+Republic Square Station (NB),SR23000986,Missing Shelter,Bus stop at Republic Square Station (NB) missing shelter - riders exposed to weather,2024-01-02,831,2.276712328767123,2–3 years
+Republic Square Station (NB),SR23001019,Missing Benches,No benches at Republic Square Station (NB) bus stop,2024-01-07,826,2.263013698630137,2–3 years
+Republic Square Station (NB),SR23000988,Missing Benches,Request bench installation at Republic Square Station (NB),2024-01-15,818,2.241095890410959,2–3 years
+Republic Square Station (NB),SR23001063,Safety (Lighting),Transit stop Republic Square Station (NB) needs better lighting,2024-01-15,818,2.241095890410959,2–3 years
+Republic Square Station (NB),SR23001056,Missing Benches,Request bench installation at Republic Square Station (NB),2024-01-30,803,2.2,2–3 years
+Republic Square Station (NB),SR23001066,Missing Benches,Request bench installation at Republic Square Station (NB),2024-02-24,778,2.1315068493150684,2–3 years
+Republic Square Station (NB),SR23001060,Missing Shelter,No shelter at Republic Square Station (NB) transit stop,2024-02-25,777,2.128767123287671,2–3 years
+Republic Square Station (NB),SR23001001,Missing Shelter,Bus stop at Republic Square Station (NB) missing shelter - riders exposed to weather,2024-04-03,739,2.0246575342465754,2–3 years
+Republic Square Station (NB),SR23000999,Missing Shelter,Request shelter installation at Republic Square Station (NB),2024-04-09,733,2.0082191780821916,2–3 years
+Republic Square Station (NB),SR23001012,Weather Exposure,Riders getting wet at Republic Square Station (NB) during rain,2024-05-08,704,1.9287671232876713,1–2 years
+Republic Square Station (NB),SR23001064,Weather Exposure,Bus stop Republic Square Station (NB) exposed to extreme heat/sun,2024-05-13,699,1.915068493150685,1–2 years
+Republic Square Station (NB),SR23001062,Missing Shelter,No shelter at Republic Square Station (NB) transit stop,2024-06-11,670,1.8356164383561644,1–2 years
+Republic Square Station (NB),SR23000987,Missing Shelter,Bus stop at Republic Square Station (NB) missing shelter - riders exposed to weather,2024-06-16,665,1.821917808219178,1–2 years
+Republic Square Station (NB),SR23001014,Missing Shelter,Request shelter installation at Republic Square Station (NB),2024-07-25,626,1.715068493150685,1–2 years
+Republic Square Station (NB),SR23001042,Safety (Lighting),Transit stop Republic Square Station (NB) needs better lighting,2024-08-09,611,1.673972602739726,1–2 years
+Republic Square Station (NB),SR23001004,Other,Riders have nowhere to sit at Republic Square Station (NB),2024-08-16,604,1.6547945205479453,1–2 years
+Republic Square Station (NB),SR23001020,Missing Shelter,No shelter at Republic Square Station (NB) transit stop,2024-08-23,597,1.6356164383561644,1–2 years
+Republic Square Station (NB),SR23001025,Missing Shelter,No shelter at Republic Square Station (NB) transit stop,2024-09-19,570,1.5616438356164384,1–2 years
+Republic Square Station (NB),SR23001031,Missing Shelter,Transit stop Republic Square Station (NB) needs shelter for rider protection,2024-09-25,564,1.5452054794520549,1–2 years
+Republic Square Station (NB),SR23001023,Missing Shelter,No weather protection at Republic Square Station (NB) transit stop,2024-09-26,563,1.5424657534246575,1–2 years
+Republic Square Station (NB),SR23001033,Missing Shelter,No shelter at Republic Square Station (NB) transit stop,2024-10-05,554,1.5178082191780822,1–2 years
+Republic Square Station (NB),SR23001030,Missing Benches,No benches at Republic Square Station (NB) bus stop,2024-10-13,546,1.4958904109589042,1–2 years
+Republic Square Station (NB),SR23001048,Missing Benches,Request bench installation at Republic Square Station (NB),2024-10-23,536,1.4684931506849317,1–2 years
+Republic Square Station (NB),SR23001026,Missing Shelter,Request shelter installation at Republic Square Station (NB),2024-11-19,509,1.3945205479452054,1–2 years
+Republic Square Station (NB),SR23001065,Missing Benches,No benches at Republic Square Station (NB) bus stop,2025-01-08,459,1.2575342465753423,1–2 years
+Republic Square Station (NB),SR23001038,Safety Concerns,Request safety improvements at Republic Square Station (NB) stop,2025-01-08,459,1.2575342465753423,1–2 years
+Republic Square Station (NB),SR23001024,Missing Benches,No benches at Republic Square Station (NB) bus stop,2025-01-19,448,1.227397260273973,1–2 years
+Republic Square Station (NB),SR23001049,Missing Shelter,Transit stop Republic Square Station (NB) needs shelter for rider protection,2025-01-20,447,1.2246575342465753,1–2 years
+Republic Square Station (NB),SR23001029,Missing Benches,Request bench installation at Republic Square Station (NB),2025-02-23,413,1.1315068493150684,1–2 years
+Republic Square Station (NB),SR23001050,Missing Benches,No benches at Republic Square Station (NB) bus stop,2025-04-04,373,1.021917808219178,1–2 years
+Republic Square Station (NB),SR23001045,Missing Shelter,No weather protection at Republic Square Station (NB) transit stop,2025-04-20,357,0.978082191780822,< 1 year
+Republic Square Station (NB),SR23000996,Missing Shelter,Transit stop Republic Square Station (NB) needs shelter for rider protection,2025-04-21,356,0.9753424657534246,< 1 year
+Republic Square Station (NB),SR23001052,Missing Shelter,No weather protection at Republic Square Station (NB) transit stop,2025-05-13,334,0.915068493150685,< 1 year
+Republic Square Station (NB),SR23001028,Missing Shelter,Bus stop at Republic Square Station (NB) missing shelter - riders exposed to weather,2025-07-07,279,0.7643835616438356,< 1 year
+Republic Square Station (NB),SR23001047,Other,Riders have nowhere to sit at Republic Square Station (NB),2025-07-21,265,0.726027397260274,< 1 year
+Republic Square Station (NB),SR23001015,Missing Shelter,No weather protection at Republic Square Station (NB) transit stop,2025-07-24,262,0.7178082191780822,< 1 year
+Republic Square Station (NB),SR23001043,Missing Shelter,Bus stop at Republic Square Station (NB) missing shelter - riders exposed to weather,2025-07-26,260,0.7123287671232876,< 1 year
+Republic Square Station (NB),SR23001037,Other,Riders have nowhere to sit at Republic Square Station (NB),2025-09-05,219,0.6,< 1 year
+Republic Square Station (NB),SR23001018,Weather Exposure,Bus stop Republic Square Station (NB) exposed to extreme heat/sun,2025-09-12,212,0.5808219178082191,< 1 year
+Republic Square Station (NB),SR23000991,Missing Shelter,Transit stop Republic Square Station (NB) needs shelter for rider protection,2025-10-10,184,0.5041095890410959,< 1 year
+Republic Square Station (NB),SR23001005,Missing Benches,No benches at Republic Square Station (NB) bus stop,2025-10-30,164,0.4493150684931506,< 1 year
+Republic Square Station (NB),SR23001054,Other,Riders have nowhere to sit at Republic Square Station (NB),2025-11-24,139,0.3808219178082191,< 1 year
+Republic Square Station (NB),SR23000994,Missing Shelter,No shelter at Republic Square Station (NB) transit stop,2025-12-26,107,0.2931506849315068,< 1 year
+Republic Square Station (NB),SR23001057,Missing Shelter,Request shelter installation at Republic Square Station (NB),2026-01-13,89,0.2438356164383561,< 1 year
+Republic Square Station (NB),SR23001003,Missing Shelter,Request shelter installation at Republic Square Station (NB),2026-02-05,66,0.1808219178082191,< 1 year
+Republic Square Station (NB),SR23001051,Missing Benches,Missing seating at Republic Square Station (NB) transit stop,2026-02-14,57,0.1561643835616438,< 1 year
+Republic Square Station (NB),SR23000992,Weather Exposure,Riders getting wet at Republic Square Station (NB) during rain,2026-02-26,45,0.1232876712328767,< 1 year
+Republic Square Station (NB),SR23001059,Missing Shelter,No shelter at Republic Square Station (NB) transit stop,2026-03-14,29,0.0794520547945205,< 1 year
+Republic Square Station (NB),SR23001046,Other,Riders have nowhere to sit at Republic Square Station (NB),2026-03-24,19,0.0520547945205479,< 1 year
+Republic Square Station (NB),SR23001011,Missing Shelter,Transit stop Republic Square Station (NB) needs shelter for rider protection,2026-03-26,17,0.0465753424657534,< 1 year
+Republic Square Station (NB),SR23001032,Missing Shelter,Request shelter installation at Republic Square Station (NB),2026-04-09,3,0.0082191780821917,< 1 year
+UT Dean Keeton Station (NB),SR23000610,Missing Benches,Request bench installation at UT Dean Keeton Station (NB),2023-01-19,1179,3.23013698630137,3+ years
+UT Dean Keeton Station (NB),SR23000552,Other,Riders have nowhere to sit at UT Dean Keeton Station (NB),2023-01-22,1176,3.221917808219178,3+ years
+UT Dean Keeton Station (NB),SR23000618,Missing Shelter,No shelter at UT Dean Keeton Station (NB) transit stop,2023-02-16,1151,3.1534246575342464,3+ years
+UT Dean Keeton Station (NB),SR23000533,Safety Concerns,Request safety improvements at UT Dean Keeton Station (NB) stop,2023-03-22,1117,3.0602739726027397,3+ years
+UT Dean Keeton Station (NB),SR23000569,Missing Shelter,Transit stop UT Dean Keeton Station (NB) needs shelter for rider protection,2023-04-17,1091,2.989041095890411,2–3 years
+UT Dean Keeton Station (NB),SR23000580,Missing Benches,Missing seating at UT Dean Keeton Station (NB) transit stop,2023-04-18,1090,2.9863013698630136,2–3 years
+UT Dean Keeton Station (NB),SR23000611,Missing Shelter,Request shelter installation at UT Dean Keeton Station (NB),2023-06-20,1027,2.813698630136986,2–3 years
+UT Dean Keeton Station (NB),SR23000613,Safety (Lighting),Safety concerns at UT Dean Keeton Station (NB) bus stop after dark,2023-06-27,1020,2.7945205479452055,2–3 years
+UT Dean Keeton Station (NB),SR23000585,Missing Shelter,No shelter at UT Dean Keeton Station (NB) transit stop,2023-07-02,1015,2.780821917808219,2–3 years
+UT Dean Keeton Station (NB),SR23000602,Missing Shelter,No weather protection at UT Dean Keeton Station (NB) transit stop,2023-08-09,977,2.6767123287671235,2–3 years
+UT Dean Keeton Station (NB),SR23000607,Missing Shelter,Transit stop UT Dean Keeton Station (NB) needs weather shelter,2023-09-12,943,2.5835616438356164,2–3 years
+UT Dean Keeton Station (NB),SR23000581,Missing Shelter,No shelter at UT Dean Keeton Station (NB) transit stop,2023-09-30,925,2.5342465753424657,2–3 years
+UT Dean Keeton Station (NB),SR23000563,Weather Exposure,Riders getting wet at UT Dean Keeton Station (NB) during rain,2023-09-30,925,2.5342465753424657,2–3 years
+UT Dean Keeton Station (NB),SR23000599,Missing Benches,No benches at UT Dean Keeton Station (NB) bus stop,2023-10-01,924,2.5315068493150683,2–3 years
+UT Dean Keeton Station (NB),SR23000572,Missing Benches,Request bench installation at UT Dean Keeton Station (NB),2023-10-22,903,2.473972602739726,2–3 years
+UT Dean Keeton Station (NB),SR23000561,Missing Benches,No benches at UT Dean Keeton Station (NB) bus stop,2023-11-24,870,2.3835616438356166,2–3 years
+UT Dean Keeton Station (NB),SR23000596,Missing Benches,Request bench installation at UT Dean Keeton Station (NB),2023-12-02,862,2.361643835616438,2–3 years
+UT Dean Keeton Station (NB),SR23000543,Missing Shelter,Bus stop at UT Dean Keeton Station (NB) missing shelter - riders exposed to weather,2023-12-13,851,2.331506849315069,2–3 years
+UT Dean Keeton Station (NB),SR23000527,Missing Shelter,Request shelter installation at UT Dean Keeton Station (NB),2024-02-22,780,2.136986301369863,2–3 years
+UT Dean Keeton Station (NB),SR23000529,Missing Shelter,Bus stop at UT Dean Keeton Station (NB) missing shelter - riders exposed to weather,2024-02-22,780,2.136986301369863,2–3 years
+UT Dean Keeton Station (NB),SR23000614,Missing Shelter,Request shelter installation at UT Dean Keeton Station (NB),2024-03-19,754,2.0657534246575344,2–3 years
+UT Dean Keeton Station (NB),SR23000593,Missing Shelter,Bus stop at UT Dean Keeton Station (NB) missing shelter - riders exposed to weather,2024-03-29,744,2.0383561643835617,2–3 years
+UT Dean Keeton Station (NB),SR23000604,Missing Benches,No benches at UT Dean Keeton Station (NB) bus stop,2024-04-11,731,2.002739726027398,2–3 years
+UT Dean Keeton Station (NB),SR23000621,Safety (Lighting),Transit stop UT Dean Keeton Station (NB) needs better lighting,2024-04-11,731,2.002739726027398,2–3 years
+UT Dean Keeton Station (NB),SR23000577,Missing Shelter,Transit stop UT Dean Keeton Station (NB) needs shelter for rider protection,2024-04-26,716,1.9616438356164383,1–2 years
+UT Dean Keeton Station (NB),SR23000550,Missing Benches,No benches at UT Dean Keeton Station (NB) bus stop,2024-05-12,700,1.917808219178082,1–2 years
+UT Dean Keeton Station (NB),SR23000588,Missing Shelter,Transit stop UT Dean Keeton Station (NB) needs shelter for rider protection,2024-05-23,689,1.887671232876712,1–2 years
+UT Dean Keeton Station (NB),SR23000558,Missing Benches,Request bench installation at UT Dean Keeton Station (NB),2024-06-26,655,1.7945205479452055,1–2 years
+UT Dean Keeton Station (NB),SR23000601,Safety Concerns,Request safety improvements at UT Dean Keeton Station (NB) stop,2024-07-04,647,1.772602739726027,1–2 years
+UT Dean Keeton Station (NB),SR23000570,Missing Benches,Missing seating at UT Dean Keeton Station (NB) transit stop,2024-07-19,632,1.7315068493150685,1–2 years
+UT Dean Keeton Station (NB),SR23000528,Missing Shelter,No shelter at UT Dean Keeton Station (NB) transit stop,2024-08-13,607,1.663013698630137,1–2 years
+UT Dean Keeton Station (NB),SR23000603,Missing Benches,Missing seating at UT Dean Keeton Station (NB) transit stop,2024-10-23,536,1.4684931506849317,1–2 years
+UT Dean Keeton Station (NB),SR23000616,Safety (Lighting),Transit stop UT Dean Keeton Station (NB) needs better lighting,2024-11-02,526,1.441095890410959,1–2 years
+UT Dean Keeton Station (NB),SR23000564,Weather Exposure,Bus stop UT Dean Keeton Station (NB) exposed to extreme heat/sun,2024-11-17,511,1.4,1–2 years
+UT Dean Keeton Station (NB),SR23000554,Missing Benches,No benches at UT Dean Keeton Station (NB) bus stop,2024-11-25,503,1.378082191780822,1–2 years
+UT Dean Keeton Station (NB),SR23000578,Other,Riders have nowhere to sit at UT Dean Keeton Station (NB),2024-11-30,498,1.3643835616438356,1–2 years
+UT Dean Keeton Station (NB),SR23000530,Safety Concerns,Feeling unsafe waiting at UT Dean Keeton Station (NB),2024-12-06,492,1.347945205479452,1–2 years
+UT Dean Keeton Station (NB),SR23000542,Missing Benches,Missing seating at UT Dean Keeton Station (NB) transit stop,2024-12-07,491,1.3452054794520547,1–2 years
+UT Dean Keeton Station (NB),SR23000587,Weather Exposure,Bus stop UT Dean Keeton Station (NB) exposed to extreme heat/sun,2025-02-17,419,1.147945205479452,1–2 years
+UT Dean Keeton Station (NB),SR23000567,Missing Shelter,No shelter at UT Dean Keeton Station (NB) transit stop,2025-02-19,417,1.1424657534246576,1–2 years
+UT Dean Keeton Station (NB),SR23000608,Other,Riders have nowhere to sit at UT Dean Keeton Station (NB),2025-02-26,410,1.1232876712328768,1–2 years
+UT Dean Keeton Station (NB),SR23000562,Weather Exposure,Bus stop UT Dean Keeton Station (NB) exposed to extreme heat/sun,2025-03-22,386,1.0575342465753426,1–2 years
+UT Dean Keeton Station (NB),SR23000615,Missing Benches,No benches at UT Dean Keeton Station (NB) bus stop,2025-03-24,384,1.0520547945205478,1–2 years
+UT Dean Keeton Station (NB),SR23000571,Missing Shelter,Transit stop UT Dean Keeton Station (NB) needs shelter for rider protection,2025-03-26,382,1.0465753424657531,1–2 years
+UT Dean Keeton Station (NB),SR23000612,Weather Exposure,Bus stop UT Dean Keeton Station (NB) exposed to extreme heat/sun,2025-05-04,343,0.9397260273972604,< 1 year
+UT Dean Keeton Station (NB),SR23000598,Missing Benches,Missing seating at UT Dean Keeton Station (NB) transit stop,2025-06-06,310,0.8493150684931506,< 1 year
+UT Dean Keeton Station (NB),SR23000617,Safety Concerns,Request safety improvements at UT Dean Keeton Station (NB) stop,2025-06-11,305,0.8356164383561644,< 1 year
+UT Dean Keeton Station (NB),SR23000556,Missing Benches,Missing seating at UT Dean Keeton Station (NB) transit stop,2025-06-12,304,0.8328767123287671,< 1 year
+UT Dean Keeton Station (NB),SR23000540,Missing Shelter,No shelter at UT Dean Keeton Station (NB) transit stop,2025-06-16,300,0.821917808219178,< 1 year
+UT Dean Keeton Station (NB),SR23000623,Missing Benches,Request bench installation at UT Dean Keeton Station (NB),2025-07-03,283,0.7753424657534247,< 1 year
+UT Dean Keeton Station (NB),SR23000555,Missing Shelter,Transit stop UT Dean Keeton Station (NB) needs shelter for rider protection,2025-07-07,279,0.7643835616438356,< 1 year
+UT Dean Keeton Station (NB),SR23000541,Missing Shelter,Bus stop at UT Dean Keeton Station (NB) missing shelter - riders exposed to weather,2025-08-16,239,0.6547945205479452,< 1 year
+UT Dean Keeton Station (NB),SR23000545,Missing Shelter,Request shelter installation at UT Dean Keeton Station (NB),2025-09-25,199,0.5452054794520548,< 1 year
+UT Dean Keeton Station (NB),SR23000582,Missing Shelter,No shelter at UT Dean Keeton Station (NB) transit stop,2025-09-30,194,0.5315068493150685,< 1 year
+UT Dean Keeton Station (NB),SR23000584,Missing Benches,No benches at UT Dean Keeton Station (NB) bus stop,2025-10-28,166,0.4547945205479452,< 1 year
+UT Dean Keeton Station (NB),SR23000560,Missing Shelter,Request shelter installation at UT Dean Keeton Station (NB),2025-11-13,150,0.410958904109589,< 1 year
+UT Dean Keeton Station (NB),SR23000591,Missing Benches,No benches at UT Dean Keeton Station (NB) bus stop,2025-11-27,136,0.3726027397260274,< 1 year
+UT Dean Keeton Station (NB),SR23000565,Missing Benches,No benches at UT Dean Keeton Station (NB) bus stop,2025-11-29,134,0.3671232876712328,< 1 year
+UT Dean Keeton Station (NB),SR23000586,Missing Shelter,Transit stop UT Dean Keeton Station (NB) needs shelter for rider protection,2025-12-11,122,0.3342465753424657,< 1 year
+UT Dean Keeton Station (NB),SR23000592,Missing Benches,Missing seating at UT Dean Keeton Station (NB) transit stop,2025-12-23,110,0.3013698630136986,< 1 year
+UT Dean Keeton Station (NB),SR23000573,Missing Benches,No benches at UT Dean Keeton Station (NB) bus stop,2025-12-24,109,0.2986301369863013,< 1 year
+UT Dean Keeton Station (NB),SR23000568,Safety Concerns,Feeling unsafe waiting at UT Dean Keeton Station (NB),2026-01-09,93,0.2547945205479452,< 1 year
+UT Dean Keeton Station (NB),SR23000551,Safety Concerns,Request safety improvements at UT Dean Keeton Station (NB) stop,2026-01-29,73,0.2,< 1 year
+UT Dean Keeton Station (NB),SR23000537,Missing Shelter,No shelter at UT Dean Keeton Station (NB) transit stop,2026-02-03,68,0.1863013698630137,< 1 year
+UT Dean Keeton Station (NB),SR23000597,Missing Shelter,Bus stop at UT Dean Keeton Station (NB) missing shelter - riders exposed to weather,2026-02-24,47,0.1287671232876712,< 1 year
+UT Dean Keeton Station (NB),SR23000566,Missing Shelter,Bus stop at UT Dean Keeton Station (NB) missing shelter - riders exposed to weather,2026-02-26,45,0.1232876712328767,< 1 year
+UT Dean Keeton Station (NB),SR23000624,Missing Shelter,No weather protection at UT Dean Keeton Station (NB) transit stop,2026-03-04,39,0.1068493150684931,< 1 year
+UT Dean Keeton Station (NB),SR23000539,Missing Shelter,Transit stop UT Dean Keeton Station (NB) needs shelter for rider protection,2026-03-08,35,0.0958904109589041,< 1 year
+UT Dean Keeton Station (NB),SR23000536,Missing Shelter,No shelter at UT Dean Keeton Station (NB) transit stop,2026-03-13,30,0.0821917808219178,< 1 year
+UT Dean Keeton Station (NB),SR23000535,Missing Shelter,Transit stop UT Dean Keeton Station (NB) needs weather shelter,2026-04-03,9,0.0246575342465753,< 1 year
+Vic Mathias/Auditorium Shores (SB),SR23000674,Missing Shelter,Transit stop Vic Mathias/Auditorium Shores (SB) needs weather shelter,2023-01-16,1182,3.2383561643835614,3+ years
+Vic Mathias/Auditorium Shores (SB),SR23000680,Missing Shelter,Request shelter installation at Vic Mathias/Auditorium Shores (SB),2023-02-02,1165,3.191780821917808,3+ years
+Vic Mathias/Auditorium Shores (SB),SR23000664,Missing Shelter,No shelter at Vic Mathias/Auditorium Shores (SB) transit stop,2023-02-05,1162,3.1835616438356165,3+ years
+Vic Mathias/Auditorium Shores (SB),SR23000711,Missing Shelter,Bus stop at Vic Mathias/Auditorium Shores (SB) missing shelter - riders exposed to weather,2023-02-07,1160,3.1780821917808217,3+ years
+Vic Mathias/Auditorium Shores (SB),SR23000691,Other,Riders have nowhere to sit at Vic Mathias/Auditorium Shores (SB),2023-02-26,1141,3.126027397260274,3+ years
+Vic Mathias/Auditorium Shores (SB),SR23000683,Missing Shelter,No shelter at Vic Mathias/Auditorium Shores (SB) transit stop,2023-03-15,1124,3.0794520547945203,3+ years
+Vic Mathias/Auditorium Shores (SB),SR23000644,Missing Shelter,Request shelter installation at Vic Mathias/Auditorium Shores (SB),2023-04-14,1094,2.997260273972602,2–3 years
+Vic Mathias/Auditorium Shores (SB),SR23000712,Missing Benches,Request bench installation at Vic Mathias/Auditorium Shores (SB),2023-05-04,1074,2.9424657534246577,2–3 years
+Vic Mathias/Auditorium Shores (SB),SR23000649,Missing Shelter,Bus stop at Vic Mathias/Auditorium Shores (SB) missing shelter - riders exposed to weather,2023-05-04,1074,2.9424657534246577,2–3 years
+Vic Mathias/Auditorium Shores (SB),SR23000717,Missing Shelter,Transit stop Vic Mathias/Auditorium Shores (SB) needs shelter for rider protection,2023-06-06,1041,2.852054794520548,2–3 years
+Vic Mathias/Auditorium Shores (SB),SR23000639,Missing Shelter,Transit stop Vic Mathias/Auditorium Shores (SB) needs weather shelter,2023-07-06,1011,2.76986301369863,2–3 years
+Vic Mathias/Auditorium Shores (SB),SR23000628,Missing Shelter,No shelter at Vic Mathias/Auditorium Shores (SB) transit stop,2023-07-17,1000,2.73972602739726,2–3 years
+Vic Mathias/Auditorium Shores (SB),SR23000640,Weather Exposure,Riders getting wet at Vic Mathias/Auditorium Shores (SB) during rain,2023-07-30,987,2.704109589041096,2–3 years
+Vic Mathias/Auditorium Shores (SB),SR23000696,Other,Riders have nowhere to sit at Vic Mathias/Auditorium Shores (SB),2023-08-13,973,2.665753424657534,2–3 years
+Vic Mathias/Auditorium Shores (SB),SR23000685,Missing Benches,No benches at Vic Mathias/Auditorium Shores (SB) bus stop,2023-09-16,939,2.5726027397260274,2–3 years
+Vic Mathias/Auditorium Shores (SB),SR23000641,Missing Shelter,Transit stop Vic Mathias/Auditorium Shores (SB) needs weather shelter,2023-09-25,930,2.547945205479452,2–3 years
+Vic Mathias/Auditorium Shores (SB),SR23000651,Missing Shelter,Bus stop at Vic Mathias/Auditorium Shores (SB) missing shelter - riders exposed to weather,2023-10-08,917,2.5123287671232877,2–3 years
+Vic Mathias/Auditorium Shores (SB),SR23000710,Safety Concerns,Request safety improvements at Vic Mathias/Auditorium Shores (SB) stop,2023-11-02,892,2.4438356164383563,2–3 years
+Vic Mathias/Auditorium Shores (SB),SR23000632,Missing Shelter,No shelter at Vic Mathias/Auditorium Shores (SB) transit stop,2023-11-07,887,2.43013698630137,2–3 years
+Vic Mathias/Auditorium Shores (SB),SR23000704,Other,Riders have nowhere to sit at Vic Mathias/Auditorium Shores (SB),2023-11-08,886,2.4273972602739726,2–3 years
+Vic Mathias/Auditorium Shores (SB),SR23000682,Missing Shelter,Bus stop at Vic Mathias/Auditorium Shores (SB) missing shelter - riders exposed to weather,2023-11-22,872,2.389041095890411,2–3 years
+Vic Mathias/Auditorium Shores (SB),SR23000630,Missing Shelter,Bus stop at Vic Mathias/Auditorium Shores (SB) missing shelter - riders exposed to weather,2023-12-28,836,2.2904109589041095,2–3 years
+Vic Mathias/Auditorium Shores (SB),SR23000708,Safety Concerns,Feeling unsafe waiting at Vic Mathias/Auditorium Shores (SB),2024-01-27,806,2.208219178082192,2–3 years
+Vic Mathias/Auditorium Shores (SB),SR23000675,Missing Benches,Missing seating at Vic Mathias/Auditorium Shores (SB) transit stop,2024-01-31,802,2.197260273972603,2–3 years
+Vic Mathias/Auditorium Shores (SB),SR23000695,Missing Shelter,Bus stop at Vic Mathias/Auditorium Shores (SB) missing shelter - riders exposed to weather,2024-02-10,792,2.16986301369863,2–3 years
+Vic Mathias/Auditorium Shores (SB),SR23000697,Missing Benches,Request bench installation at Vic Mathias/Auditorium Shores (SB),2024-02-22,780,2.136986301369863,2–3 years
+Vic Mathias/Auditorium Shores (SB),SR23000718,Other,Riders have nowhere to sit at Vic Mathias/Auditorium Shores (SB),2024-02-27,775,2.1232876712328768,2–3 years
+Vic Mathias/Auditorium Shores (SB),SR23000716,Missing Shelter,No weather protection at Vic Mathias/Auditorium Shores (SB) transit stop,2024-03-11,762,2.0876712328767124,2–3 years
+Vic Mathias/Auditorium Shores (SB),SR23000669,Missing Shelter,Transit stop Vic Mathias/Auditorium Shores (SB) needs shelter for rider protection,2024-03-27,746,2.043835616438356,2–3 years
+Vic Mathias/Auditorium Shores (SB),SR23000670,Missing Shelter,Transit stop Vic Mathias/Auditorium Shores (SB) needs shelter for rider protection,2024-04-04,738,2.021917808219178,2–3 years
+Vic Mathias/Auditorium Shores (SB),SR23000660,Missing Shelter,No shelter at Vic Mathias/Auditorium Shores (SB) transit stop,2024-04-06,736,2.0164383561643837,2–3 years
+Vic Mathias/Auditorium Shores (SB),SR23000663,Missing Benches,No benches at Vic Mathias/Auditorium Shores (SB) bus stop,2024-04-07,735,2.0136986301369864,2–3 years
+Vic Mathias/Auditorium Shores (SB),SR23000679,Missing Shelter,Transit stop Vic Mathias/Auditorium Shores (SB) needs weather shelter,2024-04-15,727,1.991780821917808,1–2 years
+Vic Mathias/Auditorium Shores (SB),SR23000678,Other,Riders have nowhere to sit at Vic Mathias/Auditorium Shores (SB),2024-05-01,711,1.947945205479452,1–2 years
+Vic Mathias/Auditorium Shores (SB),SR23000666,Missing Shelter,Bus stop at Vic Mathias/Auditorium Shores (SB) missing shelter - riders exposed to weather,2024-05-23,689,1.887671232876712,1–2 years
+Vic Mathias/Auditorium Shores (SB),SR23000687,Missing Shelter,Transit stop Vic Mathias/Auditorium Shores (SB) needs shelter for rider protection,2024-06-20,661,1.810958904109589,1–2 years
+Vic Mathias/Auditorium Shores (SB),SR23000638,Weather Exposure,Bus stop Vic Mathias/Auditorium Shores (SB) exposed to extreme heat/sun,2024-06-30,651,1.7835616438356163,1–2 years
+Vic Mathias/Auditorium Shores (SB),SR23000714,Missing Benches,Request bench installation at Vic Mathias/Auditorium Shores (SB),2024-08-10,610,1.6712328767123288,1–2 years
+Vic Mathias/Auditorium Shores (SB),SR23000625,Other,Riders have nowhere to sit at Vic Mathias/Auditorium Shores (SB),2024-09-30,559,1.5315068493150683,1–2 years
+Vic Mathias/Auditorium Shores (SB),SR23000694,Missing Shelter,Request shelter installation at Vic Mathias/Auditorium Shores (SB),2024-10-01,558,1.5287671232876712,1–2 years
+Vic Mathias/Auditorium Shores (SB),SR23000642,Missing Benches,No benches at Vic Mathias/Auditorium Shores (SB) bus stop,2024-10-17,542,1.484931506849315,1–2 years
+Vic Mathias/Auditorium Shores (SB),SR23000690,Missing Shelter,Bus stop at Vic Mathias/Auditorium Shores (SB) missing shelter - riders exposed to weather,2024-10-30,529,1.4493150684931506,1–2 years
+Vic Mathias/Auditorium Shores (SB),SR23000643,Weather Exposure,Bus stop Vic Mathias/Auditorium Shores (SB) exposed to extreme heat/sun,2024-11-17,511,1.4,1–2 years
+Vic Mathias/Auditorium Shores (SB),SR23000659,Weather Exposure,Riders getting wet at Vic Mathias/Auditorium Shores (SB) during rain,2024-11-25,503,1.378082191780822,1–2 years
+Vic Mathias/Auditorium Shores (SB),SR23000713,Missing Benches,No benches at Vic Mathias/Auditorium Shores (SB) bus stop,2024-11-26,502,1.3753424657534246,1–2 years
+Vic Mathias/Auditorium Shores (SB),SR23000650,Missing Benches,Request bench installation at Vic Mathias/Auditorium Shores (SB),2024-12-05,493,1.3506849315068492,1–2 years
+Vic Mathias/Auditorium Shores (SB),SR23000689,Missing Shelter,Bus stop at Vic Mathias/Auditorium Shores (SB) missing shelter - riders exposed to weather,2024-12-17,481,1.3178082191780822,1–2 years
+Vic Mathias/Auditorium Shores (SB),SR23000671,Other,Riders have nowhere to sit at Vic Mathias/Auditorium Shores (SB),2024-12-21,477,1.3068493150684932,1–2 years
+Vic Mathias/Auditorium Shores (SB),SR23000654,Missing Benches,Request bench installation at Vic Mathias/Auditorium Shores (SB),2024-12-28,470,1.2876712328767124,1–2 years
+Vic Mathias/Auditorium Shores (SB),SR23000715,Missing Shelter,No weather protection at Vic Mathias/Auditorium Shores (SB) transit stop,2025-01-11,456,1.2493150684931509,1–2 years
+Vic Mathias/Auditorium Shores (SB),SR23000645,Missing Shelter,Request shelter installation at Vic Mathias/Auditorium Shores (SB),2025-01-26,441,1.2082191780821918,1–2 years
+Vic Mathias/Auditorium Shores (SB),SR23000677,Missing Shelter,Transit stop Vic Mathias/Auditorium Shores (SB) needs shelter for rider protection,2025-03-12,396,1.084931506849315,1–2 years
+Vic Mathias/Auditorium Shores (SB),SR23000698,Missing Shelter,Transit stop Vic Mathias/Auditorium Shores (SB) needs weather shelter,2025-03-26,382,1.0465753424657531,1–2 years
+Vic Mathias/Auditorium Shores (SB),SR23000681,Missing Shelter,Bus stop at Vic Mathias/Auditorium Shores (SB) missing shelter - riders exposed to weather,2025-03-28,380,1.0410958904109588,1–2 years
+Vic Mathias/Auditorium Shores (SB),SR23000665,Missing Shelter,No weather protection at Vic Mathias/Auditorium Shores (SB) transit stop,2025-06-01,315,0.863013698630137,< 1 year
+Vic Mathias/Auditorium Shores (SB),SR23000636,Safety Concerns,Request safety improvements at Vic Mathias/Auditorium Shores (SB) stop,2025-06-09,307,0.8410958904109589,< 1 year
+Vic Mathias/Auditorium Shores (SB),SR23000672,Missing Benches,No benches at Vic Mathias/Auditorium Shores (SB) bus stop,2025-08-12,243,0.6657534246575343,< 1 year
+Vic Mathias/Auditorium Shores (SB),SR23000707,Missing Shelter,Transit stop Vic Mathias/Auditorium Shores (SB) needs shelter for rider protection,2025-09-04,220,0.6027397260273972,< 1 year
+Vic Mathias/Auditorium Shores (SB),SR23000688,Missing Benches,Missing seating at Vic Mathias/Auditorium Shores (SB) transit stop,2025-09-07,217,0.5945205479452055,< 1 year
+Vic Mathias/Auditorium Shores (SB),SR23000662,Missing Shelter,Request shelter installation at Vic Mathias/Auditorium Shores (SB),2025-09-19,205,0.5616438356164384,< 1 year
+Vic Mathias/Auditorium Shores (SB),SR23000635,Weather Exposure,Bus stop Vic Mathias/Auditorium Shores (SB) exposed to extreme heat/sun,2025-09-25,199,0.5452054794520548,< 1 year
+Vic Mathias/Auditorium Shores (SB),SR23000631,Missing Shelter,Request shelter installation at Vic Mathias/Auditorium Shores (SB),2025-09-26,198,0.5424657534246575,< 1 year
+Vic Mathias/Auditorium Shores (SB),SR23000676,Safety Concerns,Feeling unsafe waiting at Vic Mathias/Auditorium Shores (SB),2025-11-11,152,0.4164383561643835,< 1 year
+Vic Mathias/Auditorium Shores (SB),SR23000673,Missing Benches,Missing seating at Vic Mathias/Auditorium Shores (SB) transit stop,2025-11-12,151,0.4136986301369863,< 1 year
+Vic Mathias/Auditorium Shores (SB),SR23000627,Missing Benches,No benches at Vic Mathias/Auditorium Shores (SB) bus stop,2025-11-28,135,0.3698630136986301,< 1 year
+Vic Mathias/Auditorium Shores (SB),SR23000703,Weather Exposure,Riders getting wet at Vic Mathias/Auditorium Shores (SB) during rain,2025-12-27,106,0.2904109589041095,< 1 year
+Vic Mathias/Auditorium Shores (SB),SR23000655,Missing Shelter,Transit stop Vic Mathias/Auditorium Shores (SB) needs weather shelter,2026-01-06,96,0.2630136986301369,< 1 year
+Vic Mathias/Auditorium Shores (SB),SR23000693,Weather Exposure,Riders getting wet at Vic Mathias/Auditorium Shores (SB) during rain,2026-01-13,89,0.2438356164383561,< 1 year
+Vic Mathias/Auditorium Shores (SB),SR23000719,Missing Shelter,Request shelter installation at Vic Mathias/Auditorium Shores (SB),2026-01-17,85,0.2328767123287671,< 1 year
+Vic Mathias/Auditorium Shores (SB),SR23000705,Safety Concerns,Feeling unsafe waiting at Vic Mathias/Auditorium Shores (SB),2026-02-03,68,0.1863013698630137,< 1 year
+Vic Mathias/Auditorium Shores (SB),SR23000637,Missing Benches,Request bench installation at Vic Mathias/Auditorium Shores (SB),2026-02-22,49,0.1342465753424657,< 1 year
+West 38th Station (SB),SR23001245,Weather Exposure,Riders getting wet at West 38th Station (SB) during rain,2023-01-04,1194,3.271232876712329,3+ years
+West 38th Station (SB),SR23001263,Other,Riders have nowhere to sit at West 38th Station (SB),2023-02-06,1161,3.180821917808219,3+ years
+West 38th Station (SB),SR23001286,Missing Benches,Request bench installation at West 38th Station (SB),2023-02-18,1149,3.147945205479452,3+ years
+West 38th Station (SB),SR23001280,Safety Concerns,Request safety improvements at West 38th Station (SB) stop,2023-02-26,1141,3.126027397260274,3+ years
+West 38th Station (SB),SR23001258,Missing Shelter,No shelter at West 38th Station (SB) transit stop,2023-02-27,1140,3.1232876712328768,3+ years
+West 38th Station (SB),SR23001241,Missing Shelter,Request shelter installation at West 38th Station (SB),2023-03-12,1127,3.0876712328767124,3+ years
+West 38th Station (SB),SR23001243,Missing Shelter,Transit stop West 38th Station (SB) needs shelter for rider protection,2023-03-13,1126,3.084931506849315,3+ years
+West 38th Station (SB),SR23001273,Missing Shelter,No shelter at West 38th Station (SB) transit stop,2023-03-17,1122,3.073972602739726,3+ years
+West 38th Station (SB),SR23001221,Weather Exposure,Riders getting wet at West 38th Station (SB) during rain,2023-03-31,1108,3.0356164383561643,3+ years
+West 38th Station (SB),SR23001269,Safety (Lighting),Safety concerns at West 38th Station (SB) bus stop after dark,2023-04-04,1104,3.0246575342465754,3+ years
+West 38th Station (SB),SR23001270,Missing Benches,No benches at West 38th Station (SB) bus stop,2023-05-06,1072,2.936986301369863,2–3 years
+West 38th Station (SB),SR23001247,Missing Shelter,Transit stop West 38th Station (SB) needs weather shelter,2023-05-13,1065,2.9178082191780823,2–3 years
+West 38th Station (SB),SR23001282,Missing Benches,Request bench installation at West 38th Station (SB),2023-05-15,1063,2.9123287671232876,2–3 years
+West 38th Station (SB),SR23001264,Missing Shelter,Bus stop at West 38th Station (SB) missing shelter - riders exposed to weather,2023-07-24,993,2.7205479452054795,2–3 years
+West 38th Station (SB),SR23001288,Missing Shelter,Bus stop at West 38th Station (SB) missing shelter - riders exposed to weather,2023-08-26,960,2.6301369863013697,2–3 years
+West 38th Station (SB),SR23001272,Missing Shelter,Transit stop West 38th Station (SB) needs shelter for rider protection,2023-09-05,950,2.6027397260273974,2–3 years
+West 38th Station (SB),SR23001267,Other,Riders have nowhere to sit at West 38th Station (SB),2023-10-06,919,2.5178082191780824,2–3 years
+West 38th Station (SB),SR23001261,Weather Exposure,Bus stop West 38th Station (SB) exposed to extreme heat/sun,2023-10-30,895,2.452054794520548,2–3 years
+West 38th Station (SB),SR23001257,Weather Exposure,Riders getting wet at West 38th Station (SB) during rain,2023-11-16,878,2.405479452054794,2–3 years
+West 38th Station (SB),SR23001225,Missing Shelter,No shelter at West 38th Station (SB) transit stop,2024-02-01,801,2.1945205479452055,2–3 years
+West 38th Station (SB),SR23001238,Missing Shelter,Request shelter installation at West 38th Station (SB),2024-02-22,780,2.136986301369863,2–3 years
+West 38th Station (SB),SR23001223,Missing Shelter,No shelter at West 38th Station (SB) transit stop,2024-05-17,695,1.904109589041096,1–2 years
+West 38th Station (SB),SR23001252,Weather Exposure,Bus stop West 38th Station (SB) exposed to extreme heat/sun,2024-05-18,694,1.9013698630136984,1–2 years
+West 38th Station (SB),SR23001255,Missing Shelter,Request shelter installation at West 38th Station (SB),2024-06-01,680,1.8630136986301369,1–2 years
+West 38th Station (SB),SR23001285,Missing Shelter,Transit stop West 38th Station (SB) needs weather shelter,2024-06-02,679,1.8602739726027395,1–2 years
+West 38th Station (SB),SR23001290,Missing Shelter,Transit stop West 38th Station (SB) needs weather shelter,2024-09-11,578,1.5835616438356164,1–2 years
+West 38th Station (SB),SR23001227,Missing Benches,Missing seating at West 38th Station (SB) transit stop,2024-09-27,562,1.5397260273972602,1–2 years
+West 38th Station (SB),SR23001236,Missing Shelter,Transit stop West 38th Station (SB) needs shelter for rider protection,2024-09-27,562,1.5397260273972602,1–2 years
+West 38th Station (SB),SR23001275,Missing Benches,Missing seating at West 38th Station (SB) transit stop,2024-09-28,561,1.536986301369863,1–2 years
+West 38th Station (SB),SR23001249,Missing Shelter,No shelter at West 38th Station (SB) transit stop,2024-09-29,560,1.5342465753424657,1–2 years
+West 38th Station (SB),SR23001239,Missing Shelter,Bus stop at West 38th Station (SB) missing shelter - riders exposed to weather,2024-10-17,542,1.484931506849315,1–2 years
+West 38th Station (SB),SR23001291,Missing Shelter,Bus stop at West 38th Station (SB) missing shelter - riders exposed to weather,2024-10-25,534,1.463013698630137,1–2 years
+West 38th Station (SB),SR23001287,Missing Benches,Missing seating at West 38th Station (SB) transit stop,2024-10-26,533,1.4602739726027398,1–2 years
+West 38th Station (SB),SR23001237,Missing Shelter,Request shelter installation at West 38th Station (SB),2024-11-05,523,1.4328767123287671,1–2 years
+West 38th Station (SB),SR23001240,Missing Benches,Request bench installation at West 38th Station (SB),2024-11-20,508,1.3917808219178085,1–2 years
+West 38th Station (SB),SR23001284,Missing Shelter,Request shelter installation at West 38th Station (SB),2024-12-07,491,1.3452054794520547,1–2 years
+West 38th Station (SB),SR23001276,Missing Shelter,Transit stop West 38th Station (SB) needs shelter for rider protection,2024-12-25,473,1.295890410958904,1–2 years
+West 38th Station (SB),SR23001224,Missing Shelter,Request shelter installation at West 38th Station (SB),2024-12-27,471,1.2904109589041095,1–2 years
+West 38th Station (SB),SR23001268,Missing Shelter,Bus stop at West 38th Station (SB) missing shelter - riders exposed to weather,2025-01-01,466,1.2767123287671234,1–2 years
+West 38th Station (SB),SR23001283,Missing Shelter,Transit stop West 38th Station (SB) needs weather shelter,2025-01-24,443,1.2136986301369863,1–2 years
+West 38th Station (SB),SR23001278,Missing Shelter,Transit stop West 38th Station (SB) needs shelter for rider protection,2025-01-25,442,1.210958904109589,1–2 years
+West 38th Station (SB),SR23001220,Other,Riders have nowhere to sit at West 38th Station (SB),2025-02-16,420,1.1506849315068493,1–2 years
+West 38th Station (SB),SR23001233,Other,Riders have nowhere to sit at West 38th Station (SB),2025-05-01,346,0.947945205479452,< 1 year
+West 38th Station (SB),SR23001266,Weather Exposure,Bus stop West 38th Station (SB) exposed to extreme heat/sun,2025-05-02,345,0.9452054794520548,< 1 year
+West 38th Station (SB),SR23001256,Weather Exposure,Bus stop West 38th Station (SB) exposed to extreme heat/sun,2025-05-12,335,0.9178082191780822,< 1 year
+West 38th Station (SB),SR23001289,Missing Shelter,No shelter at West 38th Station (SB) transit stop,2025-05-19,328,0.8986301369863013,< 1 year
+West 38th Station (SB),SR23001260,Missing Shelter,No shelter at West 38th Station (SB) transit stop,2025-07-01,285,0.7808219178082192,< 1 year
+West 38th Station (SB),SR23001246,Missing Shelter,Bus stop at West 38th Station (SB) missing shelter - riders exposed to weather,2025-08-31,224,0.6136986301369863,< 1 year
+West 38th Station (SB),SR23001242,Missing Benches,Missing seating at West 38th Station (SB) transit stop,2025-09-28,196,0.536986301369863,< 1 year
+West 38th Station (SB),SR23001230,Missing Shelter,No shelter at West 38th Station (SB) transit stop,2025-10-30,164,0.4493150684931506,< 1 year
+West 38th Station (SB),SR23001244,Missing Shelter,Transit stop West 38th Station (SB) needs weather shelter,2025-11-24,139,0.3808219178082191,< 1 year
+West 38th Station (SB),SR23001248,Missing Shelter,Request shelter installation at West 38th Station (SB),2025-11-27,136,0.3726027397260274,< 1 year
+West 38th Station (SB),SR23001259,Safety Concerns,Feeling unsafe waiting at West 38th Station (SB),2025-12-22,111,0.3041095890410959,< 1 year
+West 38th Station (SB),SR23001235,Weather Exposure,Bus stop West 38th Station (SB) exposed to extreme heat/sun,2026-02-25,46,0.1260273972602739,< 1 year
+West 38th Station (SB),SR23001279,Missing Shelter,No shelter at West 38th Station (SB) transit stop,2026-03-11,32,0.0876712328767123,< 1 year

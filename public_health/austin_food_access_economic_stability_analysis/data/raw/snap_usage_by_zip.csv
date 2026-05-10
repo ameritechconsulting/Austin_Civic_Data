@@ -1,0 +1,22 @@
+zip_code,neighborhood,total_households,snap_households,snap_pct,median_hh_income,pct_below_poverty,pct_poc,snap_per_1000_residents
+78753,Rundberg / North Lamar,20200,8484,42.0,34100,28.4,74.1,421
+78741,Riverside / SE Austin,18900,7182,38.0,36800,26.1,71.3,382
+78744,Slaughter / Far SE Austin,18600,6696,36.0,38200,24.8,68.9,364
+78724,Colony Park / E Austin,16800,5880,35.0,39500,23.7,72.4,351
+78721,E 51st / Govalle,12700,4191,33.0,41200,22.1,69.8,331
+78752,North Loop / Rundberg,14300,4290,30.0,42800,20.6,58.3,300
+78723,Windsor Park,16500,4290,26.0,46100,17.2,54.1,260
+78702,East Austin,14100,3384,24.0,54300,14.8,61.2,240
+78725,Hornsby Bend,9200,2116,23.0,47600,18.9,55.7,230
+78742,Montopolis,6400,1408,22.0,43900,19.4,66.3,220
+78704,South Congress,21300,3408,16.0,61200,10.3,38.4,160
+78745,Slaughter / S Manchaca,22800,3192,14.0,58700,9.8,44.6,140
+78758,Tech Ridge / N Mopac,20400,2448,12.0,62400,8.6,42.1,120
+78748,South Austin / Stassney,21700,2170,10.0,67800,7.4,36.8,100
+78729,Rattan Creek / NW,18300,1647,9.0,78400,5.1,32.2,90
+78701,Downtown,11200,896,8.0,72100,9.3,29.7,80
+78754,Dessau / NE Austin,17600,1408,8.0,73200,6.8,47.3,80
+78756,Rosedale / Brentwood,9800,588,6.0,94600,3.2,22.8,60
+78759,Oak Hill / Great Hills,22100,884,4.0,101300,2.9,28.6,40
+78703,Tarrytown / Brykerwoods,14200,284,2.0,138700,1.7,12.1,20
+78733,Bee Cave / W Lake Hills,8100,162,2.0,149200,1.4,10.3,16

@@ -1,0 +1,13 @@
+neighborhood,zip_code,council_district,census_tract,median_household_income,pct_minority_population,avg_pavement_condition_index,lane_miles_surveyed,pct_lane_miles_poor_condition,sidewalk_gap_miles,pct_sidewalk_coverage,bridges_in_area,bridges_structurally_deficient,maintenance_requests_311_annual,avg_response_days_311,equity_priority_flag,notes
+East Austin,78702,1,,,,,,,,,,,,,Y,Populate from TPW/311 data
+East Austin,78721,1,,,,,,,,,,,,,Y,
+East Austin,78723,1,,,,,,,,,,,,,Y,
+North Austin - Rundberg,78753,4,,,,,,,,,,,,,Y,HIN corridor
+North Austin,78758,7,,,,,,,,,,,,,,
+South Austin,78745,5,,,,,,,,,,,,,,
+South Austin,78748,2,,,,,,,,,,,,,,
+Central Austin,78701,9,,,,,,,,,,,,,,
+Central Austin,78703,10,,,,,,,,,,,,,,
+West Austin,78731,10,,,,,,,,,,,,,,
+Southeast Austin - Onion Creek,78744,2,,,,,,,,,,,,,Y,Flood risk zone
+Northeast Austin,78724,1,,,,,,,,,,,,,Y,

@@ -1,0 +1,11 @@
+stop_name,trip_count,total_calls,safety_concerns,amenity_gap,missing_shelter,missing_bench,risk_score
+1609 Lavaca/17th (Midblock),2215,142.0,19.0,2,Yes,Yes,1.0
+Guadalupe/16th Street,2156,138.0,16.0,2,Yes,Yes,0.958
+Lavaca/4th,2147,135.0,12.0,2,Yes,Yes,0.909
+Guadalupe/W. 21st Street,1994,112.0,13.0,2,Yes,Yes,0.86
+UT Dean Keeton Station (NB),1843,98.0,13.0,2,Yes,Yes,0.824
+Guadalupe/4th,1813,92.0,10.0,2,Yes,Yes,0.781
+Vic Mathias/Auditorium Shores (SB),1831,95.0,8.0,2,Yes,Yes,0.766
+Republic Square Station (NB),1495,82.0,9.0,2,Yes,Yes,0.747
+Bluebonnet Station (SB),1486,75.0,10.0,2,Yes,Yes,0.74
+501 Pleasant Valley/5th,1554,85.0,7.0,2,Yes,Yes,0.731

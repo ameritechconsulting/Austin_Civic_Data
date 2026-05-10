@@ -1,0 +1,6 @@
+council_district,total_pop,pct_nonwhite,pct_hispanic,pct_black,pct_asian,stops_in_analysis,total_open_tickets,tickets_per_stop,avg_response_rate_pct,avg_open_ticket_age_days,tickets_over_1yr,tickets_over_3yr,avg_amenity_gap,capmetro_pct,city_pct,grade_response,grade_ticket_age,grade_amenity_gap,grade_burden,grade_overall
+3,85589,61.7,44.2,8.7,4.5,1,67,67.0,21.0,498.5,44,10,2.0,88.2,8.2,D,D,F,D,F
+4,87108,73.9,58.6,8.3,3.6,1,52,52.0,22.0,508.8,35,6,2.0,83.6,11.9,D,D,F,C,F
+5,95973,45.3,31.8,4.2,4.2,1,52,52.0,31.0,507.2,33,3,2.0,81.3,13.3,C,D,F,C,F
+7,101116,45.4,22.6,7.6,10.0,1,60,60.0,23.0,490.4,40,4,2.0,83.3,9.0,D,D,F,D,F
+9,95255,38.7,17.1,4.1,12.9,11,873,79.4,22.9,501.5,611,72,2.0,82.4,12.6,D,D,F,D,F

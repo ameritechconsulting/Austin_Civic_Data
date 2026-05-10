@@ -1,0 +1,4 @@
+source_document,claim_id,pillar,city_stated_claim,claimed_metric,claimed_direction,analysis_note
+example_report.pdf,C1,A. Accessibility and ADA,ADA access is improving year over year,ADA unresolved rate,decreasing,
+example_report.pdf,C2,B. Safety and Rider Conditions,Stop safety conditions are improving,Safety complaint share,decreasing,
+example_report.pdf,C3,C. Accountability and Resolution,Issue response performance is improving,Unresolved ticket rate,decreasing,

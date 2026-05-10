@@ -1,0 +1,21 @@
+fiscal_year,fund_type,appropriation_amount_usd,expenditure_amount_usd,encumbrance_amount_usd,pct_expended,notes
+2021,General Fund - Operations,,,,,Populate from adopted budget
+2021,Drainage Utility Fund,,,,,Populate from drainage utility annual report
+2021,Mobility Bond Program Draw,,,,,Populate from CIP bond status report
+2021,Federal Grants,,,,,Populate from USDOT grant awards
+2022,General Fund - Operations,,,,,
+2022,Drainage Utility Fund,,,,,
+2022,Mobility Bond Program Draw,,,,,
+2022,Federal Grants,,,,,
+2023,General Fund - Operations,,,,,
+2023,Drainage Utility Fund,,,,,
+2023,Mobility Bond Program Draw,,,,,
+2023,Federal Grants,,,,,
+2024,General Fund - Operations,,,,,
+2024,Drainage Utility Fund,,,,,
+2024,Mobility Bond Program Draw,,,,,
+2024,Federal Grants,,,,,
+2025,General Fund - Operations,,,,,
+2025,Drainage Utility Fund,,,,,
+2025,Mobility Bond Program Draw,,,,,
+2025,Federal Grants,,,,,

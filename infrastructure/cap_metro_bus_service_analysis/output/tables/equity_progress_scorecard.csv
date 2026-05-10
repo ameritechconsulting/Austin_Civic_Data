@@ -1,0 +1,6 @@
+pillar,city_claim_focus,indicator,value,unit,status,interpretation
+A. Accessibility and ADA,ADA and accessible stop conditions are improving,ADA unresolved incident rate (latest year),83.3,percent,Concern,Lower is better. High values suggest unresolved accessibility burden.
+B. Safety and Rider Conditions,Rider conditions are safer and better equipped,Missing shelter share at high-priority stops,80.0,percent,Concern,Lower is better. High values indicate persistent exposure conditions.
+B. Safety and Rider Conditions,Rider conditions are safer and better equipped,Safety complaint share,10.65,percent,Concern,Lower is better. A high share indicates persistent safety signals.
+C. Accountability and Resolution,Issues are being resolved quickly,Average unresolved 311 rate across analyzed stops,76.7,percent,Concern,Lower is better. High values indicate closure lag.
+C. Accountability and Resolution,Issues are being resolved quickly,Missing bench share at high-priority stops,64.0,percent,Concern,Lower is better. High values indicate unresolved basic amenity deficits.

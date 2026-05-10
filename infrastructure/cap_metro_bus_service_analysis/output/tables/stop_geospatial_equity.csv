@@ -1,0 +1,26 @@
+stop_id,stop_name,normalized_stop,amenity_gap,total_calls,weekly_trips,latitude,longitude,council_district,census_tract
+5940,1609 Lavaca/17th (Midblock),1609 lavaca/17th,2,142.0,2215.0,30.27883429,-97.74135767,9,000700
+501,Guadalupe/16th Street,guadalupe/16th street,2,138.0,2156.0,30.27896216,-97.74270752,9,000700
+2643,Lavaca/4th,lavaca/4th,2,135.0,2147.0,30.26668897,-97.74586257,9,001102
+498,Guadalupe/W. 21st Street,guadalupe/w. 21st street,2,112.0,1994.0,30.28338403,-97.74208129,9,000608
+5864,UT Dean Keeton Station (NB),ut dean keeton,2,98.0,1843.0,30.290239999999997,-97.74125,9,000601
+2763,Vic Mathias/Auditorium Shores (SB),vic mathias/auditorium shores,2,95.0,1831.0,30.25876667,-97.7487,9,001311
+2613,Guadalupe/4th,guadalupe/4th,2,92.0,1813.0,30.267331,-97.747037,9,001102
+6314,115 7Th/Colorado,115 7th/colorado,2,88.0,1740.0,30.269226,-97.743548,9,001101
+1368,501 Pleasant Valley/5th,501 pleasant valley/5th,2,85.0,1554.0,30.257443,-97.710596,3,000902
+5868,Republic Square Station (NB),republic square,2,82.0,1495.0,30.26621768,-97.74605645,9,001102
+5849,Northcross Station (SB),northcross,2,78.0,1494.0,30.35421667,-97.73211694,7,001501
+5879,Bluebonnet Station (SB),bluebonnet,2,75.0,1486.0,30.24676612,-97.7778743,5,001304
+5349,West 38th Station (SB),west 38th,2,72.0,1471.0,30.30440528,-97.74159384,9,000204
+6315,8th Street NB (Trinity/8th),8th street nb,2,68.0,1435.0,30.269216,-97.738446,9,001101
+5859,North Lamar Transit Center,north lamar transit center,2,67.0,1432.0,30.34932551,-97.71168455,4,040100
+497,UT West Mall Station (SB),ut west mall,1,0.0,0.0,30.286231,-97.741771,9,000608
+591,Capitol Station (NB),capitol,1,0.0,0.0,30.27558669,-97.7425576,9,000700
+1042,2231 Guadalupe/West Mall UT,2231 guadalupe/west mall ut,1,0.0,0.0,30.285753999999997,-97.74162,9,000601
+603,31st Street Rapid  Station (NB),31st street rapid,1,0.0,0.0,30.297767,-97.741167,9,000500
+2606,Austin History Center Station (NB),austin history center,1,0.0,0.0,30.27042,-97.74444,9,001101
+2328,Oltorf West Station (SB),oltorf west,1,0.0,0.0,30.248028,-97.771756,5,001304
+2738,Capitol Station (SB),capitol,0,0.0,0.0,30.275022,-97.744169,9,000700
+5357,31st Street Station (SB),31st street,0,0.0,0.0,30.298050999999997,-97.741261,9,000204
+2611,Austin History Center Station (SB),austin history center,0,0.0,0.0,30.27105714,-97.74565503,9,001101
+5604,Crestview Station Bus Stop,crestview bus stop,0,0.0,0.0,30.338721,-97.719548,7,001504

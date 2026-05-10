@@ -1,0 +1,2 @@
+question,answer,stops_evaluated,closed_tickets_age_gt_0_system,stops_with_budget_or_repair_order_system,stops_flagged_for_capital_improvement_system,pdf_source_present_in_workspace
+"Any stop repaired, replaced, or included in infrastructure improvement in available records?",No,15,0,0,0,False

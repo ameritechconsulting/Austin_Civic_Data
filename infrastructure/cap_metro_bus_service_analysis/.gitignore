@@ -1,0 +1,22 @@
+__pycache__/
+*.pyc
+.venv/
+.env
+.DS_Store
+.vscode/
+.ipynb_checkpoints/
+AnnualReport_FY2024_Digital-(June-2025-Update).pdf
+archive/legacy/Austin_311_Public_Data_20260412.csv
+archive/legacy/Austin_311_Public_Data_20260412__duplicate_1.csv
+archive/sources/state_texas_census_tracts_2020_2026_04_17.geojson
+data/geo/census_tracts.geojson
+
+# Apple working files
+*.numbers
+*.pages
+*.key
+
+# Duplicate/working file patterns
+*__duplicate*.csv
+*__duplicate_copy*.csv
+*_workfile.*

@@ -1,0 +1,8 @@
+audit_question,metric,value,source,note
+Are high-demand stops adequately equipped?,Share missing shelter,0.8,data/canonical/top_25_with_amenities.csv,Computed from shelter_present among high-priority stops.
+Are high-demand stops adequately equipped?,Share missing benches,0.64,data/canonical/top_25_with_amenities.csv,Computed from bench_present among high-priority stops.
+Are conditions improving over time?,Complaint trend slope (calls/year),-91.9,data/canonical/311_by_year_and_category.csv,Positive slope indicates worsening complaint trajectory.
+Are safety risks visible in public feedback?,Safety complaint share,0.1065,data/canonical/high_priority_stops_311_analysis.csv,Safety concerns as a share of total calls for analyzed high-priority stops.
+Are responsibilities aligned between agencies?,CapMetro issue share,0.8262,data/canonical/311_summary_by_responsibility.csv,Issue attribution among summarized high-priority stops.
+Are responsibilities aligned between agencies?,City of Austin issue share,0.124,data/canonical/311_summary_by_responsibility.csv,Issue attribution among summarized high-priority stops.
+Are there ADA/compliance warning signals?,ADA-related complaints in baseline window,342.0,data/canonical/ada_violation_dataset.csv,Count of ADA-related complaint records in selected fiscal years + YTD.

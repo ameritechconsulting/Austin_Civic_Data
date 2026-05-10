@@ -1,0 +1,1219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>City of Austin: Food Access & Economic Stability Analysis</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+<style>
+  :root {
+    --austin-blue: #003865;
+    --austin-teal: #00A591;
+    --austin-orange: #E6541B;
+    --austin-yellow: #F5A623;
+    --austin-red: #C0392B;
+    --austin-green: #27AE60;
+    --light-bg: #F4F6F9;
+    --card-bg: #FFFFFF;
+    --text-dark: #1A1A2E;
+    --text-muted: #6B7280;
+    --border: #E5E7EB;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    background: var(--light-bg);
+    color: var(--text-dark);
+    min-height: 100vh;
+  }
+
+  /* HEADER */
+  .header {
+    background: var(--austin-blue);
+    color: white;
+    padding: 28px 40px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  }
+  .header-inner {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  .header h1 { font-size: 1.5rem; font-weight: 700; line-height: 1.2; }
+  .header h1 span { color: var(--austin-teal); }
+  .header-meta { font-size: 0.78rem; opacity: 0.75; margin-top: 4px; }
+  .header-badge {
+    background: var(--austin-teal);
+    color: white;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    white-space: nowrap;
+  }
+
+  /* NAV TABS */
+  .nav-tabs {
+    background: var(--austin-blue);
+    border-top: 1px solid rgba(255,255,255,0.1);
+    overflow-x: auto;
+  }
+  .nav-tabs-inner {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    gap: 0;
+  }
+  .tab-btn {
+    padding: 12px 22px;
+    background: none;
+    border: none;
+    color: rgba(255,255,255,0.65);
+    font-size: 0.82rem;
+    font-weight: 500;
+    cursor: pointer;
+    border-bottom: 3px solid transparent;
+    white-space: nowrap;
+    transition: all 0.2s;
+  }
+  .tab-btn:hover { color: white; border-bottom-color: rgba(255,255,255,0.4); }
+  .tab-btn.active { color: var(--austin-teal); border-bottom-color: var(--austin-teal); font-weight: 700; }
+
+  /* MAIN */
+  .main {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 32px 24px;
+  }
+
+  /* SECTION */
+  .section { display: none; }
+  .section.active { display: block; }
+
+  /* KPI STRIP */
+  .kpi-strip {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 16px;
+    margin-bottom: 32px;
+  }
+  .kpi-card {
+    background: var(--card-bg);
+    border-radius: 12px;
+    padding: 20px;
+    border-left: 4px solid var(--austin-blue);
+    box-shadow: 0 1px 4px rgba(0,0,0,0.07);
+  }
+  .kpi-card.danger { border-left-color: var(--austin-red); }
+  .kpi-card.warning { border-left-color: var(--austin-orange); }
+  .kpi-card.success { border-left-color: var(--austin-green); }
+  .kpi-card.teal { border-left-color: var(--austin-teal); }
+  .kpi-number { font-size: 2rem; font-weight: 800; line-height: 1; color: var(--austin-blue); }
+  .kpi-card.danger .kpi-number { color: var(--austin-red); }
+  .kpi-card.warning .kpi-number { color: var(--austin-orange); }
+  .kpi-card.teal .kpi-number { color: var(--austin-teal); }
+  .kpi-label { font-size: 0.75rem; color: var(--text-muted); margin-top: 6px; line-height: 1.4; font-weight: 500; text-transform: uppercase; letter-spacing: 0.03em; }
+
+  /* CHART GRID */
+  .chart-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    margin-bottom: 24px;
+  }
+  .chart-grid.single { grid-template-columns: 1fr; }
+  .chart-grid.three { grid-template-columns: 1fr 1fr 1fr; }
+  @media (max-width: 900px) {
+    .chart-grid, .chart-grid.three { grid-template-columns: 1fr; }
+  }
+
+  .chart-card {
+    background: var(--card-bg);
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.07);
+  }
+  .chart-title {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: var(--austin-blue);
+    margin-bottom: 4px;
+  }
+  .chart-subtitle {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    margin-bottom: 20px;
+  }
+  .chart-wrap { position: relative; width: 100%; }
+  .chart-wrap canvas { max-width: 100%; }
+
+  /* FINDING BOXES */
+  .finding-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-bottom: 24px;
+  }
+  @media (max-width: 700px) { .finding-grid { grid-template-columns: 1fr; } }
+  .finding-box {
+    border-radius: 10px;
+    padding: 18px 20px;
+    font-size: 0.84rem;
+    line-height: 1.6;
+  }
+  .finding-box.red { background: #FEF2F2; border-left: 4px solid var(--austin-red); }
+  .finding-box.orange { background: #FFF7ED; border-left: 4px solid var(--austin-orange); }
+  .finding-box.blue { background: #EFF6FF; border-left: 4px solid var(--austin-blue); }
+  .finding-box.green { background: #F0FDF4; border-left: 4px solid var(--austin-green); }
+  .finding-box strong { display: block; margin-bottom: 6px; font-size: 0.85rem; }
+
+  /* TABLE */
+  .table-wrap { overflow-x: auto; margin-bottom: 24px; }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.82rem;
+  }
+  thead th {
+    background: var(--austin-blue);
+    color: white;
+    padding: 10px 14px;
+    text-align: left;
+    font-weight: 600;
+    font-size: 0.78rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+  tbody tr:nth-child(even) { background: var(--light-bg); }
+  tbody td { padding: 10px 14px; border-bottom: 1px solid var(--border); }
+  .badge {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 10px;
+    font-size: 0.7rem;
+    font-weight: 700;
+  }
+  .badge-red { background: #FEE2E2; color: #991B1B; }
+  .badge-orange { background: #FFEDD5; color: #9A3412; }
+  .badge-green { background: #D1FAE5; color: #065F46; }
+  .badge-blue { background: #DBEAFE; color: #1E40AF; }
+
+  /* SECTION TITLE */
+  .section-title {
+    font-size: 1.3rem;
+    font-weight: 800;
+    color: var(--austin-blue);
+    margin-bottom: 6px;
+  }
+  .section-intro {
+    font-size: 0.88rem;
+    color: var(--text-muted);
+    margin-bottom: 28px;
+    line-height: 1.6;
+    max-width: 780px;
+  }
+
+  /* FOOTER */
+  .footer {
+    background: var(--austin-blue);
+    color: rgba(255,255,255,0.65);
+    text-align: center;
+    padding: 20px 24px;
+    font-size: 0.75rem;
+    margin-top: 48px;
+  }
+  .footer a { color: var(--austin-teal); text-decoration: none; }
+
+  /* EQUITY BAR */
+  .equity-bar-wrap { margin-bottom: 12px; }
+  .equity-bar-label { font-size: 0.78rem; font-weight: 600; margin-bottom: 4px; display: flex; justify-content: space-between; }
+  .equity-bar-bg { background: #E5E7EB; border-radius: 6px; height: 14px; overflow: hidden; }
+  .equity-bar-fill { height: 100%; border-radius: 6px; transition: width 0.8s ease; }
+</style>
+</head>
+<body>
+
+<header class="header">
+  <div class="header-inner">
+    <div>
+      <h1>City of Austin: <span>Food Access &amp; Economic Stability</span> Analysis</h1>
+      <div class="header-meta">Ameritech Consulting Group &nbsp;|&nbsp; April 2026 &nbsp;|&nbsp; Travis County, Texas</div>
+    </div>
+    <div class="header-badge">Interactive Dashboard</div>
+  </div>
+</header>
+
+<nav class="nav-tabs">
+  <div class="nav-tabs-inner">
+    <button class="tab-btn active" onclick="showTab('overview')">Overview</button>
+    <button class="tab-btn" onclick="showTab('snap')">SNAP &amp; Food Insecurity</button>
+    <button class="tab-btn" onclick="showTab('access')">Grocery Access</button>
+    <button class="tab-btn" onclick="showTab('wages')">Wages &amp; Cost of Living</button>
+    <button class="tab-btn" onclick="showTab('childcare')">Childcare Crisis</button>
+    <button class="tab-btn" onclick="showTab('equity')">Equity Analysis</button>
+  </div>
+</nav>
+
+<main class="main">
+
+  <!-- ===== OVERVIEW ===== -->
+  <div id="tab-overview" class="section active">
+    <h2 class="section-title">Executive Overview</h2>
+    <p class="section-intro">Austin is one of the nation's fastest-growing cities, yet food insecurity, wage shortfalls, and childcare costs create compounding hardship for lower-income residents—concentrated in eastern and southeastern zip codes and disproportionately impacting families of color.</p>
+
+    <div class="kpi-strip">
+      <div class="kpi-card danger">
+        <div class="kpi-number">14.8%</div>
+        <div class="kpi-label">Travis County Residents Food Insecure (~145,000 people)</div>
+      </div>
+      <div class="kpi-card danger">
+        <div class="kpi-number">~95K</div>
+        <div class="kpi-label">SNAP Households in Travis County</div>
+      </div>
+      <div class="kpi-card warning">
+        <div class="kpi-number">7</div>
+        <div class="kpi-label">Zip Codes in Full or Partial Food Desert Status</div>
+      </div>
+      <div class="kpi-card warning">
+        <div class="kpi-number">-$31.9K</div>
+        <div class="kpi-label">Annual Wage Gap — Single Parent, 1 Child vs. Living Wage</div>
+      </div>
+      <div class="kpi-card danger">
+        <div class="kpi-number">$22,164</div>
+        <div class="kpi-label">Annual Infant Childcare Cost (vs. $5,250 HHS Affordability Threshold)</div>
+      </div>
+      <div class="kpi-card teal">
+        <div class="kpi-number">$1.2B</div>
+        <div class="kpi-label">Estimated Annual Economic Loss from Childcare Gap</div>
+      </div>
+    </div>
+
+    <div class="chart-grid">
+      <div class="chart-card">
+        <div class="chart-title">Food Insecurity Rate vs. County Average — Top 5 High-Need Zips</div>
+        <div class="chart-subtitle">SNAP participation rate as a proxy for household food insecurity</div>
+        <div class="chart-wrap" style="height:260px">
+          <canvas id="overviewSNAPChart"></canvas>
+        </div>
+      </div>
+      <div class="chart-card">
+        <div class="chart-title">Annual Wage Gap by Household Type</div>
+        <div class="chart-subtitle">Difference between living wage needed and Austin median earnings</div>
+        <div class="chart-wrap" style="height:260px">
+          <canvas id="overviewWageChart"></canvas>
+        </div>
+      </div>
+    </div>
+
+    <div class="finding-grid">
+      <div class="finding-box red">
+        <strong>Food Desert Concentration</strong>
+        Zip codes 78724, 78725, 78742, and 78721 have zero supermarkets within 1 mile. Dollar store density is 3–4x higher than in affluent zip codes, functioning as nutritional dead ends.
+      </div>
+      <div class="finding-box orange">
+        <strong>Childcare as Workforce Barrier</strong>
+        14.2% of Austin-area parents left the workforce entirely due to childcare costs. Mothers are 4.8x more likely than fathers to exit. 26,400 licensed care slots are missing from the county.
+      </div>
+      <div class="finding-box blue">
+        <strong>Historical Roots of Geographic Inequality</strong>
+        Austin's 1928 City Plan explicitly segregated Black residents east of Chicon Street. Today's food access and poverty gaps trace directly to those boundaries—grocery investment, transit routes, and parks followed the same logic.
+      </div>
+      <div class="finding-box green">
+        <strong>Policy Leverage Points</strong>
+        SNAP outreach expansion, grocery incentive programs for food deserts, employer living wage commitments, and municipal childcare investment represent the highest-ROI intervention opportunities.
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== SNAP ===== -->
+  <div id="tab-snap" class="section">
+    <h2 class="section-title">SNAP Participation &amp; Food Insecurity</h2>
+    <p class="section-intro">SNAP enrollment—while an undercount of true need—reveals dramatic geographic concentration of food insecurity within Austin. The 40-percentage-point gap between the highest and lowest zip codes reflects deep structural inequality, not individual choices.</p>
+
+    <div class="kpi-strip">
+      <div class="kpi-card danger"><div class="kpi-number">42%</div><div class="kpi-label">78753 (Rundberg) Households on SNAP</div></div>
+      <div class="kpi-card danger"><div class="kpi-number">38%</div><div class="kpi-label">78741 (Riverside/SE Austin) Households on SNAP</div></div>
+      <div class="kpi-card success"><div class="kpi-number">2%</div><div class="kpi-label">78703 (Tarrytown) Households on SNAP</div></div>
+      <div class="kpi-card warning"><div class="kpi-number">19.2%</div><div class="kpi-label">Child Food Insecurity Rate — Travis County</div></div>
+    </div>
+
+    <div class="chart-grid single">
+      <div class="chart-card">
+        <div class="chart-title">SNAP Participation Rate by Zip Code — All Austin Zips Analyzed</div>
+        <div class="chart-subtitle">Sorted highest to lowest; red = full food desert zip, orange = partial food desert</div>
+        <div class="chart-wrap" style="height:380px">
+          <canvas id="snapBarChart"></canvas>
+        </div>
+      </div>
+    </div>
+
+    <div class="chart-grid">
+      <div class="chart-card">
+        <div class="chart-title">SNAP Rate vs. Median Household Income</div>
+        <div class="chart-subtitle">Strong inverse correlation (r ≈ -0.96): as income rises, SNAP rate falls sharply</div>
+        <div class="chart-wrap" style="height:300px">
+          <canvas id="snapIncomeScatter"></canvas>
+        </div>
+      </div>
+      <div class="chart-card">
+        <div class="chart-title">Racial Composition — Top 5 SNAP Zips vs. Bottom 5</div>
+        <div class="chart-subtitle">Share of population that is people of color</div>
+        <div class="chart-wrap" style="height:300px">
+          <canvas id="snapRaceChart"></canvas>
+        </div>
+      </div>
+    </div>
+
+    <div class="chart-card" style="margin-bottom:24px">
+      <div class="chart-title">Hidden Need: Estimated Eligible Non-Participants</div>
+      <div class="chart-subtitle">30–40% of eligible households do not enroll due to barriers. Dashed bars estimate unmet need above enrolled SNAP.</div>
+      <div class="chart-wrap" style="height:260px">
+        <canvas id="snapHiddenChart"></canvas>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== ACCESS ===== -->
+  <div id="tab-access" class="section">
+    <h2 class="section-title">Grocery Store Access &amp; Food Deserts</h2>
+    <p class="section-intro">Four Austin zip codes fully meet USDA food desert criteria; three more are partially designated. The combination of distance, no-vehicle households, and inadequate transit creates a geography of nutritional deprivation concentrated in eastern Austin.</p>
+
+    <div class="kpi-strip">
+      <div class="kpi-card danger"><div class="kpi-number">4.1 mi</div><div class="kpi-label">Avg Miles to Supermarket — 78725 (Hornsby Bend)</div></div>
+      <div class="kpi-card danger"><div class="kpi-number">31.4%</div><div class="kpi-label">No-Vehicle Households — 78742 (Montopolis)</div></div>
+      <div class="kpi-card warning"><div class="kpi-number">116K</div><div class="kpi-label">Residents in Food Desert or Partial Zips</div></div>
+      <div class="kpi-card success"><div class="kpi-number">2.4/10</div><div class="kpi-label">Healthy Food Score — 78725 (Lowest in City)</div></div>
+    </div>
+
+    <div class="chart-grid">
+      <div class="chart-card">
+        <div class="chart-title">Distance to Nearest Supermarket by Zip Code</div>
+        <div class="chart-subtitle">USDA urban food desert threshold = 1 mile</div>
+        <div class="chart-wrap" style="height:340px">
+          <canvas id="accessDistChart"></canvas>
+        </div>
+      </div>
+      <div class="chart-card">
+        <div class="chart-title">Healthy Food Score vs. Dollar Store Density</div>
+        <div class="chart-subtitle">Dollar stores proliferate where healthy groceries are absent</div>
+        <div class="chart-wrap" style="height:340px">
+          <canvas id="accessDollarChart"></canvas>
+        </div>
+      </div>
+    </div>
+
+    <div class="chart-grid">
+      <div class="chart-card">
+        <div class="chart-title">% Households with No Vehicle — Food Desert Zips</div>
+        <div class="chart-subtitle">No-vehicle + distant grocery = acute food access crisis</div>
+        <div class="chart-wrap" style="height:260px">
+          <canvas id="accessVehicleChart"></canvas>
+        </div>
+      </div>
+      <div class="chart-card">
+        <div class="chart-title">Food Desert Status Map (Simulated by Zip)</div>
+        <div class="chart-subtitle">Healthy food score as geographic proxy — darker = worse access</div>
+        <div class="chart-wrap" style="height:260px">
+          <canvas id="accessHeatChart"></canvas>
+        </div>
+      </div>
+    </div>
+
+    <div class="table-wrap">
+      <div class="chart-card">
+        <div class="chart-title" style="margin-bottom:16px">Food Desert Detail — Key Zip Codes</div>
+        <table>
+          <thead>
+            <tr>
+              <th>Zip</th>
+              <th>Neighborhood</th>
+              <th>Status</th>
+              <th>Miles to Grocery</th>
+              <th>Supermarkets ≤1mi</th>
+              <th>Dollar Stores ≤1mi</th>
+              <th>% No Vehicle</th>
+              <th>Healthy Food Score</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>78725</td><td>Hornsby Bend</td><td><span class="badge badge-red">Full Desert</span></td><td>4.1</td><td>0</td><td>1</td><td>19.3%</td><td>2.4 / 10</td></tr>
+            <tr><td>78724</td><td>Colony Park / E. Austin</td><td><span class="badge badge-red">Full Desert</span></td><td>2.3</td><td>0</td><td>3</td><td>28.1%</td><td>3.1 / 10</td></tr>
+            <tr><td>78742</td><td>Montopolis</td><td><span class="badge badge-red">Full Desert</span></td><td>1.9</td><td>0</td><td>2</td><td>31.4%</td><td>3.4 / 10</td></tr>
+            <tr><td>78721</td><td>E. 51st / Govalle</td><td><span class="badge badge-red">Full Desert</span></td><td>1.6</td><td>0</td><td>2</td><td>26.8%</td><td>4.1 / 10</td></tr>
+            <tr><td>78753</td><td>Rundberg / N. Lamar</td><td><span class="badge badge-orange">Partial</span></td><td>1.1</td><td>1</td><td>4</td><td>22.4%</td><td>4.8 / 10</td></tr>
+            <tr><td>78741</td><td>Riverside / SE Austin</td><td><span class="badge badge-orange">Partial</span></td><td>1.2</td><td>1</td><td>3</td><td>24.7%</td><td>5.1 / 10</td></tr>
+            <tr><td>78744</td><td>Far SE Austin</td><td><span class="badge badge-orange">Partial</span></td><td>1.8</td><td>0</td><td>2</td><td>18.6%</td><td>4.6 / 10</td></tr>
+            <tr><td>78703</td><td>Tarrytown</td><td><span class="badge badge-green">No Desert</span></td><td>0.6</td><td>2</td><td>0</td><td>7.4%</td><td>9.1 / 10</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== WAGES ===== -->
+  <div id="tab-wages" class="section">
+    <h2 class="section-title">Wages vs. Cost of Living</h2>
+    <p class="section-intro">Austin's economic boom has driven up housing costs faster than wages for most workers. The MIT Living Wage Calculator reveals a structural gap that cannot be closed by individual effort alone — particularly for households with children.</p>
+
+    <div class="kpi-strip">
+      <div class="kpi-card warning"><div class="kpi-number">$47,320</div><div class="kpi-label">Austin Median Annual Wage (All Workers)</div></div>
+      <div class="kpi-card danger"><div class="kpi-number">$79,248</div><div class="kpi-label">Living Wage Needed — Single Parent, 1 Child</div></div>
+      <div class="kpi-card danger"><div class="kpi-number">-$31,928</div><div class="kpi-label">Annual Shortfall — Single Parent vs. Living Wage</div></div>
+      <div class="kpi-card warning"><div class="kpi-number">$7.25/hr</div><div class="kpi-label">Texas Minimum Wage (Unchanged since 2009)</div></div>
+    </div>
+
+    <div class="chart-grid single">
+      <div class="chart-card">
+        <div class="chart-title">Living Wage Needed vs. Actual Median Wage — By Household Type</div>
+        <div class="chart-subtitle">Red bars = living wage required; blue line = Austin median earnings. Gap = structural shortfall.</div>
+        <div class="chart-wrap" style="height:340px">
+          <canvas id="wageGapChart"></canvas>
+        </div>
+      </div>
+    </div>
+
+    <div class="chart-grid">
+      <div class="chart-card">
+        <div class="chart-title">Cost of Living Breakdown — Single Parent, 1 Child</div>
+        <div class="chart-subtitle">Where the $79,248 living wage goes (before savings)</div>
+        <div class="chart-wrap" style="height:300px">
+          <canvas id="costBreakdownChart"></canvas>
+        </div>
+      </div>
+      <div class="chart-card">
+        <div class="chart-title">Annual Wage Gap by Household Type</div>
+        <div class="chart-subtitle">Negative = shortfall vs. living wage at median earnings; Positive = surplus</div>
+        <div class="chart-wrap" style="height:300px">
+          <canvas id="wageGapBarChart"></canvas>
+        </div>
+      </div>
+    </div>
+
+    <div class="chart-card" style="margin-bottom:24px">
+      <div class="chart-title">Housing Cost Burden — Share of Income on Rent, by Zip Income Level</div>
+      <div class="chart-subtitle">HUD defines cost-burdened as >30% of income on housing. Severely cost-burdened = >50%.</div>
+      <div style="padding:8px 0">
+        <div class="equity-bar-wrap">
+          <div class="equity-bar-label"><span>78753 Rundberg (Median HH $34,100)</span><span style="color:var(--austin-red);font-weight:700">62% of income on rent</span></div>
+          <div class="equity-bar-bg"><div class="equity-bar-fill" style="width:62%;background:var(--austin-red)"></div></div>
+        </div>
+        <div class="equity-bar-wrap">
+          <div class="equity-bar-label"><span>78741 Riverside (Median HH $36,800)</span><span style="color:var(--austin-red);font-weight:700">58% of income on rent</span></div>
+          <div class="equity-bar-bg"><div class="equity-bar-fill" style="width:58%;background:var(--austin-red)"></div></div>
+        </div>
+        <div class="equity-bar-wrap">
+          <div class="equity-bar-label"><span>78724 Colony Park (Median HH $39,500)</span><span style="color:var(--austin-orange);font-weight:700">54% of income on rent</span></div>
+          <div class="equity-bar-bg"><div class="equity-bar-fill" style="width:54%;background:var(--austin-orange)"></div></div>
+        </div>
+        <div class="equity-bar-wrap">
+          <div class="equity-bar-label"><span>78704 South Congress (Median HH $61,200)</span><span style="color:var(--austin-orange);font-weight:700">37% of income on rent</span></div>
+          <div class="equity-bar-bg"><div class="equity-bar-fill" style="width:37%;background:var(--austin-orange)"></div></div>
+        </div>
+        <div class="equity-bar-wrap">
+          <div class="equity-bar-label"><span>78759 NW Austin (Median HH $101,300)</span><span style="color:var(--austin-green);font-weight:700">22% of income on rent</span></div>
+          <div class="equity-bar-bg"><div class="equity-bar-fill" style="width:22%;background:var(--austin-green)"></div></div>
+        </div>
+        <div class="equity-bar-wrap">
+          <div class="equity-bar-label"><span>78703 Tarrytown (Median HH $138,700)</span><span style="color:var(--austin-green);font-weight:700">16% of income on rent</span></div>
+          <div class="equity-bar-bg"><div class="equity-bar-fill" style="width:16%;background:var(--austin-green)"></div></div>
+        </div>
+        <div style="font-size:0.72rem;color:var(--text-muted);margin-top:12px">
+          HUD cost-burden threshold (30%): <span style="display:inline-block;width:30px;height:3px;background:var(--austin-blue);vertical-align:middle"></span> &nbsp; Severely cost-burdened (50%): <span style="display:inline-block;width:30px;height:3px;background:var(--austin-red);vertical-align:middle"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== CHILDCARE ===== -->
+  <div id="tab-childcare" class="section">
+    <h2 class="section-title">Childcare Crisis &amp; Workforce Impact</h2>
+    <p class="section-intro">Austin's childcare costs have decoupled from wages. At $1,847/month for infant care, the cost exceeds the HHS affordability threshold for all but the highest earners—and is suppressing labor force participation, especially among mothers, at a scale measurable in billions of dollars of lost output.</p>
+
+    <div class="kpi-strip">
+      <div class="kpi-card danger"><div class="kpi-number">$1,847</div><div class="kpi-label">Monthly Infant Care Cost (Center-Based)</div></div>
+      <div class="kpi-card danger"><div class="kpi-number">29.6%</div><div class="kpi-label">Infant Care as % of Median Family Income</div></div>
+      <div class="kpi-card warning"><div class="kpi-number">26,400</div><div class="kpi-label">Licensed Childcare Slot Deficit — Travis County</div></div>
+      <div class="kpi-card warning"><div class="kpi-number">18 mo.</div><div class="kpi-label">Avg Wait for Childcare Subsidy (CCMS)</div></div>
+    </div>
+
+    <div class="chart-grid">
+      <div class="chart-card">
+        <div class="chart-title">Annual Childcare Cost by Care Type vs. HHS Affordability Threshold</div>
+        <div class="chart-subtitle">HHS defines "affordable" as no more than 7% of family income (~$5,250 at median)</div>
+        <div class="chart-wrap" style="height:300px">
+          <canvas id="childcareCostChart"></canvas>
+        </div>
+      </div>
+      <div class="chart-card">
+        <div class="chart-title">Childcare as % of Median Family Income — By Care Type</div>
+        <div class="chart-subtitle">All care types far exceed the 7% affordability threshold</div>
+        <div class="chart-wrap" style="height:300px">
+          <canvas id="childcarePctChart"></canvas>
+        </div>
+      </div>
+    </div>
+
+    <div class="chart-grid">
+      <div class="chart-card">
+        <div class="chart-title">Workforce Impact of Childcare Costs — % of Parents Affected</div>
+        <div class="chart-subtitle">Based on Austin Chamber / Regional workforce survey (2023)</div>
+        <div class="chart-wrap" style="height:280px">
+          <canvas id="childcareWorkforceChart"></canvas>
+        </div>
+      </div>
+      <div class="chart-card">
+        <div class="chart-title">Licensed Care Supply vs. Demand Gap — Travis County</div>
+        <div class="chart-subtitle">30% of demand is unmet by licensed childcare providers</div>
+        <div class="chart-wrap" style="height:280px">
+          <canvas id="childcareSupplyChart"></canvas>
+        </div>
+      </div>
+    </div>
+
+    <div class="finding-grid">
+      <div class="finding-box red">
+        <strong>Gender Inequity in Labor Force Exit</strong>
+        Mothers are 4.8x more likely than fathers to leave the workforce due to childcare costs. This compounds lifetime earnings gaps, retirement security, and career trajectory.
+      </div>
+      <div class="finding-box orange">
+        <strong>Subsidy Access Gap</strong>
+        9,800 Travis County families are on the CCMS childcare subsidy waitlist with an average 18-month wait. Low-income families who most need relief face the longest delays.
+      </div>
+      <div class="finding-box blue">
+        <strong>Economic Multiplier Effect</strong>
+        Each $1 invested in quality early childhood education returns an estimated $7–13 in long-term economic benefits (Nobel laureate James Heckman research). Austin's $1.2B annual loss from the childcare gap is avoidable.
+      </div>
+      <div class="finding-box green">
+        <strong>Employer Opportunity</strong>
+        19.6% of workers turned down a job offer because childcare would eliminate net income gains. Employer-sponsored or employer-subsidized childcare directly expands the effective labor supply.
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== EQUITY ===== -->
+  <div id="tab-equity" class="section">
+    <h2 class="section-title">Equity Analysis — Who Bears the Burden</h2>
+    <p class="section-intro">Food insecurity, grocery access gaps, and economic instability are not randomly distributed across Austin. Hispanic/Latino and Black residents face food insecurity rates nearly double those of White Non-Hispanic residents, and are far more likely to live in food desert zip codes.</p>
+
+    <div class="kpi-strip">
+      <div class="kpi-card danger"><div class="kpi-number">21.8%</div><div class="kpi-label">Hispanic/Latino Food Insecurity Rate (vs. 10.2% White Non-Hispanic)</div></div>
+      <div class="kpi-card danger"><div class="kpi-number">51.3%</div><div class="kpi-label">Black Residents in Food Desert Zip Codes</div></div>
+      <div class="kpi-card warning"><div class="kpi-number">42.6%</div><div class="kpi-label">Hispanic/Latino Residents in Food Desert Zips</div></div>
+      <div class="kpi-card teal"><div class="kpi-number">1928</div><div class="kpi-label">Year Austin Officially Segregated Black Residents East of Chicon St.</div></div>
+    </div>
+
+    <div class="chart-grid">
+      <div class="chart-card">
+        <div class="chart-title">Food Insecurity Rate by Racial/Ethnic Group</div>
+        <div class="chart-subtitle">Black and Hispanic/Latino residents face rates ~2x that of White Non-Hispanic residents</div>
+        <div class="chart-wrap" style="height:300px">
+          <canvas id="equityInsecurityChart"></canvas>
+        </div>
+      </div>
+      <div class="chart-card">
+        <div class="chart-title">% of Each Group Living in Food Desert Zip Codes</div>
+        <div class="chart-subtitle">Geographic concentration of food deserts tracks racial segregation patterns</div>
+        <div class="chart-wrap" style="height:300px">
+          <canvas id="equityDesertChart"></canvas>
+        </div>
+      </div>
+    </div>
+
+    <div class="chart-grid">
+      <div class="chart-card">
+        <div class="chart-title">Median Household Income by Race — Travis County</div>
+        <div class="chart-subtitle">Income gap compounds all other disparities in food and economic stability</div>
+        <div class="chart-wrap" style="height:280px">
+          <canvas id="equityIncomeChart"></canvas>
+        </div>
+      </div>
+      <div class="chart-card">
+        <div class="chart-title">Childcare Cost as % of Income — By Racial Group</div>
+        <div class="chart-subtitle">Lower median income = higher childcare burden as share of household resources</div>
+        <div class="chart-wrap" style="height:280px">
+          <canvas id="equityChildcareChart"></canvas>
+        </div>
+      </div>
+    </div>
+
+    <div class="chart-card" style="margin-bottom:24px">
+      <div class="chart-title">Intersectionality Index — Where All Three Crises Converge</div>
+      <div class="chart-subtitle">Estimated 18,000–22,000 households in Travis County face food desert location + below-living-wage earnings + no childcare subsidy simultaneously</div>
+      <div style="margin-top:16px">
+        <div class="equity-bar-wrap">
+          <div class="equity-bar-label"><span>Black / African American — in all 3 crisis zones</span><span style="color:var(--austin-red);font-weight:700">~62% of Black households</span></div>
+          <div class="equity-bar-bg"><div class="equity-bar-fill" style="width:62%;background:var(--austin-red)"></div></div>
+        </div>
+        <div class="equity-bar-wrap">
+          <div class="equity-bar-label"><span>Hispanic / Latino — in all 3 crisis zones</span><span style="color:var(--austin-red);font-weight:700">~54% of Hispanic households</span></div>
+          <div class="equity-bar-bg"><div class="equity-bar-fill" style="width:54%;background:var(--austin-red)"></div></div>
+        </div>
+        <div class="equity-bar-wrap">
+          <div class="equity-bar-label"><span>Multiracial — in all 3 crisis zones</span><span style="color:var(--austin-orange);font-weight:700">~28% of Multiracial households</span></div>
+          <div class="equity-bar-bg"><div class="equity-bar-fill" style="width:28%;background:var(--austin-orange)"></div></div>
+        </div>
+        <div class="equity-bar-wrap">
+          <div class="equity-bar-label"><span>Asian / Pacific Islander — in all 3 crisis zones</span><span style="color:var(--austin-yellow);font-weight:700">~12% of Asian/PI households</span></div>
+          <div class="equity-bar-bg"><div class="equity-bar-fill" style="width:12%;background:var(--austin-yellow)"></div></div>
+        </div>
+        <div class="equity-bar-wrap">
+          <div class="equity-bar-label"><span>White Non-Hispanic — in all 3 crisis zones</span><span style="color:var(--austin-green);font-weight:700">~6% of White Non-Hispanic households</span></div>
+          <div class="equity-bar-bg"><div class="equity-bar-fill" style="width:6%;background:var(--austin-green)"></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</main>
+
+<footer class="footer">
+  <div>&copy; 2026 Ameritech Consulting Group &mdash; City of Austin Food Access &amp; Economic Stability Analysis</div>
+  <div style="margin-top:4px">Prepared by <a href="mailto:tiffany@a-techconsulting.com">tiffany@a-techconsulting.com</a> &nbsp;|&nbsp; Data: Feeding America, USDA ERS, MIT Living Wage Calculator, ACS 5-Year, Child Care Aware, Austin Chamber</div>
+</footer>
+
+<script>
+// ─── TAB SWITCHING ─────────────────────────────────────────────────────────
+function showTab(name) {
+  document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+  document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+  document.getElementById('tab-' + name).classList.add('active');
+  event.target.classList.add('active');
+}
+
+// ─── COLORS ────────────────────────────────────────────────────────────────
+const BLUE = '#003865';
+const TEAL = '#00A591';
+const ORANGE = '#E6541B';
+const RED = '#C0392B';
+const GREEN = '#27AE60';
+const YELLOW = '#F5A623';
+const LIGHT_BLUE = '#DBEAFE';
+
+const RACE_COLORS = [BLUE, '#E67E22', RED, TEAL, '#8E44AD', '#95A5A6'];
+
+// ─── CHART DEFAULTS ────────────────────────────────────────────────────────
+Chart.defaults.font.family = "'Segoe UI', system-ui, sans-serif";
+Chart.defaults.font.size = 11;
+Chart.defaults.plugins.legend.labels.boxWidth = 12;
+Chart.defaults.plugins.legend.labels.padding = 12;
+
+// ─── OVERVIEW: SNAP OVERVIEW ───────────────────────────────────────────────
+new Chart(document.getElementById('overviewSNAPChart'), {
+  type: 'bar',
+  data: {
+    labels: ['78753 Rundberg', '78741 Riverside', '78744 SE Austin', '78724 Colony Park', '78721 E. 51st'],
+    datasets: [{
+      label: 'SNAP Participation Rate',
+      data: [42, 38, 36, 35, 33],
+      backgroundColor: [RED, RED, ORANGE, ORANGE, ORANGE],
+      borderRadius: 5
+    }, {
+      label: 'County Average (14.8%)',
+      data: [14.8, 14.8, 14.8, 14.8, 14.8],
+      type: 'line',
+      borderColor: BLUE,
+      borderWidth: 2,
+      borderDash: [6, 3],
+      pointRadius: 0,
+      fill: false
+    }]
+  },
+  options: {
+    responsive: true, maintainAspectRatio: false,
+    plugins: { legend: { position: 'bottom' } },
+    scales: {
+      y: { beginAtZero: true, max: 50, ticks: { callback: v => v + '%' }, grid: { color: '#F3F4F6' } },
+      x: { grid: { display: false } }
+    }
+  }
+});
+
+// ─── OVERVIEW: WAGE GAP ────────────────────────────────────────────────────
+new Chart(document.getElementById('overviewWageChart'), {
+  type: 'bar',
+  data: {
+    labels: ['1A No Kids', '1A 1 Child', '1A 2 Children', '2A 2 Children'],
+    datasets: [{
+      label: 'Annual Wage Gap vs. Living Wage',
+      data: [436, -31928, -52052, -17440],
+      backgroundColor: [GREEN, RED, RED, ORANGE],
+      borderRadius: 5
+    }]
+  },
+  options: {
+    responsive: true, maintainAspectRatio: false,
+    plugins: { legend: { display: false },
+      tooltip: { callbacks: { label: ctx => '$' + ctx.raw.toLocaleString() } }
+    },
+    scales: {
+      y: { ticks: { callback: v => '$' + (v/1000).toFixed(0) + 'K' }, grid: { color: '#F3F4F6' } },
+      x: { grid: { display: false } }
+    }
+  }
+});
+
+// ─── SNAP: ALL ZIPS BAR ────────────────────────────────────────────────────
+const snapZips = ['78753','78741','78744','78724','78721','78752','78723','78702','78725','78742','78704','78745','78758','78748','78729','78701','78754','78756','78759','78703','78733'];
+const snapRates = [42, 38, 36, 35, 33, 30, 26, 24, 23, 22, 16, 14, 12, 10, 9, 8, 8, 6, 4, 2, 2];
+const snapColors = snapZips.map((z,i) => {
+  if (['78724','78725','78742','78721'].includes(z)) return RED;
+  if (['78753','78741','78744'].includes(z)) return ORANGE;
+  return TEAL;
+});
+
+new Chart(document.getElementById('snapBarChart'), {
+  type: 'bar',
+  data: {
+    labels: snapZips,
+    datasets: [{
+      label: 'SNAP Participation %',
+      data: snapRates,
+      backgroundColor: snapColors,
+      borderRadius: 4
+    }]
+  },
+  options: {
+    responsive: true, maintainAspectRatio: false,
+    plugins: {
+      legend: { display: false },
+      tooltip: { callbacks: { label: ctx => ctx.raw + '% of households on SNAP' } }
+    },
+    scales: {
+      y: { beginAtZero: true, ticks: { callback: v => v + '%' }, grid: { color: '#F3F4F6' } },
+      x: { grid: { display: false } }
+    }
+  }
+});
+
+// ─── SNAP: INCOME SCATTER ──────────────────────────────────────────────────
+const incomeData = [
+  {x:34100,y:42},{x:36800,y:38},{x:38200,y:36},{x:39500,y:35},{x:41200,y:33},
+  {x:42800,y:30},{x:46100,y:26},{x:47600,y:23},{x:43900,y:22},{x:54300,y:24},
+  {x:61200,y:16},{x:58700,y:14},{x:62400,y:12},{x:67800,y:10},{x:78400,y:9},
+  {x:72100,y:8},{x:73200,y:8},{x:94600,y:6},{x:101300,y:4},{x:138700,y:2},{x:149200,y:2}
+];
+
+new Chart(document.getElementById('snapIncomeScatter'), {
+  type: 'scatter',
+  data: {
+    datasets: [{
+      label: 'Zip Codes',
+      data: incomeData,
+      backgroundColor: TEAL,
+      pointRadius: 6,
+      pointHoverRadius: 8
+    }]
+  },
+  options: {
+    responsive: true, maintainAspectRatio: false,
+    plugins: { legend: { display: false },
+      tooltip: { callbacks: { label: ctx => `Income: $${ctx.raw.x.toLocaleString()} | SNAP: ${ctx.raw.y}%` } }
+    },
+    scales: {
+      x: { title: { display: true, text: 'Median HH Income ($)' }, ticks: { callback: v => '$' + (v/1000).toFixed(0) + 'K' }, grid: { color: '#F3F4F6' } },
+      y: { title: { display: true, text: 'SNAP Rate (%)' }, ticks: { callback: v => v + '%' }, grid: { color: '#F3F4F6' } }
+    }
+  }
+});
+
+// ─── SNAP: RACE COMPARISON ─────────────────────────────────────────────────
+new Chart(document.getElementById('snapRaceChart'), {
+  type: 'bar',
+  data: {
+    labels: ['Top 5 SNAP Zips', 'Bottom 5 SNAP Zips'],
+    datasets: [{
+      label: '% People of Color',
+      data: [71.3, 11.2],
+      backgroundColor: [RED, GREEN],
+      borderRadius: 6
+    }]
+  },
+  options: {
+    responsive: true, maintainAspectRatio: false,
+    plugins: { legend: { display: false },
+      tooltip: { callbacks: { label: ctx => ctx.raw + '% People of Color' } }
+    },
+    scales: {
+      y: { beginAtZero: true, max: 100, ticks: { callback: v => v + '%' }, grid: { color: '#F3F4F6' } },
+      x: { grid: { display: false } }
+    }
+  }
+});
+
+// ─── SNAP: HIDDEN NEED ─────────────────────────────────────────────────────
+new Chart(document.getElementById('snapHiddenChart'), {
+  type: 'bar',
+  data: {
+    labels: ['78753', '78741', '78744', '78724', '78721'],
+    datasets: [
+      { label: 'Enrolled SNAP HH', data: [8484, 7182, 6696, 5880, 4191], backgroundColor: ORANGE, borderRadius: [0,0,4,4] },
+      { label: 'Est. Eligible Non-Enrolled', data: [3394, 2873, 2678, 2352, 1676], backgroundColor: 'rgba(230,84,27,0.35)', borderRadius: [4,4,0,0] }
+    ]
+  },
+  options: {
+    responsive: true, maintainAspectRatio: false,
+    plugins: { legend: { position: 'bottom' } },
+    scales: {
+      x: { stacked: true, grid: { display: false } },
+      y: { stacked: true, ticks: { callback: v => v.toLocaleString() }, grid: { color: '#F3F4F6' } }
+    }
+  }
+});
+
+// ─── ACCESS: DISTANCE CHART ────────────────────────────────────────────────
+const accessZips = ['78725','78724','78742','78744','78721','78753','78741','78754','78723','78702','78756','78703'];
+const accessDist = [4.1, 2.3, 1.9, 1.8, 1.6, 1.1, 1.2, 0.8, 0.8, 0.7, 0.5, 0.6];
+const accessDistColors = accessDist.map(d => d >= 1.0 ? RED : (d >= 0.7 ? ORANGE : GREEN));
+
+new Chart(document.getElementById('accessDistChart'), {
+  type: 'bar',
+  data: {
+    labels: accessZips,
+    datasets: [{
+      label: 'Miles to Nearest Supermarket',
+      data: accessDist,
+      backgroundColor: accessDistColors,
+      borderRadius: 5
+    }, {
+      label: 'Food Desert Threshold (1 mi)',
+      data: Array(accessZips.length).fill(1.0),
+      type: 'line',
+      borderColor: RED,
+      borderWidth: 2,
+      borderDash: [6, 3],
+      pointRadius: 0,
+      fill: false
+    }]
+  },
+  options: {
+    responsive: true, maintainAspectRatio: false,
+    plugins: { legend: { position: 'bottom' } },
+    scales: {
+      y: { ticks: { callback: v => v + ' mi' }, grid: { color: '#F3F4F6' } },
+      x: { grid: { display: false } }
+    }
+  }
+});
+
+// ─── ACCESS: DOLLAR STORE vs HEALTHY SCORE ─────────────────────────────────
+new Chart(document.getElementById('accessDollarChart'), {
+  type: 'scatter',
+  data: {
+    datasets: [{
+      label: 'Zip Codes',
+      data: [
+        {x:3,y:3.1},{x:1,y:2.4},{x:2,y:3.4},{x:2,y:4.1},
+        {x:4,y:4.8},{x:3,y:5.1},{x:2,y:4.6},{x:2,y:6.4},
+        {x:1,y:7.4},{x:1,y:8.2},{x:0,y:8.8},{x:0,y:9.1}
+      ],
+      backgroundColor: BLUE,
+      pointRadius: 7,
+      pointHoverRadius: 9
+    }]
+  },
+  options: {
+    responsive: true, maintainAspectRatio: false,
+    plugins: { legend: { display: false },
+      tooltip: { callbacks: { label: ctx => `Dollar Stores: ${ctx.raw.x} | Healthy Food Score: ${ctx.raw.y}/10` } }
+    },
+    scales: {
+      x: { title: { display: true, text: 'Dollar Stores within 1 Mile' }, grid: { color: '#F3F4F6' } },
+      y: { title: { display: true, text: 'Healthy Food Score (1–10)' }, min: 0, max: 10, grid: { color: '#F3F4F6' } }
+    }
+  }
+});
+
+// ─── ACCESS: VEHICLE ACCESS ────────────────────────────────────────────────
+new Chart(document.getElementById('accessVehicleChart'), {
+  type: 'bar',
+  data: {
+    labels: ['78742\nMontopolis', '78724\nColony Park', '78721\nE. 51st', '78753\nRundberg', '78741\nRiverside', '78725\nHornsby'],
+    datasets: [{
+      label: '% Households with No Vehicle',
+      data: [31.4, 28.1, 26.8, 22.4, 24.7, 19.3],
+      backgroundColor: RED,
+      borderRadius: 5
+    }]
+  },
+  options: {
+    responsive: true, maintainAspectRatio: false,
+    plugins: { legend: { display: false } },
+    scales: {
+      y: { beginAtZero: true, ticks: { callback: v => v + '%' }, grid: { color: '#F3F4F6' } },
+      x: { grid: { display: false } }
+    }
+  }
+});
+
+// ─── ACCESS: HEAT (HEALTHY FOOD SCORE) ────────────────────────────────────
+const heatZips = ['78725','78724','78742','78744','78721','78753','78741','78752','78723'];
+const heatScores = [2.4, 3.1, 3.4, 4.6, 4.1, 4.8, 5.1, 5.6, 6.2];
+const heatColors = heatScores.map(s => s < 4 ? RED : (s < 6 ? ORANGE : TEAL));
+
+new Chart(document.getElementById('accessHeatChart'), {
+  type: 'bar',
+  data: {
+    labels: heatZips,
+    datasets: [{ label: 'Healthy Food Score', data: heatScores, backgroundColor: heatColors, borderRadius: 5 }]
+  },
+  options: {
+    responsive: true, maintainAspectRatio: false,
+    plugins: { legend: { display: false },
+      tooltip: { callbacks: { label: ctx => ctx.raw + ' / 10' } }
+    },
+    scales: {
+      y: { beginAtZero: true, max: 10, ticks: { callback: v => v + '/10' }, grid: { color: '#F3F4F6' } },
+      x: { grid: { display: false } }
+    }
+  }
+});
+
+// ─── WAGES: GAP CHART ──────────────────────────────────────────────────────
+const wageHHTypes = ['1A No Kids','1A 1 Child','1A 2 Children','2A No Kids','2A 1 Child','2A 2 Children','2A 3 Children'];
+const wageLiving = [46884, 79248, 99372, 62880, 93264, 112080, 131040];
+const wageActual = [47320, 47320, 47320, 94640, 94640, 94640, 94640];
+
+new Chart(document.getElementById('wageGapChart'), {
+  type: 'bar',
+  data: {
+    labels: wageHHTypes,
+    datasets: [
+      { label: 'Living Wage Needed', data: wageLiving, backgroundColor: RED + 'CC', borderRadius: [5,5,0,0] },
+      { label: 'Actual Median Earnings', data: wageActual, backgroundColor: BLUE + 'CC', borderRadius: [0,0,5,5] }
+    ]
+  },
+  options: {
+    responsive: true, maintainAspectRatio: false,
+    plugins: { legend: { position: 'bottom' },
+      tooltip: { callbacks: { label: ctx => '$' + ctx.raw.toLocaleString() } }
+    },
+    scales: {
+      y: { ticks: { callback: v => '$' + (v/1000).toFixed(0) + 'K' }, grid: { color: '#F3F4F6' } },
+      x: { grid: { display: false } }
+    }
+  }
+});
+
+// ─── WAGES: COST BREAKDOWN (SINGLE PARENT 1 CHILD) ─────────────────────────
+new Chart(document.getElementById('costBreakdownChart'), {
+  type: 'doughnut',
+  data: {
+    labels: ['Housing ($19,200)', 'Childcare ($19,800)', 'Food ($7,800)', 'Taxes ($13,008)', 'Transportation ($6,240)', 'Healthcare ($4,800)', 'Other ($8,400)'],
+    datasets: [{
+      data: [19200, 19800, 7800, 13008, 6240, 4800, 8400],
+      backgroundColor: [RED, ORANGE, GREEN, BLUE, TEAL, YELLOW, '#95A5A6'],
+      borderWidth: 2,
+      borderColor: '#fff'
+    }]
+  },
+  options: {
+    responsive: true, maintainAspectRatio: false,
+    plugins: {
+      legend: { position: 'right', labels: { font: { size: 10 } } },
+      tooltip: { callbacks: { label: ctx => ctx.label } }
+    }
+  }
+});
+
+// ─── WAGES: GAP BAR ────────────────────────────────────────────────────────
+const gapValues = [436, -31928, -52052, 31760, 1376, -17440, -36400];
+const gapColors = gapValues.map(v => v >= 0 ? GREEN : RED);
+
+new Chart(document.getElementById('wageGapBarChart'), {
+  type: 'bar',
+  data: {
+    labels: wageHHTypes,
+    datasets: [{ label: 'Annual Surplus / Deficit vs. Living Wage', data: gapValues, backgroundColor: gapColors, borderRadius: 5 }]
+  },
+  options: {
+    responsive: true, maintainAspectRatio: false,
+    plugins: { legend: { display: false },
+      tooltip: { callbacks: { label: ctx => (ctx.raw >= 0 ? '+' : '') + '$' + ctx.raw.toLocaleString() } }
+    },
+    scales: {
+      y: { ticks: { callback: v => (v >= 0 ? '+' : '') + '$' + (Math.abs(v)/1000).toFixed(0) + 'K' }, grid: { color: '#F3F4F6' } },
+      x: { grid: { display: false } }
+    }
+  }
+});
+
+// ─── CHILDCARE: COST CHART ─────────────────────────────────────────────────
+new Chart(document.getElementById('childcareCostChart'), {
+  type: 'bar',
+  data: {
+    labels: ['Infant Care', 'Toddler Care', 'Preschool (3-5)', 'School-Age'],
+    datasets: [
+      { label: 'Annual Childcare Cost', data: [22164, 19344, 16656, 11088], backgroundColor: RED, borderRadius: 5 },
+      { label: 'HHS Affordability Threshold ($5,250)', data: [5250, 5250, 5250, 5250], type: 'line', borderColor: GREEN, borderWidth: 3, borderDash: [6,3], pointRadius: 0, fill: false }
+    ]
+  },
+  options: {
+    responsive: true, maintainAspectRatio: false,
+    plugins: { legend: { position: 'bottom' },
+      tooltip: { callbacks: { label: ctx => '$' + ctx.raw.toLocaleString() } }
+    },
+    scales: {
+      y: { ticks: { callback: v => '$' + (v/1000).toFixed(0) + 'K' }, grid: { color: '#F3F4F6' } },
+      x: { grid: { display: false } }
+    }
+  }
+});
+
+// ─── CHILDCARE: PCT INCOME ─────────────────────────────────────────────────
+new Chart(document.getElementById('childcarePctChart'), {
+  type: 'bar',
+  data: {
+    labels: ['Infant Care', 'Toddler Care', 'Preschool', 'School-Age'],
+    datasets: [
+      { label: '% of Median Family Income', data: [29.6, 25.8, 22.2, 14.8], backgroundColor: ORANGE, borderRadius: 5 },
+      { label: 'HHS Affordability (7%)', data: [7, 7, 7, 7], type: 'line', borderColor: GREEN, borderWidth: 3, borderDash: [6,3], pointRadius: 0, fill: false }
+    ]
+  },
+  options: {
+    responsive: true, maintainAspectRatio: false,
+    plugins: { legend: { position: 'bottom' },
+      tooltip: { callbacks: { label: ctx => ctx.raw + '%' } }
+    },
+    scales: {
+      y: { beginAtZero: true, max: 40, ticks: { callback: v => v + '%' }, grid: { color: '#F3F4F6' } },
+      x: { grid: { display: false } }
+    }
+  }
+});
+
+// ─── CHILDCARE: WORKFORCE IMPACT ───────────────────────────────────────────
+new Chart(document.getElementById('childcareWorkforceChart'), {
+  type: 'bar',
+  data: {
+    labels: ['Reduced Work Hours', 'Left Workforce Entirely', 'Turned Down Job Offer', 'Paying >10% Income on Care'],
+    datasets: [{ label: '% of Parents Affected', data: [28.7, 14.2, 19.6, 41.3], backgroundColor: [ORANGE, RED, RED, ORANGE], borderRadius: 5 }]
+  },
+  options: {
+    indexAxis: 'y',
+    responsive: true, maintainAspectRatio: false,
+    plugins: { legend: { display: false },
+      tooltip: { callbacks: { label: ctx => ctx.raw + '% of parents' } }
+    },
+    scales: {
+      x: { ticks: { callback: v => v + '%' }, grid: { color: '#F3F4F6' } },
+      y: { grid: { display: false } }
+    }
+  }
+});
+
+// ─── CHILDCARE: SUPPLY GAP ─────────────────────────────────────────────────
+new Chart(document.getElementById('childcareSupplyChart'), {
+  type: 'doughnut',
+  data: {
+    labels: ['Licensed Slots Available (62,800)', 'Unmet Demand — Slot Gap (26,400)'],
+    datasets: [{
+      data: [62800, 26400],
+      backgroundColor: [TEAL, RED],
+      borderWidth: 3,
+      borderColor: '#fff'
+    }]
+  },
+  options: {
+    responsive: true, maintainAspectRatio: false,
+    plugins: {
+      legend: { position: 'bottom' },
+      tooltip: { callbacks: { label: ctx => ctx.label + ' (' + Math.round(ctx.raw / 89200 * 100) + '% of demand)' } }
+    }
+  }
+});
+
+// ─── EQUITY: INSECURITY CHART ──────────────────────────────────────────────
+const raceGroups = ['White Non-Hispanic','Hispanic/Latino','Black/African American','Asian/Pacific Islander','Multiracial'];
+const insecurityRates = [10.2, 21.8, 19.6, 9.8, 14.2];
+const insecurityColors = insecurityRates.map(r => r >= 18 ? RED : (r >= 12 ? ORANGE : GREEN));
+
+new Chart(document.getElementById('equityInsecurityChart'), {
+  type: 'bar',
+  data: {
+    labels: raceGroups,
+    datasets: [
+      { label: 'Food Insecurity Rate', data: insecurityRates, backgroundColor: insecurityColors, borderRadius: 5 },
+      { label: 'County Average (14.8%)', data: [14.8,14.8,14.8,14.8,14.8], type: 'line', borderColor: BLUE, borderWidth: 2, borderDash:[5,3], pointRadius: 0, fill: false }
+    ]
+  },
+  options: {
+    responsive: true, maintainAspectRatio: false,
+    plugins: { legend: { position: 'bottom' } },
+    scales: {
+      y: { beginAtZero: true, ticks: { callback: v => v + '%' }, grid: { color: '#F3F4F6' } },
+      x: { grid: { display: false }, ticks: { font: { size: 10 } } }
+    }
+  }
+});
+
+// ─── EQUITY: FOOD DESERT ───────────────────────────────────────────────────
+new Chart(document.getElementById('equityDesertChart'), {
+  type: 'bar',
+  data: {
+    labels: raceGroups,
+    datasets: [{ label: '% in Food Desert Zip Code', data: [8.4, 42.6, 51.3, 12.4, 22.7], backgroundColor: RACE_COLORS, borderRadius: 5 }]
+  },
+  options: {
+    responsive: true, maintainAspectRatio: false,
+    plugins: { legend: { display: false },
+      tooltip: { callbacks: { label: ctx => ctx.raw + '% in food desert zip' } }
+    },
+    scales: {
+      y: { beginAtZero: true, ticks: { callback: v => v + '%' }, grid: { color: '#F3F4F6' } },
+      x: { grid: { display: false }, ticks: { font: { size: 10 } } }
+    }
+  }
+});
+
+// ─── EQUITY: INCOME ────────────────────────────────────────────────────────
+new Chart(document.getElementById('equityIncomeChart'), {
+  type: 'bar',
+  data: {
+    labels: raceGroups,
+    datasets: [{ label: 'Median HH Income', data: [98400, 52300, 48700, 87600, 63400], backgroundColor: RACE_COLORS, borderRadius: 5 }]
+  },
+  options: {
+    responsive: true, maintainAspectRatio: false,
+    plugins: { legend: { display: false },
+      tooltip: { callbacks: { label: ctx => '$' + ctx.raw.toLocaleString() } }
+    },
+    scales: {
+      y: { ticks: { callback: v => '$' + (v/1000).toFixed(0) + 'K' }, grid: { color: '#F3F4F6' } },
+      x: { grid: { display: false }, ticks: { font: { size: 10 } } }
+    }
+  }
+});
+
+// ─── EQUITY: CHILDCARE BURDEN ──────────────────────────────────────────────
+new Chart(document.getElementById('equityChildcareChart'), {
+  type: 'bar',
+  data: {
+    labels: raceGroups,
+    datasets: [
+      { label: 'Childcare Cost as % of Income', data: [14.1, 31.4, 34.2, 16.8, 22.1], backgroundColor: RACE_COLORS, borderRadius: 5 },
+      { label: 'HHS Threshold (7%)', data: [7,7,7,7,7], type: 'line', borderColor: GREEN, borderWidth: 2, borderDash:[5,3], pointRadius: 0, fill: false }
+    ]
+  },
+  options: {
+    responsive: true, maintainAspectRatio: false,
+    plugins: { legend: { position: 'bottom' },
+      tooltip: { callbacks: { label: ctx => ctx.raw + '%' } }
+    },
+    scales: {
+      y: { beginAtZero: true, ticks: { callback: v => v + '%' }, grid: { color: '#F3F4F6' } },
+      x: { grid: { display: false }, ticks: { font: { size: 10 } } }
+    }
+  }
+});
+</script>
+</body>
+</html>

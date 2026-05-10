@@ -1,0 +1,24 @@
+timeframe:
+  fiscal_years:
+    - 2023
+    - 2024
+    - 2025
+  ytd_year: 2026
+  ytd_note: Jan-Apr
+
+weights:
+  amenity_gap_weight: 0.35
+  complaints_weight: 0.35
+  safety_weight: 0.20
+  age_weight: 0.10
+
+files:
+  high_priority_stops: data/canonical/top_25_with_amenities.csv
+  complaints_summary: data/canonical/high_priority_stops_311_analysis.csv
+  complaints_detail: data/canonical/311_detailed_complaint_report.csv
+  yearly_categories: data/canonical/311_by_year_and_category.csv
+  responsibility_summary: data/canonical/311_summary_by_responsibility.csv
+  jurisdiction_summary: data/canonical/jurisdictional_responsibility_15_stops.csv
+  equity_summary: data/canonical/equity_analysis_15_stops.csv
+  ada_dataset: data/canonical/ada_violation_dataset.csv
+  stop_amenities: data/canonical/stop_amenities_2026.csv

@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>austin-tpw-analysis | Ameritech LLC | Ameritech Consulting Group</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --navy:   #1b2e4b;
+  --teal:   #1e6e7a;
+  --gold:   #b8830a;
+  --ltgray: #f4f5f7;
+  --rule:   #d0d4d8;
+}
+
+body {
+  font-family: 'Georgia', 'Times New Roman', serif;
+  font-size: 10pt;
+  color: #1a1a1a;
+  background: #d8dce0;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+
+/* ── Page shell ── */
+.page {
+  width: 8.5in;
+  height: 11in;
+  margin: 0.3in auto;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  box-shadow: 0 3px 16px rgba(0,0,0,0.22);
+}
+
+/* ── Inner content area ── */
+.body {
+  flex: 1;
+  padding: 0.4in 0.65in 0.18in 0.65in;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+/* ════════════════════
+   COVER (Page 1)
+════════════════════ */
+.cover-hero {
+  background: var(--navy);
+  padding: 0.54in 0.65in 0.4in 0.65in;
+  flex-shrink: 0;
+}
+.cover-hero .eyebrow {
+  font-size: 7.5pt;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: #a8c8e0;
+  margin-bottom: 0.16in;
+}
+.cover-hero h1 {
+  font-size: 26pt;
+  font-weight: bold;
+  color: #fff;
+  line-height: 1.1;
+  margin-bottom: 0.1in;
+}
+.cover-hero .subhead {
+  font-size: 11.5pt;
+  color: #c8dcea;
+  line-height: 1.4;
+}
+
+.accent-bar {
+  height: 5px;
+  background: linear-gradient(90deg, var(--teal) 0%, var(--gold) 54%, #ddd 100%);
+  flex-shrink: 0;
+}
+
+.datebar {
+  background: #edf0f4;
+  padding: 8px 0.65in;
+  font-size: 8.5pt;
+  color: #445;
+  display: flex;
+  gap: 0.35in;
+  flex-shrink: 0;
+}
+.datebar b { color: var(--navy); }
+
+/* ── Stat grid ── */
+.stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+  margin-bottom: 0.18in;
+}
+.stat {
+  background: var(--ltgray);
+  border-top: 3px solid var(--teal);
+  padding: 9px 8px 7px;
+  text-align: center;
+}
+.stat .n { font-size: 14pt; font-weight: bold; color: var(--navy); line-height: 1.1; }
+.stat .l { font-size: 6.8pt; color: #556; text-transform: uppercase; letter-spacing: 0.05em; line-height: 1.35; margin-top: 3px; }
+
+/* ── TOC ── */
+.toc {
+  border-left: 4px solid var(--gold);
+  background: #fdf8ef;
+  padding: 10px 14px;
+  margin-bottom: 0.16in;
+}
+.toc .th { font-size: 7.5pt; text-transform: uppercase; letter-spacing: 0.12em; color: var(--navy); font-weight: bold; margin-bottom: 6px; }
+.toc-row { display: flex; justify-content: space-between; font-size: 9.3pt; line-height: 1.8; color: #333; border-bottom: 1px dotted #d8ccb4; }
+.toc-row:last-child { border-bottom: none; }
+.toc-row .pg { color: #888; font-size: 8.5pt; }
+
+/* ════════════════════
+   INTERIOR HEADER
+════════════════════ */
+.ihead {
+  background: var(--navy);
+  padding: 0.18in 0.65in 0.16in 0.65in;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-shrink: 0;
+}
+.ihead .lbl {
+  font-size: 7pt;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  color: #a8c8e0;
+  margin-bottom: 3px;
+}
+.ihead h2 { font-size: 17pt; font-weight: bold; color: #fff; line-height: 1.1; }
+.ihead .pgn { font-size: 8pt; color: #fff; white-space: nowrap; padding-bottom: 2px; }
+
+/* ════════════════════
+   CONTENT ELEMENTS
+════════════════════ */
+h3 {
+  font-size: 8.8pt;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--teal);
+  font-weight: bold;
+  border-bottom: 1px solid var(--rule);
+  padding-bottom: 3px;
+  margin-top: 0.15in;
+  margin-bottom: 0.09in;
+}
+h3:first-child { margin-top: 0; }
+
+p { font-size: 9.5pt; line-height: 1.65; color: #222; margin-bottom: 0.09in; }
+p:last-child { margin-bottom: 0; }
+
+ul { padding-left: 16px; margin-bottom: 0.09in; }
+li { font-size: 9.3pt; line-height: 1.7; margin-bottom: 1px; }
+
+/* tables */
+table { width: 100%; border-collapse: collapse; font-size: 8.8pt; margin-bottom: 0.1in; }
+thead tr { background: var(--navy); color: #fff; }
+th { padding: 6px 9px; text-align: left; font-size: 8pt; letter-spacing: 0.04em; font-weight: bold; color: #fff; }
+tbody tr:nth-child(even) { background: var(--ltgray); }
+td { padding: 5.5px 9px; vertical-align: top; border-bottom: 1px solid #e2e6ea; line-height: 1.45; }
+
+/* callout — teal left border */
+.callout {
+  border-left: 4px solid var(--teal);
+  background: #eff7f8;
+  padding: 10px 14px;
+  margin: 0.1in 0;
+  font-size: 9.4pt;
+  line-height: 1.65;
+  color: #1a2a3a;
+}
+.callout b { color: var(--navy); }
+
+/* info box — gold left border */
+.info {
+  border-left: 4px solid var(--gold);
+  background: #fdf8ef;
+  padding: 10px 14px;
+  margin: 0.1in 0;
+  font-size: 9.4pt;
+  line-height: 1.65;
+  color: #2a2510;
+}
+.info b { color: var(--navy); }
+
+/* challenge overview cards */
+.challenge {
+  border: 1px solid var(--rule);
+  border-top: 4px solid var(--navy);
+  padding: 11px 14px 10px;
+  background: #fff;
+}
+.challenge .ctag {
+  font-size: 7pt;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--teal);
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+.challenge h4 {
+  font-size: 10pt;
+  font-weight: bold;
+  color: var(--navy);
+  margin-bottom: 6px;
+  line-height: 1.2;
+}
+.challenge p { font-size: 9.2pt; line-height: 1.55; margin-bottom: 0; }
+
+/* two-col grid */
+.two { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 0.12in; }
+
+/* KPI gap highlight */
+.gap-high   { color: #a83228; font-weight: bold; }
+.gap-policy { color: #8a6200; font-weight: bold; }
+
+/* ════════════════════
+   FOOTER
+════════════════════ */
+.foot {
+  background: var(--navy);
+  padding: 7px 0.65in;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 7pt;
+  flex-shrink: 0;
+}
+.foot .firm { color: #fff; font-weight: bold; }
+.foot .mid  { color: #c0d4e4; }
+.foot .pgn  { color: #fff; font-weight: bold; white-space: nowrap; }
+
+/* ── Print ── */
+@media print {
+  body { background: #fff; }
+  .page { margin: 0; box-shadow: none; page-break-after: always; height: 11in; }
+  .page:last-child { page-break-after: avoid; }
+}
+</style>
+</head>
+<body>
+
+
+<!-- ═══════════════════════════════
+     PAGE 1  —  COVER
+════════════════════════════════ -->
+<div class="page">
+  <div class="cover-hero">
+    <div class="eyebrow">Ameritech LLC | Ameritech Consulting Group &nbsp;·&nbsp; Infrastructure &amp; Policy Practice</div>
+    <h1>Austin Transportation &amp;<br>Public Works Department</h1>
+    <div class="subhead">Independent Analysis &nbsp;|&nbsp; Five-Page Qualitative Summary</div>
+  </div>
+  <div class="accent-bar"></div>
+  <div class="datebar">
+    <div>Published: <b>May 2026</b></div>
+    <div>Subject: <b>City of Austin — TPW Department</b></div>
+    <div>Prepared By: <b>Ameritech LLC | Ameritech Consulting Group</b></div>
+  </div>
+
+  <div class="body">
+    <p style="margin-top:0.15in;">
+      This is an independent analysis prepared by Ameritech LLC | Ameritech Consulting Group, examining the structure, performance, and equity dimensions of Austin's Transportation &amp; Public Works Department (TPW). TPW manages the city's most critical physical infrastructure — roads, bridges, drainage, sidewalks, and traffic systems — against a backdrop of rapid population growth, a multi-billion-dollar capital backlog, and persistent service inequities between wealthier and lower-income neighborhoods. The 2020 merger of Austin Transportation and Austin Public Works created a unified department with significant authority and resources. The 2020 Mobility Bond ($460M) and federal IIJA funding have injected capital into the system. Four structural challenges, however, remain unresolved and are the focus of this report.
+    </p>
+
+    <div class="stats">
+      <div class="stat"><div class="n">2,000+</div><div class="l">City-Maintained Lane Miles</div></div>
+      <div class="stat"><div class="n">$3–5B+</div><div class="l">Estimated Capital Backlog</div></div>
+      <div class="stat"><div class="n">100–120</div><div class="l">Annual Traffic Fatalities</div></div>
+      <div class="stat"><div class="n">1,700–2,000</div><div class="l">Miles of Sidewalk Gaps</div></div>
+      <div class="stat"><div class="n">$460M</div><div class="l">2020 Mobility Bond (Active)</div></div>
+      <div class="stat"><div class="n">~$400M</div><div class="l">Annual Budget — All Funds</div></div>
+      <div class="stat"><div class="n">$80–100M</div><div class="l">Drainage Utility Fund (Annual)</div></div>
+      <div class="stat"><div class="n">0</div><div class="l">Displacement Impact Reviews Completed</div></div>
+    </div>
+
+    <div class="toc">
+      <div class="th">Contents</div>
+      <div class="toc-row"><span>Situation Overview &amp; Key Policy Leverage Points</span><span class="pg">Page 2</span></div>
+      <div class="toc-row"><span>The Four Structural Challenges — Overview</span><span class="pg">Page 3</span></div>
+      <div class="toc-row"><span>Challenge 1 — Capital Backlog &amp; Deferred Maintenance</span><span class="pg">Page 3</span></div>
+      <div class="toc-row"><span>Challenge 2 — Vision Zero &amp; The High Injury Network</span><span class="pg">Page 4</span></div>
+      <div class="toc-row"><span>Challenge 3 — Flood Infrastructure, Equity &amp; Displacement</span><span class="pg">Page 4</span></div>
+      <div class="toc-row"><span>Challenge 4 — Infrastructure as a Displacement Vector</span><span class="pg">Page 5</span></div>
+      <div class="toc-row"><span>Performance Dashboard</span><span class="pg">Page 5</span></div>
+      <div class="toc-row"><span>Closing Analysis &amp; Scope Notes</span><span class="pg">Page 6</span></div>
+    </div>
+
+    <div class="callout">
+      <b>The core finding:</b> TPW has the resources, authority, and active capital program to address Austin's infrastructure deficits. What the system currently lacks is the policy framework to ensure that investment reaches underserved communities equitably and does not accelerate the displacement of the residents it is meant to serve.
+    </div>
+  </div>
+
+  <div class="foot">
+    <span class="firm">Ameritech LLC | Ameritech Consulting Group &nbsp;|&nbsp; tiffany@a-techconsulting.com</span>
+    <span class="mid">Independent Analysis — Austin TPW &nbsp;|&nbsp; May 2026</span>
+    <span class="pgn">Page 1 of 6</span>
+  </div>
+</div>
+
+
+<!-- ═══════════════════════════════
+     PAGE 2  —  SITUATION & LEVERAGE POINTS
+════════════════════════════════ -->
+<div class="page">
+  <div class="ihead">
+    <div><div class="lbl">Section 1</div><h2>Situation Overview &amp; Key Policy Leverage Points</h2></div>
+    <div class="pgn">Page 2 of 6</div>
+  </div>
+  <div class="accent-bar"></div>
+
+  <div class="body">
+    <h3>The Situation</h3>
+    <p>
+      TPW was formed in October 2020 through the consolidation of the Austin Transportation Department and Austin Public Works, creating a unified department overseeing the full lifecycle of Austin's built transportation and drainage environment. With approximately 1,100–1,300 FTEs and a combined annual budget of $350–450M across all funds, it is the largest operational department in city government. Its asset portfolio spans over 2,000 lane miles of roadway, more than 100 bridges, a citywide drainage network, thousands of traffic signals, and an expanding urban trail and sidewalk system.
+    </p>
+    <p>
+      The department operates at the intersection of three compounding citywide pressures. First, <b>rapid growth</b>: Austin has surpassed one million residents, placing mounting demand on infrastructure that was built for a substantially smaller city. Second, <b>historic underinvestment</b>: maintenance appropriations have chronically lagged asset aging, producing a capital backlog that now exceeds $3–5B and grows annually. Third, <b>structural inequity</b>: the communities bearing the greatest burden of deferred maintenance, traffic violence, and flood risk are disproportionately low-income and minority — a pattern rooted in historical policy decisions and not random in its distribution.
+    </p>
+    <p>
+      Significant new resources are in the system. The 2020 Mobility Bond ($460M), legacy bond programs totaling $1.1B+ in active capital investment, and federal IIJA grants flowing through multiple competitive programs represent a generational influx of infrastructure capital. The challenge is not the absence of investment — it is the absence of policy frameworks that direct investment equitably and prevent it from accelerating displacement in the communities it enters.
+    </p>
+
+    <h3>Key Policy Leverage Points</h3>
+    <p>The table below identifies the primary policy mechanisms available to address the four structural challenges documented in this analysis. Each gap in the current status column represents a discrete, actionable policy intervention — most of which do not require new budget authority to initiate.</p>
+
+    <table>
+      <thead><tr><th>Policy Lever</th><th>Current Status</th><th>Gap Assessment</th></tr></thead>
+      <tbody>
+        <tr><td><b>Annual budget appropriations</b></td><td>TPW receives ~$350–450M across all funds</td><td>Equity-disaggregated allocation targets not established</td></tr>
+        <tr><td><b>Bond program design</b></td><td>Next cycle not yet defined</td><td>No equity targeting framework in place for next bond</td></tr>
+        <tr><td><b>Displacement Impact Review</b></td><td>No requirement currently exists</td><td>Critical policy gap; can be adopted by directive</td></tr>
+        <tr><td><b>Equity service standards</b></td><td>No disaggregated performance targets adopted</td><td>No accountability baseline for equitable service delivery</td></tr>
+        <tr><td><b>Capital project approval</b></td><td>Major contracts and corridor priorities approved annually</td><td>No displacement screen applied at approval stage</td></tr>
+      </tbody>
+    </table>
+
+    <div class="info">
+      <b>Federal funding urgency:</b> IIJA grant cycles are time-sensitive and increasingly require equity documentation as part of competitive applications. Policy action on equity frameworks and displacement review can simultaneously improve internal accountability and strengthen Austin's competitive position for remaining federal infrastructure funding. The window to shape how this capital is deployed is narrowing.
+    </div>
+
+    <div class="callout">
+      <b>Scope note:</b> This analysis draws on publicly available budget documents, capital program data, city reports, and published research. Figures cited are estimates and should be verified against current adopted budgets and TPW data systems before use in formal proceedings. Indicative service distribution patterns reflect findings from published analyses; a full data audit would strengthen the evidentiary foundation for each challenge identified.
+    </div>
+  </div>
+
+  <div class="foot">
+    <span class="firm">Ameritech LLC | Ameritech Consulting Group &nbsp;|&nbsp; tiffany@a-techconsulting.com</span>
+    <span class="mid">Independent Analysis — Austin TPW &nbsp;|&nbsp; May 2026</span>
+    <span class="pgn">Page 2 of 6</span>
+  </div>
+</div>
+
+
+<!-- ═══════════════════════════════
+     PAGE 3  —  FOUR CHALLENGES OVERVIEW + CHALLENGE 1
+════════════════════════════════ -->
+<div class="page">
+  <div class="ihead">
+    <div><div class="lbl">Section 2</div><h2>The Four Structural Challenges</h2></div>
+    <div class="pgn">Page 3 of 6</div>
+  </div>
+  <div class="accent-bar"></div>
+
+  <div class="body">
+    <p>
+      The following four challenges are presented in order of operational urgency, though all are deeply interconnected. Infrastructure underinvestment, traffic violence, flood risk, and displacement are not separate problems — they concentrate in the same corridors, affect the same communities, and require coordinated responses rather than siloed interventions. Each challenge section below provides a full qualitative assessment; this overview provides orientation.
+    </p>
+
+    <div class="two">
+      <div class="challenge">
+        <div class="ctag">Challenge 1</div>
+        <h4>Capital Backlog &amp; Deferred Maintenance</h4>
+        <p>$3–5B+ and growing ~$100–200M/year. Each bond cycle inherits a larger maintenance burden from the prior cycle.</p>
+      </div>
+      <div class="challenge">
+        <div class="ctag">Challenge 2</div>
+        <h4>Vision Zero — Missed Targets, High-Risk Corridors</h4>
+        <p>100–120 deaths/year with no downward trend. The High Injury Network runs through Austin's lowest-income corridors.</p>
+      </div>
+    </div>
+    <div class="two">
+      <div class="challenge">
+        <div class="ctag">Challenge 3</div>
+        <h4>Flood Infrastructure — Equity &amp; Displacement</h4>
+        <p>Flood risk is racialized and growing. Buyout programs displace lower-income residents without replacement housing.</p>
+      </div>
+      <div class="challenge">
+        <div class="ctag">Challenge 4</div>
+        <h4>Infrastructure as a Displacement Vector</h4>
+        <p>Every corridor improvement raises adjacent property values. No displacement review exists at project approval.</p>
+      </div>
+    </div>
+
+    <h3>Challenge 1 — Capital Backlog &amp; Deferred Maintenance ($3–5B+)</h3>
+    <p>
+      Austin's infrastructure is aging faster than the maintenance budget can address. The capital backlog — the accumulated gap between the investment required to maintain infrastructure in a state of good repair and the funding actually appropriated — is estimated at <b>$3–5B+</b> for roads, bridges, and drainage alone, growing approximately $100–200M per year. This is not a temporary shortfall; it is a structural feature of how Austin has historically financed infrastructure. Bond programs fund new construction and major rehabilitation, but routine maintenance is funded through the General Fund — and those appropriations have consistently fallen short of what the asset base requires.
+    </p>
+    <p>
+      The consequence is a compounding burden: each new bond cycle inherits a larger deferred backlog, raises public expectations with new infrastructure, and simultaneously leaves existing assets in declining condition. Austin targets a systemwide average Pavement Condition Index (PCI) of 70 or above; current estimates place the average in the mid-to-upper 60s. The gap is not uniform — arterials in higher-income areas receive more consistent maintenance, while residential streets in East Austin, North Austin, and older South Austin neighborhoods show the highest deterioration rates. Without a dedicated maintenance funding mechanism — separate from bond programs and insulated from annual budget competition — the backlog will continue to grow regardless of how many new bonds are approved.
+    </p>
+
+    <div class="callout">
+      <b>What this looks like on the ground:</b> Potholes that take months to repair in lower-income neighborhoods. Creek crossings that flood with each major storm because drainage culverts have not been upsized in decades. Bridges on a structural watch list because inspection findings have not triggered funded rehabilitation. These are not isolated failures — they are the predictable output of a system that builds faster than it maintains.
+    </div>
+  </div>
+
+  <div class="foot">
+    <span class="firm">Ameritech LLC | Ameritech Consulting Group &nbsp;|&nbsp; tiffany@a-techconsulting.com</span>
+    <span class="mid">Independent Analysis — Austin TPW &nbsp;|&nbsp; May 2026</span>
+    <span class="pgn">Page 3 of 6</span>
+  </div>
+</div>
+
+
+<!-- ═══════════════════════════════
+     PAGE 4  —  CHALLENGES 2 & 3
+════════════════════════════════ -->
+<div class="page">
+  <div class="ihead">
+    <div><div class="lbl">Challenges 2 &amp; 3</div><h2>Vision Zero &amp; Flood Infrastructure</h2></div>
+    <div class="pgn">Page 4 of 6</div>
+  </div>
+  <div class="accent-bar"></div>
+
+  <div class="body">
+    <h3>Challenge 2 — Vision Zero: Missed Targets, High-Risk Corridors</h3>
+    <p>
+      Austin adopted Vision Zero in 2016, committing to eliminate all traffic fatalities and serious injuries by 2025. That goal was not achieved. Annual traffic fatalities have ranged from approximately <b>100–120 deaths per year</b> throughout the Vision Zero period, with no sustained downward trend. Pedestrian and cyclist fatalities account for 25–35% of the total — a share that is growing.
+    </p>
+    <p>
+      The High Injury Network (HIN) — the approximately <b>8% of Austin streets where the majority of severe and fatal crashes occur</b> — is not randomly distributed across the city. It runs through the corridors that serve Austin's lowest-income, most transit-dependent residents: Rundberg Lane in North Austin, East MLK Jr. Boulevard and Airport Boulevard in East Austin, East William Cannon Drive in South Austin, and segments of North Lamar Boulevard. The people most likely to be killed or seriously injured while traveling in Austin are those who have the fewest transportation alternatives.
+    </p>
+    <p>
+      The primary drivers are structural: high-speed road geometry with wide travel lanes and minimal pedestrian accommodation; sidewalk gaps that force pedestrians into traffic lanes; poor lighting; and high-speed access points concentrated in corridors that carry heavy pedestrian volumes. Austin has deployed the low-cost interventions — signage, paint, automated speed cameras in school zones, safety grants. What it has not done consistently is fund structural redesign of HIN corridors: lane narrowing, raised pedestrian crossings, protected bike facilities, and pedestrian refuge islands. These are what peer Vision Zero cities identify as the primary driver of sustained fatality reduction. Without them, Austin will continue averaging 100+ deaths per year indefinitely.
+    </p>
+
+    <h3>Challenge 3 — Flood Infrastructure: Equity &amp; Displacement</h3>
+    <p>
+      Austin sits in <b>Flash Flood Alley</b>, one of the most flood-prone regions in the United States. Limestone karst terrain, steep watersheds, and dense impervious surfaces combine to produce rapid, extreme runoff — conditions intensified by population growth and upstream development. The Onion Creek watershed in Southeast Austin, Williamson Creek in South Austin, Shoal Creek in Central Austin, and Walnut Creek in Northeast Austin all carry histories of repeated, severe flooding events.
+    </p>
+    <p>
+      The equity dimension is that Austin's flood risk is <b>not randomly distributed</b>. Flood-prone areas are disproportionately lower-income and minority — a direct legacy of exclusionary zoning and housing market discrimination that concentrated affordable housing in floodplains when higher-ground development was effectively restricted. The 2013 Halloween Flood on Onion Creek, which killed 13 people, was not an anomaly; it was the predictable result of manufactured housing sited in a 100-year floodplain over decades of underregulated development.
+    </p>
+    <p>
+      The Onion Creek Voluntary Buyout Program — financed through the Drainage Utility Enterprise Fund (~$80–100M/year) — has relocated hundreds of households from the floodplain since 2013. But flood-risk reduction has come at a significant social cost: <b>no systematic replacement housing program exists</b>. Displaced residents, predominantly lower-income homeowners and renters with limited capacity to navigate Austin's housing market, have in many cases left the city entirely. Drainage capital investment has also historically tracked new development — newer, wealthier areas received newer systems, while older East and North Austin corridors carry aging infrastructure that has not been systematically upsized.
+    </p>
+
+    <div class="info">
+      <b>The displacement paradox:</b> Flood mitigation investment increases neighborhood desirability and drives up property values. Without affordability protections, the residents a buyout was designed to protect are subsequently displaced by the market conditions the investment helped create. Protecting communities from floods while pricing them out of the city is not a successful outcome — it is a transfer of harm, not an elimination of it.
+    </div>
+  </div>
+
+  <div class="foot">
+    <span class="firm">Ameritech LLC | Ameritech Consulting Group &nbsp;|&nbsp; tiffany@a-techconsulting.com</span>
+    <span class="mid">Independent Analysis — Austin TPW &nbsp;|&nbsp; May 2026</span>
+    <span class="pgn">Page 4 of 6</span>
+  </div>
+</div>
+
+
+<!-- ═══════════════════════════════
+     PAGE 5  —  CHALLENGE 4 + DASHBOARD + CLOSING
+════════════════════════════════ -->
+<div class="page">
+  <div class="ihead">
+    <div><div class="lbl">Challenge 4 &amp; Performance Dashboard</div><h2>Infrastructure as a Displacement Vector</h2></div>
+    <div class="pgn">Page 5 of 6</div>
+  </div>
+  <div class="accent-bar"></div>
+
+  <div class="body">
+    <h3>Challenge 4 — Infrastructure as a Displacement Vector</h3>
+    <p>
+      Every major TPW capital project — corridor improvements, sidewalk buildout, drainage upgrades, trail extensions, safety retrofits — increases the attractiveness of adjacent neighborhoods and, with it, adjacent property values. In a rapidly gentrifying city with limited affordable housing stock and no systematic displacement protections, public infrastructure investment is not equity-neutral. It is a documented driver of displacement in the communities it ostensibly serves.
+    </p>
+    <p>
+      The pattern has been observed repeatedly in Austin. Street improvements along East Cesar Chavez preceded a wave of rapid gentrification. Airport Boulevard is actively receiving infrastructure investment while adjacent block-level rents rise. North Lamar improvements appear in luxury real estate marketing materials. The mechanism is well understood: bond-funded investment creates an amenity premium; the premium attracts private capital; private capital raises land values; and without anti-displacement intervention, lower-income renters and small businesses are priced out before they can benefit from the infrastructure their tax dollars funded.
+    </p>
+    <p>
+      <b>Austin currently has no systematic mechanism to evaluate displacement risk before approving capital projects</b>, and no policy requiring that infrastructure investment corridors be paired with affordability preservation tools. Each corridor improvement and safety retrofit is approved on its infrastructure merits alone. The displacement consequences — which are predictable, documentable, and in many cases preventable — are treated as an externality rather than a policy responsibility.
+    </p>
+
+    <h3>Performance Dashboard — Current Baseline</h3>
+    <table>
+      <thead>
+        <tr><th>KPI</th><th>Current Estimate</th><th>Target</th><th>Gap</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Systemwide avg Pavement Condition Index (PCI)</td><td>~65</td><td>70+</td><td class="gap-high">–5 points; below target</td></tr>
+        <tr><td>Annual traffic fatalities</td><td>~100–120</td><td>0 (Vision Zero)</td><td class="gap-high">100–120 deaths/year</td></tr>
+        <tr><td>Sidewalk gap inventory</td><td>~1,700–2,000 miles</td><td>0 miles</td><td class="gap-high">1,700–2,000 miles</td></tr>
+        <tr><td>HIN corridors with structural redesign</td><td>&lt;5</td><td>All HIN segments</td><td class="gap-high">Majority unredesigned</td></tr>
+        <tr><td>Flood buyouts with replacement housing plan</td><td>None</td><td>100% of buyout phases</td><td class="gap-policy">Policy gap — no requirement exists</td></tr>
+        <tr><td>Displacement Impact Reviews completed</td><td>0</td><td>All capital projects &gt;$5M</td><td class="gap-policy">Policy gap — no requirement exists</td></tr>
+        <tr><td>Equity-disaggregated service standards adopted</td><td>None</td><td>Framework in place</td><td class="gap-policy">Policy gap — no framework adopted</td></tr>
+        <tr><td>Capital backlog (roads, bridges, drainage)</td><td>$3–5B+</td><td>Fully funded lifecycle maintenance</td><td class="gap-high">Growing ~$100–200M/year</td></tr>
+      </tbody>
+    </table>
+
+  </div>
+
+  <div class="foot">
+    <span class="firm">Ameritech LLC | Ameritech Consulting Group &nbsp;|&nbsp; tiffany@a-techconsulting.com</span>
+    <span class="mid">Independent Analysis — Austin TPW &nbsp;|&nbsp; May 2026</span>
+    <span class="pgn">Page 5 of 6</span>
+  </div>
+</div>
+
+
+<!-- ═══════════════════════════════
+     PAGE 6  —  CLOSING ANALYSIS & SCOPE NOTES
+════════════════════════════════ -->
+<div class="page">
+  <div class="ihead">
+    <div><div class="lbl">Section 6</div><h2>Closing Analysis &amp; Scope Notes</h2></div>
+    <div class="pgn">Page 6 of 6</div>
+  </div>
+  <div class="accent-bar"></div>
+
+  <div class="body">
+    <h3>Closing Analysis</h3>
+    <p>
+      The performance dashboard presented on the preceding page reveals a department investing at scale but not yet investing with sufficient strategic equity orientation. The distinction between operational deficits and policy gaps is important. The operational deficits — fatalities, pavement deterioration, sidewalk gaps, a growing capital backlog — are resource problems. They require sustained, multi-year funding commitments to close and will not yield to short-term interventions alone.
+    </p>
+    <p>
+      The policy gaps are a different category of problem entirely. The absence of a Displacement Impact Review requirement, the lack of replacement housing plans paired with flood buyout programs, and the nonexistence of equity-disaggregated service standards are not funding shortfalls — they are institutional absences. They can be addressed through directive, framework adoption, and interagency coordination. They do not require new appropriations to initiate. This asymmetry matters: the corrective actions most immediately available are also among the most consequential, because the frameworks adopted now will govern how billions of dollars of existing bond and federal grant funding are deployed over the next decade.
+    </p>
+    <p>
+      The 2020 Mobility Bond is actively deploying capital into Austin's highest-displacement-risk corridors today. Federal IIJA funds are being drawn against projects already in design. Each cycle without an equity and displacement framework in place is another set of corridor projects committed without a displacement screen — and another set of communities improved on paper while being priced out in practice.
+    </p>
+
+    <div class="callout">
+      <b>The core opportunity:</b> TPW has the resources, institutional authority, and active capital program to begin closing these gaps now. The four structural challenges documented in this analysis are serious — but none are intractable. Each has a known policy intervention that peer cities and programs have demonstrated at scale. The question is not whether Austin can address them. It is whether the institutional will exists to do so before the current capital deployment window closes.
+    </div>
+
+    <h3>Scope &amp; Data Notes</h3>
+    <p>
+      This analysis is an independent qualitative assessment prepared by Ameritech LLC | Ameritech Consulting Group. It is not a comprehensive audit or formal program evaluation. All figures cited are estimates drawn from publicly available budget documents, city reports, capital program data, open data portals, and published research. They have not been independently verified against internal TPW data systems or the City of Austin's financial management platform.
+    </p>
+    <p>
+      Service distribution patterns described throughout this document — PCI variation by neighborhood income, maintenance response time disparities, drainage capital allocation history — reflect indicative patterns identified in published analyses and should be verified against Austin's 311 service request data, GIS capital expenditure records, and Drainage Utility asset management systems before being cited in formal proceedings or policy submissions. A full quantitative data audit would substantially strengthen the evidentiary foundation for each of the four challenges identified here and is recommended as a next step.
+    </p>
+
+    <div class="info">
+      <b>Suggested next steps:</b> (1) Commission a GIS-based equity audit of TPW capital expenditure by census tract income quartile and racial demographics, using 311 data and bond spending records. (2) Conduct a Drainage Utility capital allocation review comparing fee revenue collected vs. capital invested by watershed and neighborhood income level. (3) Map HIN corridors against current bond project deployment to identify immediate opportunities to embed displacement screening into active project approvals.
+    </div>
+  </div>
+
+  <div class="foot">
+    <span class="firm">Ameritech LLC | Ameritech Consulting Group &nbsp;|&nbsp; tiffany@a-techconsulting.com</span>
+    <span class="mid">All figures are estimates based on publicly available data. Verify before formal use.</span>
+    <span class="pgn">Page 6 of 6</span>
+  </div>
+</div>
+
+
+</body>
+</html>

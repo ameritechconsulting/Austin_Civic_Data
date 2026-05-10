@@ -1,0 +1,8 @@
+metric,value,note
+Share missing shelter,0.8,Computed from shelter_present among high-priority stops.
+Share missing benches,0.64,Computed from bench_present among high-priority stops.
+Complaint trend slope (calls/year),-91.9,Positive slope indicates worsening complaint trajectory.
+Safety complaint share,0.1065,Safety concerns as a share of total calls for analyzed high-priority stops.
+CapMetro issue share,0.8262,Issue attribution among summarized high-priority stops.
+City of Austin issue share,0.124,Issue attribution among summarized high-priority stops.
+ADA-related complaints in baseline window,342.0,Count of ADA-related complaint records in selected fiscal years + YTD.

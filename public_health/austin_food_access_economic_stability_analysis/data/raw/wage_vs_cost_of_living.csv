@@ -1,0 +1,8 @@
+household_type,annual_living_wage_needed,annual_median_wage_actual,wage_gap_annual,hourly_living_wage,hourly_median_wage,housing_cost_annual,food_cost_annual,childcare_cost_annual,transportation_annual,healthcare_annual,other_necessities_annual,taxes_annual,pct_meeting_living_wage,notes
+"1 Adult, No Children",46884,47320,436,22.54,22.75,19200,4800,0,6240,3120,7200,6324,52.1,"Single adult barely covers living wage at median"
+"1 Adult, 1 Child",79248,47320,-31928,38.10,22.75,19200,7800,19800,6240,4800,8400,13008,18.3,"Single parent faces ~$32K annual shortfall"
+"1 Adult, 2 Children",99372,47320,-52052,47.78,22.75,21600,10200,30000,6240,6000,9600,15732,9.7,"Severe shortfall; childcare alone exceeds housing cost"
+"2 Adults, No Children",62880,94640,31760,15.12,22.75,24000,9600,0,8400,6240,10800,3840,71.4,"Dual-income no-kids relatively stable"
+"2 Adults, 1 Child",93264,94640,1376,22.42,22.75,25200,12000,19800,8400,7440,12000,8424,51.8,"Two working adults w/ 1 child near breaking even"
+"2 Adults, 2 Children",112080,94640,-17440,26.95,22.75,27600,14400,30000,8400,8640,12600,10440,38.6,"Most common family type; $17K annual gap"
+"2 Adults, 3 Children",131040,94640,-36400,31.46,22.75,30000,16800,36000,8400,9840,13200,16800,24.1,"Large family; significant structural deficit"

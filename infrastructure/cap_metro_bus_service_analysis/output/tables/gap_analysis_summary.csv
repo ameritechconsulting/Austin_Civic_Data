@@ -1,0 +1,8 @@
+metric,value
+capital_plan_source,no_capital_plan_file_found
+stops_analyzed,25
+severe_gap_stops,15
+high_gap_stops,0
+top_gap_stop,Guadalupe/16th Street
+top_gap_index_100,64.1
+district_with_highest_avg_gap,3

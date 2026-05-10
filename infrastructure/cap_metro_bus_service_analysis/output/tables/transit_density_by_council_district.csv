@@ -1,0 +1,6 @@
+council_district,transit_density_rank,unique_stops,total_weekly_trips,total_calls,unresolved_tickets,calls_per_stop,unresolved_per_stop,avg_amenity_gap
+9,1,19,20140.0,1122.0,873.0,59.05,45.95,1.42
+7,2,2,1494.0,78.0,60.0,39.0,30.0,1.0
+5,2,2,1486.0,75.0,52.0,37.5,26.0,1.5
+3,3,1,1554.0,85.0,67.0,85.0,67.0,2.0
+4,3,1,1432.0,67.0,52.0,67.0,52.0,2.0

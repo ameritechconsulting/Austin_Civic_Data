@@ -1,0 +1,26 @@
+inputs:
+  stops_file: data/canonical/top_25_with_amenities.csv
+  complaints_file: data/canonical/high_priority_stops_311_analysis.csv
+  equity_file: data/canonical/equity_analysis_15_stops.csv
+  coordinate_file: data/canonical/stop_amenities_2026.csv
+  geographies:
+    council_districts: data/geo/council_districts.geojson
+    census_tracts: data/geo/census_tracts.geojson
+
+join_settings:
+  stop_latitude_column_candidates:
+    - Latitude
+    - latitude
+    - Latitude Coordinate
+    - LATITUDE
+  stop_longitude_column_candidates:
+    - Longitude
+    - longitude
+    - Longitude Coordinate
+    - LONGITUDE
+  target_crs: EPSG:4326
+
+outputs:
+  stop_geospatial_equity: output/tables/stop_geospatial_equity.csv
+  district_equity_summary: output/tables/district_equity_summary.csv
+  tract_equity_summary: output/tables/tract_equity_summary.csv

@@ -1,0 +1,26 @@
+stop_id,stop_name,trip_count,amenity_gap,missing_shelter,missing_bench,total_calls,safety_concerns,avg_open_ticket_age_days,response_rate,risk_score
+5940,1609 Lavaca/17th (Midblock),2215,2,1,1,142.0,19.0,507.75,0.2,0.9995783486958226
+501,Guadalupe/16th Street,2156,2,1,1,138.0,16.0,507.8,0.16,0.9581500522421074
+2643,Lavaca/4th,2147,2,1,1,135.0,12.0,509.55,0.21,0.9089936274369412
+498,Guadalupe/W. 21st Street,1994,2,1,1,112.0,13.0,496.4,0.19,0.8602508653348648
+5864,UT Dean Keeton Station (NB),1843,2,1,1,98.0,13.0,488.0,0.29,0.8240964412417673
+2613,Guadalupe/4th,1813,2,1,1,92.0,10.0,502.3,0.18,0.7805332329439733
+2763,Vic Mathias/Auditorium Shores (SB),1831,2,1,1,95.0,8.0,500.125,0.25,0.7664484133358901
+5868,Republic Square Station (NB),1495,2,1,1,82.0,9.0,509.9,0.22,0.7468495181616011
+5879,Bluebonnet Station (SB),1486,2,1,1,75.0,10.0,507.2,0.31,0.7395927972330218
+1368,501 Pleasant Valley/5th,1554,2,1,1,85.0,7.0,498.475,0.21,0.7309506173611273
+6315,8th Street NB (Trinity/8th),1435,2,1,1,68.0,10.0,496.25,0.35,0.720191796208242
+5849,Northcross Station (SB),1494,2,1,1,78.0,7.0,490.425,0.23,0.7121183553047727
+6314,115 7Th/Colorado,1740,2,1,1,88.0,4.0,502.3,0.23,0.7075161832775536
+5859,North Lamar Transit Center,1432,2,1,1,67.0,8.0,508.8,0.22,0.6991356428119817
+5349,West 38th Station (SB),1471,2,1,1,72.0,6.0,495.8250000000001,0.24,0.6878623383035176
+497,UT West Mall Station (SB),2798,1,0,1,0.0,0.0,0.0,,0.175
+591,Capitol Station (NB),2344,1,1,0,0.0,0.0,0.0,,0.175
+1042,2231 Guadalupe/West Mall UT,2107,1,1,0,0.0,0.0,0.0,,0.175
+603,31st Street Rapid  Station (NB),1803,1,1,0,0.0,0.0,0.0,,0.175
+2606,Austin History Center Station (NB),1495,1,1,0,0.0,0.0,0.0,,0.175
+2328,Oltorf West Station (SB),1486,1,1,0,0.0,0.0,0.0,,0.175
+2738,Capitol Station (SB),2805,0,0,0,0.0,0.0,0.0,,0.0
+5357,31st Street Station (SB),2231,0,0,0,0.0,0.0,0.0,,0.0
+2611,Austin History Center Station (SB),1930,0,0,0,0.0,0.0,0.0,,0.0
+5604,Crestview Station Bus Stop,1699,0,0,0,0.0,0.0,0.0,,0.0

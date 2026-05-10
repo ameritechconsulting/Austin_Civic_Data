@@ -1,0 +1,6 @@
+council_district,stops_in_district,mean_tract_density_per_1k,max_tract_density_per_1k,mean_tract_pct_phone,mean_tract_pct_digital,mean_gap_index,severe_gap_stops,phone_dependency
+3,1,1663.6,1663.6,53.1,45.5,60.2,1,MODERATE
+4,1,1249.9,1249.9,65.4,34.1,54.1,1,HIGH
+5,2,2095.4,2095.4,54.5,44.4,19.4,1,MODERATE
+9,19,4381.8,7920.7,40.8,58.1,12.8,11,LOW
+7,2,1298.4,1298.4,54.9,44.1,9.3,1,MODERATE
