@@ -1,0 +1,89 @@
+name: Data Source Freshness Check
+
+on:
+  schedule:
+    # Runs every Monday at 8:00 AM CT (14:00 UTC)
+    - cron: "0 14 * * 1"
+  workflow_dispatch: # Allow manual trigger from GitHub UI
+
+jobs:
+  check-data-sources:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check Austin Open Data Sources
+        id: check
+        run: |
+          echo "## Data Source Freshness Report" >> $GITHUB_STEP_SUMMARY
+          echo "Checked: $(date -u '+%Y-%m-%d %H:%M UTC')" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+
+          ALERTS=""
+
+          # ── CapMetro 311 Service Complaints ──
+          CMTA_RESP=$(curl -s "https://data.austintexas.gov/api/views/i26j-ai4z.json" 2>/dev/null || echo "ERROR")
+          if [ "$CMTA_RESP" != "ERROR" ]; then
+            CMTA_DATE=$(echo "$CMTA_RESP" | python3 -c "import sys,json,datetime; d=json.load(sys.stdin); ts=d.get('rowsUpdatedAt',0); print(datetime.datetime.fromtimestamp(ts).strftime('%Y-%m-%d'))" 2>/dev/null || echo "unknown")
+            echo "| CapMetro 311 Complaints | $CMTA_DATE |" >> $GITHUB_STEP_SUMMARY
+            # Flag if updated in the last 8 days
+            DAYS_AGO=$(python3 -c "import datetime; d=datetime.datetime.strptime('$CMTA_DATE','%Y-%m-%d'); print((datetime.datetime.now()-d).days)" 2>/dev/null || echo "999")
+            if [ "$DAYS_AGO" -lt 8 ] 2>/dev/null; then
+              ALERTS="${ALERTS}\n- CapMetro 311 data updated $CMTA_DATE ($DAYS_AGO days ago) — consider refreshing the CapMetro analysis."
+            fi
+          else
+            echo "| CapMetro 311 Complaints | ⚠️ Could not reach API |" >> $GITHUB_STEP_SUMMARY
+          fi
+
+          # ── Austin Transportation / Vision Zero Crashes ──
+          TPW_RESP=$(curl -s "https://data.austintexas.gov/api/views/y2wy-tgr5.json" 2>/dev/null || echo "ERROR")
+          if [ "$TPW_RESP" != "ERROR" ]; then
+            TPW_DATE=$(echo "$TPW_RESP" | python3 -c "import sys,json,datetime; d=json.load(sys.stdin); ts=d.get('rowsUpdatedAt',0); print(datetime.datetime.fromtimestamp(ts).strftime('%Y-%m-%d'))" 2>/dev/null || echo "unknown")
+            echo "| Vision Zero Crash Data | $TPW_DATE |" >> $GITHUB_STEP_SUMMARY
+            DAYS_AGO=$(python3 -c "import datetime; d=datetime.datetime.strptime('$TPW_DATE','%Y-%m-%d'); print((datetime.datetime.now()-d).days)" 2>/dev/null || echo "999")
+            if [ "$DAYS_AGO" -lt 8 ] 2>/dev/null; then
+              ALERTS="${ALERTS}\n- Vision Zero crash data updated $TPW_DATE ($DAYS_AGO days ago) — consider refreshing the TPW analysis."
+            fi
+          else
+            echo "| Vision Zero Crash Data | ⚠️ Could not reach API |" >> $GITHUB_STEP_SUMMARY
+          fi
+
+          # ── Austin Code / 311 Service Requests (general) ──
+          SR_RESP=$(curl -s "https://data.austintexas.gov/api/views/xwdj-i9he.json" 2>/dev/null || echo "ERROR")
+          if [ "$SR_RESP" != "ERROR" ]; then
+            SR_DATE=$(echo "$SR_RESP" | python3 -c "import sys,json,datetime; d=json.load(sys.stdin); ts=d.get('rowsUpdatedAt',0); print(datetime.datetime.fromtimestamp(ts).strftime('%Y-%m-%d'))" 2>/dev/null || echo "unknown")
+            echo "| 311 Service Requests | $SR_DATE |" >> $GITHUB_STEP_SUMMARY
+            DAYS_AGO=$(python3 -c "import datetime; d=datetime.datetime.strptime('$SR_DATE','%Y-%m-%d'); print((datetime.datetime.now()-d).days)" 2>/dev/null || echo "999")
+            if [ "$DAYS_AGO" -lt 8 ] 2>/dev/null; then
+              ALERTS="${ALERTS}\n- Austin 311 data updated $SR_DATE ($DAYS_AGO days ago) — consider refreshing relevant analyses."
+            fi
+          else
+            echo "| 311 Service Requests | ⚠️ Could not reach API |" >> $GITHUB_STEP_SUMMARY
+          fi
+
+          # ── Capital Metro GTFS Feed Check ──
+          GTFS_STATUS=$(curl -s -o /dev/null -w "%{http_code}" "https://data.texas.gov/api/views/r4v4-vz24.json" 2>/dev/null || echo "000")
+          if [ "$GTFS_STATUS" = "200" ]; then
+            echo "| CapMetro GTFS Feed | ✅ Reachable |" >> $GITHUB_STEP_SUMMARY
+          else
+            echo "| CapMetro GTFS Feed | ⚠️ Status $GTFS_STATUS |" >> $GITHUB_STEP_SUMMARY
+          fi
+
+          # Output alerts for the issue creation step
+          echo "alerts<<EOF" >> $GITHUB_OUTPUT
+          echo -e "$ALERTS" >> $GITHUB_OUTPUT
+          echo "EOF" >> $GITHUB_OUTPUT
+
+      - name: Create GitHub Issue if Data Updated
+        if: steps.check.outputs.alerts != ''
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const alerts = `${{ steps.check.outputs.alerts }}`;
+            if (!alerts.trim()) return;
+
+            await github.rest.issues.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title: `📊 Data Source Update Detected — ${new Date().toISOString().split('T')[0]}`,
+              body: `## Source Datasets Have Been Updated\n\nOne or more of your source datasets was updated this week. Review and re-run the relevant analysis if needed.\n\n### Updates Detected\n${alerts}\n\n### Action Items\n- [ ] Review the updated dataset on the Austin Open Data portal\n- [ ] Re-run the analysis script if data has materially changed\n- [ ] Update the "Data current as of" date on the report and website card\n- [ ] Commit and push the refreshed report\n\n---\n*Generated automatically by the Data Freshness Check workflow.*`,
+              labels: ['data-update']
+            });

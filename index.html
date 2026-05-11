@@ -289,6 +289,25 @@
       padding: 3px 10px;
     }
 
+    .data-freshness {
+      font-size: 11px;
+      color: var(--muted);
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    .freshness-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: #1B7A3E;
+      flex-shrink: 0;
+    }
+
+    .freshness-dot.stale { background: #946200; }
+
     .card-footer {
       display: flex;
       gap: 8px;
@@ -688,6 +707,10 @@
         <span class="tag">GIS / Spatial</span>
         <span class="tag">311 Data</span>
       </div>
+      <div class="data-freshness">
+        <span class="freshness-dot"></span>
+        Data current as of Jan 2026
+      </div>
       <div class="card-footer">
         <a class="card-btn card-btn-secondary" href="https://github.com/ameritechconsulting/Austin_Civic_Data/tree/main/infrastructure/cap_metro_bus_service_analysis" target="_blank">GitHub</a>
         <a class="card-btn card-btn-primary" href="https://ameritechconsulting.github.io/Austin_Civic_Data/infrastructure/cap_metro_bus_service_analysis/CMTA_5Page_Print_Summary.html" target="_blank">View Report →</a>
@@ -708,6 +731,10 @@
         <span class="tag">Capital Budget</span>
         <span class="tag">Equity</span>
       </div>
+      <div class="data-freshness">
+        <span class="freshness-dot"></span>
+        Data current as of Jan 2026
+      </div>
       <div class="card-footer">
         <a class="card-btn card-btn-secondary" href="https://github.com/ameritechconsulting/Austin_Civic_Data/tree/main/infrastructure/austin_transportation_public_works_analysis" target="_blank">GitHub</a>
         <a class="card-btn card-btn-primary" href="https://ameritechconsulting.github.io/Austin_Civic_Data/infrastructure/austin_transportation_public_works_analysis/austin-tpw-analysis.html" target="_blank">View Report →</a>
@@ -727,6 +754,10 @@
         <span class="tag">SNAP Data</span>
         <span class="tag">Economic Stability</span>
         <span class="tag">Equity</span>
+      </div>
+      <div class="data-freshness">
+        <span class="freshness-dot"></span>
+        Data current as of Jan 2026
       </div>
       <div class="card-footer">
         <a class="card-btn card-btn-secondary" href="https://github.com/ameritechconsulting/Austin_Civic_Data/tree/main/public_health/austin_food_access_economic_stability_analysis" target="_blank">GitHub</a>
