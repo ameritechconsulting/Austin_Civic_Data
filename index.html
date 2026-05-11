@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-3E38FE8RF4"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag("js", new Date());
+    gtag("config", "G-3E38FE8RF4");
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Austin Nexus — Civic Transparency Platform. Open data, analysis, and accountability reporting for Austin, Texas.">
+  <title>Austin Nexus | Civic Transparency Platform</title>
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --navy:   #1B3A6B;
+      --blue:   #2E86AB;
+      --light:  #F4F7FB;
+      --border: #DDE3ED;
+      --text:   #222;
+      --muted:  #666;
+      --white:  #ffffff;
+    }
+
+    body {
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      background: var(--white);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    a { color: inherit; text-decoration: none; }
+
+    /* ── NAV ── */
+    nav {
+      background: var(--navy);
+      padding: 0 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 60px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .nav-brand {
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--white);
+      letter-spacing: 0.5px;
+    }
+
+    .nav-brand span {
+      color: #7EC8E3;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 24px;
+      align-items: center;
+    }
+
+    .nav-links a {
+      font-size: 13px;
+      color: rgba(255,255,255,0.8);
+      transition: color 0.2s;
+    }
+
+    .nav-links a:hover { color: var(--white); }
+
+    .nav-github {
+      background: rgba(255,255,255,0.15);
+      border: 1px solid rgba(255,255,255,0.3);
+      border-radius: 5px;
+      padding: 6px 14px;
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--white) !important;
+      transition: background 0.2s;
+    }
+
+    .nav-github:hover { background: rgba(255,255,255,0.25) !important; }
+
+    /* ── HERO ── */
+    .hero {
+      background: linear-gradient(135deg, var(--navy) 0%, #1a4a8a 60%, #1d5fa0 100%);
+      padding: 80px 40px 72px;
+      text-align: center;
+      color: var(--white);
+    }
+
+    .hero-eyebrow {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+      color: #7EC8E3;
+      margin-bottom: 16px;
+    }
+
+    .hero h1 {
+      font-size: 52px;
+      font-weight: 800;
+      letter-spacing: -1px;
+      margin-bottom: 16px;
+      line-height: 1.1;
+    }
+
+    .hero h1 span { color: #7EC8E3; }
+
+    .hero-tagline {
+      font-size: 16px;
+      color: rgba(255,255,255,0.85);
+      max-width: 540px;
+      margin: 0 auto 32px;
+      line-height: 1.7;
+    }
+
+    .hero-tagline strong {
+      color: var(--white);
+      font-weight: 600;
+    }
+
+    .hero-cta {
+      display: inline-flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .btn {
+      display: inline-block;
+      font-size: 13px;
+      font-weight: 700;
+      padding: 12px 24px;
+      border-radius: 6px;
+      transition: all 0.2s;
+      letter-spacing: 0.3px;
+    }
+
+    .btn-white {
+      background: var(--white);
+      color: var(--navy);
+    }
+
+    .btn-white:hover { background: #e8f0fe; }
+
+    .btn-outline {
+      border: 2px solid rgba(255,255,255,0.5);
+      color: var(--white);
+    }
+
+    .btn-outline:hover { border-color: var(--white); background: rgba(255,255,255,0.1); }
+
+    /* ── STATS STRIP ── */
+    .stats {
+      background: var(--light);
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      justify-content: center;
+      gap: 0;
+    }
+
+    .stat {
+      padding: 28px 48px;
+      text-align: center;
+      border-right: 1px solid var(--border);
+    }
+
+    .stat:last-child { border-right: none; }
+
+    .stat-number {
+      font-size: 28px;
+      font-weight: 800;
+      color: var(--navy);
+      display: block;
+    }
+
+    .stat-label {
+      font-size: 12px;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+    }
+
+    /* ── SECTION ── */
+    section { padding: 64px 40px; max-width: 1100px; margin: 0 auto; }
+
+    .section-header { margin-bottom: 36px; }
+
+    .section-eyebrow {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--blue);
+      margin-bottom: 8px;
+    }
+
+    .section-header h2 {
+      font-size: 28px;
+      font-weight: 800;
+      color: var(--navy);
+      margin-bottom: 8px;
+    }
+
+    .section-header p {
+      font-size: 14px;
+      color: var(--muted);
+      max-width: 560px;
+    }
+
+    /* ── PROJECT CARDS ── */
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      transition: box-shadow 0.2s, transform 0.2s;
+    }
+
+    .card:hover {
+      box-shadow: 0 4px 20px rgba(27,58,107,0.1);
+      transform: translateY(-2px);
+    }
+
+    .card-top {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      margin-bottom: 12px;
+    }
+
+    .card-category {
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: var(--blue);
+    }
+
+    .status-badge {
+      font-size: 10px;
+      font-weight: 700;
+      padding: 3px 10px;
+      border-radius: 20px;
+    }
+
+    .status-published {
+      background: #E6F4EA;
+      color: #1B7A3E;
+    }
+
+    .status-progress {
+      background: #FFF8E1;
+      color: #946200;
+    }
+
+    .card h3 {
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--navy);
+      margin-bottom: 8px;
+      line-height: 1.3;
+    }
+
+    .card p {
+      font-size: 13px;
+      color: var(--muted);
+      line-height: 1.6;
+      flex: 1;
+      margin-bottom: 20px;
+    }
+
+    .card-tags {
+      display: flex;
+      gap: 6px;
+      flex-wrap: wrap;
+      margin-bottom: 20px;
+    }
+
+    .tag {
+      font-size: 11px;
+      background: var(--light);
+      color: var(--navy);
+      border-radius: 20px;
+      padding: 3px 10px;
+    }
+
+    .card-footer {
+      display: flex;
+      gap: 8px;
+      border-top: 1px solid var(--border);
+      padding-top: 16px;
+    }
+
+    .card-btn {
+      flex: 1;
+      text-align: center;
+      font-size: 12px;
+      font-weight: 700;
+      padding: 8px 12px;
+      border-radius: 5px;
+      transition: all 0.2s;
+    }
+
+    .card-btn-primary {
+      background: var(--navy);
+      color: var(--white);
+    }
+
+    .card-btn-primary:hover { background: var(--blue); }
+
+    .card-btn-secondary {
+      background: var(--white);
+      color: var(--navy);
+      border: 1px solid var(--border);
+    }
+
+    .card-btn-secondary:hover { background: var(--light); }
+
+    /* ── PIPELINE SECTION ── */
+    .pipeline-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 16px;
+    }
+
+    .pipeline-card {
+      background: var(--light);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 20px;
+    }
+
+    .pipeline-icon {
+      font-size: 22px;
+      margin-bottom: 10px;
+    }
+
+    .pipeline-card h4 {
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--navy);
+      margin-bottom: 6px;
+    }
+
+    .pipeline-card p {
+      font-size: 12px;
+      color: var(--muted);
+      line-height: 1.5;
+    }
+
+    /* ── ABOUT ── */
+    .about-strip {
+      background: var(--light);
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      padding: 56px 40px;
+    }
+
+    .about-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+    }
+
+    .about-inner h2 {
+      font-size: 26px;
+      font-weight: 800;
+      color: var(--navy);
+      margin-bottom: 16px;
+      line-height: 1.3;
+    }
+
+    .about-inner p {
+      font-size: 14px;
+      color: var(--muted);
+      line-height: 1.8;
+      margin-bottom: 12px;
+    }
+
+    .principles { list-style: none; display: flex; flex-direction: column; gap: 14px; }
+
+    .principle {
+      display: flex;
+      gap: 14px;
+      align-items: flex-start;
+    }
+
+    .principle-icon {
+      width: 36px;
+      height: 36px;
+      background: var(--navy);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      font-size: 16px;
+    }
+
+    .principle-text h4 {
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--navy);
+      margin-bottom: 2px;
+    }
+
+    .principle-text p {
+      font-size: 12px;
+      color: var(--muted);
+      margin: 0;
+    }
+
+    /* ── FOOTER ── */
+    footer {
+      background: var(--navy);
+      color: rgba(255,255,255,0.7);
+      padding: 48px 40px 32px;
+    }
+
+    .footer-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 40px;
+      flex-wrap: wrap;
+      padding-bottom: 32px;
+      border-bottom: 1px solid rgba(255,255,255,0.15);
+      margin-bottom: 24px;
+    }
+
+    .footer-brand h3 {
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--white);
+      margin-bottom: 6px;
+    }
+
+    .footer-brand p {
+      font-size: 12px;
+      line-height: 1.6;
+      max-width: 280px;
+    }
+
+    .footer-links h4 {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: var(--white);
+      margin-bottom: 14px;
+    }
+
+    .footer-links ul { list-style: none; display: flex; flex-direction: column; gap: 8px; }
+
+    .footer-links a {
+      font-size: 13px;
+      color: rgba(255,255,255,0.7);
+      transition: color 0.2s;
+    }
+
+    .footer-links a:hover { color: var(--white); }
+
+    .footer-bottom {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 12px;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    @media (max-width: 700px) {
+      .hero h1 { font-size: 34px; }
+      .stats { flex-direction: column; }
+      .stat { border-right: none; border-bottom: 1px solid var(--border); }
+      .about-inner { grid-template-columns: 1fr; gap: 32px; }
+      section { padding: 48px 20px; }
+      nav { padding: 0 20px; }
+      .hero { padding: 56px 20px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-brand">Austin <span>Nexus</span></div>
+  <div class="nav-links">
+    <a href="#research">Research</a>
+    <a href="#pipeline">Pipeline</a>
+    <a href="#about">About</a>
+    <a class="nav-github" href="https://github.com/ameritechconsulting/Austin_Civic_Data" target="_blank">GitHub →</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+  <p class="hero-eyebrow">Civic Transparency Platform</p>
+  <h1>Austin <span>Nexus</span></h1>
+  <p class="hero-tagline">
+    <strong>Open Data. Accountable Government. Informed Communities.</strong><br>
+    Independent civic data analysis for Austin, Texas — built for residents, advocates, and policymakers.
+  </p>
+  <div class="hero-cta">
+    <a class="btn btn-white" href="#research">View Research</a>
+    <a class="btn btn-outline" href="https://github.com/ameritechconsulting/Austin_Civic_Data" target="_blank">View on GitHub</a>
+  </div>
+</div>
+
+<!-- STATS -->
+<div class="stats">
+  <div class="stat">
+    <span class="stat-number">3</span>
+    <span class="stat-label">Published Analyses</span>
+  </div>
+  <div class="stat">
+    <span class="stat-number">5</span>
+    <span class="stat-label">Topic Areas</span>
+  </div>
+  <div class="stat">
+    <span class="stat-number">10</span>
+    <span class="stat-label">Council Districts</span>
+  </div>
+  <div class="stat">
+    <span class="stat-number">2026</span>
+    <span class="stat-label">Data Vintage</span>
+  </div>
+</div>
+
+<!-- PUBLISHED RESEARCH -->
+<section id="research">
+  <div class="section-header">
+    <p class="section-eyebrow">Published Research</p>
+    <h2>Active Analyses</h2>
+    <p>Completed, peer-reviewable analyses available for download, citation, and public use.</p>
+  </div>
+
+  <div class="card-grid">
+
+    <!-- CapMetro -->
+    <div class="card">
+      <div class="card-top">
+        <span class="card-category">Infrastructure</span>
+        <span class="status-badge status-published">Published</span>
+      </div>
+      <h3>CapMetro Bus Service Analysis</h3>
+      <p>Baseline evidence report and equity analysis of CapMetro transit accessibility across Austin council districts — 311 complaint data, stop amenity gaps, ADA violations, and risk scoring.</p>
+      <div class="card-tags">
+        <span class="tag">Transit Equity</span>
+        <span class="tag">ADA Compliance</span>
+        <span class="tag">311 Data</span>
+      </div>
+      <div class="card-footer">
+        <a class="card-btn card-btn-secondary" href="https://github.com/ameritechconsulting/Austin_Civic_Data/tree/main/infrastructure/cap_metro_bus_service_analysis" target="_blank">GitHub</a>
+        <a class="card-btn card-btn-primary" href="https://ameritechconsulting.github.io/Austin_Civic_Data/infrastructure/cap_metro_bus_service_analysis/CMTA_5Page_Print_Summary.html" target="_blank">View Report →</a>
+      </div>
+    </div>
+
+    <!-- TPW -->
+    <div class="card">
+      <div class="card-top">
+        <span class="card-category">Infrastructure</span>
+        <span class="status-badge status-published">Published</span>
+      </div>
+      <h3>Austin Transportation & Public Works</h3>
+      <p>Policy briefings and data templates for the City of Austin TPW Department — capital spending, Vision Zero safety, drainage infrastructure, and equity distribution analysis.</p>
+      <div class="card-tags">
+        <span class="tag">Transportation</span>
+        <span class="tag">Vision Zero</span>
+        <span class="tag">Capital Budget</span>
+      </div>
+      <div class="card-footer">
+        <a class="card-btn card-btn-secondary" href="https://github.com/ameritechconsulting/Austin_Civic_Data/tree/main/infrastructure/austin_transportation_public_works_analysis" target="_blank">GitHub</a>
+        <a class="card-btn card-btn-primary" href="https://ameritechconsulting.github.io/Austin_Civic_Data/infrastructure/austin_transportation_public_works_analysis/austin-tpw-analysis.html" target="_blank">View Report →</a>
+      </div>
+    </div>
+
+    <!-- Food Access -->
+    <div class="card">
+      <div class="card-top">
+        <span class="card-category">Public Health</span>
+        <span class="status-badge status-published">Published</span>
+      </div>
+      <h3>Food Access & Economic Stability</h3>
+      <p>Analysis of food access gaps and economic stability across Austin neighborhoods — SNAP usage, grocery access by zip code, wage vs. cost of living, and childcare workforce impact.</p>
+      <div class="card-tags">
+        <span class="tag">Food Access</span>
+        <span class="tag">SNAP Data</span>
+        <span class="tag">Equity</span>
+      </div>
+      <div class="card-footer">
+        <a class="card-btn card-btn-secondary" href="https://github.com/ameritechconsulting/Austin_Civic_Data/tree/main/public_health/austin_food_access_economic_stability_analysis" target="_blank">GitHub</a>
+        <a class="card-btn card-btn-primary" href="https://ameritechconsulting.github.io/Austin_Civic_Data/public_health/austin_food_access_economic_stability_analysis/outputs/final/austin_food_access_economic_stability_analysis.html" target="_blank">View Report →</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ABOUT -->
+<div class="about-strip" id="about">
+  <div class="about-inner">
+    <div>
+      <h2>What is Austin Nexus?</h2>
+      <p>Austin Nexus is a civic transparency platform maintained by Ameritech Consulting Group — producing independent, data-driven analysis of City of Austin programs, policies, and infrastructure.</p>
+      <p>Every dataset, methodology, and finding is published openly on GitHub so residents, journalists, advocates, and policymakers can verify, replicate, and build on the work.</p>
+      <a class="btn btn-white" style="background:var(--navy);color:#fff;margin-top:8px;display:inline-block;" href="https://github.com/ameritechconsulting/Austin_Civic_Data" target="_blank">View the Full Repository →</a>
+    </div>
+    <ul class="principles">
+      <li class="principle">
+        <div class="principle-icon">📂</div>
+        <div class="principle-text">
+          <h4>Open by Default</h4>
+          <p>All data, scripts, and findings are published publicly on GitHub under an open license.</p>
+        </div>
+      </li>
+      <li class="principle">
+        <div class="principle-icon">📊</div>
+        <div class="principle-text">
+          <h4>Source-Cited Analysis</h4>
+          <p>Every claim links back to a primary government source — City data portals, Census, CapMetro feeds.</p>
+        </div>
+      </li>
+      <li class="principle">
+        <div class="principle-icon">🏙️</div>
+        <div class="principle-text">
+          <h4>District-Level Equity Focus</h4>
+          <p>All analyses are disaggregated by Austin's 10 council districts to surface equity gaps.</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<!-- RESEARCH PIPELINE -->
+<section id="pipeline">
+  <div class="section-header">
+    <p class="section-eyebrow">Research Pipeline</p>
+    <h2>Coming Soon</h2>
+    <p>Analyses currently in development across all five topic areas.</p>
+  </div>
+  <div class="pipeline-grid">
+    <div class="pipeline-card">
+      <div class="pipeline-icon">🏠</div>
+      <h4>Housing</h4>
+      <p>Displacement risk scoring, ADCAP program tracking, and homelessness system accountability.</p>
+    </div>
+    <div class="pipeline-card">
+      <div class="pipeline-icon">💼</div>
+      <h4>Economic Development</h4>
+      <p>City of Austin budget analysis and public investment priorities.</p>
+    </div>
+    <div class="pipeline-card">
+      <div class="pipeline-icon">❤️</div>
+      <h4>Public Health</h4>
+      <p>Neighborhood services, community investment strategy, and CSBG program analysis.</p>
+    </div>
+    <div class="pipeline-card">
+      <div class="pipeline-icon">🤝</div>
+      <h4>Public Procurement</h4>
+      <p>Small business equity, vendor concentration, and workforce procurement modernization.</p>
+    </div>
+    <div class="pipeline-card">
+      <div class="pipeline-icon">⚡</div>
+      <h4>Utilities & Technology</h4>
+      <p>Digital equity, broadband access, and utility infrastructure analysis.</p>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <h3>Austin Nexus</h3>
+      <p>A Civic Transparency Platform by Ameritech Consulting Group. Independent analysis for an accountable Austin.</p>
+    </div>
+    <div class="footer-links">
+      <h4>Research</h4>
+      <ul>
+        <li><a href="https://ameritechconsulting.github.io/Austin_Civic_Data/infrastructure/cap_metro_bus_service_analysis/CMTA_5Page_Print_Summary.html" target="_blank">CapMetro Bus Analysis</a></li>
+        <li><a href="https://ameritechconsulting.github.io/Austin_Civic_Data/infrastructure/austin_transportation_public_works_analysis/austin-tpw-analysis.html" target="_blank">Transportation & Public Works</a></li>
+        <li><a href="https://ameritechconsulting.github.io/Austin_Civic_Data/public_health/austin_food_access_economic_stability_analysis/outputs/final/austin_food_access_economic_stability_analysis.html" target="_blank">Food Access & Economic Stability</a></li>
+      </ul>
+    </div>
+    <div class="footer-links">
+      <h4>Connect</h4>
+      <ul>
+        <li><a href="https://github.com/ameritechconsulting/Austin_Civic_Data" target="_blank">GitHub Repository</a></li>
+        <li><a href="https://www.linkedin.com/in/tiffanymoorea-tech" target="_blank">LinkedIn (Personal)</a></li>
+        <li><a href="https://www.linkedin.com/company/113020000/" target="_blank">LinkedIn (Company)</a></li>
+        <li><a href="mailto:tiffany@a-techconsulting.com">tiffany@a-techconsulting.com</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Ameritech Consulting Group. All analyses are based on public data.</span>
+    <span>Austin, Texas</span>
+  </div>
+</footer>
+
+</body>
+</html>
