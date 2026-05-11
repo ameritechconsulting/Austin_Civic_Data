@@ -1,0 +1,51 @@
+,vendor,total_authorized,total_ordered,num_contracts,departments,categories,utilization,source,is_sbe
+1,AECOM TECHNICAL SERVICES INC,334338976.41,257887078.13,12,Austin Water Utility / Economic Development,Sole and Single Source / Professional Services,77.1,Professional Services,False
+2,HDR ENGINEERING INC,277856253.0,184124619.65,10,Austin Water Utility,Sole and Single Source / Professional Services,66.3,Professional Services,False
+3,FREESE AND NICHOLS INC,254030000.0,180936868.06,7,Austin Water Utility,Sole and Single Source / Professional Services,71.2,Professional Services,False
+4,"BGE, INC",245329999.9,170530552.84,7,Austin Water Utility,Sole and Single Source / Professional Services,69.5,Professional Services,False
+5,HALFF ASSOCIATES INC,231630000.0,169372961.9,9,Austin Water Utility,Sole and Single Source / Professional Services,73.1,Professional Services,False
+6,LOCKWOOD ANDREWS & NEWNAM INC,220429999.9,176121720.47,7,Austin Water Utility,Sole and Single Source / Professional Services,79.9,Professional Services,False
+7,BINKLEY & BARFIELD INC,206210637.72,152175587.79,6,Austin Water Utility,Sole and Single Source / Professional Services,73.8,Professional Services,False
+8,CP&Y INC,192923450.03,157052716.77,8,Austin Water Utility,Sole and Single Source / Professional Services,81.4,Professional Services,False
+9,CDM SMITH INC,173769150.24,149435865.38,7,Austin Water Utility,Sole and Single Source / Professional Services,86.0,Professional Services,False
+10,HENSEL PHELPS CONSTRUCTION CO,168580044.0,136758048.8,2,Austin Water Utility,Other Contracting,81.1,Professional Services,False
+11,"KIMLEY-HORN AND ASSOCIATES, INC",145000000.0,112667361.92,2,Austin Water Utility,Sole and Single Source / Professional Services,77.7,Professional Services,False
+12,TEXAS ELECTRIC COOPERATIVES,142938212.5,142938212.5,1760,Citywide,Goods & Commodities,100.0,Goods / Purchase Orders,False
+13,SILSBEE FORD INC,135416419.88,135416419.88,1053,Citywide,Goods & Commodities,100.0,Goods / Purchase Orders,False
+14,SUN COAST RESOURCES INC,129156726.09,129156726.09,2159,Citywide,Goods & Commodities,100.0,Goods / Purchase Orders,False
+15,MWH CONSTRUCTORS INC,116000852.0,116000852.0,1,Austin Water Utility,Construction,100.0,Professional Services,False
+16,MATOUS CONSTRUCTION LTD,115264516.36,115264516.36,2,Austin Water Utility,Construction,100.0,Professional Services,False
+17,"DEC - CENTRAL TEXAS, LLC",115000000.0,111460417.18,1,Austin Water Utility,Sole and Single Source,96.9,Professional Services,False
+18,ALLIANCE TRANSPORTATION GROUP LLC,115000000.0,111460417.18,1,Austin Water Utility,Sole and Single Source,96.9,Professional Services,False
+19,MOTOROLA SOLUTIONS INC,104820752.52,104820752.52,2685,Citywide,Goods & Commodities,100.0,Goods / Purchase Orders,False
+20,K FRIESE & ASSOC INC,101858526.65,60011958.08,7,Austin Water Utility,Sole and Single Source / Professional Services,58.9,Professional Services,False
+21,"H.W. LOCHNER, INC.",101858526.65,60011958.08,7,Austin Water Utility,Sole and Single Source / Professional Services,58.9,Professional Services,False
+22,FLINTCO LLC,96591385.68,91915279.68,4,Austin Water Utility,Construction / Other Contracting,95.2,Professional Services,False
+23,TECHLINE INC,95320219.08,95320219.08,4139,Citywide,Goods & Commodities,100.0,Goods / Purchase Orders,False
+24,DOUCET & ASSOCIATES INC,92229999.9,65036659.699999996,6,Austin Water Utility,Sole and Single Source / Professional Services,70.5,Professional Services,False
+25,DELL MARKETING LP,89430951.23,89430951.23,11329,Citywide,Goods & Commodities,100.0,Goods / Purchase Orders,False
+26,"SIDDONS-MARTIN EMERGENCY GROUP, LLC",88727828.44,88727828.44,117,Citywide,Goods & Commodities,100.0,Goods / Purchase Orders,False
+27,PINNACLE PETROLEUM INCORPORATED,86838700.61,86838700.61,1388,Citywide,Goods & Commodities,100.0,Goods / Purchase Orders,False
+28,W W GRAINGER INC,86203592.24,86203592.24,25538,Citywide,Goods & Commodities,100.0,Goods / Purchase Orders,False
+29,"RPS INFRASTRUCTURE, INC.",85500000.0,30984117.810000002,5,Austin Water Utility,Professional Services / Sole and Single Source,36.2,Professional Services,False
+30,JACOBS ENGINEERING GROUP INC,77799999.9,45578069.59,6,Austin Water Utility,Professional Services / Sole and Single Source,58.6,Professional Services,False
+31,DENUCCI CONSTRUCTORS L L C,63718684.87,57024792.8,6,Austin Water Utility,Construction,89.5,Professional Services,False
+32,"PAPE-DAWSON CONSULTING ENGINEERS, LLC",60700000.0,16442469.18,4,Austin Water Utility,Sole and Single Source / Professional Services,27.1,Professional Services,False
+33,"CAS CONSULTING AND SERVICES, INC.",58163146.34,38149776.63,5,Austin Water Utility,Professional Services / Sole and Single Source,65.6,Professional Services,False
+34,T MORALES COMPANY ELECTRIC & CONTROLS LTD,57503644.09,57503644.09,2,Austin Water Utility,Non-Professional Services / Construction,100.0,Professional Services,False
+35,MWM DESIGNGROUP INC,56700000.0,26736638.9,6,Austin Water Utility,Sole and Single Source / Professional Services,47.2,Professional Services,False
+36,MASTEC NORTH AMERICA INC,56000000.0,42417026.39,2,Austin Water Utility,Other Contracting / Construction,75.7,Professional Services,False
+37,KBS ELECTRICAL DISTRIBUTORS INC,55914859.03,55914859.03,1811,Citywide,Goods & Commodities,100.0,Goods / Purchase Orders,False
+38,SANTA CLARA CONSTRUCTION LTD,54803109.29,44136876.64,10,Austin Water Utility,Construction,80.5,Professional Services,False
+39,METRO FIRE APPARATUS SPECIALISTS INC,54730177.21,54730177.21,461,Citywide,Goods & Commodities,100.0,Goods / Purchase Orders,False
+40,"PLW WATERWORKS, LLC",52747095.47,52747095.47,2,Austin Water Utility,Construction,100.0,Professional Services,False
+41,"VELIZ COMPANY, LLC",52022347.23,20200352.03,2,Austin Water Utility,Other Contracting / Construction,38.8,Professional Services,False
+42,"METER READINGS HOLDING, LLC",51058366.91,51058366.91,2,Citywide,Goods & Commodities,100.0,Goods / Purchase Orders,False
+43,"PGC GENERAL CONTRACTORS, LLC",49580069.17,40651595.61,7,Austin Water Utility,Construction,82.0,Professional Services,False
+44,COBB FENDLEY & ASSOC INC,49500000.0,11388887.32,4,Austin Water Utility,Professional Services / Sole and Single Source,23.0,Professional Services,False
+45,"ALLEGIS GROUP HOLDINGS, INC.",48375000.0,33260542.71,1,Austin Water Utility,Sole and Single Source,68.8,Professional Services,False
+46,JAMAIL & SMITH CONSTRUCTION LP,48000000.0,16178004.8,1,Austin Water Utility,Other Contracting,33.7,Professional Services,False
+47,"BASIC IDIQ, INC.",48000000.0,16178004.8,1,Austin Water Utility,Other Contracting,33.7,Professional Services,False
+48,BROWN & ROOT INDUSTRIAL SERVICES LLC,48000000.0,16178004.8,1,Austin Water Utility,Other Contracting,33.7,Professional Services,False
+49,ALPHA BUILDING CORPORATION,48000000.0,16178004.8,1,Austin Water Utility,Other Contracting,33.7,Professional Services,False
+50,"CENTENNIAL CONTRACTORS ENTERPRISES, INC.",48000000.0,16178004.8,1,Austin Water Utility,Other Contracting,33.7,Professional Services,False

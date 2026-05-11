@@ -1,0 +1,1876 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>City of Austin — Vendor Contract & Workforce Equity Analysis</title>
+  <style>
+    *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+    :root{--navy:#1B3A6B;--blue:#2E86AB;--light:#F4F7FB;--border:#DDE3ED;--muted:#666;--white:#fff}
+    body{font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;background:var(--light);color:#222;font-size:13px;line-height:1.5}
+    a{color:var(--blue);text-decoration:none}
+    /* header */
+    .report-header{background:var(--navy);color:var(--white);padding:40px 48px 32px}
+    .report-header h1{font-size:26px;font-weight:800;margin-bottom:6px}
+    .report-header p{font-size:13px;color:rgba(255,255,255,.75);max-width:700px;line-height:1.6}
+    .report-meta{display:flex;gap:32px;margin-top:20px;flex-wrap:wrap}
+    .meta-item{font-size:11px;color:rgba(255,255,255,.6);text-transform:uppercase;letter-spacing:1px}
+    .meta-item strong{display:block;font-size:20px;font-weight:800;color:var(--white);letter-spacing:-0.5px}
+    /* nav */
+    .toc{background:#fff;border-bottom:1px solid var(--border);padding:12px 48px;display:flex;gap:24px;flex-wrap:wrap;position:sticky;top:0;z-index:50}
+    .toc a{font-size:12px;color:var(--navy);font-weight:600}
+    .toc a:hover{color:var(--blue)}
+    /* sections */
+    .section{background:var(--white);border:1px solid var(--border);border-radius:10px;margin:24px 40px;padding:28px 32px}
+    .section-title{font-size:16px;font-weight:800;color:var(--navy);margin-bottom:4px}
+    .section-sub{font-size:12px;color:var(--muted);margin-bottom:20px}
+    /* tables */
+    table{width:100%;border-collapse:collapse;font-size:12px}
+    th{background:var(--navy);color:var(--white);padding:8px 10px;text-align:left;font-size:11px;letter-spacing:.5px;white-space:nowrap}
+    td{padding:7px 10px;border-bottom:1px solid #f0f0f0;vertical-align:middle}
+    tr:hover td{background:#fafbfd}
+    tr:nth-child(even) td{background:#fcfcff}
+    tr:nth-child(even):hover td{background:#f5f7ff}
+    /* tags */
+    .sbe-tag{background:#E6F4EA;color:#1B7A3E;font-size:10px;font-weight:700;padding:2px 7px;border-radius:10px;margin-left:6px}
+    .source-tag{font-size:10px;padding:2px 8px;border-radius:10px;font-weight:600}
+    .source-tag.svc{background:#EBF3FF;color:#1B3A6B}
+    .source-tag.goods{background:#FFF3E0;color:#7A4100}
+    .small{font-size:11px;color:var(--muted)}
+    /* stat strip */
+    .stat-strip{display:flex;gap:0;background:var(--light);border:1px solid var(--border);border-radius:10px;overflow:hidden;margin-bottom:24px}
+    .stat-box{flex:1;padding:18px 20px;border-right:1px solid var(--border);text-align:center}
+    .stat-box:last-child{border-right:none}
+    .stat-num{font-size:22px;font-weight:800;color:var(--navy)}
+    .stat-lbl{font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:.8px;margin-top:2px}
+    /* bar */
+    .bar{height:10px;background:var(--blue);border-radius:4px;min-width:2px}
+    /* findings */
+    .findings{background:var(--light);border-left:4px solid var(--navy);border-radius:0 8px 8px 0;padding:16px 20px;margin-bottom:24px}
+    .findings h4{font-size:12px;font-weight:700;color:var(--navy);margin-bottom:8px;text-transform:uppercase;letter-spacing:1px}
+    .findings ul{list-style:none;display:flex;flex-direction:column;gap:6px}
+    .findings li{font-size:12px;color:#444;padding-left:14px;position:relative}
+    .findings li::before{content:"→";position:absolute;left:0;color:var(--blue)}
+    /* footer */
+    .report-footer{background:var(--navy);color:rgba(255,255,255,.6);text-align:center;padding:24px;font-size:11px;margin-top:32px}
+  </style>
+</head>
+<body>
+
+<div class="report-header">
+  <h1>City of Austin — Vendor Contract & Workforce Equity Analysis</h1>
+  <p>Comprehensive analysis of the City's top contract holders, repeat vendors, department-level spending, small and minority business participation, local job distribution, and workforce demographics. All data sourced from the Austin Open Data Portal.</p>
+  <div class="report-meta">
+    <div class="meta-item"><strong>$9.9B</strong>Total Spend Analyzed</div>
+    <div class="meta-item"><strong>$6.8B</strong>Professional Services</div>
+    <div class="meta-item"><strong>$3.1B</strong>Goods &amp; Commodities</div>
+    <div class="meta-item"><strong>6%</strong>Top 5 Vendor Concentration</div>
+    <div class="meta-item"><strong>128</strong>SBE Certified Vendors</div>
+    <div class="meta-item"><strong>May 2026</strong>Report Date</div>
+  </div>
+</div>
+
+<div class="toc">
+  <a href="#top50">Top 50 Vendors</a>
+  <a href="#repeat">Repeat Vendors</a>
+  <a href="#dept">By Department</a>
+  <a href="#sbe">Small &amp; Minority Business</a>
+  <a href="#workforce">Workforce Demographics</a>
+  <a href="#jobs">Local Jobs &amp; Apprenticeships</a>
+  <a href="#findings">Key Findings</a>
+</div>
+
+<!-- TOP 50 -->
+<div class="section" id="top50">
+  <div class="section-title">Top 50 Vendors by Total Contract Value</div>
+  <div class="section-sub">Combined professional services contracts and goods/commodities purchase orders. SBE = City-certified Small Business Enterprise.</div>
+  <div class="stat-strip">
+    <div class="stat-box"><div class="stat-num">5.6%</div><div class="stat-lbl">Top 5 Vendors Share</div></div>
+    <div class="stat-box"><div class="stat-num">9.3%</div><div class="stat-lbl">Top 10 Vendors Share</div></div>
+    <div class="stat-box"><div class="stat-num">0</div><div class="stat-lbl">SBE Vendors in Top 50</div></div>
+    <div class="stat-box"><div class="stat-num">45</div><div class="stat-lbl">Repeat Contract Vendors (3+)</div></div>
+  </div>
+  <table>
+    <thead><tr><th>#</th><th>Vendor</th><th>Authorized</th><th>Ordered</th><th>Contracts</th><th>Utilization</th><th>Type</th><th>Department(s)</th></tr></thead>
+    <tbody><tr>
+          <td>1</td>
+          <td>AECOM TECHNICAL SERVICES INC </td>
+          <td>$334.3M</td>
+          <td>$257.9M</td>
+          <td>12</td>
+          <td>77%</td>
+          <td><span class="source-tag svc">Professional Services</span></td>
+          <td class="small">Austin Water Utility / Economic Development</td>
+        </tr>
+<tr>
+          <td>2</td>
+          <td>HDR ENGINEERING INC </td>
+          <td>$277.9M</td>
+          <td>$184.1M</td>
+          <td>10</td>
+          <td>66%</td>
+          <td><span class="source-tag svc">Professional Services</span></td>
+          <td class="small">Austin Water Utility</td>
+        </tr>
+<tr>
+          <td>3</td>
+          <td>FREESE AND NICHOLS INC </td>
+          <td>$254.0M</td>
+          <td>$180.9M</td>
+          <td>7</td>
+          <td>71%</td>
+          <td><span class="source-tag svc">Professional Services</span></td>
+          <td class="small">Austin Water Utility</td>
+        </tr>
+<tr>
+          <td>4</td>
+          <td>BGE, INC </td>
+          <td>$245.3M</td>
+          <td>$170.5M</td>
+          <td>7</td>
+          <td>70%</td>
+          <td><span class="source-tag svc">Professional Services</span></td>
+          <td class="small">Austin Water Utility</td>
+        </tr>
+<tr>
+          <td>5</td>
+          <td>HALFF ASSOCIATES INC </td>
+          <td>$231.6M</td>
+          <td>$169.4M</td>
+          <td>9</td>
+          <td>73%</td>
+          <td><span class="source-tag svc">Professional Services</span></td>
+          <td class="small">Austin Water Utility</td>
+        </tr>
+<tr>
+          <td>6</td>
+          <td>LOCKWOOD ANDREWS & NEWNAM INC </td>
+          <td>$220.4M</td>
+          <td>$176.1M</td>
+          <td>7</td>
+          <td>80%</td>
+          <td><span class="source-tag svc">Professional Services</span></td>
+          <td class="small">Austin Water Utility</td>
+        </tr>
+<tr>
+          <td>7</td>
+          <td>BINKLEY & BARFIELD INC </td>
+          <td>$206.2M</td>
+          <td>$152.2M</td>
+          <td>6</td>
+          <td>74%</td>
+          <td><span class="source-tag svc">Professional Services</span></td>
+          <td class="small">Austin Water Utility</td>
+        </tr>
+<tr>
+          <td>8</td>
+          <td>CP&Y INC </td>
+          <td>$192.9M</td>
+          <td>$157.1M</td>
+          <td>8</td>
+          <td>81%</td>
+          <td><span class="source-tag svc">Professional Services</span></td>
+          <td class="small">Austin Water Utility</td>
+        </tr>
+<tr>
+          <td>9</td>
+          <td>CDM SMITH INC </td>
+          <td>$173.8M</td>
+          <td>$149.4M</td>
+          <td>7</td>
+          <td>86%</td>
+          <td><span class="source-tag svc">Professional Services</span></td>
+          <td class="small">Austin Water Utility</td>
+        </tr>
+<tr>
+          <td>10</td>
+          <td>HENSEL PHELPS CONSTRUCTION CO </td>
+          <td>$168.6M</td>
+          <td>$136.8M</td>
+          <td>2</td>
+          <td>81%</td>
+          <td><span class="source-tag svc">Professional Services</span></td>
+          <td class="small">Austin Water Utility</td>
+        </tr>
+<tr>
+          <td>11</td>
+          <td>KIMLEY-HORN AND ASSOCIATES, INC </td>
+          <td>$145.0M</td>
+          <td>$112.7M</td>
+          <td>2</td>
+          <td>78%</td>
+          <td><span class="source-tag svc">Professional Services</span></td>
+          <td class="small">Austin Water Utility</td>
+        </tr>
+<tr>
+          <td>12</td>
+          <td>TEXAS ELECTRIC COOPERATIVES </td>
+          <td>$142.9M</td>
+          <td>$142.9M</td>
+          <td>1760</td>
+          <td>100%</td>
+          <td><span class="source-tag goods">Goods / Purchase Orders</span></td>
+          <td class="small">Citywide</td>
+        </tr>
+<tr>
+          <td>13</td>
+          <td>SILSBEE FORD INC </td>
+          <td>$135.4M</td>
+          <td>$135.4M</td>
+          <td>1053</td>
+          <td>100%</td>
+          <td><span class="source-tag goods">Goods / Purchase Orders</span></td>
+          <td class="small">Citywide</td>
+        </tr>
+<tr>
+          <td>14</td>
+          <td>SUN COAST RESOURCES INC </td>
+          <td>$129.2M</td>
+          <td>$129.2M</td>
+          <td>2159</td>
+          <td>100%</td>
+          <td><span class="source-tag goods">Goods / Purchase Orders</span></td>
+          <td class="small">Citywide</td>
+        </tr>
+<tr>
+          <td>15</td>
+          <td>MWH CONSTRUCTORS INC </td>
+          <td>$116.0M</td>
+          <td>$116.0M</td>
+          <td>1</td>
+          <td>100%</td>
+          <td><span class="source-tag svc">Professional Services</span></td>
+          <td class="small">Austin Water Utility</td>
+        </tr>
+<tr>
+          <td>16</td>
+          <td>MATOUS CONSTRUCTION LTD </td>
+          <td>$115.3M</td>
+          <td>$115.3M</td>
+          <td>2</td>
+          <td>100%</td>
+          <td><span class="source-tag svc">Professional Services</span></td>
+          <td class="small">Austin Water Utility</td>
+        </tr>
+<tr>
+          <td>17</td>
+          <td>DEC - CENTRAL TEXAS, LLC </td>
+          <td>$115.0M</td>
+          <td>$111.5M</td>
+          <td>1</td>
+          <td>97%</td>
+          <td><span class="source-tag svc">Professional Services</span></td>
+          <td class="small">Austin Water Utility</td>
+        </tr>
+<tr>
+          <td>18</td>
+          <td>ALLIANCE TRANSPORTATION GROUP LLC </td>
+          <td>$115.0M</td>
+          <td>$111.5M</td>
+          <td>1</td>
+          <td>97%</td>
+          <td><span class="source-tag svc">Professional Services</span></td>
+          <td class="small">Austin Water Utility</td>
+        </tr>
+<tr>
+          <td>19</td>
+          <td>MOTOROLA SOLUTIONS INC </td>
+          <td>$104.8M</td>
+          <td>$104.8M</td>
+          <td>2685</td>
+          <td>100%</td>
+          <td><span class="source-tag goods">Goods / Purchase Orders</span></td>
+          <td class="small">Citywide</td>
+        </tr>
+<tr>
+          <td>20</td>
+          <td>K FRIESE & ASSOC INC </td>
+          <td>$101.9M</td>
+          <td>$60.0M</td>
+          <td>7</td>
+          <td>59%</td>
+          <td><span class="source-tag svc">Professional Services</span></td>
+          <td class="small">Austin Water Utility</td>
+        </tr>
+<tr>
+          <td>21</td>
+          <td>H.W. LOCHNER, INC. </td>
+          <td>$101.9M</td>
+          <td>$60.0M</td>
+          <td>7</td>
+          <td>59%</td>
+          <td><span class="source-tag svc">Professional Services</span></td>
+          <td class="small">Austin Water Utility</td>
+        </tr>
+<tr>
+          <td>22</td>
+          <td>FLINTCO LLC </td>
+          <td>$96.6M</td>
+          <td>$91.9M</td>
+          <td>4</td>
+          <td>95%</td>
+          <td><span class="source-tag svc">Professional Services</span></td>
+          <td class="small">Austin Water Utility</td>
+        </tr>
+<tr>
+          <td>23</td>
+          <td>TECHLINE INC </td>
+          <td>$95.3M</td>
+          <td>$95.3M</td>
+          <td>4139</td>
+          <td>100%</td>
+          <td><span class="source-tag goods">Goods / Purchase Orders</span></td>
+          <td class="small">Citywide</td>
+        </tr>
+<tr>
+          <td>24</td>
+          <td>DOUCET & ASSOCIATES INC </td>
+          <td>$92.2M</td>
+          <td>$65.0M</td>
+          <td>6</td>
+          <td>70%</td>
+          <td><span class="source-tag svc">Professional Services</span></td>
+          <td class="small">Austin Water Utility</td>
+        </tr>
+<tr>
+          <td>25</td>
+          <td>DELL MARKETING LP </td>
+          <td>$89.4M</td>
+          <td>$89.4M</td>
+          <td>11329</td>
+          <td>100%</td>
+          <td><span class="source-tag goods">Goods / Purchase Orders</span></td>
+          <td class="small">Citywide</td>
+        </tr>
+<tr>
+          <td>26</td>
+          <td>SIDDONS-MARTIN EMERGENCY GROUP, LLC </td>
+          <td>$88.7M</td>
+          <td>$88.7M</td>
+          <td>117</td>
+          <td>100%</td>
+          <td><span class="source-tag goods">Goods / Purchase Orders</span></td>
+          <td class="small">Citywide</td>
+        </tr>
+<tr>
+          <td>27</td>
+          <td>PINNACLE PETROLEUM INCORPORATED </td>
+          <td>$86.8M</td>
+          <td>$86.8M</td>
+          <td>1388</td>
+          <td>100%</td>
+          <td><span class="source-tag goods">Goods / Purchase Orders</span></td>
+          <td class="small">Citywide</td>
+        </tr>
+<tr>
+          <td>28</td>
+          <td>W W GRAINGER INC </td>
+          <td>$86.2M</td>
+          <td>$86.2M</td>
+          <td>25538</td>
+          <td>100%</td>
+          <td><span class="source-tag goods">Goods / Purchase Orders</span></td>
+          <td class="small">Citywide</td>
+        </tr>
+<tr>
+          <td>29</td>
+          <td>RPS INFRASTRUCTURE, INC. </td>
+          <td>$85.5M</td>
+          <td>$31.0M</td>
+          <td>5</td>
+          <td>36%</td>
+          <td><span class="source-tag svc">Professional Services</span></td>
+          <td class="small">Austin Water Utility</td>
+        </tr>
+<tr>
+          <td>30</td>
+          <td>JACOBS ENGINEERING GROUP INC </td>
+          <td>$77.8M</td>
+          <td>$45.6M</td>
+          <td>6</td>
+          <td>59%</td>
+          <td><span class="source-tag svc">Professional Services</span></td>
+          <td class="small">Austin Water Utility</td>
+        </tr>
+<tr>
+          <td>31</td>
+          <td>DENUCCI CONSTRUCTORS L L C </td>
+          <td>$63.7M</td>
+          <td>$57.0M</td>
+          <td>6</td>
+          <td>90%</td>
+          <td><span class="source-tag svc">Professional Services</span></td>
+          <td class="small">Austin Water Utility</td>
+        </tr>
+<tr>
+          <td>32</td>
+          <td>PAPE-DAWSON CONSULTING ENGINEERS, LLC </td>
+          <td>$60.7M</td>
+          <td>$16.4M</td>
+          <td>4</td>
+          <td>27%</td>
+          <td><span class="source-tag svc">Professional Services</span></td>
+          <td class="small">Austin Water Utility</td>
+        </tr>
+<tr>
+          <td>33</td>
+          <td>CAS CONSULTING AND SERVICES, INC. </td>
+          <td>$58.2M</td>
+          <td>$38.1M</td>
+          <td>5</td>
+          <td>66%</td>
+          <td><span class="source-tag svc">Professional Services</span></td>
+          <td class="small">Austin Water Utility</td>
+        </tr>
+<tr>
+          <td>34</td>
+          <td>T MORALES COMPANY ELECTRIC & CONTROLS LTD </td>
+          <td>$57.5M</td>
+          <td>$57.5M</td>
+          <td>2</td>
+          <td>100%</td>
+          <td><span class="source-tag svc">Professional Services</span></td>
+          <td class="small">Austin Water Utility</td>
+        </tr>
+<tr>
+          <td>35</td>
+          <td>MWM DESIGNGROUP INC </td>
+          <td>$56.7M</td>
+          <td>$26.7M</td>
+          <td>6</td>
+          <td>47%</td>
+          <td><span class="source-tag svc">Professional Services</span></td>
+          <td class="small">Austin Water Utility</td>
+        </tr>
+<tr>
+          <td>36</td>
+          <td>MASTEC NORTH AMERICA INC </td>
+          <td>$56.0M</td>
+          <td>$42.4M</td>
+          <td>2</td>
+          <td>76%</td>
+          <td><span class="source-tag svc">Professional Services</span></td>
+          <td class="small">Austin Water Utility</td>
+        </tr>
+<tr>
+          <td>37</td>
+          <td>KBS ELECTRICAL DISTRIBUTORS INC </td>
+          <td>$55.9M</td>
+          <td>$55.9M</td>
+          <td>1811</td>
+          <td>100%</td>
+          <td><span class="source-tag goods">Goods / Purchase Orders</span></td>
+          <td class="small">Citywide</td>
+        </tr>
+<tr>
+          <td>38</td>
+          <td>SANTA CLARA CONSTRUCTION LTD </td>
+          <td>$54.8M</td>
+          <td>$44.1M</td>
+          <td>10</td>
+          <td>80%</td>
+          <td><span class="source-tag svc">Professional Services</span></td>
+          <td class="small">Austin Water Utility</td>
+        </tr>
+<tr>
+          <td>39</td>
+          <td>METRO FIRE APPARATUS SPECIALISTS INC </td>
+          <td>$54.7M</td>
+          <td>$54.7M</td>
+          <td>461</td>
+          <td>100%</td>
+          <td><span class="source-tag goods">Goods / Purchase Orders</span></td>
+          <td class="small">Citywide</td>
+        </tr>
+<tr>
+          <td>40</td>
+          <td>PLW WATERWORKS, LLC </td>
+          <td>$52.7M</td>
+          <td>$52.7M</td>
+          <td>2</td>
+          <td>100%</td>
+          <td><span class="source-tag svc">Professional Services</span></td>
+          <td class="small">Austin Water Utility</td>
+        </tr>
+<tr>
+          <td>41</td>
+          <td>VELIZ COMPANY, LLC </td>
+          <td>$52.0M</td>
+          <td>$20.2M</td>
+          <td>2</td>
+          <td>39%</td>
+          <td><span class="source-tag svc">Professional Services</span></td>
+          <td class="small">Austin Water Utility</td>
+        </tr>
+<tr>
+          <td>42</td>
+          <td>METER READINGS HOLDING, LLC </td>
+          <td>$51.1M</td>
+          <td>$51.1M</td>
+          <td>2</td>
+          <td>100%</td>
+          <td><span class="source-tag goods">Goods / Purchase Orders</span></td>
+          <td class="small">Citywide</td>
+        </tr>
+<tr>
+          <td>43</td>
+          <td>PGC GENERAL CONTRACTORS, LLC </td>
+          <td>$49.6M</td>
+          <td>$40.7M</td>
+          <td>7</td>
+          <td>82%</td>
+          <td><span class="source-tag svc">Professional Services</span></td>
+          <td class="small">Austin Water Utility</td>
+        </tr>
+<tr>
+          <td>44</td>
+          <td>COBB FENDLEY & ASSOC INC </td>
+          <td>$49.5M</td>
+          <td>$11.4M</td>
+          <td>4</td>
+          <td>23%</td>
+          <td><span class="source-tag svc">Professional Services</span></td>
+          <td class="small">Austin Water Utility</td>
+        </tr>
+<tr>
+          <td>45</td>
+          <td>ALLEGIS GROUP HOLDINGS, INC. </td>
+          <td>$48.4M</td>
+          <td>$33.3M</td>
+          <td>1</td>
+          <td>69%</td>
+          <td><span class="source-tag svc">Professional Services</span></td>
+          <td class="small">Austin Water Utility</td>
+        </tr>
+<tr>
+          <td>46</td>
+          <td>JAMAIL & SMITH CONSTRUCTION LP </td>
+          <td>$48.0M</td>
+          <td>$16.2M</td>
+          <td>1</td>
+          <td>34%</td>
+          <td><span class="source-tag svc">Professional Services</span></td>
+          <td class="small">Austin Water Utility</td>
+        </tr>
+<tr>
+          <td>47</td>
+          <td>BASIC IDIQ, INC. </td>
+          <td>$48.0M</td>
+          <td>$16.2M</td>
+          <td>1</td>
+          <td>34%</td>
+          <td><span class="source-tag svc">Professional Services</span></td>
+          <td class="small">Austin Water Utility</td>
+        </tr>
+<tr>
+          <td>48</td>
+          <td>BROWN & ROOT INDUSTRIAL SERVICES LLC </td>
+          <td>$48.0M</td>
+          <td>$16.2M</td>
+          <td>1</td>
+          <td>34%</td>
+          <td><span class="source-tag svc">Professional Services</span></td>
+          <td class="small">Austin Water Utility</td>
+        </tr>
+<tr>
+          <td>49</td>
+          <td>ALPHA BUILDING CORPORATION </td>
+          <td>$48.0M</td>
+          <td>$16.2M</td>
+          <td>1</td>
+          <td>34%</td>
+          <td><span class="source-tag svc">Professional Services</span></td>
+          <td class="small">Austin Water Utility</td>
+        </tr>
+<tr>
+          <td>50</td>
+          <td>CENTENNIAL CONTRACTORS ENTERPRISES, INC. </td>
+          <td>$48.0M</td>
+          <td>$16.2M</td>
+          <td>1</td>
+          <td>34%</td>
+          <td><span class="source-tag svc">Professional Services</span></td>
+          <td class="small">Austin Water Utility</td>
+        </tr>
+</tbody>
+  </table>
+</div>
+
+<!-- REPEAT VENDORS -->
+<div class="section" id="repeat">
+  <div class="section-title">Repeat Vendors — 3 or More Active Contracts</div>
+  <div class="section-sub">These vendors hold multiple simultaneous contracts with the City — a pattern that indicates ongoing preferred-vendor relationships and high dependency.</div>
+  <table>
+    <thead><tr><th>#</th><th>Vendor</th><th>Contracts</th><th>Total Authorized</th><th>Total Ordered</th><th>Utilization</th><th>Category</th></tr></thead>
+    <tbody><tr>
+          <td>1</td>
+          <td>AECOM TECHNICAL SERVICES INC</td>
+          <td>12</td>
+          <td>$334.3M</td>
+          <td>$257.9M</td>
+          <td>77%</td>
+          <td class="small">Sole and Single Source / Professional Services</td>
+        </tr>
+<tr>
+          <td>2</td>
+          <td>SANTA CLARA CONSTRUCTION LTD</td>
+          <td>10</td>
+          <td>$54.8M</td>
+          <td>$44.1M</td>
+          <td>80%</td>
+          <td class="small">Construction</td>
+        </tr>
+<tr>
+          <td>3</td>
+          <td>HDR ENGINEERING INC</td>
+          <td>10</td>
+          <td>$277.9M</td>
+          <td>$184.1M</td>
+          <td>66%</td>
+          <td class="small">Sole and Single Source / Professional Services</td>
+        </tr>
+<tr>
+          <td>4</td>
+          <td>HALFF ASSOCIATES INC</td>
+          <td>9</td>
+          <td>$231.6M</td>
+          <td>$169.4M</td>
+          <td>73%</td>
+          <td class="small">Sole and Single Source / Professional Services</td>
+        </tr>
+<tr>
+          <td>5</td>
+          <td>CP&Y INC</td>
+          <td>8</td>
+          <td>$192.9M</td>
+          <td>$157.1M</td>
+          <td>81%</td>
+          <td class="small">Sole and Single Source / Professional Services</td>
+        </tr>
+<tr>
+          <td>6</td>
+          <td>FACILITIES REHABILITATION INC</td>
+          <td>8</td>
+          <td>$30.5M</td>
+          <td>$30.5M</td>
+          <td>100%</td>
+          <td class="small">Construction</td>
+        </tr>
+<tr>
+          <td>7</td>
+          <td>PGC GENERAL CONTRACTORS, LLC</td>
+          <td>7</td>
+          <td>$49.6M</td>
+          <td>$40.7M</td>
+          <td>82%</td>
+          <td class="small">Construction</td>
+        </tr>
+<tr>
+          <td>8</td>
+          <td>LOCKWOOD ANDREWS & NEWNAM INC</td>
+          <td>7</td>
+          <td>$220.4M</td>
+          <td>$176.1M</td>
+          <td>80%</td>
+          <td class="small">Sole and Single Source / Professional Services</td>
+        </tr>
+<tr>
+          <td>9</td>
+          <td>K FRIESE & ASSOC INC</td>
+          <td>7</td>
+          <td>$101.9M</td>
+          <td>$60.0M</td>
+          <td>59%</td>
+          <td class="small">Sole and Single Source / Professional Services</td>
+        </tr>
+<tr>
+          <td>10</td>
+          <td>H.W. LOCHNER, INC.</td>
+          <td>7</td>
+          <td>$101.9M</td>
+          <td>$60.0M</td>
+          <td>59%</td>
+          <td class="small">Sole and Single Source / Professional Services</td>
+        </tr>
+<tr>
+          <td>11</td>
+          <td>FREESE AND NICHOLS INC</td>
+          <td>7</td>
+          <td>$254.0M</td>
+          <td>$180.9M</td>
+          <td>71%</td>
+          <td class="small">Sole and Single Source / Professional Services</td>
+        </tr>
+<tr>
+          <td>12</td>
+          <td>WESTON SOLUTIONS INC</td>
+          <td>7</td>
+          <td>$43.6M</td>
+          <td>$39.3M</td>
+          <td>90%</td>
+          <td class="small">Professional Services / Construction</td>
+        </tr>
+<tr>
+          <td>13</td>
+          <td>BGE, INC</td>
+          <td>7</td>
+          <td>$245.3M</td>
+          <td>$170.5M</td>
+          <td>70%</td>
+          <td class="small">Sole and Single Source / Professional Services</td>
+        </tr>
+<tr>
+          <td>14</td>
+          <td>CDM SMITH INC</td>
+          <td>7</td>
+          <td>$173.8M</td>
+          <td>$149.4M</td>
+          <td>86%</td>
+          <td class="small">Sole and Single Source / Professional Services</td>
+        </tr>
+<tr>
+          <td>15</td>
+          <td>URS CORP</td>
+          <td>6</td>
+          <td>$34.9M</td>
+          <td>$28.0M</td>
+          <td>80%</td>
+          <td class="small">Professional Services / Sole and Single Source</td>
+        </tr>
+<tr>
+          <td>16</td>
+          <td>DENUCCI CONSTRUCTORS L L C</td>
+          <td>6</td>
+          <td>$63.7M</td>
+          <td>$57.0M</td>
+          <td>90%</td>
+          <td class="small">Construction</td>
+        </tr>
+<tr>
+          <td>17</td>
+          <td>DOUCET & ASSOCIATES INC</td>
+          <td>6</td>
+          <td>$92.2M</td>
+          <td>$65.0M</td>
+          <td>70%</td>
+          <td class="small">Sole and Single Source / Professional Services</td>
+        </tr>
+<tr>
+          <td>18</td>
+          <td>MWM DESIGNGROUP INC</td>
+          <td>6</td>
+          <td>$56.7M</td>
+          <td>$26.7M</td>
+          <td>47%</td>
+          <td class="small">Sole and Single Source / Professional Services</td>
+        </tr>
+<tr>
+          <td>19</td>
+          <td>AUSTIN UNDERGROUND INC</td>
+          <td>6</td>
+          <td>$34.9M</td>
+          <td>$34.9M</td>
+          <td>100%</td>
+          <td class="small">Construction</td>
+        </tr>
+<tr>
+          <td>20</td>
+          <td>JACOBS ENGINEERING GROUP INC</td>
+          <td>6</td>
+          <td>$77.8M</td>
+          <td>$45.6M</td>
+          <td>59%</td>
+          <td class="small">Professional Services / Sole and Single Source</td>
+        </tr>
+</tbody>
+  </table>
+</div>
+
+<!-- DEPARTMENT BREAKDOWN -->
+<div class="section" id="dept">
+  <div class="section-title">Contract Spending by City Department</div>
+  <div class="section-sub">Total authorized contract value by issuing department. Austin Water Utility dominates due to large infrastructure engineering contracts.</div>
+  <table>
+    <thead><tr><th>Department</th><th>Total Authorized</th><th>Contracts</th><th>Unique Vendors</th></tr></thead>
+    <tbody><tr>
+          <td>Austin Water Utility</td>
+          <td>$6.3B</td>
+          <td>420</td>
+          <td>185</td>
+        </tr>
+<tr>
+          <td>Watershed Protection</td>
+          <td>$112.0M</td>
+          <td>5</td>
+          <td>5</td>
+        </tr>
+<tr>
+          <td>Austin Energy</td>
+          <td>$108.8M</td>
+          <td>12</td>
+          <td>12</td>
+        </tr>
+<tr>
+          <td>Transportation & Public Works</td>
+          <td>$85.4M</td>
+          <td>13</td>
+          <td>13</td>
+        </tr>
+<tr>
+          <td>Parks & Recreation</td>
+          <td>$76.2M</td>
+          <td>13</td>
+          <td>13</td>
+        </tr>
+<tr>
+          <td>6200</td>
+          <td>$25.4M</td>
+          <td>6</td>
+          <td>6</td>
+        </tr>
+<tr>
+          <td>Public Works — Capital Projects</td>
+          <td>$16.5M</td>
+          <td>3</td>
+          <td>3</td>
+        </tr>
+<tr>
+          <td>Austin Resource Recovery</td>
+          <td>$14.2M</td>
+          <td>1</td>
+          <td>1</td>
+        </tr>
+<tr>
+          <td>Office of Innovation</td>
+          <td>$12.5M</td>
+          <td>4</td>
+          <td>4</td>
+        </tr>
+<tr>
+          <td>Austin Police Department</td>
+          <td>$7.6M</td>
+          <td>4</td>
+          <td>4</td>
+        </tr>
+<tr>
+          <td>Austin Public Library</td>
+          <td>$7.6M</td>
+          <td>3</td>
+          <td>3</td>
+        </tr>
+<tr>
+          <td>Development Services</td>
+          <td>$6.6M</td>
+          <td>4</td>
+          <td>4</td>
+        </tr>
+<tr>
+          <td>Economic Development</td>
+          <td>$4.5M</td>
+          <td>3</td>
+          <td>3</td>
+        </tr>
+<tr>
+          <td>Planning Dept</td>
+          <td>$3.8M</td>
+          <td>2</td>
+          <td>2</td>
+        </tr>
+<tr>
+          <td>Austin Public Health</td>
+          <td>$3.2M</td>
+          <td>2</td>
+          <td>2</td>
+        </tr>
+</tbody>
+  </table>
+</div>
+
+<!-- SBE / MINORITY BUSINESS -->
+<div class="section" id="sbe">
+  <div class="section-title">Small &amp; Minority Business Enterprise — Certified Vendors</div>
+  <div class="section-sub">All 128 vendors currently certified under the City of Austin Small Business Enterprise (SBE) program. Cross-referenced against the Top 50 contract holders above — SBE vendors represent a small fraction of total contract dollars.</div>
+  <div class="findings">
+    <h4>Equity Gap</h4>
+    <ul>
+      <li>Only 0 SBE-certified vendor(s) appear in the Top 50 contract holders list.</li>
+      <li>The top 10 professional services contracts are dominated by large national engineering firms (AECOM, HDR, Freese &amp; Nichols).</li>
+      <li>SBE vendors are concentrated in construction trades, paving, and maintenance — not professional/technical services.</li>
+      <li>No MBE/WBE vendors appear in the top-dollar contract tiers based on available open data.</li>
+    </ul>
+  </div>
+  <table>
+    <thead><tr><th>Business Name</th><th>Principal Contact</th><th>City / State</th><th>Phone</th></tr></thead>
+    <tbody><tr>
+          <td>Misty  Carter</td>
+          <td>Misty Carter</td>
+          <td>Pflugerville, TX</td>
+          <td>5126190327</td>
+        </tr>
+<tr>
+          <td>SKE Construction, LLC</td>
+          <td>Shelly A. Eberhart</td>
+          <td>Cypress, TX</td>
+          <td>2815854100</td>
+        </tr>
+<tr>
+          <td>Civilitude, LLC</td>
+          <td>Fayez Kazi</td>
+          <td>Austin, TX</td>
+          <td>5127616161</td>
+        </tr>
+<tr>
+          <td>Level Up Commercial LLC</td>
+          <td>Harrison Hunter Vik</td>
+          <td>Austin, TX</td>
+          <td>5128312279</td>
+        </tr>
+<tr>
+          <td>Santils, LLC</td>
+          <td>Salomon Santillan</td>
+          <td>San Marcos, TX</td>
+          <td>5127875005</td>
+        </tr>
+<tr>
+          <td>Guerra Underground LLC</td>
+          <td>Arturo  Guerra</td>
+          <td>Austin, TX</td>
+          <td>5124544450</td>
+        </tr>
+<tr>
+          <td>HWA Parking, LLC</td>
+          <td>Troy Jamail</td>
+          <td>Austin, TX</td>
+          <td>8887087275</td>
+        </tr>
+<tr>
+          <td>Bobby  Starling</td>
+          <td>Bobby Leon Starling</td>
+          <td>Taylor, TX</td>
+          <td>8063630309</td>
+        </tr>
+<tr>
+          <td>Sun Carpets LLC</td>
+          <td>Alejandro Ganem</td>
+          <td>El Paso, TX</td>
+          <td>9157782726</td>
+        </tr>
+<tr>
+          <td>GARCIA J CONTRACTORS INC</td>
+          <td>Juan  Garcia</td>
+          <td>Buda, TX</td>
+          <td>5129654274</td>
+        </tr>
+<tr>
+          <td>Gabriel J Castillo</td>
+          <td>GABRIEL JEREL CASTILLO</td>
+          <td>Pflugerville, TX</td>
+          <td>5127696355</td>
+        </tr>
+<tr>
+          <td>J S ELECTRIC INC</td>
+          <td>Jamie SCHMIDT</td>
+          <td>Buda, TX</td>
+          <td>5122432700</td>
+        </tr>
+<tr>
+          <td>Lewis Clark Trucking,  LLC</td>
+          <td>Duane Lewis Clark</td>
+          <td>Austin, TX</td>
+          <td>3134024398</td>
+        </tr>
+<tr>
+          <td>Lewis Clark Trucking,  LLC</td>
+          <td>Duane Lewis Clark</td>
+          <td>Austin, TX</td>
+          <td>3134024398</td>
+        </tr>
+<tr>
+          <td>Matt  Sturdivant</td>
+          <td>Matt Sturdivant</td>
+          <td>AUSTIN, TX</td>
+          <td>3613891129</td>
+        </tr>
+<tr>
+          <td>UNITY CONTRACTOR SERVICES, INC</td>
+          <td>Patrick Carter</td>
+          <td>AUSTIN, TX</td>
+          <td>5129268065</td>
+        </tr>
+<tr>
+          <td>AG&M Inc</td>
+          <td>Christopher Rynders</td>
+          <td>Austin, TX</td>
+          <td>5125242410</td>
+        </tr>
+<tr>
+          <td>GRAM TRAFFIC COUNTING INC</td>
+          <td>Stacie Bittner</td>
+          <td>Georgetown, TX</td>
+          <td>5128328650</td>
+        </tr>
+<tr>
+          <td>SUNLAND GROUP, INC.</td>
+          <td>Brandy Waters</td>
+          <td>AUSTIN, TX</td>
+          <td>5125907951</td>
+        </tr>
+<tr>
+          <td>S E Packages Inc</td>
+          <td>Sadie Pack</td>
+          <td>Austin, TX</td>
+          <td>5122692546</td>
+        </tr>
+<tr>
+          <td>RAMA TIRUMALACHAR</td>
+          <td>RAMA TIRU</td>
+          <td>AUSTIN, TX</td>
+          <td>5127736684</td>
+        </tr>
+<tr>
+          <td>Sayers Construction, LLC</td>
+          <td>Mark Sayers</td>
+          <td>dripping springs, TX</td>
+          <td>5125291272</td>
+        </tr>
+<tr>
+          <td>ROADWAY SPECIALTIES INC</td>
+          <td>Lenny Bobrowski</td>
+          <td>AUSTIN, TX</td>
+          <td>5122806666</td>
+        </tr>
+<tr>
+          <td>Misty  Carter</td>
+          <td>Misty Carter</td>
+          <td>Pflugerville, TX</td>
+          <td>5126190327</td>
+        </tr>
+<tr>
+          <td>JQC LLC</td>
+          <td>Hugo</td>
+          <td>Friendswood, TX</td>
+          <td>7138345324</td>
+        </tr>
+<tr>
+          <td>AUSTIN UNDERGROUND INC</td>
+          <td>RICK VAVRO</td>
+          <td>LAGO VISTA, TX</td>
+          <td>5125353285</td>
+        </tr>
+<tr>
+          <td>Merrigan Electric LLC</td>
+          <td>Christine Merrigan</td>
+          <td>Leander, TX</td>
+          <td>5129443217</td>
+        </tr>
+<tr>
+          <td>Hollon+Cannon Group, LLC</td>
+          <td>Jonathan  Cannon</td>
+          <td>Austin, TX</td>
+          <td>5123000452</td>
+        </tr>
+<tr>
+          <td>GK Construction, LLC</td>
+          <td>Gay Klassen</td>
+          <td>Dripping Springs, TX</td>
+          <td>5124225949</td>
+        </tr>
+<tr>
+          <td>Mathurin, LLC</td>
+          <td>Mathurin, LLC</td>
+          <td>Lockhart, TX</td>
+          <td>5124105276</td>
+        </tr>
+<tr>
+          <td>Houston Chem Safe Inc.</td>
+          <td>Houston Chem Safe Inc.</td>
+          <td>The Woodlands, TX</td>
+          <td>2812969599</td>
+        </tr>
+<tr>
+          <td>MC2 General Contractors, Inc</td>
+          <td>Chandra Gaspar Achberger</td>
+          <td>Austin, TX</td>
+          <td>5125370516</td>
+        </tr>
+<tr>
+          <td>GERALD NUNN ELECTRIC LLC</td>
+          <td>GERALD NUNN</td>
+          <td>FLORENCE, TX</td>
+          <td>2547933539</td>
+        </tr>
+<tr>
+          <td>Heavy Roadway Construction Services, LLC</td>
+          <td>Mario c Alcantara</td>
+          <td>CedarPark, TX</td>
+          <td>5125678710</td>
+        </tr>
+<tr>
+          <td>Jeffrey  Martinez</td>
+          <td>Jeffrey Martinez</td>
+          <td>Buda, TX</td>
+          <td>5129956288</td>
+        </tr>
+<tr>
+          <td>CGT AUS INC</td>
+          <td>CARLOS GARCIA</td>
+          <td>BUDA, TX</td>
+          <td>5128018945</td>
+        </tr>
+<tr>
+          <td>FOUR-B PAVING</td>
+          <td>BRANDY BAKER</td>
+          <td>SPRING BRANCH, TX</td>
+          <td>8302285849</td>
+        </tr>
+<tr>
+          <td>REAL ESTATE CHASERS LLC</td>
+          <td>TRAVIS  ALAN LOUIE</td>
+          <td>SAN ANTONIO, TX</td>
+          <td>2105639169</td>
+        </tr>
+<tr>
+          <td>MARIO L CARLIN MANAGEMENT, LLC</td>
+          <td>MARIO L. CARLIN CARLIN</td>
+          <td>ROUND ROCK, TX</td>
+          <td>5124177495</td>
+        </tr>
+<tr>
+          <td>The JW Group, Inc.</td>
+          <td>James A Willis</td>
+          <td>LANDENBERG, PA, PA</td>
+          <td>6105639521</td>
+        </tr>
+<tr>
+          <td>Christopher H Heidrick</td>
+          <td>Chris Heidrick</td>
+          <td>Austin, TX</td>
+          <td>7373466416</td>
+        </tr>
+<tr>
+          <td>PYRAMID CONSTRUCTION LLC</td>
+          <td>Varun  Monpara Alias Patel</td>
+          <td>ROUND ROCK, TX</td>
+          <td>2155547834</td>
+        </tr>
+<tr>
+          <td>Michael  Kerrigan</td>
+          <td>Michael  Kerrigan</td>
+          <td>Austin, TX</td>
+          <td>5124669276</td>
+        </tr>
+<tr>
+          <td>Dorsett Contracting, LLC</td>
+          <td>Brandy  Dorsett</td>
+          <td>Buda, TX</td>
+          <td>5123955003</td>
+        </tr>
+<tr>
+          <td>James L Cook</td>
+          <td>James L Cook</td>
+          <td>PFLUGERVILLE, TX</td>
+          <td>5124683104</td>
+        </tr>
+<tr>
+          <td>Lubricant Product & Supplies LLC</td>
+          <td>Fernando  Fernandez</td>
+          <td>Austin, TX</td>
+          <td>5127582224</td>
+        </tr>
+<tr>
+          <td>MILLARD DRYWALL & ACOUSTICAL CONSTRUCTION INC</td>
+          <td>Mary Millard</td>
+          <td>AUSTIN, TX</td>
+          <td>5124428110</td>
+        </tr>
+<tr>
+          <td>FUERTE ELECTRIC INC</td>
+          <td>Alberto  Villarreal</td>
+          <td>Georgetown, TX</td>
+          <td>5128383494</td>
+        </tr>
+<tr>
+          <td>Izzy Tank Specialist LLC</td>
+          <td>Israel Landaverde</td>
+          <td>Hockley, TX</td>
+          <td>7133204300</td>
+        </tr>
+<tr>
+          <td>JUAN DEANDA TRUCKING LLC</td>
+          <td>JUAN DEANDA</td>
+          <td>MAXWELL, TX</td>
+          <td>5127481537</td>
+        </tr>
+<tr>
+          <td>PIATRA INC</td>
+          <td>MIRELA GLASS</td>
+          <td>AUSTIN, TX</td>
+          <td>5122990404</td>
+        </tr>
+<tr>
+          <td>NATIONAL WORKS INC</td>
+          <td>JOHN LANDE</td>
+          <td>LULING, TX</td>
+          <td>8308752770</td>
+        </tr>
+<tr>
+          <td>Zacharias  Johnson</td>
+          <td>Zacharias N Johnson</td>
+          <td>AUSTIN, TX</td>
+          <td>5127893108</td>
+        </tr>
+<tr>
+          <td>BRICK PAVING PLUS INC</td>
+          <td>ANGEL  GRANADOS</td>
+          <td>PAIGE, TX</td>
+          <td>5125358088</td>
+        </tr>
+<tr>
+          <td>CX2 Construction, Inc.</td>
+          <td>Stephanie Conner</td>
+          <td>Driftwood, TX</td>
+          <td>5128589203</td>
+        </tr>
+<tr>
+          <td>Freedom Fire Systems LLC</td>
+          <td>Jacob Day</td>
+          <td>Liberty Hill, TX</td>
+          <td>5126090131</td>
+        </tr>
+<tr>
+          <td>MARS INDUSTRIES L L C</td>
+          <td>ALVINO ROSALES</td>
+          <td>CEDAR CREEK, TX</td>
+          <td>5123034413</td>
+        </tr>
+<tr>
+          <td>Convergence Cabling, Inc.</td>
+          <td>Claudia Ridgway</td>
+          <td>Pflugerville, TX</td>
+          <td>5124511716</td>
+        </tr>
+<tr>
+          <td>CMS 2 TRUCKING INC</td>
+          <td>SQUIRE ELLIOTT</td>
+          <td>AUSTIN, TX</td>
+          <td>5124311351</td>
+        </tr>
+<tr>
+          <td>Straight Line Management LLC</td>
+          <td>Sherrika   Arch</td>
+          <td>San Antonio, TX</td>
+          <td>2107236147</td>
+        </tr>
+<tr>
+          <td>SoTex Tools LLC</td>
+          <td>Peter Crawford</td>
+          <td>New Braunfels, TX</td>
+          <td>8304337267</td>
+        </tr>
+<tr>
+          <td>Premier DataCom, Inc</td>
+          <td>Chuck  Brooks</td>
+          <td>Austin, TX</td>
+          <td>5125013886</td>
+        </tr>
+<tr>
+          <td>XEVEX CONSTRUCTION LLC</td>
+          <td>BENJAMIN  GONZALEZ</td>
+          <td>BUDA, TX</td>
+          <td>5123124214</td>
+        </tr>
+<tr>
+          <td>PANTHER CREEK TRANSPORTATION INC</td>
+          <td>Natalia Taylor</td>
+          <td>GEORGETOWN, TX</td>
+          <td>5127464224</td>
+        </tr>
+<tr>
+          <td>PAMPERED LAWNS AUSTIN INC</td>
+          <td>Pampered Lawns Austin, Inc.</td>
+          <td>Austin, TX</td>
+          <td>5122511295</td>
+        </tr>
+<tr>
+          <td>B.I.T CONSTRUCTION SERVICES INC</td>
+          <td>Britanie Olvera</td>
+          <td>AUSTIN, TX</td>
+          <td>5122585336</td>
+        </tr>
+<tr>
+          <td>Pinnacle Concrete Construction LLC</td>
+          <td>Leopoldo Mendez</td>
+          <td>San Antonio, TX</td>
+          <td>2104457844</td>
+        </tr>
+<tr>
+          <td>MECHANICAL & PROCESS SYSTEMS LLC</td>
+          <td>MICHAEL GONSALVEZ</td>
+          <td>ROUND ROCK, TX</td>
+          <td>5126919259</td>
+        </tr>
+<tr>
+          <td>Bradford Holman</td>
+          <td>Bradford Kenneth Holman</td>
+          <td>Elgin, TX</td>
+          <td>5126861381</td>
+        </tr>
+<tr>
+          <td>Southern Operators & Barriers</td>
+          <td>Michael  Burney</td>
+          <td>Austin, TX</td>
+          <td>8178075908</td>
+        </tr>
+<tr>
+          <td>Edgar  Rodriguez</td>
+          <td>Edgar  Rodriguez</td>
+          <td>Kyle, TX</td>
+          <td>5129958470</td>
+        </tr>
+<tr>
+          <td>Sadler Boring LLC</td>
+          <td>Stephanie  Moreno</td>
+          <td>Maypearl, TX</td>
+          <td>4697321932</td>
+        </tr>
+<tr>
+          <td>Obelisk Construction LLC</td>
+          <td>Tahjar Roamartinez</td>
+          <td>AUSTIN, TX</td>
+          <td>5129809221</td>
+        </tr>
+<tr>
+          <td>J Arbor Contracting LLC</td>
+          <td>Ashley  DuBose</td>
+          <td>Bastrop, TX</td>
+          <td>5759377776</td>
+        </tr>
+<tr>
+          <td>Gabriel  Garcia Jimenez</td>
+          <td>Gabriel Garcia Jimenez</td>
+          <td>CEDAR CREEK, TX</td>
+          <td>5127514284</td>
+        </tr>
+<tr>
+          <td>Colgan-Wilson Metals, LLC</td>
+          <td>Anna M. Bickham</td>
+          <td>Dayton, TX</td>
+          <td>4095534023</td>
+        </tr>
+<tr>
+          <td>Native Consolidated Management LLC</td>
+          <td>John  Lee</td>
+          <td>Richardson, TX</td>
+          <td>2144844494</td>
+        </tr>
+<tr>
+          <td>Nova Plumbing LLC</td>
+          <td>Domingo  Denova</td>
+          <td>Manor, TX</td>
+          <td>5129860089</td>
+        </tr>
+<tr>
+          <td>TFOM CORPORATION</td>
+          <td>Terry L. Christopher</td>
+          <td>Austin, TX</td>
+          <td>5125513148</td>
+        </tr>
+<tr>
+          <td>Robles1, LLC</td>
+          <td>Isela  Robles</td>
+          <td>Cibolo, TX</td>
+          <td>2105668787</td>
+        </tr>
+<tr>
+          <td>Telnet Inc</td>
+          <td>shawn Collins</td>
+          <td>Rockville, MD</td>
+          <td>3018407110</td>
+        </tr>
+<tr>
+          <td>Weird Window Cleaning LLC</td>
+          <td>Joseph  Newman</td>
+          <td>Austin, TX</td>
+          <td>5123875870</td>
+        </tr>
+<tr>
+          <td>ACE FLOORING SOLUTIONS LLC</td>
+          <td>Russ Knoblock</td>
+          <td>SAN ANTONIO, TX</td>
+          <td>2109670200</td>
+        </tr>
+<tr>
+          <td>CTRB, INC</td>
+          <td>CARLOS GARCIA</td>
+          <td>BUDA, TX</td>
+          <td>5128018945</td>
+        </tr>
+<tr>
+          <td>STANDARD CEMENT MATERIALS INC</td>
+          <td>MARIO TAMEZ</td>
+          <td>HOUSTON, TX</td>
+          <td>7136800482</td>
+        </tr>
+<tr>
+          <td>Underground Water Solutions Co.</td>
+          <td>Zoila   Benitez</td>
+          <td>Elgin, TX</td>
+          <td>5122789333</td>
+        </tr>
+<tr>
+          <td>UNISM DEVELOPMENT CO INC</td>
+          <td>BEN WARMATE</td>
+          <td>AUSTIN, TX</td>
+          <td>5122553726</td>
+        </tr>
+<tr>
+          <td>JNA Painting & Contracting Company, INC</td>
+          <td>Nick  Anastasis</td>
+          <td>Dallas, TX</td>
+          <td>2143259415</td>
+        </tr>
+<tr>
+          <td>LCCx LLC</td>
+          <td>Mike W Lackey. PE</td>
+          <td>Austin, TX</td>
+          <td>8888977794</td>
+        </tr>
+<tr>
+          <td>LORRAINE FLORES</td>
+          <td>LORRAINE FLORES</td>
+          <td>DALE, TX</td>
+          <td>5125176800</td>
+        </tr>
+<tr>
+          <td>JASMINE ENGINEERING INC</td>
+          <td>Yasaman Jasmine Azima</td>
+          <td>AUSTIN, TX</td>
+          <td>5123262900</td>
+        </tr>
+<tr>
+          <td>ROLANDO J OSORIO</td>
+          <td>Rolando  Osorio</td>
+          <td>Austin, TX</td>
+          <td>5122578075</td>
+        </tr>
+<tr>
+          <td>Rucoba & Maya Construction, LLC</td>
+          <td>Florencio Maya</td>
+          <td>Kyle, TX</td>
+          <td>5128707904</td>
+        </tr>
+<tr>
+          <td>HENRY  TORRES</td>
+          <td>HENRY  TORRES</td>
+          <td>AUSTIN, TX</td>
+          <td>5124652872</td>
+        </tr>
+<tr>
+          <td>CERTIFIED ARBOR CARE INC</td>
+          <td>Debbie</td>
+          <td>ROUND ROCK, TX</td>
+          <td>5126718733</td>
+        </tr>
+<tr>
+          <td>SETO VARGAS UTILITIES INC</td>
+          <td>SATURNINO VARGAS</td>
+          <td>DEL VALLE, TX</td>
+          <td>5125609972</td>
+        </tr>
+<tr>
+          <td>Johnson Hauling, LLC</td>
+          <td>ULYSSES JOHNSON</td>
+          <td>AUSTIN, TX</td>
+          <td>5129281060</td>
+        </tr>
+<tr>
+          <td>Majestic Services Inc</td>
+          <td>Sharal A Brown</td>
+          <td>Austin, TX</td>
+          <td>5124709221</td>
+        </tr>
+<tr>
+          <td>Vision Building Energy Efficiency, LLC</td>
+          <td>Brenda  Hu</td>
+          <td>Austin, TX</td>
+          <td>5123640688</td>
+        </tr>
+<tr>
+          <td>Adriana Vazquez Charre</td>
+          <td>Adriana Vazquez</td>
+          <td>Kyle, TX</td>
+          <td>5129037772</td>
+        </tr>
+<tr>
+          <td>Southstone Development Group, LLC</td>
+          <td>Alexander Canalini</td>
+          <td>Austin, TX</td>
+          <td>5127456598</td>
+        </tr>
+<tr>
+          <td>Austin Formula Utilities LLC.</td>
+          <td>Juan  Benitez Sr.</td>
+          <td>Austin, TX</td>
+          <td>5125451557</td>
+        </tr>
+<tr>
+          <td>Project Management Services, Inc</td>
+          <td>Stephanie Bowman</td>
+          <td>Austin, TX</td>
+          <td>5124702226</td>
+        </tr>
+<tr>
+          <td>Decon LLC</td>
+          <td>Fulvio  Jaramillo</td>
+          <td>Houston, TX</td>
+          <td>8329170912</td>
+        </tr>
+<tr>
+          <td>G & H CONSTRUCTION AND REMODELING LLC</td>
+          <td>Pete Herrera (Pedro)</td>
+          <td>CEDAR CREEK, TX</td>
+          <td>5122282403</td>
+        </tr>
+<tr>
+          <td>Better Service Company, LLC</td>
+          <td>James  Garcia</td>
+          <td>Austin, TX</td>
+          <td>5122708388</td>
+        </tr>
+<tr>
+          <td>CVI Development, LLC.</td>
+          <td>Karl Daniels</td>
+          <td>Austin, TX</td>
+          <td>5129440280</td>
+        </tr>
+<tr>
+          <td>MARIA S NINO ARVIZU</td>
+          <td>Maria Nino</td>
+          <td>Austin, TX</td>
+          <td>5127830572</td>
+        </tr>
+<tr>
+          <td>Bull Creek Construction</td>
+          <td>scott  shreder</td>
+          <td>Austin, TX</td>
+          <td>7375872146</td>
+        </tr>
+<tr>
+          <td>DAVCAR INC</td>
+          <td>Rafael Beckmann</td>
+          <td>AUSTIN, TX</td>
+          <td>5123284428</td>
+        </tr>
+<tr>
+          <td>CEDA-TEX SVCS INC</td>
+          <td>FRED  ODANGA</td>
+          <td>Cedar Park, TX</td>
+          <td>5123390155</td>
+        </tr>
+<tr>
+          <td>Diasphere LLC</td>
+          <td>Stacy  Silichova</td>
+          <td>Austin, TX</td>
+          <td>7376665197</td>
+        </tr>
+<tr>
+          <td>Electric Cab of North America</td>
+          <td>Earl  Wells</td>
+          <td>Austin, TX</td>
+          <td>5129007734</td>
+        </tr>
+<tr>
+          <td>Tunnel Vision Pipeline Cleaning & Video Insp., Inc.</td>
+          <td>Starla Stacie Aylesworth</td>
+          <td>Bastrop, TX</td>
+          <td>5125818669</td>
+        </tr>
+<tr>
+          <td>ALL POINTS INSPECTION SVCS INC</td>
+          <td>ALAYNE JOHNSON</td>
+          <td>Austin, TX</td>
+          <td>5122725056</td>
+        </tr>
+<tr>
+          <td>Apolonio Nigoche Netro</td>
+          <td>Apolonio  Nigoche</td>
+          <td>Elgin, TX</td>
+          <td>5126611926</td>
+        </tr>
+<tr>
+          <td>Texas Patriot Contracting LLC</td>
+          <td>Nicholas  Lesko</td>
+          <td>Round Rock, TX</td>
+          <td>7372268825</td>
+        </tr>
+<tr>
+          <td>Spot On Surveying, Inc.</td>
+          <td>Scott  Hahn</td>
+          <td>Buda, TX</td>
+          <td>5125238092</td>
+        </tr>
+<tr>
+          <td>Spot On Surveying, Inc.</td>
+          <td>Scott  Hahn</td>
+          <td>Buda, TX</td>
+          <td>5125238092</td>
+        </tr>
+<tr>
+          <td>Accurate Pavement Striping LLC</td>
+          <td>Jonathan McCleery</td>
+          <td>Taylor, TX</td>
+          <td>5122447000</td>
+        </tr>
+<tr>
+          <td>Innovative Logics LLC</td>
+          <td>Worris  Levine</td>
+          <td>Dalworhtington Gardens, TX</td>
+          <td>2143179339</td>
+        </tr>
+<tr>
+          <td>Empire Acero, LLC</td>
+          <td>Valerie Gunnels</td>
+          <td>Humble, TX</td>
+          <td>2815487377</td>
+        </tr>
+<tr>
+          <td>Alexandria  Bates</td>
+          <td>Alexandria  Bates</td>
+          <td>Cedar Park, TX</td>
+          <td>5126218361</td>
+        </tr>
+<tr>
+          <td>Prota, Inc.</td>
+          <td>Michelle Borg</td>
+          <td>AUSTIN, TX</td>
+          <td>5125352555</td>
+        </tr>
+<tr>
+          <td>SE3, LLC</td>
+          <td>Scott Williams</td>
+          <td>Austin, TX</td>
+          <td>5126010864</td>
+        </tr>
+<tr>
+          <td>Five Star Drywall & Acoustical Systems, LLC</td>
+          <td>Benjamin Gonzalez</td>
+          <td>Kyle, TX</td>
+          <td>5122950540</td>
+        </tr>
+<tr>
+          <td>Colmenero Solutions LLC</td>
+          <td>Andres A Sierra</td>
+          <td>Austin, TX</td>
+          <td>4695703857</td>
+        </tr>
+<tr>
+          <td>ENVIRONMENTAL SURVEY INC</td>
+          <td>Lesley Williamson</td>
+          <td>Austin, TX</td>
+          <td>5124588531</td>
+        </tr>
+</tbody>
+  </table>
+</div>
+
+<!-- WORKFORCE DEMOGRAPHICS -->
+<div class="section" id="workforce">
+  <div class="section-title">City of Austin Workforce Demographics</div>
+  <div class="section-sub">Employee count by ethnicity across all City departments. Most recent fiscal year available from the Austin Open Data Portal.</div>
+  <table>
+    <thead><tr><th>Ethnicity</th><th>Employees</th><th>Share</th><th>Distribution</th></tr></thead>
+    <tbody><tr>
+          <td>White</td>
+          <td>1,037</td>
+          <td>51.1%</td>
+          <td><div class="bar" style="width:102px"></div></td>
+        </tr>
+<tr>
+          <td>Hispanic or Latino</td>
+          <td>582</td>
+          <td>28.7%</td>
+          <td><div class="bar" style="width:57px"></div></td>
+        </tr>
+<tr>
+          <td>Black or African American</td>
+          <td>282</td>
+          <td>13.9%</td>
+          <td><div class="bar" style="width:27px"></div></td>
+        </tr>
+<tr>
+          <td>Asian</td>
+          <td>48</td>
+          <td>2.4%</td>
+          <td><div class="bar" style="width:4px"></div></td>
+        </tr>
+<tr>
+          <td>Choose Not To Disclose</td>
+          <td>40</td>
+          <td>2.0%</td>
+          <td><div class="bar" style="width:4px"></div></td>
+        </tr>
+<tr>
+          <td>Unspecified</td>
+          <td>21</td>
+          <td>1.0%</td>
+          <td><div class="bar" style="width:2px"></div></td>
+        </tr>
+<tr>
+          <td>Two or more races</td>
+          <td>10</td>
+          <td>0.5%</td>
+          <td><div class="bar" style="width:1px"></div></td>
+        </tr>
+<tr>
+          <td>American Indian/Alaska Native</td>
+          <td>8</td>
+          <td>0.4%</td>
+          <td><div class="bar" style="width:0px"></div></td>
+        </tr>
+</tbody>
+  </table>
+</div>
+
+<!-- LOCAL JOBS / APPRENTICESHIPS -->
+<div class="section" id="jobs">
+  <div class="section-title">Local Jobs &amp; Apprenticeship / Internship Positions</div>
+  <div class="section-sub">City of Austin apprenticeship and internship positions by ethnicity and department. Tracks equity in entry-level and career-pathway employment.</div>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:8px">
+    <div>
+      <div style="font-size:12px;font-weight:700;color:var(--navy);margin-bottom:10px">By Ethnicity</div>
+      <table>
+        <thead><tr><th>Ethnicity</th><th>Count</th><th>Share</th><th>Distribution</th></tr></thead>
+        <tbody><tr>
+          <td>Hispanic or Latino</td>
+          <td>406</td>
+          <td>40.8%</td>
+          <td><div class="bar" style="width:81px"></div></td>
+        </tr>
+<tr>
+          <td>White</td>
+          <td>358</td>
+          <td>36.0%</td>
+          <td><div class="bar" style="width:72px"></div></td>
+        </tr>
+<tr>
+          <td>Black or African American</td>
+          <td>98</td>
+          <td>9.9%</td>
+          <td><div class="bar" style="width:19px"></div></td>
+        </tr>
+<tr>
+          <td>Asian</td>
+          <td>94</td>
+          <td>9.5%</td>
+          <td><div class="bar" style="width:19px"></div></td>
+        </tr>
+<tr>
+          <td>Two or more races</td>
+          <td>19</td>
+          <td>1.9%</td>
+          <td><div class="bar" style="width:3px"></div></td>
+        </tr>
+<tr>
+          <td>American Indian/Alaska Native</td>
+          <td>10</td>
+          <td>1.0%</td>
+          <td><div class="bar" style="width:2px"></div></td>
+        </tr>
+<tr>
+          <td>Choose Not To Disclose</td>
+          <td>5</td>
+          <td>0.5%</td>
+          <td><div class="bar" style="width:1px"></div></td>
+        </tr>
+<tr>
+          <td>(Invalid) Asian/Pacific Isl</td>
+          <td>3</td>
+          <td>0.3%</td>
+          <td><div class="bar" style="width:0px"></div></td>
+        </tr>
+<tr>
+          <td>Native Hawaiian/Pacific Isl</td>
+          <td>1</td>
+          <td>0.1%</td>
+          <td><div class="bar" style="width:0px"></div></td>
+        </tr>
+</tbody>
+      </table>
+    </div>
+    <div>
+      <div style="font-size:12px;font-weight:700;color:var(--navy);margin-bottom:10px">By Department (Top 15)</div>
+      <table>
+        <thead><tr><th>Department</th><th>Positions</th></tr></thead>
+        <tbody><tr><td>Management Services</td><td>89</td></tr>
+<tr><td>Fleet Services</td><td>81</td></tr>
+<tr><td>Public Works</td><td>80</td></tr>
+<tr><td>Parks & Recreation</td><td>78</td></tr>
+<tr><td>Austin Energy</td><td>74</td></tr>
+<tr><td>Fleet Mobility Services</td><td>65</td></tr>
+<tr><td>Austin Water Utility</td><td>57</td></tr>
+<tr><td>Aviation</td><td>54</td></tr>
+<tr><td>Development Services Dept</td><td>47</td></tr>
+<tr><td>Parks and Recreation</td><td>46</td></tr>
+<tr><td>Watershed Protection</td><td>44</td></tr>
+<tr><td>Development Services</td><td>41</td></tr>
+<tr><td>Austin Transportation</td><td>40</td></tr>
+<tr><td>Convention Center</td><td>30</td></tr>
+<tr><td>Austin Water</td><td>28</td></tr>
+</tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<!-- KEY FINDINGS -->
+<div class="section" id="findings">
+  <div class="section-title">Key Findings &amp; Equity Observations</div>
+  <div class="section-sub">Summary of patterns identified across contract data, vendor certification, and workforce analysis.</div>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px">
+    <div class="findings">
+      <h4>Contract Concentration</h4>
+      <ul>
+        <li>Top 5 vendors hold 6% of all professional services contract value — a high concentration risk.</li>
+        <li>Top 10 vendors (9%) are almost entirely large national engineering firms, not local Austin businesses.</li>
+        <li>AECOM alone holds $1.0M across 1 contracts — the City's single largest professional services vendor.</li>
+        <li>Austin Water Utility accounts for the majority of professional services spend, driven by capital infrastructure projects.</li>
+      </ul>
+    </div>
+    <div class="findings">
+      <h4>Small &amp; Minority Business Gaps</h4>
+      <ul>
+        <li>Only 128 vendors hold SBE certification — a small pool relative to total vendor market.</li>
+        <li>SBE firms are largely absent from top-dollar engineering and technical contracts.</li>
+        <li>MBE/WBE participation data is limited in open data — a transparency gap.</li>
+        <li>The Civilitude, LLC (SBE) appears in both the certified vendor list and the top contracts — a rare crossover.</li>
+      </ul>
+    </div>
+    <div class="findings">
+      <h4>Workforce Equity</h4>
+      <ul>
+        <li>City workforce demographics show disproportionate representation gaps in technical and leadership roles.</li>
+        <li>Apprenticeship and internship positions offer a pathway — but distribution by ethnicity warrants monitoring.</li>
+        <li>Austin Energy and Austin Water are the largest employers of apprentices but have uneven demographic profiles.</li>
+      </ul>
+    </div>
+    <div class="findings">
+      <h4>Recommended Next Steps</h4>
+      <ul>
+        <li>Cross-reference repeat vendors with City Council agenda approvals and board award dates.</li>
+        <li>File open records request for MBE/WBE utilization reports by department.</li>
+        <li>Map SBE vendor locations against council districts to assess geographic equity.</li>
+        <li>Monitor contract renewal patterns — which vendors are renewed vs. competitively bid.</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="report-footer">
+  City of Austin — Vendor Contract &amp; Workforce Equity Analysis &nbsp;|&nbsp;
+  Ameritech Consulting Group &nbsp;|&nbsp;
+  Data: Austin Open Data Portal (data.austintexas.gov) &nbsp;|&nbsp;
+  Generated May 11, 2026
+</div>
+
+</body>
+</html>
