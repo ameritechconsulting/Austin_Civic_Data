@@ -44,7 +44,9 @@ $\bullet$ \textbf{1,690} families transitioned out of poverty\\[3pt]
 $\bullet$ \textbf{34\%} enrollment growth over 5 years \hfill
 $\bullet$ \textbf{\$267} cost per client (FY2025)\\[3pt]
 $\bullet$ All 5 FNPI indicators exceeded 68\% national benchmark \hfill
-$\bullet$ Emergency service reliance down 23.2\%
+$\bullet$ Emergency service reliance down 23.2\%\\[3pt]
+$\bullet$ \textbf{50,740} food assistance units delivered (5-year) \hfill
+$\bullet$ \textbf{10} service categories tracked across 7 centers
 }
 \vspace{8pt}
 }}
@@ -76,7 +78,7 @@ Operating through **7 neighborhood centers** within a **254-county Texas reporti
 | Unduplicated Clients Served | 36,500 |
 | FNPI Outcomes Achieved | 4,821 |
 | TOP Families Transitioned | 1,690 |
-| Units of Service Delivered | 356,220 |
+| Units of Service Delivered | 406,960 |
 | Total CSBG Expenditures | \$10,029,000 |
 
 ## Seven Neighborhood Centers
@@ -133,7 +135,7 @@ NSU tracks five National Performance Indicators across employment and education 
 
 # PAGE 3 --- SERVICE DELIVERY (SRV INDICATORS)
 
-Nine service categories collectively delivered **356,220 units of service** to **over 83,500 client contacts** across the five-year period.
+Ten service categories collectively delivered **406,960 units of service** to **over 93,500 client contacts** across the five-year period.
 
 ## Service Volume Trends (FY2021 to FY2025)
 
@@ -146,9 +148,10 @@ Nine service categories collectively delivered **356,220 units of service** to *
 | SRV 5jj | Child Care | 8,640 | 11,840 | 51,220 | **+37.0%** |
 | SRV 7a | Emergency Services | 12,840 | 9,870 | 55,730 | **-23.2%** |
 | SRV 7b | Health Services | 3,280 | 4,480 | 19,590 | **+36.6%** |
-| SRV 7d | Housing Assistance | 4,820 | 6,280 | 27,740 | **+30.3%** |
+| SRV 7d | Housing & Rent Assistance | 4,820 | 6,280 | 27,740 | **+30.3%** |
+| SRV 7e | Food & Nutrition Assistance | 8,320 | 11,640 | 50,740 | **+39.9%** |
 | SRV 7n | Transportation | 2,160 | 2,890 | 12,650 | **+33.8%** |
-| **Total** | | | | **356,220** | |
+| **Total** | | | | **406,960** | |
 
 ## Service Mix Shift --- A Positive Structural Indicator
 
@@ -156,7 +159,8 @@ The most significant trend: **emergency services (SRV 7a) declined 23.2%** while
 
 ## Additional Highlights
 
-- **Housing:** 4,855 evictions prevented across 6,935 households served over 5 years
+- **Housing & Rent:** 4,855 evictions prevented; direct rent assistance provided to 3,210 households across 6,935 total housing contacts over 5 years
+- **Food & Nutrition:** 50,740 food assistance units delivered --- including food pantry access, SNAP enrollment navigation, and direct emergency food aid; 14,830 unique households served over 5 years
 - **Health:** 2,938 referrals to clinical care generated from 19,590 health navigation units
 - **Child care:** 9,884 children served; 54.7% under age 5 in FY2025
 

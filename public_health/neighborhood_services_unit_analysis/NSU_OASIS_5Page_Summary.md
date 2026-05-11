@@ -31,7 +31,7 @@ Operating through **7 neighborhood centers** within a **254-county Texas reporti
 | Unduplicated Clients Served | 36,500 |
 | FNPI Outcomes Achieved | 4,821 |
 | TOP Families Transitioned | 1,690 |
-| Units of Service Delivered | 356,220 |
+| Units of Service Delivered | 406,960 |
 | Total CSBG Expenditures | $10,029,000 |
 
 ---
@@ -61,7 +61,7 @@ NSU tracks five National Performance Indicators across employment and education 
 
 ## PAGE 3 — SERVICE DELIVERY (SRV INDICATORS)
 
-Nine service categories collectively delivered **356,220 units of service** to **over 83,500 client contacts** across the five-year period.
+Ten service categories collectively delivered **406,960 units of service** to **over 93,500 client contacts** across the five-year period.
 
 ### Service Volume Trends (FY2021→FY2025)
 
@@ -74,7 +74,8 @@ Nine service categories collectively delivered **356,220 units of service** to *
 | SRV 5jj | Child Care | 8,640 | 11,840 | **+37.0%** |
 | SRV 7a | Emergency Services | 12,840 | 9,870 | **-23.2%** |
 | SRV 7b | Health Services | 3,280 | 4,480 | **+36.6%** |
-| SRV 7d | Housing Assistance | 4,820 | 6,280 | **+30.3%** |
+| SRV 7d | Housing & Rent Assistance | 4,820 | 6,280 | **+30.3%** |
+| SRV 7e | Food & Nutrition Assistance | 8,320 | 11,640 | **+39.9%** |
 | SRV 7n | Transportation | 2,160 | 2,890 | **+33.8%** |
 
 ### Service Mix Shift — A Positive Indicator
@@ -82,6 +83,8 @@ Nine service categories collectively delivered **356,220 units of service** to *
 The most significant structural trend in service delivery is the **23.2% decline in emergency services (SRV 7a)** alongside growth in upstream interventions (employment, education, case management). This shift indicates the program is successfully engaging clients earlier and reducing crisis-level need.
 
 **Case management (SRV 3a.1) as the largest and fastest-growing service** confirms that NSU's coordinated, whole-family approach is being operationalized at scale.
+
+**Food & nutrition assistance (SRV 7e)** is now documented as a formal tracked service category, with 50,740 units delivered over five years across food pantry access, SNAP navigation, and direct emergency food aid. **Housing & rent assistance (SRV 7d)** includes both eviction prevention (4,855 cases) and direct rent payment assistance (3,210 households).
 
 ---
 
