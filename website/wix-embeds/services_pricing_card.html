@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-3E38FE8RF4"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag("js", new Date());
+    gtag("config", "G-3E38FE8RF4");
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      background: transparent;
+      padding: 8px;
+      color: #222;
+    }
+
+    .services-wrap {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 16px;
+      max-width: 960px;
+    }
+
+    .service-card {
+      background: #ffffff;
+      border: 1px solid #dde3ed;
+      border-radius: 10px;
+      padding: 28px 24px;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+    }
+
+    .service-card.featured {
+      border-color: #1B3A6B;
+      border-width: 2px;
+    }
+
+    .featured-label {
+      position: absolute;
+      top: -12px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: #1B3A6B;
+      color: #fff;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      padding: 3px 14px;
+      border-radius: 20px;
+      white-space: nowrap;
+    }
+
+    .service-icon {
+      font-size: 26px;
+      margin-bottom: 12px;
+    }
+
+    .service-type {
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #2E86AB;
+      margin-bottom: 6px;
+    }
+
+    .service-name {
+      font-size: 17px;
+      font-weight: 800;
+      color: #1B3A6B;
+      margin-bottom: 10px;
+      line-height: 1.3;
+    }
+
+    .service-desc {
+      font-size: 12px;
+      color: #666;
+      line-height: 1.65;
+      margin-bottom: 18px;
+      flex: 1;
+    }
+
+    .price-block {
+      background: #f4f7fb;
+      border-radius: 8px;
+      padding: 14px 16px;
+      margin-bottom: 18px;
+    }
+
+    .price-label {
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: #999;
+      margin-bottom: 4px;
+    }
+
+    .price-range {
+      font-size: 22px;
+      font-weight: 800;
+      color: #1B3A6B;
+      line-height: 1.2;
+    }
+
+    .price-basis {
+      font-size: 11px;
+      color: #888;
+      margin-top: 3px;
+    }
+
+    .includes-label {
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: #999;
+      margin-bottom: 10px;
+    }
+
+    .includes-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 7px;
+      margin-bottom: 20px;
+    }
+
+    .includes-list li {
+      font-size: 12px;
+      color: #444;
+      padding-left: 16px;
+      position: relative;
+      line-height: 1.4;
+    }
+
+    .includes-list li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: #1B7A3E;
+      font-size: 11px;
+      font-weight: 700;
+      top: 1px;
+    }
+
+    .btn {
+      display: block;
+      text-align: center;
+      font-size: 12px;
+      font-weight: 700;
+      padding: 10px 16px;
+      border-radius: 6px;
+      text-decoration: none;
+      transition: background 0.2s;
+      letter-spacing: 0.3px;
+    }
+
+    .btn-primary { background: #1B3A6B; color: #fff; }
+    .btn-primary:hover { background: #2E86AB; }
+    .btn-outline { background: #fff; color: #1B3A6B; border: 1px solid #1B3A6B; }
+    .btn-outline:hover { background: #f0f4ff; }
+
+    .market-note {
+      max-width: 960px;
+      margin-top: 14px;
+      font-size: 11px;
+      color: #999;
+      line-height: 1.6;
+      padding: 0 4px;
+    }
+
+    .market-note strong { color: #666; }
+  </style>
+</head>
+<body>
+
+<div class="services-wrap">
+
+  <!-- SERVICE 1: Civic Intelligence Report -->
+  <div class="service-card">
+    <div class="service-icon">📋</div>
+    <div class="service-type">Analysis Type 1</div>
+    <h3 class="service-name">Civic Intelligence Report</h3>
+    <p class="service-desc">A single-domain, source-cited research report analyzing publicly available government data — covering infrastructure, transportation, housing, procurement, or public health. Delivered as a print-ready and web-publishable document with data visualizations, methodology, and policy recommendations.</p>
+    <div class="price-block">
+      <div class="price-label">Austin Market Rate</div>
+      <div class="price-range">$3,500 – $7,500</div>
+      <div class="price-basis">Per report · Project-based</div>
+    </div>
+    <div class="includes-label">Includes</div>
+    <ul class="includes-list">
+      <li>Public records acquisition & cleaning</li>
+      <li>Data analysis & visualization</li>
+      <li>5–10 page written report</li>
+      <li>District-level equity breakdown</li>
+      <li>Executive summary (1-pager)</li>
+      <li>GitHub-hosted deliverable</li>
+    </ul>
+    <a class="btn btn-outline" href="mailto:tiffany@a-techconsulting.com?subject=Civic Intelligence Report Inquiry">Request a Quote</a>
+  </div>
+
+  <!-- SERVICE 2: Operational Analytics Dashboard -->
+  <div class="service-card featured">
+    <div class="featured-label">Most Requested</div>
+    <div class="service-icon">📊</div>
+    <div class="service-type">Analysis Type 2</div>
+    <h3 class="service-name">Operational Analytics Dashboard</h3>
+    <p class="service-desc">A custom-built Power BI or interactive web dashboard integrating cross-agency datasets into a unified operational view — KPI tracking, performance monitoring, and stakeholder reporting for public-sector programs, departments, or initiatives.</p>
+    <div class="price-block">
+      <div class="price-label">Austin Market Rate</div>
+      <div class="price-range">$5,000 – $12,000</div>
+      <div class="price-basis">Development · + $1,500–$3,000/mo maintenance</div>
+    </div>
+    <div class="includes-label">Includes</div>
+    <ul class="includes-list">
+      <li>Data architecture & pipeline design</li>
+      <li>Power BI or web dashboard build</li>
+      <li>KPI definition and performance framework</li>
+      <li>GIS / spatial layers (where applicable)</li>
+      <li>Stakeholder and executive reporting views</li>
+      <li>Training and documentation</li>
+    </ul>
+    <a class="btn btn-primary" href="mailto:tiffany@a-techconsulting.com?subject=Dashboard Development Inquiry">Request a Quote</a>
+  </div>
+
+  <!-- SERVICE 3: Cross-Agency Intelligence Platform -->
+  <div class="service-card">
+    <div class="service-icon">🔗</div>
+    <div class="service-type">Analysis Type 3</div>
+    <h3 class="service-name">Cross-Agency Intelligence Platform</h3>
+    <p class="service-desc">A full-scope civic intelligence engagement integrating multiple data domains — infrastructure, procurement, workforce, GIS, and operational data — into a unified analytical platform with ongoing monitoring, automated data freshness checks, and quarterly intelligence reporting.</p>
+    <div class="price-block">
+      <div class="price-label">Austin Market Rate</div>
+      <div class="price-range">$15,000 – $35,000+</div>
+      <div class="price-basis">Per engagement · Scope-dependent</div>
+    </div>
+    <div class="includes-label">Includes</div>
+    <ul class="includes-list">
+      <li>Multi-domain data integration & architecture</li>
+      <li>GIS mapping and spatial intelligence</li>
+      <li>Automated source data monitoring</li>
+      <li>Quarterly intelligence reports</li>
+      <li>Procurement & vendor ecosystem analysis</li>
+      <li>Stakeholder briefings and presentations</li>
+    </ul>
+    <a class="btn btn-outline" href="mailto:tiffany@a-techconsulting.com?subject=Intelligence Platform Inquiry">Request a Quote</a>
+  </div>
+
+</div>
+
+<p class="market-note">
+  <strong>Austin, TX market rates</strong> based on 2025–2026 benchmarks for senior data architect and civic analytics consulting.
+  Hourly rate: <strong>$125 – $175/hr.</strong>
+  All engagements include written scope, source citations, and deliverables published to GitHub.
+  NAICS: 541511 · 541512 · 541611 · 541690 · 541370.
+</p>
+
+</body>
+</html>
