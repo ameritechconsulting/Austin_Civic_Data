@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-3E38FE8RF4"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag("js", new Date());
+    gtag("config", "G-3E38FE8RF4");
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="NSU OASIS Community Action Program — 5-Year Strategic Analysis FY2021–FY2025. City of Austin Neighborhood Services Unit CSBG performance, equity, and financial analysis by Ameritech Consulting Group.">
+  <title>NSU OASIS Program — 5-Year Analysis | Ameritech Consulting Group</title>
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    :root {
+      --navy:   #1B3A6B;
+      --blue:   #2E86AB;
+      --green:  #1B7A3E;
+      --amber:  #946200;
+      --light:  #F4F7FB;
+      --border: #DDE3ED;
+      --text:   #222;
+      --muted:  #666;
+      --white:  #ffffff;
+    }
+    body { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; background: var(--light); color: var(--text); font-size: 13px; line-height: 1.6; }
+    a { color: var(--blue); text-decoration: none; }
+
+    /* ── HEADER ── */
+    .report-header { background: var(--navy); color: var(--white); padding: 44px 48px 36px; }
+    .report-eyebrow { font-size: 11px; font-weight: 700; letter-spacing: 2.5px; text-transform: uppercase; color: #7EC8E3; margin-bottom: 10px; }
+    .report-header h1 { font-size: 28px; font-weight: 800; line-height: 1.2; margin-bottom: 8px; }
+    .report-header h2 { font-size: 15px; font-weight: 400; color: rgba(255,255,255,0.75); margin-bottom: 20px; }
+    .meta-strip { display: flex; gap: 40px; flex-wrap: wrap; padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.15); }
+    .meta-item { font-size: 11px; color: rgba(255,255,255,0.6); text-transform: uppercase; letter-spacing: 1px; }
+    .meta-item strong { display: block; font-size: 22px; font-weight: 800; color: var(--white); letter-spacing: -0.5px; margin-bottom: 2px; }
+
+    /* ── NAV ── */
+    .toc { background: var(--white); border-bottom: 2px solid var(--border); padding: 0 48px; display: flex; gap: 0; flex-wrap: wrap; position: sticky; top: 0; z-index: 100; }
+    .toc a { font-size: 12px; font-weight: 600; color: var(--navy); padding: 14px 18px; display: block; border-bottom: 2px solid transparent; margin-bottom: -2px; transition: all 0.2s; }
+    .toc a:hover { color: var(--blue); border-bottom-color: var(--blue); }
+
+    /* ── SECTIONS ── */
+    .section { background: var(--white); border: 1px solid var(--border); border-radius: 10px; margin: 24px 40px; padding: 32px 36px; }
+    .section-eyebrow { font-size: 10px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: var(--blue); margin-bottom: 6px; }
+    .section-title { font-size: 18px; font-weight: 800; color: var(--navy); margin-bottom: 6px; }
+    .section-sub { font-size: 13px; color: var(--muted); line-height: 1.6; max-width: 740px; margin-bottom: 24px; }
+
+    /* ── STAT STRIP ── */
+    .stat-strip { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 0; background: var(--light); border: 1px solid var(--border); border-radius: 8px; overflow: hidden; margin-bottom: 28px; }
+    .stat-box { padding: 18px 20px; border-right: 1px solid var(--border); text-align: center; }
+    .stat-box:last-child { border-right: none; }
+    .stat-num { font-size: 24px; font-weight: 800; color: var(--navy); display: block; }
+    .stat-lbl { font-size: 10px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.8px; margin-top: 3px; display: block; }
+
+    /* ── TABLES ── */
+    .tbl-wrap { overflow-x: auto; margin-bottom: 24px; }
+    table { width: 100%; border-collapse: collapse; font-size: 12px; }
+    th { background: var(--navy); color: var(--white); padding: 9px 12px; text-align: left; font-size: 11px; font-weight: 600; letter-spacing: 0.4px; white-space: nowrap; }
+    td { padding: 8px 12px; border-bottom: 1px solid #f0f0f0; vertical-align: middle; }
+    tr:last-child td { border-bottom: none; }
+    tr:nth-child(even) td { background: #fafbff; }
+    tr:hover td { background: #f0f4ff; }
+    .num { text-align: right; font-variant-numeric: tabular-nums; }
+    .up { color: var(--green); font-weight: 700; }
+    .down { color: #c0392b; font-weight: 700; }
+    .neutral { color: var(--amber); font-weight: 700; }
+
+    /* ── CALLOUT BOXES ── */
+    .callout { border-radius: 8px; padding: 16px 20px; margin-bottom: 20px; }
+    .callout-green { background: #E6F4EA; border-left: 4px solid var(--green); }
+    .callout-blue  { background: #EBF3FF; border-left: 4px solid var(--blue); }
+    .callout-amber { background: #FFF8E1; border-left: 4px solid var(--amber); }
+    .callout-navy  { background: var(--light); border-left: 4px solid var(--navy); }
+    .callout h4 { font-size: 11px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 8px; }
+    .callout-green h4 { color: var(--green); }
+    .callout-blue h4  { color: var(--blue); }
+    .callout-amber h4 { color: var(--amber); }
+    .callout-navy h4  { color: var(--navy); }
+    .callout ul { list-style: none; display: flex; flex-direction: column; gap: 5px; }
+    .callout li { font-size: 12px; color: #333; padding-left: 14px; position: relative; line-height: 1.5; }
+    .callout li::before { content: "→"; position: absolute; left: 0; font-size: 11px; }
+    .callout-green li::before { color: var(--green); }
+    .callout-blue  li::before { color: var(--blue); }
+    .callout-amber li::before { color: var(--amber); }
+    .callout-navy  li::before { color: var(--navy); }
+
+    /* ── PROGRESS BARS ── */
+    .progress-row { display: flex; align-items: center; gap: 12px; margin-bottom: 10px; }
+    .progress-label { font-size: 12px; color: var(--text); width: 220px; flex-shrink: 0; }
+    .progress-bar-wrap { flex: 1; background: var(--border); border-radius: 4px; height: 10px; }
+    .progress-bar { height: 10px; border-radius: 4px; background: var(--blue); }
+    .progress-bar.green { background: var(--green); }
+    .progress-pct { font-size: 12px; font-weight: 700; color: var(--navy); width: 44px; text-align: right; }
+
+    /* ── RECOMMENDATION TABLE ── */
+    .rec-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 16px; }
+    .rec-card { background: var(--light); border: 1px solid var(--border); border-radius: 8px; padding: 18px 20px; }
+    .rec-priority { font-size: 10px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: var(--blue); margin-bottom: 6px; }
+    .rec-title { font-size: 13px; font-weight: 700; color: var(--navy); margin-bottom: 8px; line-height: 1.3; }
+    .rec-body { font-size: 12px; color: var(--muted); line-height: 1.6; margin-bottom: 10px; }
+    .rec-meta { display: flex; gap: 12px; flex-wrap: wrap; }
+    .rec-tag { font-size: 11px; padding: 2px 10px; border-radius: 20px; font-weight: 600; }
+    .rec-tag-cost { background: #E6F4EA; color: var(--green); }
+    .rec-tag-time { background: #EBF3FF; color: var(--navy); }
+
+    /* ── EQUITY BARS ── */
+    .equity-table { width: 100%; }
+    .equity-bar { height: 10px; border-radius: 4px; background: var(--blue); display: inline-block; vertical-align: middle; }
+    .disparity-pos { color: var(--green); font-weight: 700; }
+    .disparity-neg { color: #c0392b; font-weight: 700; }
+
+    /* ── TWO COL ── */
+    .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; }
+    @media (max-width: 700px) { .two-col { grid-template-columns: 1fr; } }
+
+    /* ── SECTION DIVIDER ── */
+    .section-divider { border: none; border-top: 1px solid var(--border); margin: 24px 0; }
+
+    /* ── FOOTER ── */
+    .report-footer { background: var(--navy); color: rgba(255,255,255,0.6); text-align: center; padding: 28px; font-size: 12px; margin-top: 32px; line-height: 1.8; }
+    .report-footer strong { color: var(--white); }
+
+    /* ── GLOSSARY ── */
+    .glossary-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 8px; }
+    .glossary-item { font-size: 12px; color: var(--muted); padding: 6px 0; border-bottom: 1px solid #f0f0f0; }
+    .glossary-item strong { color: var(--navy); }
+
+    @media (max-width: 700px) {
+      .section { margin: 16px 16px; padding: 20px 18px; }
+      .toc { padding: 0 16px; }
+      .report-header { padding: 28px 20px; }
+      .stat-strip { grid-template-columns: 1fr 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- HEADER -->
+<div class="report-header">
+  <div class="report-eyebrow">City of Austin — Public Health Department</div>
+  <h1>Neighborhood Services Unit (NSU)<br>OASIS Community Action Program</h1>
+  <h2>Community Services Block Grant (CSBG) | 5-Year Strategic Analysis: FY2021–FY2025</h2>
+  <div class="meta-strip">
+    <div class="meta-item"><strong>36,500</strong>Clients Served (5-Yr)</div>
+    <div class="meta-item"><strong>91.4%</strong>TOP Success Rate</div>
+    <div class="meta-item"><strong>$10.2M</strong>CSBG Expenditures</div>
+    <div class="meta-item"><strong>7</strong>Neighborhood Centers</div>
+    <div class="meta-item"><strong>1,690</strong>Families Out of Poverty</div>
+    <div class="meta-item"><strong>May 2026</strong>Report Date</div>
+  </div>
+</div>
+
+<!-- NAV -->
+<div class="toc">
+  <a href="#overview">Overview</a>
+  <a href="#fnpi">FNPI Outcomes</a>
+  <a href="#srv">Service Delivery</a>
+  <a href="#top">TOP Analysis</a>
+  <a href="#financial">Financial</a>
+  <a href="#centers">Centers</a>
+  <a href="#equity">Equity</a>
+  <a href="#recommendations">Recommendations</a>
+  <a href="#glossary">Glossary</a>
+</div>
+
+<!-- EXECUTIVE SUMMARY -->
+<div class="section" id="overview">
+  <div class="section-eyebrow">Executive Summary</div>
+  <div class="section-title">Program at a Glance</div>
+  <div class="section-sub">The Neighborhood Services Unit delivers the OASIS Community Action Program under the Community Services Block Grant (CSBG), administered by the City of Austin Public Health Department and overseen at the state level by the Texas Health and Human Services Commission (HHSC). Operating through 7 neighborhood centers, NSU provides a continuum of services targeting Austin's most economically vulnerable residents — from emergency crisis intervention through sustainable career and education pathways.</div>
+
+  <div class="stat-strip">
+    <div class="stat-box"><span class="stat-num">8,227</span><span class="stat-lbl">FY2025 Clients</span></div>
+    <div class="stat-box"><span class="stat-num">72.5%</span><span class="stat-lbl">FNPI Avg Success Rate</span></div>
+    <div class="stat-box"><span class="stat-num">374</span><span class="stat-lbl">TOP Families FY2025</span></div>
+    <div class="stat-box"><span class="stat-num">93.5%</span><span class="stat-lbl">TOP Success Rate</span></div>
+    <div class="stat-box"><span class="stat-num">$267</span><span class="stat-lbl">Cost per Client</span></div>
+    <div class="stat-box"><span class="stat-num">$2.34M</span><span class="stat-lbl">FY2026 Budget</span></div>
+  </div>
+
+  <div class="two-col">
+    <div class="callout callout-green">
+      <h4>Headline Strengths</h4>
+      <ul>
+        <li>All 5 FNPI success rates improved 7–10 percentage points over 5 years</li>
+        <li>TOP success rate of 91.4% over 5 years — exceptionally strong</li>
+        <li>34% enrollment growth while improving per-client cost efficiency</li>
+        <li>Emergency service reliance declining as upstream programming scales</li>
+        <li>FY2026 budget on pace — 46.7% expended at Q2 midpoint</li>
+      </ul>
+    </div>
+    <div class="callout callout-amber">
+      <h4>Priority Gaps</h4>
+      <ul>
+        <li>FNPI 5b (School Readiness) lags all other indicators at 68.1%</li>
+        <li>Employment training-to-placement conversion static at ~42%</li>
+        <li>Northeast Center TOP outcomes 36% below center average</li>
+        <li>CSBG federal reauthorization creates annual funding uncertainty</li>
+        <li>Annual reporting framework undercounts multi-year pathway completions</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="tbl-wrap">
+    <table>
+      <thead><tr><th>Component</th><th>Details</th></tr></thead>
+      <tbody>
+        <tr><td>Program Name</td><td>OASIS (Community Action Program)</td></tr>
+        <tr><td>Grant Type</td><td>Community Services Block Grant (CSBG)</td></tr>
+        <tr><td>Administering Agency</td><td>City of Austin — Public Health Department</td></tr>
+        <tr><td>State Administrator</td><td>Texas Health and Human Services Commission (HHSC)</td></tr>
+        <tr><td>Reporting Framework</td><td>CSBG ROMA Next Generation (NPI Reporting)</td></tr>
+        <tr><td>Neighborhood Centers</td><td>7 centers across Austin</td></tr>
+        <tr><td>Geographic Reporting</td><td>254-county Texas jurisdiction</td></tr>
+        <tr><td>Contract Cycle</td><td>Annual (State fiscal year)</td></tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- FNPI OUTCOMES -->
+<div class="section" id="fnpi">
+  <div class="section-eyebrow">National Performance Indicators</div>
+  <div class="section-title">FNPI Outcome Performance (FY2021–FY2025)</div>
+  <div class="section-sub">The FNPI series tracks outcome-level results for low-income individuals served. All five indicators show consistent upward trends, with all exceeding the national CSBG average of 68% by FY2025.</div>
+
+  <div class="callout callout-blue" style="margin-bottom:24px">
+    <h4>FNPI Summary Dashboard</h4>
+    <div style="margin-top:10px">
+      <div class="progress-row"><span class="progress-label">FNPI 4 — Employment Skills (71.0% avg)</span><div class="progress-bar-wrap"><div class="progress-bar green" style="width:71%"></div></div><span class="progress-pct">74.9%</span></div>
+      <div class="progress-row"><span class="progress-label">FNPI 4e — Employment Obtained (69.8% avg)</span><div class="progress-bar-wrap"><div class="progress-bar green" style="width:70%"></div></div><span class="progress-pct">74.2%</span></div>
+      <div class="progress-row"><span class="progress-label">FNPI 5 — Credential Attainment (70.6% avg)</span><div class="progress-bar-wrap"><div class="progress-bar green" style="width:71%"></div></div><span class="progress-pct">74.7%</span></div>
+      <div class="progress-row"><span class="progress-label">FNPI 5b — School Readiness (68.1% avg)</span><div class="progress-bar-wrap"><div class="progress-bar" style="width:68%"></div></div><span class="progress-pct">71.2%</span></div>
+      <div class="progress-row"><span class="progress-label">FNPI 5d — GED / HS Diploma (66.4% avg)</span><div class="progress-bar-wrap"><div class="progress-bar" style="width:66%"></div></div><span class="progress-pct">70.5%</span></div>
+      <div class="progress-row"><span class="progress-label" style="font-weight:700">National CSBG Average Benchmark</span><div class="progress-bar-wrap"><div class="progress-bar" style="width:68%;background:#ccc"></div></div><span class="progress-pct" style="color:#999">68.0%</span></div>
+    </div>
+  </div>
+
+  <div class="tbl-wrap">
+    <table>
+      <thead><tr><th>Indicator</th><th>Domain</th><th>FY2021</th><th>FY2022</th><th>FY2023</th><th>FY2024</th><th>FY2025</th><th>Change</th><th>5-Yr Enrolled</th><th>5-Yr Achieved</th></tr></thead>
+      <tbody>
+        <tr><td><strong>FNPI 4</strong></td><td>Employment Skills</td><td class="num">65.6%</td><td class="num">68.5%</td><td class="num">71.4%</td><td class="num">73.4%</td><td class="num">74.9%</td><td class="num up">+9.3 pts</td><td class="num">2,310</td><td class="num">1,641</td></tr>
+        <tr><td><strong>FNPI 4e</strong></td><td>Employment Obtained</td><td class="num">63.7%</td><td class="num">67.0%</td><td class="num">69.5%</td><td class="num">72.3%</td><td class="num">74.2%</td><td class="num up">+10.5 pts</td><td class="num">1,232</td><td class="num">860</td></tr>
+        <tr><td><strong>FNPI 5</strong></td><td>Credential Attainment</td><td class="num">65.1%</td><td class="num">67.6%</td><td class="num">70.3%</td><td class="num">73.0%</td><td class="num">74.7%</td><td class="num up">+9.6 pts</td><td class="num">1,036</td><td class="num">731</td></tr>
+        <tr><td><strong>FNPI 5b</strong></td><td>School Readiness</td><td class="num">63.6%</td><td class="num">66.2%</td><td class="num">68.2%</td><td class="num">69.9%</td><td class="num">71.2%</td><td class="num up">+7.6 pts</td><td class="num">1,790</td><td class="num">1,219</td></tr>
+        <tr><td><strong>FNPI 5d</strong></td><td>GED / HS Diploma</td><td class="num">61.5%</td><td class="num">64.7%</td><td class="num">65.8%</td><td class="num">67.8%</td><td class="num">70.5%</td><td class="num up">+9.0 pts</td><td class="num">557</td><td class="num">370</td></tr>
+        <tr style="background:#f4f7fb"><td colspan="2"><strong>Overall FNPI</strong></td><td class="num">63.9%</td><td class="num">66.8%</td><td class="num">69.0%</td><td class="num">71.3%</td><td class="num">73.9%</td><td class="num up"><strong>+10.0 pts</strong></td><td class="num"><strong>6,925</strong></td><td class="num"><strong>4,821</strong></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="two-col">
+    <div class="callout callout-green">
+      <h4>Key Observations</h4>
+      <ul>
+        <li>FNPI 4e (Employment Obtained) showed the greatest improvement at +10.5 pts, reflecting expanded employer partnerships</li>
+        <li>All five indicators exceeded the national CSBG benchmark of 68% by FY2025</li>
+        <li>FNPI 5 (Credential Attainment) strongest positive trajectory — post-secondary vocational programs account for ~62% of FY2025 achievements</li>
+        <li>97.5% capture rate in FY2025 (enrolled vs. target) reflects improved intake screening</li>
+      </ul>
+    </div>
+    <div class="callout callout-amber">
+      <h4>Areas for Investment</h4>
+      <ul>
+        <li>FNPI 5b (School Readiness) remains lowest performer at 71.2% — COVID disruptions to early childhood programming still echoing</li>
+        <li>FNPI 5d (GED/Diploma) at 70.5% — longest average completion time (18 months) complicates annual measurement</li>
+        <li>Gap between FNPI 4 (skill-building) and 4e (placement) has narrowed but persists at 0.7 pts — employer partnership expansion needed</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- SERVICE DELIVERY -->
+<div class="section" id="srv">
+  <div class="section-eyebrow">Service Volume Analysis</div>
+  <div class="section-title">SRV Service Delivery Indicators (FY2021–FY2025)</div>
+  <div class="section-sub">Nine service categories collectively delivered 356,220 units of service to over 83,500 client contacts across the five-year period. The most significant structural trend: emergency service volumes declining while upstream interventions (employment, education, case management) grow.</div>
+
+  <div class="tbl-wrap">
+    <table>
+      <thead><tr><th>Code</th><th>Service Type</th><th>FY2021 Units</th><th>FY2025 Units</th><th>Growth</th><th>5-Yr Total</th><th>5-Yr Clients</th></tr></thead>
+      <tbody>
+        <tr><td><strong>SRV 3a.1</strong></td><td>Case Management / Counseling</td><td class="num">18,420</td><td class="num">27,830</td><td class="num up">+51.1%</td><td class="num">116,820</td><td class="num">22,690</td></tr>
+        <tr><td><strong>SRV 4c</strong></td><td>Employment Training</td><td class="num">4,780</td><td class="num">6,520</td><td class="num up">+36.4%</td><td class="num">28,440</td><td class="num">5,494</td></tr>
+        <tr><td><strong>SRV 4i</strong></td><td>Job Placement Assistance</td><td class="num">2,140</td><td class="num">3,010</td><td class="num up">+40.7%</td><td class="num">12,940</td><td class="num">4,840</td></tr>
+        <tr><td><strong>SRV 5a</strong></td><td>Education &amp; Literacy</td><td class="num">5,160</td><td class="num">7,230</td><td class="num up">+40.1%</td><td class="num">31,090</td><td class="num">6,016</td></tr>
+        <tr><td><strong>SRV 5jj</strong></td><td>Child Care Services</td><td class="num">8,640</td><td class="num">11,840</td><td class="num up">+37.0%</td><td class="num">51,220</td><td class="num">9,884</td></tr>
+        <tr><td><strong>SRV 7a</strong></td><td>Emergency Services</td><td class="num">12,840</td><td class="num">9,870</td><td class="num down">−23.2%</td><td class="num">55,730</td><td class="num">18,576</td></tr>
+        <tr><td><strong>SRV 7b</strong></td><td>Health Services</td><td class="num">3,280</td><td class="num">4,480</td><td class="num up">+36.6%</td><td class="num">19,590</td><td class="num">4,897</td></tr>
+        <tr><td><strong>SRV 7d</strong></td><td>Housing &amp; Homelessness Prevention</td><td class="num">4,820</td><td class="num">6,280</td><td class="num up">+30.3%</td><td class="num">27,740</td><td class="num">6,935</td></tr>
+        <tr><td><strong>SRV 7n</strong></td><td>Transportation Assistance</td><td class="num">2,160</td><td class="num">2,890</td><td class="num up">+33.8%</td><td class="num">12,650</td><td class="num">4,217</td></tr>
+        <tr style="background:#f4f7fb"><td colspan="2"><strong>Total</strong></td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num"><strong>356,220</strong></td><td class="num"><strong>83,549</strong></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="callout callout-green">
+    <h4>Service Mix Shift — A Positive Indicator</h4>
+    <ul>
+      <li>Emergency services (SRV 7a) declined 23.2% — indicating the program is engaging clients earlier and reducing crisis-level need</li>
+      <li>Case management (SRV 3a.1) is the largest and fastest-growing service (+51.1%) — confirming NSU's whole-family approach is scaling</li>
+      <li>Employment training to placement conversion (SRV 4c → 4i) has improved but remains at ~42% — the primary systemic gap to address</li>
+      <li>Housing eviction prevention: 4,855 evictions prevented over 5 years across 6,935 households</li>
+      <li>Health referrals to clinical care: 2,938 over 5 years from health navigation services</li>
+    </ul>
+  </div>
+</div>
+
+<!-- TOP ANALYSIS -->
+<div class="section" id="top">
+  <div class="section-eyebrow">Transition Out of Poverty</div>
+  <div class="section-title">TOP Performance (FY2021–FY2025)</div>
+  <div class="section-sub">The Transition Out of Poverty (TOP) metric is NSU's flagship outcome — tracking families that move from below 100% Federal Poverty Level to economic stability within a 12-month program cycle. With a 91.4% success rate over five years, TOP is the strongest indicator in the NSU portfolio.</div>
+
+  <div class="tbl-wrap">
+    <table>
+      <thead><tr><th>Fiscal Year</th><th>TOP Goal</th><th>TOP Achieved</th><th>Success Rate</th><th>Families at 100%+ FPL</th><th>Avg FPL Point Gain</th></tr></thead>
+      <tbody>
+        <tr><td>FY2021</td><td class="num">340</td><td class="num">298</td><td class="num">87.6%</td><td class="num">214</td><td class="num up">+31.7 pts</td></tr>
+        <tr><td>FY2022</td><td class="num">355</td><td class="num">321</td><td class="num">90.4%</td><td class="num">237</td><td class="num up">+34.5 pts</td></tr>
+        <tr><td>FY2023</td><td class="num">370</td><td class="num">340</td><td class="num">91.9%</td><td class="num">258</td><td class="num up">+38.5 pts</td></tr>
+        <tr><td>FY2024</td><td class="num">385</td><td class="num">357</td><td class="num">92.7%</td><td class="num">278</td><td class="num up">+41.5 pts</td></tr>
+        <tr><td>FY2025</td><td class="num">400</td><td class="num">374</td><td class="num"><strong>93.5%</strong></td><td class="num">301</td><td class="num up">+44.9 pts</td></tr>
+        <tr style="background:#f4f7fb"><td><strong>5-Year Total</strong></td><td class="num"><strong>1,850</strong></td><td class="num"><strong>1,690</strong></td><td class="num"><strong>91.4%</strong></td><td class="num"><strong>1,288</strong></td><td class="num up"><strong>+38.2 avg</strong></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="two-col">
+    <div>
+      <div style="font-size:12px;font-weight:700;color:var(--navy);margin-bottom:12px">TOP Pathways to Stability (FY2023–FY2025 avg)</div>
+      <div class="progress-row"><span class="progress-label">Employment (primary)</span><div class="progress-bar-wrap"><div class="progress-bar green" style="width:48.3%"></div></div><span class="progress-pct">48.3%</span></div>
+      <div class="progress-row"><span class="progress-label">Education + Employment</span><div class="progress-bar-wrap"><div class="progress-bar" style="width:22.6%"></div></div><span class="progress-pct">22.6%</span></div>
+      <div class="progress-row"><span class="progress-label">Benefits Optimization</span><div class="progress-bar-wrap"><div class="progress-bar" style="width:16.4%"></div></div><span class="progress-pct">16.4%</span></div>
+      <div class="progress-row"><span class="progress-label">Housing Stability + Income</span><div class="progress-bar-wrap"><div class="progress-bar" style="width:12.7%"></div></div><span class="progress-pct">12.7%</span></div>
+    </div>
+    <div class="callout callout-green">
+      <h4>Depth of Poverty Reduction</h4>
+      <ul>
+        <li>Clients are entering deeper in poverty year-over-year (avg starting FPL declining from 62.4% to 58.9%)</li>
+        <li>Despite deeper starting points, FPL gains are accelerating — +44.9 pts in FY2025 vs. +31.7 pts in FY2021</li>
+        <li>FY2025: 301 families crossed from below 100% FPL to 103.8% FPL average — economic self-sufficiency achieved</li>
+        <li>Multi-service coordination (employment + housing + health) is the driver of deepest poverty exits</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- FINANCIAL -->
+<div class="section" id="financial">
+  <div class="section-eyebrow">Financial Analysis</div>
+  <div class="section-title">CSBG Expenditures &amp; Budget Execution (FY2021–FY2026)</div>
+  <div class="section-sub">Five-year total CSBG expenditures of $10.2M with consistent year-over-year growth averaging 4.9%. Personnel costs held steady at ~62% of total expenditures — a model ratio for community action programs of this scale.</div>
+
+  <div class="tbl-wrap">
+    <table>
+      <thead><tr><th>Category</th><th>FY2021</th><th>FY2022</th><th>FY2023</th><th>FY2024</th><th>FY2025</th><th>5-Yr Total</th><th>% of Total</th></tr></thead>
+      <tbody>
+        <tr><td>Personnel</td><td class="num">$1,124,800</td><td class="num">$1,187,400</td><td class="num">$1,248,600</td><td class="num">$1,312,300</td><td class="num">$1,387,200</td><td class="num">$6,260,300</td><td class="num">62.4%</td></tr>
+        <tr><td>Fringe Benefits</td><td class="num">$304,700</td><td class="num">$321,600</td><td class="num">$337,100</td><td class="num">$354,300</td><td class="num">$375,000</td><td class="num">$1,692,700</td><td class="num">16.9%</td></tr>
+        <tr><td>Other</td><td class="num">$389,500</td><td class="num">$401,000</td><td class="num">$414,300</td><td class="num">$433,400</td><td class="num">$437,800</td><td class="num">$2,076,000</td><td class="num">20.7%</td></tr>
+        <tr style="background:#f4f7fb"><td><strong>Total</strong></td><td class="num"><strong>$1,819,000</strong></td><td class="num"><strong>$1,910,000</strong></td><td class="num"><strong>$2,000,000</strong></td><td class="num"><strong>$2,100,000</strong></td><td class="num"><strong>$2,200,000</strong></td><td class="num"><strong>$10,029,000</strong></td><td class="num"><strong>100%</strong></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <hr class="section-divider">
+  <div style="font-size:13px;font-weight:700;color:var(--navy);margin-bottom:16px">FY2026 Budget Execution (YTD — Q2)</div>
+  <div class="two-col">
+    <div class="tbl-wrap">
+      <table>
+        <thead><tr><th>Category</th><th>Budget</th><th>Expended</th><th>% Used</th></tr></thead>
+        <tbody>
+          <tr><td>Personnel</td><td class="num">$1,474,200</td><td class="num">$692,100</td><td class="num">46.9%</td></tr>
+          <tr><td>Fringe Benefits</td><td class="num">$399,600</td><td class="num">$186,300</td><td class="num">46.6%</td></tr>
+          <tr><td>Other</td><td class="num">$466,200</td><td class="num">$214,000</td><td class="num">45.9%</td></tr>
+          <tr style="background:#f4f7fb"><td><strong>Total</strong></td><td class="num"><strong>$2,340,000</strong></td><td class="num"><strong>$1,092,400</strong></td><td class="num"><strong>46.7%</strong></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div>
+      <div class="tbl-wrap">
+        <table>
+          <thead><tr><th>Cost Efficiency Metric</th><th>FY2021</th><th>FY2025</th><th>Change</th></tr></thead>
+          <tbody>
+            <tr><td>Cost per Unduplicated Client</td><td class="num">$296</td><td class="num">$267</td><td class="num up">−9.8%</td></tr>
+            <tr><td>Cost per FNPI Achievement</td><td class="num">$377</td><td class="num">$301</td><td class="num up">−20.2%</td></tr>
+            <tr><td>Cost per TOP Outcome</td><td class="num">$6,106</td><td class="num">$5,882</td><td class="num up">−3.7%</td></tr>
+            <tr><td>Personnel Cost per Client</td><td class="num">$183</td><td class="num">$169</td><td class="num up">−7.7%</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="callout callout-blue" style="margin-top:12px">
+        <h4>FY2026 Outlook</h4>
+        <ul>
+          <li>Budget execution on pace — 46.7% expended at Q2</li>
+          <li>Projected year-end surplus ~$121,000</li>
+          <li>Recommend redirecting surplus to FY2027 early childhood staffing</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- NEIGHBORHOOD CENTERS -->
+<div class="section" id="centers">
+  <div class="section-eyebrow">Center-Level Performance</div>
+  <div class="section-title">7 Neighborhood Centers (FY2025)</div>
+  <div class="section-sub">Performance disaggregated by neighborhood center. Northeast Center is the primary outlier requiring attention — TOP outcomes are 36% below the center average.</div>
+
+  <div class="tbl-wrap">
+    <table>
+      <thead><tr><th>Center</th><th>ZIP</th><th>Primary Population</th><th>Enrolled</th><th>% of Total</th><th>TOP Achieved</th><th>FNPI Avg Rate</th><th>Top Service</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Dove Springs</strong></td><td>78744</td><td>Latino/a families, refugees</td><td class="num">1,480</td><td class="num">18.0%</td><td class="num">72</td><td class="num up">76.2%</td><td>Employment Training (SRV 4c)</td></tr>
+        <tr><td><strong>Rosewood-Zaragosa</strong></td><td>78702</td><td>African American, elderly</td><td class="num">1,234</td><td class="num">15.0%</td><td class="num">61</td><td class="num up">73.8%</td><td>Emergency Services (SRV 7a)</td></tr>
+        <tr><td><strong>Montopolis</strong></td><td>78741</td><td>Hispanic families, workforce adults</td><td class="num">1,152</td><td class="num">14.0%</td><td class="num">57</td><td class="num up">74.6%</td><td>Education/Literacy (SRV 5a)</td></tr>
+        <tr><td><strong>Rundberg</strong></td><td>78753</td><td>High-poverty corridor, East African</td><td class="num">1,316</td><td class="num">16.0%</td><td class="num">60</td><td class="num">71.4%</td><td>Housing Assistance (SRV 7d)</td></tr>
+        <tr><td><strong>South Austin</strong></td><td>78745</td><td>Multi-ethnic, single-parent</td><td class="num">987</td><td class="num">12.0%</td><td class="num">47</td><td class="num">72.1%</td><td>Case Management (SRV 3a.1)</td></tr>
+        <tr><td><strong>George Morales</strong></td><td>78744</td><td>Youth, workforce development</td><td class="num">904</td><td class="num">11.0%</td><td class="num">43</td><td class="num">70.8%</td><td>Child Care (SRV 5jj)</td></tr>
+        <tr><td><strong>Northeast Center</strong></td><td>78723</td><td>Mixed demographics, seniors, veterans</td><td class="num">1,154</td><td class="num">14.0%</td><td class="num down">34</td><td class="num down">68.9%</td><td>Health Services (SRV 7b)</td></tr>
+        <tr style="background:#f4f7fb"><td colspan="3"><strong>Total / Average</strong></td><td class="num"><strong>8,227</strong></td><td class="num"><strong>100%</strong></td><td class="num"><strong>374</strong></td><td class="num"><strong>72.5%</strong></td><td></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="callout callout-amber">
+    <h4>Northeast Center — Priority Action</h4>
+    <ul>
+      <li>TOP achieved: 34 vs. center average of 53 — 36% below average</li>
+      <li>FNPI average rate: 68.9% vs. portfolio average 72.5% — lowest of all 7 centers</li>
+      <li>Recommendation: organizational capacity audit and case management staffing review in FY2026 Q3</li>
+      <li>Population mix (seniors + veterans) may require specialized case management protocols not currently in standard toolkit</li>
+    </ul>
+  </div>
+</div>
+
+<!-- EQUITY & DEMOGRAPHICS -->
+<div class="section" id="equity">
+  <div class="section-eyebrow">Equity &amp; Demographic Analysis</div>
+  <div class="section-title">Client Demographics vs. Austin Population (FY2025)</div>
+  <div class="section-sub">NSU serves populations significantly over-represented relative to Austin's general population — particularly Hispanic/Latino and African American residents, consistent with the program's antipoverty mission targeting economically vulnerable communities.</div>
+
+  <div class="tbl-wrap">
+    <table class="equity-table">
+      <thead><tr><th>Demographic Group</th><th>% of NSU Enrolled</th><th>% Austin Population</th><th>Disparity Index</th><th>Distribution</th></tr></thead>
+      <tbody>
+        <tr><td>Hispanic / Latino</td><td class="num">47.3%</td><td class="num">33.9%</td><td class="num disparity-pos">+13.4 pts</td><td><div class="equity-bar" style="width:94px"></div></td></tr>
+        <tr><td>African American</td><td class="num">18.6%</td><td class="num">8.1%</td><td class="num disparity-pos">+10.5 pts</td><td><div class="equity-bar" style="width:37px"></div></td></tr>
+        <tr><td>Multiracial / Other</td><td class="num">7.9%</td><td class="num">1.9%</td><td class="num disparity-pos">+6.0 pts</td><td><div class="equity-bar" style="width:16px"></div></td></tr>
+        <tr><td>Asian / Pacific Islander</td><td class="num">4.8%</td><td class="num">7.9%</td><td class="num disparity-neg">−3.1 pts</td><td><div class="equity-bar" style="width:10px;background:#aaa"></div></td></tr>
+        <tr><td>White (non-Hispanic)</td><td class="num">21.4%</td><td class="num">48.2%</td><td class="num disparity-neg">−26.8 pts</td><td><div class="equity-bar" style="width:43px;background:#aaa"></div></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <hr class="section-divider">
+
+  <div class="two-col">
+    <div>
+      <div style="font-size:12px;font-weight:700;color:var(--navy);margin-bottom:12px">Household Type at Enrollment</div>
+      <div class="progress-row"><span class="progress-label">Single-parent female-headed</span><div class="progress-bar-wrap"><div class="progress-bar" style="width:82.4%"></div></div><span class="progress-pct">41.2%</span></div>
+      <div class="progress-row"><span class="progress-label">Two-parent household</span><div class="progress-bar-wrap"><div class="progress-bar" style="width:57.4%"></div></div><span class="progress-pct">28.7%</span></div>
+      <div class="progress-row"><span class="progress-label">Single adult</span><div class="progress-bar-wrap"><div class="progress-bar" style="width:38.8%"></div></div><span class="progress-pct">19.4%</span></div>
+      <div class="progress-row"><span class="progress-label">Elder (65+) household</span><div class="progress-bar-wrap"><div class="progress-bar" style="width:21.4%"></div></div><span class="progress-pct">10.7%</span></div>
+    </div>
+    <div>
+      <div style="font-size:12px;font-weight:700;color:var(--navy);margin-bottom:12px">Income Level at Enrollment</div>
+      <div class="progress-row"><span class="progress-label">Below 50% FPL (deepest poverty)</span><div class="progress-bar-wrap"><div class="progress-bar" style="width:100%"></div></div><span class="progress-pct">52.3%</span></div>
+      <div class="progress-row"><span class="progress-label">50%–75% FPL</span><div class="progress-bar-wrap"><div class="progress-bar" style="width:54.3%"></div></div><span class="progress-pct">28.4%</span></div>
+      <div class="progress-row"><span class="progress-label">75%–100% FPL</span><div class="progress-bar-wrap"><div class="progress-bar" style="width:37%"></div></div><span class="progress-pct">19.3%</span></div>
+      <p style="font-size:11px;color:var(--muted);margin-top:12px">Over 80% of clients enrolled at or below 75% FPL — consistent with CSBG eligibility targeting the deepest poverty tiers.</p>
+    </div>
+  </div>
+</div>
+
+<!-- STRATEGIC RECOMMENDATIONS -->
+<div class="section" id="recommendations">
+  <div class="section-eyebrow">Strategic Findings &amp; Recommendations</div>
+  <div class="section-title">FY2026–FY2028 Priority Actions</div>
+  <div class="section-sub">Six prioritized recommendations based on five-year performance data, center-level analysis, and financial trajectory. Estimated investment: $628,000 over the planning period.</div>
+
+  <div class="rec-grid">
+    <div class="rec-card">
+      <div class="rec-priority">Priority 1 — Employment</div>
+      <div class="rec-title">Launch Employer Partnership Cohort</div>
+      <div class="rec-body">Structured employer engagement program at Dove Springs, Rundberg, and Rosewood-Zaragosa — the three highest-enrollment employment centers. Target major Austin employers in healthcare, construction, and hospitality to close the 42% training-to-placement conversion gap.</div>
+      <div class="rec-meta">
+        <span class="rec-tag rec-tag-cost">$85,000</span>
+        <span class="rec-tag rec-tag-time">FY2026 Q3</span>
+      </div>
+    </div>
+    <div class="rec-card">
+      <div class="rec-priority">Priority 2 — Early Childhood</div>
+      <div class="rec-title">Hire 2 Early Childhood Specialists</div>
+      <div class="rec-body">Place dedicated early childhood specialists at George Morales and Rosewood-Zaragosa — the centers with the highest child care service volumes. Projected to increase FNPI 5b school readiness rates by 4–6 percentage points annually.</div>
+      <div class="rec-meta">
+        <span class="rec-tag rec-tag-cost">$142,000/yr</span>
+        <span class="rec-tag rec-tag-time">FY2026 Q4</span>
+      </div>
+    </div>
+    <div class="rec-card">
+      <div class="rec-priority">Priority 3 — Data Systems</div>
+      <div class="rec-title">Multi-Year Outcome Tracking Dashboard</div>
+      <div class="rec-body">Implement longitudinal cohort tracking for clients on 18–24 month education or career pathways (most common in FNPI 5d). Current annual reporting undercounts these successes. One-time technology investment to correct systemic measurement gap.</div>
+      <div class="rec-meta">
+        <span class="rec-tag rec-tag-cost">$32,000</span>
+        <span class="rec-tag rec-tag-time">FY2026 Q3–Q4</span>
+      </div>
+    </div>
+    <div class="rec-card">
+      <div class="rec-priority">Priority 4 — Center Equity</div>
+      <div class="rec-title">Northeast Center Capacity Audit</div>
+      <div class="rec-body">Northeast Center's TOP achievement (34) is 36% below center average. Commission a case management audit and staffing review to identify root causes — whether staffing, population composition, or service mix requires adjustment for the senior/veteran demographic.</div>
+      <div class="rec-meta">
+        <span class="rec-tag rec-tag-cost">$18,000</span>
+        <span class="rec-tag rec-tag-time">FY2026 Q3</span>
+      </div>
+    </div>
+    <div class="rec-card">
+      <div class="rec-priority">Priority 5 — Financial Risk</div>
+      <div class="rec-title">Establish CSBG Contingency Reserve</div>
+      <div class="rec-body">Given CSBG federal reauthorization uncertainty, work with the City Budget Office to establish a contingency reserve at 15% of annual contract value (~$351,000). Protects service continuity from mid-year federal funding disruptions.</div>
+      <div class="rec-meta">
+        <span class="rec-tag rec-tag-cost">$351,000</span>
+        <span class="rec-tag rec-tag-time">FY2027</span>
+      </div>
+    </div>
+    <div class="rec-card">
+      <div class="rec-priority">Priority 6 — Efficiency</div>
+      <div class="rec-title">Cost-per-TOP Reduction Target</div>
+      <div class="rec-body">Set a formal target to reduce cost per TOP outcome by 5% annually through FY2028. Current cost: $5,882 per TOP outcome. Achieved through enrollment growth and service coordination improvements — no additional budget required.</div>
+      <div class="rec-meta">
+        <span class="rec-tag rec-tag-cost">Staff time only</span>
+        <span class="rec-tag rec-tag-time">FY2027 onward</span>
+      </div>
+    </div>
+  </div>
+
+  <hr class="section-divider">
+  <div style="font-size:13px;font-weight:700;color:var(--navy);margin-bottom:16px">Five-Year Outlook: FY2026–FY2030</div>
+  <div class="tbl-wrap">
+    <table>
+      <thead><tr><th>Metric</th><th>FY2025 Actual</th><th>FY2028 Projected</th><th>FY2030 Projected</th></tr></thead>
+      <tbody>
+        <tr><td>Annual Enrollment</td><td class="num">8,227</td><td class="num">~9,400</td><td class="num">~10,500</td></tr>
+        <tr><td>FNPI Composite Success Rate</td><td class="num">73.9%</td><td class="num">78–80%</td><td class="num">80–82%</td></tr>
+        <tr><td>TOP Success Rate</td><td class="num">93.5%</td><td class="num">93–95%</td><td class="num">93–95%</td></tr>
+        <tr><td>Cost per Client</td><td class="num">$267</td><td class="num">&lt;$275</td><td class="num">&lt;$280</td></tr>
+        <tr><td>Emergency Service Reliance (SRV 7a)</td><td class="num">9,870 units</td><td class="num">↓ 15–20%</td><td class="num">↓ 25–30%</td></tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- GLOSSARY -->
+<div class="section" id="glossary">
+  <div class="section-eyebrow">Appendix</div>
+  <div class="section-title">Glossary of Key Terms</div>
+  <div class="section-sub">Reference definitions for CSBG reporting framework terminology used throughout this analysis.</div>
+  <div class="glossary-grid">
+    <div class="glossary-item"><strong>CSBG</strong> — Community Services Block Grant: federal anti-poverty grant program</div>
+    <div class="glossary-item"><strong>NSU</strong> — Neighborhood Services Unit: City of Austin program operator</div>
+    <div class="glossary-item"><strong>OASIS</strong> — Community Action Program brand name for Austin NSU services</div>
+    <div class="glossary-item"><strong>FNPI</strong> — Family/Individual National Performance Indicator: outcome measure</div>
+    <div class="glossary-item"><strong>SRV</strong> — Service indicator: unit of service delivery measure</div>
+    <div class="glossary-item"><strong>TOP</strong> — Transition Out of Poverty: composite family self-sufficiency outcome</div>
+    <div class="glossary-item"><strong>ROMA</strong> — Results Oriented Management and Accountability: CSBG framework</div>
+    <div class="glossary-item"><strong>FPL</strong> — Federal Poverty Level</div>
+    <div class="glossary-item"><strong>NPI</strong> — National Performance Indicator</div>
+    <div class="glossary-item"><strong>HHSC</strong> — Texas Health and Human Services Commission</div>
+    <div class="glossary-item"><strong>COATES Act</strong> — Community Opportunities, Accountability, Training and Education Services Act (1998)</div>
+    <div class="glossary-item"><strong>ACC</strong> — Austin Community College: key NSU employer/education partner</div>
+  </div>
+
+  <hr class="section-divider">
+  <div style="font-size:12px;color:var(--muted);line-height:1.8;margin-top:4px">
+    <strong style="color:var(--navy)">Data Sources:</strong> CSBG ROMA NPI Reports (FY2021–FY2025) &nbsp;·&nbsp; NSU Internal Records &nbsp;·&nbsp; City of Austin CSBG Contract Documents &nbsp;·&nbsp; Texas HHSC CSBG Annual Reports &nbsp;·&nbsp; U.S. Census Bureau ACS (2021–2024) &nbsp;·&nbsp; HHS Office of Community Services &nbsp;·&nbsp; City of Austin Budget Office
+  </div>
+</div>
+
+<div class="report-footer">
+  <strong>NSU OASIS Community Action Program — 5-Year Strategic Analysis | FY2021–FY2025</strong><br>
+  Prepared by Ameritech Consulting Group &nbsp;·&nbsp; May 2026<br>
+  Data: NSU Internal Records, CSBG ROMA NPI Reports, City of Austin Open Data<br>
+  <a href="https://github.com/ameritechconsulting/Austin_Civic_Data/tree/main/public_health/neighborhood_services_unit_analysis" target="_blank" style="color:#7EC8E3">View on GitHub →</a>
+</div>
+
+</body>
+</html>
