@@ -11,8 +11,12 @@
   </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Austin Nexus — Civic Transparency Platform. Open data, analysis, and accountability reporting for Austin, Texas.">
-  <title>Austin Nexus | Civic Transparency Platform</title>
+  <meta name="description" content="Austin Nexus — Civic Intelligence & Operational Analytics Platform by Ameritech Consulting Group. Transforming fragmented public data into actionable operational insights for Austin, Texas.">
+  <meta property="og:title" content="Austin Nexus | Civic Intelligence & Operational Analytics">
+  <meta property="og:description" content="Independent civic data analysis, GIS mapping, and public-sector reporting for Austin, Texas. Open data. Accountable government. Informed communities.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ameritechconsulting.github.io/Austin_Civic_Data/">
+  <title>Austin Nexus | Civic Intelligence & Operational Analytics</title>
   <style>
     *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 
@@ -55,9 +59,7 @@
       letter-spacing: 0.5px;
     }
 
-    .nav-brand span {
-      color: #7EC8E3;
-    }
+    .nav-brand span { color: #7EC8E3; }
 
     .nav-links {
       display: flex;
@@ -116,7 +118,7 @@
     .hero-tagline {
       font-size: 16px;
       color: rgba(255,255,255,0.85);
-      max-width: 540px;
+      max-width: 600px;
       margin: 0 auto 32px;
       line-height: 1.7;
     }
@@ -143,19 +145,12 @@
       letter-spacing: 0.3px;
     }
 
-    .btn-white {
-      background: var(--white);
-      color: var(--navy);
-    }
-
+    .btn-white { background: var(--white); color: var(--navy); }
     .btn-white:hover { background: #e8f0fe; }
-
-    .btn-outline {
-      border: 2px solid rgba(255,255,255,0.5);
-      color: var(--white);
-    }
-
+    .btn-outline { border: 2px solid rgba(255,255,255,0.5); color: var(--white); }
     .btn-outline:hover { border-color: var(--white); background: rgba(255,255,255,0.1); }
+    .btn-navy { background: var(--navy); color: var(--white); }
+    .btn-navy:hover { background: var(--blue); }
 
     /* ── STATS STRIP ── */
     .stats {
@@ -213,7 +208,7 @@
     .section-header p {
       font-size: 14px;
       color: var(--muted);
-      max-width: 560px;
+      max-width: 620px;
     }
 
     /* ── PROJECT CARDS ── */
@@ -260,15 +255,8 @@
       border-radius: 20px;
     }
 
-    .status-published {
-      background: #E6F4EA;
-      color: #1B7A3E;
-    }
-
-    .status-progress {
-      background: #FFF8E1;
-      color: #946200;
-    }
+    .status-published { background: #E6F4EA; color: #1B7A3E; }
+    .status-progress  { background: #FFF8E1; color: #946200; }
 
     .card h3 {
       font-size: 16px;
@@ -318,20 +306,172 @@
       transition: all 0.2s;
     }
 
-    .card-btn-primary {
-      background: var(--navy);
-      color: var(--white);
-    }
-
+    .card-btn-primary { background: var(--navy); color: var(--white); }
     .card-btn-primary:hover { background: var(--blue); }
+    .card-btn-secondary { background: var(--white); color: var(--navy); border: 1px solid var(--border); }
+    .card-btn-secondary:hover { background: var(--light); }
 
-    .card-btn-secondary {
-      background: var(--white);
-      color: var(--navy);
-      border: 1px solid var(--border);
+    /* ── CAPABILITY SECTION ── */
+    .capability-strip {
+      background: var(--light);
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      padding: 64px 40px;
     }
 
-    .card-btn-secondary:hover { background: var(--light); }
+    .capability-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .competency-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 20px;
+      margin-bottom: 40px;
+    }
+
+    .competency-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 24px;
+    }
+
+    .competency-icon {
+      font-size: 22px;
+      margin-bottom: 12px;
+    }
+
+    .competency-card h4 {
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--navy);
+      margin-bottom: 12px;
+      line-height: 1.3;
+    }
+
+    .competency-card ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .competency-card ul li {
+      font-size: 12px;
+      color: var(--muted);
+      padding-left: 14px;
+      position: relative;
+      line-height: 1.4;
+    }
+
+    .competency-card ul li::before {
+      content: "—";
+      position: absolute;
+      left: 0;
+      color: var(--blue);
+      font-size: 11px;
+    }
+
+    .differentiators {
+      background: var(--navy);
+      border-radius: 10px;
+      padding: 28px 32px;
+      margin-bottom: 32px;
+    }
+
+    .differentiators h4 {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #7EC8E3;
+      margin-bottom: 16px;
+    }
+
+    .diff-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 10px 32px;
+    }
+
+    .diff-item {
+      font-size: 13px;
+      color: rgba(255,255,255,0.85);
+      padding-left: 16px;
+      position: relative;
+      line-height: 1.5;
+    }
+
+    .diff-item::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: #7EC8E3;
+      font-size: 11px;
+      top: 2px;
+    }
+
+    /* ── TOOLS STRIP ── */
+    .tools-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-items: center;
+    }
+
+    .tools-label {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-right: 6px;
+    }
+
+    .tool-badge {
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--navy);
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 4px 14px;
+    }
+
+    /* ── NAICS ── */
+    .naics-section {
+      margin-top: 36px;
+      padding-top: 32px;
+      border-top: 1px solid var(--border);
+    }
+
+    .naics-section h4 {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 14px;
+    }
+
+    .naics-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 8px;
+    }
+
+    .naics-item {
+      font-size: 12px;
+      color: var(--muted);
+      line-height: 1.5;
+    }
+
+    .naics-item strong {
+      color: var(--navy);
+      font-weight: 700;
+    }
 
     /* ── PIPELINE SECTION ── */
     .pipeline-grid {
@@ -347,10 +487,7 @@
       padding: 20px;
     }
 
-    .pipeline-icon {
-      font-size: 22px;
-      margin-bottom: 10px;
-    }
+    .pipeline-icon { font-size: 22px; margin-bottom: 10px; }
 
     .pipeline-card h4 {
       font-size: 13px;
@@ -359,15 +496,11 @@
       margin-bottom: 6px;
     }
 
-    .pipeline-card p {
-      font-size: 12px;
-      color: var(--muted);
-      line-height: 1.5;
-    }
+    .pipeline-card p { font-size: 12px; color: var(--muted); line-height: 1.5; }
 
     /* ── ABOUT ── */
     .about-strip {
-      background: var(--light);
+      background: var(--white);
       border-top: 1px solid var(--border);
       border-bottom: 1px solid var(--border);
       padding: 56px 40px;
@@ -399,11 +532,7 @@
 
     .principles { list-style: none; display: flex; flex-direction: column; gap: 14px; }
 
-    .principle {
-      display: flex;
-      gap: 14px;
-      align-items: flex-start;
-    }
+    .principle { display: flex; gap: 14px; align-items: flex-start; }
 
     .principle-icon {
       width: 36px;
@@ -424,11 +553,7 @@
       margin-bottom: 2px;
     }
 
-    .principle-text p {
-      font-size: 12px;
-      color: var(--muted);
-      margin: 0;
-    }
+    .principle-text p { font-size: 12px; color: var(--muted); margin: 0; }
 
     /* ── FOOTER ── */
     footer {
@@ -450,18 +575,8 @@
       margin-bottom: 24px;
     }
 
-    .footer-brand h3 {
-      font-size: 18px;
-      font-weight: 700;
-      color: var(--white);
-      margin-bottom: 6px;
-    }
-
-    .footer-brand p {
-      font-size: 12px;
-      line-height: 1.6;
-      max-width: 280px;
-    }
+    .footer-brand h3 { font-size: 18px; font-weight: 700; color: var(--white); margin-bottom: 6px; }
+    .footer-brand p  { font-size: 12px; line-height: 1.6; max-width: 280px; }
 
     .footer-links h4 {
       font-size: 11px;
@@ -474,12 +589,7 @@
 
     .footer-links ul { list-style: none; display: flex; flex-direction: column; gap: 8px; }
 
-    .footer-links a {
-      font-size: 13px;
-      color: rgba(255,255,255,0.7);
-      transition: color 0.2s;
-    }
-
+    .footer-links a { font-size: 13px; color: rgba(255,255,255,0.7); transition: color 0.2s; }
     .footer-links a:hover { color: var(--white); }
 
     .footer-bottom {
@@ -498,9 +608,11 @@
       .stats { flex-direction: column; }
       .stat { border-right: none; border-bottom: 1px solid var(--border); }
       .about-inner { grid-template-columns: 1fr; gap: 32px; }
-      section { padding: 48px 20px; }
+      section, .capability-strip { padding: 48px 20px; }
+      .about-strip { padding: 48px 20px; }
       nav { padding: 0 20px; }
       .hero { padding: 56px 20px; }
+      .differentiators { padding: 20px; }
     }
   </style>
 </head>
@@ -511,6 +623,7 @@
   <div class="nav-brand">Austin <span>Nexus</span></div>
   <div class="nav-links">
     <a href="#research">Research</a>
+    <a href="#capabilities">Capabilities</a>
     <a href="#pipeline">Pipeline</a>
     <a href="#about">About</a>
     <a class="nav-github" href="https://github.com/ameritechconsulting/Austin_Civic_Data" target="_blank">GitHub →</a>
@@ -519,15 +632,15 @@
 
 <!-- HERO -->
 <div class="hero">
-  <p class="hero-eyebrow">Civic Transparency Platform</p>
+  <p class="hero-eyebrow">Civic Intelligence & Operational Analytics</p>
   <h1>Austin <span>Nexus</span></h1>
   <p class="hero-tagline">
     <strong>Open Data. Accountable Government. Informed Communities.</strong><br>
-    Independent civic data analysis for Austin, Texas — built for residents, advocates, and policymakers.
+    Transforming fragmented public data into actionable operational insights — independent civic analysis for Austin, Texas.
   </p>
   <div class="hero-cta">
     <a class="btn btn-white" href="#research">View Research</a>
-    <a class="btn btn-outline" href="https://github.com/ameritechconsulting/Austin_Civic_Data" target="_blank">View on GitHub</a>
+    <a class="btn btn-outline" href="#capabilities">Our Capabilities</a>
   </div>
 </div>
 
@@ -538,8 +651,8 @@
     <span class="stat-label">Published Analyses</span>
   </div>
   <div class="stat">
-    <span class="stat-number">5</span>
-    <span class="stat-label">Topic Areas</span>
+    <span class="stat-number">4</span>
+    <span class="stat-label">Core Competencies</span>
   </div>
   <div class="stat">
     <span class="stat-number">10</span>
@@ -556,7 +669,7 @@
   <div class="section-header">
     <p class="section-eyebrow">Published Research</p>
     <h2>Active Analyses</h2>
-    <p>Completed, peer-reviewable analyses available for download, citation, and public use.</p>
+    <p>Completed operational intelligence reports — peer-reviewable, source-cited, and available for public use, citation, and download.</p>
   </div>
 
   <div class="card-grid">
@@ -568,10 +681,11 @@
         <span class="status-badge status-published">Published</span>
       </div>
       <h3>CapMetro Bus Service Analysis</h3>
-      <p>Baseline evidence report and equity analysis of CapMetro transit accessibility across Austin council districts — 311 complaint data, stop amenity gaps, ADA violations, and risk scoring.</p>
+      <p>Baseline evidence report and equity analysis of CapMetro transit accessibility across Austin council districts — 311 complaint data, stop amenity gaps, ADA infrastructure mapping, and risk scoring.</p>
       <div class="card-tags">
         <span class="tag">Transit Equity</span>
         <span class="tag">ADA Compliance</span>
+        <span class="tag">GIS / Spatial</span>
         <span class="tag">311 Data</span>
       </div>
       <div class="card-footer">
@@ -587,11 +701,12 @@
         <span class="status-badge status-published">Published</span>
       </div>
       <h3>Austin Transportation & Public Works</h3>
-      <p>Policy briefings and data templates for the City of Austin TPW Department — capital spending, Vision Zero safety, drainage infrastructure, and equity distribution analysis.</p>
+      <p>Operational analysis and stakeholder briefings for the City of Austin TPW Department — capital spending, Vision Zero safety analytics, drainage infrastructure, and district-level equity distribution.</p>
       <div class="card-tags">
         <span class="tag">Transportation</span>
         <span class="tag">Vision Zero</span>
         <span class="tag">Capital Budget</span>
+        <span class="tag">Equity</span>
       </div>
       <div class="card-footer">
         <a class="card-btn card-btn-secondary" href="https://github.com/ameritechconsulting/Austin_Civic_Data/tree/main/infrastructure/austin_transportation_public_works_analysis" target="_blank">GitHub</a>
@@ -606,10 +721,11 @@
         <span class="status-badge status-published">Published</span>
       </div>
       <h3>Food Access & Economic Stability</h3>
-      <p>Analysis of food access gaps and economic stability across Austin neighborhoods — SNAP usage, grocery access by zip code, wage vs. cost of living, and childcare workforce impact.</p>
+      <p>Cross-system operational analysis of food access gaps and economic stability across Austin neighborhoods — SNAP usage, grocery access by zip code, wage vs. cost of living, and childcare workforce impact.</p>
       <div class="card-tags">
         <span class="tag">Food Access</span>
         <span class="tag">SNAP Data</span>
+        <span class="tag">Economic Stability</span>
         <span class="tag">Equity</span>
       </div>
       <div class="card-footer">
@@ -621,35 +737,133 @@
   </div>
 </section>
 
+<!-- CAPABILITY STATEMENT -->
+<div class="capability-strip" id="capabilities">
+  <div class="capability-inner">
+    <div class="section-header">
+      <p class="section-eyebrow">Capability Statement</p>
+      <h2>Civic Intelligence & Operational Analytics</h2>
+      <p>Ameritech Consulting Group integrates infrastructure, transportation, procurement, GIS, workforce, and operational datasets into clear analytical dashboards, visualizations, and reporting systems that support transparency, operational visibility, and decision-making.</p>
+    </div>
+
+    <div class="competency-grid">
+      <div class="competency-card">
+        <div class="competency-icon">📊</div>
+        <h4>Civic & Operational Analytics</h4>
+        <ul>
+          <li>Public-sector operational analysis</li>
+          <li>Cross-system reporting</li>
+          <li>KPI and performance dashboards</li>
+          <li>Infrastructure and transportation analytics</li>
+          <li>Public transparency reporting</li>
+          <li>Data visualization and operational insights</li>
+        </ul>
+      </div>
+      <div class="competency-card">
+        <div class="competency-icon">🗺️</div>
+        <h4>GIS & Spatial Intelligence</h4>
+        <ul>
+          <li>GIS mapping and spatial analysis</li>
+          <li>ADA and infrastructure mapping</li>
+          <li>Transportation and mobility analysis</li>
+          <li>Geographic equity analysis</li>
+          <li>Infrastructure visualization</li>
+        </ul>
+      </div>
+      <div class="competency-card">
+        <div class="competency-icon">⚙️</div>
+        <h4>Dashboard Development & Reporting</h4>
+        <ul>
+          <li>Power BI dashboard development</li>
+          <li>Interactive operational dashboards</li>
+          <li>Public-facing reporting systems</li>
+          <li>Data integration and visualization</li>
+          <li>Executive and stakeholder reporting</li>
+        </ul>
+      </div>
+      <div class="competency-card">
+        <div class="competency-icon">🔍</div>
+        <h4>Research & Intelligence Reporting</h4>
+        <ul>
+          <li>Vendor and procurement analysis</li>
+          <li>Infrastructure ecosystem analysis</li>
+          <li>Operational trend analysis</li>
+          <li>Cross-agency analytical reporting</li>
+          <li>Public-sector intelligence summaries</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="differentiators">
+      <h4>Differentiators</h4>
+      <div class="diff-grid">
+        <span class="diff-item">Systems-level analytical approach</span>
+        <span class="diff-item">Cross-agency operational analysis</span>
+        <span class="diff-item">Integration of GIS, infrastructure, procurement, and operational data</span>
+        <span class="diff-item">Public-sector and civic intelligence focus</span>
+        <span class="diff-item">Translates fragmented data into understandable operational insights</span>
+        <span class="diff-item">Emerging framework for civic intelligence and municipal operational analytics</span>
+      </div>
+    </div>
+
+    <div class="tools-row">
+      <span class="tools-label">Tools & Technologies</span>
+      <span class="tool-badge">Microsoft Power BI</span>
+      <span class="tool-badge">GIS / ArcGIS</span>
+      <span class="tool-badge">Python</span>
+      <span class="tool-badge">SQL</span>
+      <span class="tool-badge">Data Visualization</span>
+      <span class="tool-badge">Public Records Analysis</span>
+      <span class="tool-badge">Spatial Analytics</span>
+      <span class="tool-badge">Dashboard Reporting Systems</span>
+    </div>
+
+    <div class="naics-section">
+      <h4>NAICS Codes</h4>
+      <div class="naics-grid">
+        <div class="naics-item"><strong>541511</strong> — Custom Computer Programming Services</div>
+        <div class="naics-item"><strong>541512</strong> — Computer Systems Design Services</div>
+        <div class="naics-item"><strong>541611</strong> — Administrative Management Consulting Services</div>
+        <div class="naics-item"><strong>541618</strong> — Other Management Consulting Services</div>
+        <div class="naics-item"><strong>541690</strong> — Other Scientific & Technical Consulting</div>
+        <div class="naics-item"><strong>541370</strong> — Surveying and Mapping Services (GIS)</div>
+        <div class="naics-item"><strong>541715</strong> — R&D in Physical, Engineering & Life Sciences</div>
+        <div class="naics-item"><strong>518210</strong> — Computing Infrastructure & Data Processing</div>
+      </div>
+    </div>
+  </div>
+</div>
+
 <!-- ABOUT -->
 <div class="about-strip" id="about">
   <div class="about-inner">
     <div>
       <h2>What is Austin Nexus?</h2>
-      <p>Austin Nexus is a civic transparency platform maintained by Ameritech Consulting Group — producing independent, data-driven analysis of City of Austin programs, policies, and infrastructure.</p>
+      <p>Austin Nexus is the civic intelligence platform of Ameritech Consulting Group — providing public-sector operational analytics, GIS mapping, and reporting solutions that transform fragmented public data into actionable operational insights.</p>
+      <p>We specialize in integrating infrastructure, transportation, procurement, GIS, workforce, and operational datasets into clear analytical dashboards, visualizations, and reporting systems that support transparency, operational visibility, and decision-making.</p>
       <p>Every dataset, methodology, and finding is published openly on GitHub so residents, journalists, advocates, and policymakers can verify, replicate, and build on the work.</p>
-      <a class="btn btn-white" style="background:var(--navy);color:#fff;margin-top:8px;display:inline-block;" href="https://github.com/ameritechconsulting/Austin_Civic_Data" target="_blank">View the Full Repository →</a>
+      <a class="btn btn-navy" style="margin-top:8px;display:inline-block;" href="https://github.com/ameritechconsulting/Austin_Civic_Data" target="_blank">View the Full Repository →</a>
     </div>
     <ul class="principles">
       <li class="principle">
-        <div class="principle-icon">📂</div>
+        <div class="principle-icon">🔗</div>
         <div class="principle-text">
-          <h4>Open by Default</h4>
-          <p>All data, scripts, and findings are published publicly on GitHub under an open license.</p>
+          <h4>Systems-Level Approach</h4>
+          <p>We integrate cross-agency datasets — GIS, infrastructure, procurement, workforce — into unified, actionable operational insights.</p>
         </div>
       </li>
       <li class="principle">
-        <div class="principle-icon">📊</div>
+        <div class="principle-icon">📋</div>
         <div class="principle-text">
           <h4>Source-Cited Analysis</h4>
-          <p>Every claim links back to a primary government source — City data portals, Census, CapMetro feeds.</p>
+          <p>Every claim links back to a primary government source — City data portals, U.S. Census, CapMetro GTFS feeds, and open records.</p>
         </div>
       </li>
       <li class="principle">
         <div class="principle-icon">🏙️</div>
         <div class="principle-text">
           <h4>District-Level Equity Focus</h4>
-          <p>All analyses are disaggregated by Austin's 10 council districts to surface equity gaps.</p>
+          <p>All analyses are disaggregated by Austin's 10 council districts to surface geographic equity gaps and inform targeted policy.</p>
         </div>
       </li>
     </ul>
@@ -661,33 +875,33 @@
   <div class="section-header">
     <p class="section-eyebrow">Research Pipeline</p>
     <h2>Coming Soon</h2>
-    <p>Analyses currently in development across all five topic areas.</p>
+    <p>Operational intelligence analyses currently in development — spanning all five research domains.</p>
   </div>
   <div class="pipeline-grid">
     <div class="pipeline-card">
       <div class="pipeline-icon">🏠</div>
       <h4>Housing</h4>
-      <p>Displacement risk scoring, ADCAP program tracking, and homelessness system accountability.</p>
+      <p>Displacement risk scoring, ADCAP program tracking, and homelessness system accountability reporting.</p>
     </div>
     <div class="pipeline-card">
       <div class="pipeline-icon">💼</div>
       <h4>Economic Development</h4>
-      <p>City of Austin budget analysis and public investment priorities.</p>
+      <p>City of Austin budget analysis, public investment priorities, and operational spend transparency.</p>
     </div>
     <div class="pipeline-card">
       <div class="pipeline-icon">❤️</div>
       <h4>Public Health</h4>
-      <p>Neighborhood services, community investment strategy, and CSBG program analysis.</p>
+      <p>Neighborhood services analytics, community investment strategy, and CSBG program operational reporting.</p>
     </div>
     <div class="pipeline-card">
       <div class="pipeline-icon">🤝</div>
       <h4>Public Procurement</h4>
-      <p>Small business equity, vendor concentration, and workforce procurement modernization.</p>
+      <p>Small business equity analysis, vendor concentration reporting, and workforce procurement modernization.</p>
     </div>
     <div class="pipeline-card">
       <div class="pipeline-icon">⚡</div>
       <h4>Utilities & Technology</h4>
-      <p>Digital equity, broadband access, and utility infrastructure analysis.</p>
+      <p>Digital equity, broadband access, and utility infrastructure operational analysis.</p>
     </div>
   </div>
 </section>
@@ -697,7 +911,7 @@
   <div class="footer-inner">
     <div class="footer-brand">
       <h3>Austin Nexus</h3>
-      <p>A Civic Transparency Platform by Ameritech Consulting Group. Independent analysis for an accountable Austin.</p>
+      <p>Civic Intelligence & Operational Analytics by Ameritech Consulting Group. Transforming fragmented public data into accountable government insights.</p>
     </div>
     <div class="footer-links">
       <h4>Research</h4>
